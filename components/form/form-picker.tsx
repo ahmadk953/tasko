@@ -94,7 +94,7 @@ export const FormPicker = ({ id, errors }: FormPickerProps) => {
               </div>
             )}
             <Link
-              href={image.links.html}
+              href={image.links.html + '?utm_source=Tasko&utm_medium=referral'}
               target='_blank'
               className='absolute bottom-0 w-full truncate bg-black/50 p-1 text-[10px] text-white opacity-0 hover:underline group-hover:opacity-100'
             >

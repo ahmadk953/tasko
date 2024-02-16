@@ -19,6 +19,7 @@ import { useProModal } from '@/hooks/use-pro-modal';
 import { FormInput } from './form-input';
 import { FormSubmit } from './form-submit';
 import { FormPicker } from './form-picker';
+import Link from 'next/link';
 
 interface FormPopoverProps {
   children: React.ReactNode;
@@ -78,6 +79,15 @@ export const FormPopover = ({
         </PopoverClose>
         <form action={onSubmit} className='space-y-4'>
           <div className='space-y-4'>
+            <p className='text-center text-xs font-medium italic text-neutral-700'>
+              Images Provided by{' '}
+              <Link
+                className='text-sky-900 underline'
+                href='https://unsplash.com/'
+              >
+                Unsplash
+              </Link>
+            </p>
             <FormPicker id='image' errors={fieldErrors} />
             <FormInput
               id='title'
