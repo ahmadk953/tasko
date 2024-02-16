@@ -1,7 +1,7 @@
-import { auth, currentUser } from "@clerk/nextjs";
-import { ACTION, ENTITY_TYPE } from "@prisma/client";
+import { auth, currentUser } from '@clerk/nextjs';
+import { ACTION, ENTITY_TYPE } from '@prisma/client';
 
-import { db } from "@/lib/db";
+import { db } from '@/lib/db';
 
 interface Props {
   entityId: string;
@@ -15,7 +15,7 @@ export const createAuditLog = async (props: Props) => {
     const { orgId } = auth();
     const user = await currentUser();
 
-    if (!orgId || !user) throw new Error("User not found");
+    if (!orgId || !user) throw new Error('User not found');
 
     const { entityId, entityType, entityTitle, action } = props;
 
@@ -28,10 +28,10 @@ export const createAuditLog = async (props: Props) => {
         action,
         userId: user.id,
         userImage: user?.imageUrl,
-        userName: user?.firstName + " " + user?.lastName,
+        userName: user?.firstName + ' ' + user?.lastName,
       },
     });
   } catch (error) {
-    console.error("[AUDIT_LOG_ERROR]", error);
+    console.error('[AUDIT_LOG_ERROR]', error);
   }
 };

@@ -1,20 +1,20 @@
-"use server";
+'use server';
 
-import { auth } from "@clerk/nextjs";
-import { revalidatePath } from "next/cache";
-import { ACTION, ENTITY_TYPE } from "@prisma/client";
+import { auth } from '@clerk/nextjs';
+import { revalidatePath } from 'next/cache';
+import { ACTION, ENTITY_TYPE } from '@prisma/client';
 
-import { db } from "@/lib/db";
-import { createAuditLog } from "@/lib/create-audit-log";
-import { createSafeAction } from "@/lib/create-safe-action";
+import { db } from '@/lib/db';
+import { createAuditLog } from '@/lib/create-audit-log';
+import { createSafeAction } from '@/lib/create-safe-action';
 
-import { InputType, ReturnType } from "./types";
-import { UpdateCard } from "./schema";
+import { InputType, ReturnType } from './types';
+import { UpdateCard } from './schema';
 
 const handler = async (data: InputType): Promise<ReturnType> => {
   const { userId, orgId } = auth();
 
-  if (!userId || !orgId) return { error: "Unauthorized" };
+  if (!userId || !orgId) return { error: 'Unauthorized' };
 
   const { id, boardId, ...values } = data;
   let card;
@@ -42,7 +42,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
     });
   } catch (error) {
     return {
-      error: "Failed to update card",
+      error: 'Failed to update card',
     };
   }
 

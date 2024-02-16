@@ -1,8 +1,8 @@
-import { auth } from "@clerk/nextjs";
-import { ENTITY_TYPE } from "@prisma/client";
-import { NextResponse } from "next/server";
+import { auth } from '@clerk/nextjs';
+import { ENTITY_TYPE } from '@prisma/client';
+import { NextResponse } from 'next/server';
 
-import { db } from "@/lib/db";
+import { db } from '@/lib/db';
 
 export async function GET(
   req: Request,
@@ -12,7 +12,7 @@ export async function GET(
     const { orgId, userId } = auth();
 
     if (!orgId || !userId)
-      return new NextResponse(JSON.stringify({ error: "Unauthorized" }), {
+      return new NextResponse(JSON.stringify({ error: 'Unauthorized' }), {
         status: 401,
       });
 
@@ -23,7 +23,7 @@ export async function GET(
         entityType: ENTITY_TYPE.CARD,
       },
       orderBy: {
-        createdAt: "desc",
+        createdAt: 'desc',
       },
       take: 3,
     });

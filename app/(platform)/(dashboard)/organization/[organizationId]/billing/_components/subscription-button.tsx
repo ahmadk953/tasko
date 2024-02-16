@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { toast } from "sonner";
+import { toast } from 'sonner';
 
-import { stripeRedirect } from "@/actions/stripe-redirect";
-import { Button } from "@/components/ui/button";
-import { useAction } from "@/hooks/use-action";
-import { useProModal } from "@/hooks/use-pro-modal";
+import { stripeRedirect } from '@/actions/stripe-redirect';
+import { Button } from '@/components/ui/button';
+import { useAction } from '@/hooks/use-action';
+import { useProModal } from '@/hooks/use-pro-modal';
 
 interface SubscriptionButtonProps {
   isPro: boolean;
@@ -32,8 +32,8 @@ export const SubscriptionButton = ({ isPro }: SubscriptionButtonProps) => {
   };
 
   return (
-    <Button disabled={isLoading} onClick={onClick} variant="primary">
-      {isPro ? "Manage Subscription" : "Upgrade to Pro"}
+    <Button disabled={isLoading} onClick={onClick} variant='primary'>
+      {isPro ? 'Manage Subscription' : 'Upgrade to Pro'}
     </Button>
   );
 };

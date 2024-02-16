@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import { DragDropContext, Droppable } from "@hello-pangea/dnd";
-import { toast } from "sonner";
+import { useEffect, useState } from 'react';
+import { DragDropContext, Droppable } from '@hello-pangea/dnd';
+import { toast } from 'sonner';
 
-import { useAction } from "@/hooks/use-action";
-import { updateListOrder } from "@/actions/update-list-order";
-import { updateCardOrder } from "@/actions/update-card-order";
-import { ListWithCards } from "@/types";
+import { useAction } from '@/hooks/use-action';
+import { updateListOrder } from '@/actions/update-list-order';
+import { updateCardOrder } from '@/actions/update-card-order';
+import { ListWithCards } from '@/types';
 
-import { ListForm } from "./list-form";
-import { ListItem } from "./list-item";
+import { ListForm } from './list-form';
+import { ListItem } from './list-item';
 
 interface ListContainerProps {
   data: ListWithCards[];
@@ -30,7 +30,7 @@ export const ListContainer = ({ data, boardId }: ListContainerProps) => {
 
   const { execute: executeUpdateListOrder } = useAction(updateListOrder, {
     onSuccess: () => {
-      toast.success("List reordered");
+      toast.success('List reordered');
     },
     onError: (error) => {
       toast.error(error);
@@ -39,7 +39,7 @@ export const ListContainer = ({ data, boardId }: ListContainerProps) => {
 
   const { execute: executeUpdateCardOrder } = useAction(updateCardOrder, {
     onSuccess: () => {
-      toast.success("Card reordered");
+      toast.success('Card reordered');
     },
     onError: (error) => {
       toast.error(error);
@@ -63,7 +63,7 @@ export const ListContainer = ({ data, boardId }: ListContainerProps) => {
       return;
 
     // User moves a list
-    if (type === "list") {
+    if (type === 'list') {
       const items = reorder(orderedData, source.index, destination.index).map(
         (item, index) => ({ ...item, order: index })
       );
@@ -72,7 +72,7 @@ export const ListContainer = ({ data, boardId }: ListContainerProps) => {
     }
 
     // User moves a card
-    if (type === "card") {
+    if (type === 'card') {
       let newOrderedData = [...orderedData];
 
       // Get source and destination list
@@ -142,19 +142,19 @@ export const ListContainer = ({ data, boardId }: ListContainerProps) => {
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <Droppable droppableId="lists" type="list" direction="horizontal">
+      <Droppable droppableId='lists' type='list' direction='horizontal'>
         {(provided) => (
           <ol
             {...provided.droppableProps}
             ref={provided.innerRef}
-            className="flex gap-x-3 h-full"
+            className='flex h-full gap-x-3'
           >
             {orderedData.map((list, index) => {
               return <ListItem key={list.id} index={index} data={list} />;
             })}
             {provided.placeholder}
             <ListForm />
-            <div className="flex-shrink-0 w-1" />
+            <div className='w-1 flex-shrink-0' />
           </ol>
         )}
       </Droppable>

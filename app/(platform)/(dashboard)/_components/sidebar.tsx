@@ -1,21 +1,21 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { Plus } from "lucide-react";
-import { useLocalStorage } from "usehooks-ts";
-import { useOrganizationList, useOrganization } from "@clerk/nextjs";
+import Link from 'next/link';
+import { Plus } from 'lucide-react';
+import { useLocalStorage } from 'usehooks-ts';
+import { useOrganizationList, useOrganization } from '@clerk/nextjs';
 
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { Accordion } from "@/components/ui/accordion";
-import { Skeleton } from "@/components/ui/skeleton";
-import { NavItem, Organization } from "./nav-item";
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { Accordion } from '@/components/ui/accordion';
+import { Skeleton } from '@/components/ui/skeleton';
+import { NavItem, Organization } from './nav-item';
 
 interface SidebarProps {
   storageKey?: string;
 }
 
-export const Sidebar = ({ storageKey = "t-sidebar-state" }: SidebarProps) => {
+export const Sidebar = ({ storageKey = 't-sidebar-state' }: SidebarProps) => {
   const [expanded, setExpanded] = useLocalStorage<Record<string, any>>(
     storageKey,
     {}
@@ -46,11 +46,11 @@ export const Sidebar = ({ storageKey = "t-sidebar-state" }: SidebarProps) => {
   if (!isLoadedOrgList || !isLoadedOrg || userMemberships.isLoading) {
     return (
       <>
-        <div className="flex items-center justify-between mb-2">
-          <Skeleton className="h-10 w-[50%]" />
-          <Skeleton className="h-10 w-10" />
+        <div className='mb-2 flex items-center justify-between'>
+          <Skeleton className='h-10 w-[50%]' />
+          <Skeleton className='h-10 w-10' />
         </div>
-        <div className="space-y-2">
+        <div className='space-y-2'>
           <NavItem.Skeleton />
           <NavItem.Skeleton />
           <NavItem.Skeleton />
@@ -61,24 +61,24 @@ export const Sidebar = ({ storageKey = "t-sidebar-state" }: SidebarProps) => {
 
   return (
     <>
-      <div className="font-medium text-xs flex items-center mb-1">
-        <span className="pl-4">Workspaces</span>
+      <div className='mb-1 flex items-center text-xs font-medium'>
+        <span className='pl-4'>Workspaces</span>
         <Button
           asChild
-          type="button"
-          size="icon"
-          variant="ghost"
-          className="ml-auto"
+          type='button'
+          size='icon'
+          variant='ghost'
+          className='ml-auto'
         >
-          <Link href="/select-org">
-            <Plus className="h-4 w-4" />
+          <Link href='/select-org'>
+            <Plus className='h-4 w-4' />
           </Link>
         </Button>
       </div>
       <Accordion
-        type="multiple"
+        type='multiple'
         defaultValue={defaultAccordionValue}
-        className="space-y-2"
+        className='space-y-2'
       >
         {userMemberships.data.map(({ organization }) => (
           <NavItem

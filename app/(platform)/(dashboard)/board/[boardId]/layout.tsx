@@ -1,8 +1,8 @@
-import { auth } from "@clerk/nextjs";
-import { notFound, redirect } from "next/navigation";
+import { auth } from '@clerk/nextjs';
+import { notFound, redirect } from 'next/navigation';
 
-import { db } from "@/lib/db";
-import { BoardNavbar } from "./_components/board-navbar";
+import { db } from '@/lib/db';
+import { BoardNavbar } from './_components/board-navbar';
 
 export async function generateMetadata({
   params,
@@ -11,7 +11,7 @@ export async function generateMetadata({
 }) {
   const { orgId } = auth();
 
-  if (!orgId) return { title: "Board" };
+  if (!orgId) return { title: 'Board' };
 
   const board = await db.board.findUnique({
     where: {
@@ -21,7 +21,7 @@ export async function generateMetadata({
   });
 
   return {
-    title: board?.title ?? "Board",
+    title: board?.title ?? 'Board',
   };
 }
 
@@ -34,7 +34,7 @@ const BoardIdLayout = async ({
 }) => {
   const { orgId } = auth();
 
-  if (!orgId) redirect("/select-org");
+  if (!orgId) redirect('/select-org');
 
   const board = await db.board.findUnique({
     where: {
@@ -47,12 +47,12 @@ const BoardIdLayout = async ({
 
   return (
     <div
-      className="relative h-full bg-no-repeat bg-cover bg-center"
+      className='relative h-full bg-cover bg-center bg-no-repeat'
       style={{ backgroundImage: `url(${board.imageFullUrl})` }}
     >
       <BoardNavbar data={board} />
-      <div className="absolute inset-0 bg-black/10" />
-      <main className="relative pt-28 h-full">{children}</main>
+      <div className='absolute inset-0 bg-black/10' />
+      <main className='relative h-full pt-28'>{children}</main>
     </div>
   );
 };

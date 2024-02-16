@@ -1,25 +1,25 @@
-"use server";
+'use server';
 
-import { auth, currentUser } from "@clerk/nextjs";
-import { revalidatePath } from "next/cache";
+import { auth, currentUser } from '@clerk/nextjs';
+import { revalidatePath } from 'next/cache';
 
-import { db } from "@/lib/db";
-import { createSafeAction } from "@/lib/create-safe-action";
-import { absoluteUrl } from "@/lib/utils";
-import { stripe } from "@/lib/stripe";
+import { db } from '@/lib/db';
+import { createSafeAction } from '@/lib/create-safe-action';
+import { absoluteUrl } from '@/lib/utils';
+import { stripe } from '@/lib/stripe';
 
-import { InputType, ReturnType } from "./types";
-import { StripeRedirect } from "./schema";
+import { InputType, ReturnType } from './types';
+import { StripeRedirect } from './schema';
 
 const handler = async (data: InputType): Promise<ReturnType> => {
   const { userId, orgId } = auth();
   const user = await currentUser();
 
-  if (!userId || !orgId || !user) return { error: "Unauthorized" };
+  if (!userId || !orgId || !user) return { error: 'Unauthorized' };
 
   const settingsUrl = absoluteUrl(`/organization/${orgId}`);
 
-  let url = "";
+  let url = '';
 
   try {
     const orgSubscription = await db.orgSubscription.findUnique({
@@ -37,20 +37,20 @@ const handler = async (data: InputType): Promise<ReturnType> => {
       const stripeSession = await stripe.checkout.sessions.create({
         success_url: settingsUrl,
         cancel_url: settingsUrl,
-        payment_method_types: ["card", "paypal"],
-        mode: "subscription",
-        billing_address_collection: "auto",
+        payment_method_types: ['card', 'paypal'],
+        mode: 'subscription',
+        billing_address_collection: 'auto',
         customer_email: user.emailAddresses[0].emailAddress,
         line_items: [
           {
             price_data: {
-              currency: "usd",
+              currency: 'usd',
               product_data: {
-                name: "Tasko Pro",
-                description: "Unlimited boards for your organization",
+                name: 'Tasko Pro',
+                description: 'Unlimited boards for your organization',
               },
               unit_amount: 2000,
-              recurring: { interval: "month" },
+              recurring: { interval: 'month' },
             },
             quantity: 1,
           },
@@ -60,11 +60,11 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         },
       });
 
-      url = stripeSession.url ?? "";
+      url = stripeSession.url ?? '';
     }
   } catch (error) {
     return {
-      error: "Something went wrong",
+      error: 'Something went wrong',
     };
   }
 

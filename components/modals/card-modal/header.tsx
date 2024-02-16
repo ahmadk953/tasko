@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import { useRef, ElementRef, useState } from "react";
-import { useQueryClient } from "@tanstack/react-query";
-import { useParams } from "next/navigation";
-import { Layout } from "lucide-react";
-import { toast } from "sonner";
+import { useRef, ElementRef, useState } from 'react';
+import { useQueryClient } from '@tanstack/react-query';
+import { useParams } from 'next/navigation';
+import { Layout } from 'lucide-react';
+import { toast } from 'sonner';
 
-import { CardWithList } from "@/types";
-import { useAction } from "@/hooks/use-action";
-import { updateCard } from "@/actions/update-card";
-import { FormInput } from "@/components/form/form-input";
-import { Skeleton } from "@/components/ui/skeleton";
+import { CardWithList } from '@/types';
+import { useAction } from '@/hooks/use-action';
+import { updateCard } from '@/actions/update-card';
+import { FormInput } from '@/components/form/form-input';
+import { Skeleton } from '@/components/ui/skeleton';
 
 interface HeaderProps {
   data: CardWithList;
@@ -23,11 +23,11 @@ export const Header = ({ data }: HeaderProps) => {
   const { execute } = useAction(updateCard, {
     onSuccess: (data) => {
       queryClient.invalidateQueries({
-        queryKey: ["card", data.id],
+        queryKey: ['card', data.id],
       });
 
       queryClient.invalidateQueries({
-        queryKey: ["card-logs", data.id],
+        queryKey: ['card-logs', data.id],
       });
 
       toast.success(`Card renamed to "${data.title}"`);
@@ -38,7 +38,7 @@ export const Header = ({ data }: HeaderProps) => {
     },
   });
 
-  const inputRef = useRef<ElementRef<"input">>(null);
+  const inputRef = useRef<ElementRef<'input'>>(null);
 
   const [title, setTitle] = useState(data.title);
 
@@ -47,7 +47,7 @@ export const Header = ({ data }: HeaderProps) => {
   };
 
   const onSubmit = (formData: FormData) => {
-    const title = formData.get("title") as string;
+    const title = formData.get('title') as string;
     const boardId = params.boardId as string;
 
     if (title === data.title) return;
@@ -60,20 +60,20 @@ export const Header = ({ data }: HeaderProps) => {
   };
 
   return (
-    <div className="flex items-start gap-x-3 mb-6 w-full">
-      <Layout className="h-5 w-5 mt-1 text-neutral-700" />
-      <div className="w-full">
+    <div className='mb-6 flex w-full items-start gap-x-3'>
+      <Layout className='mt-1 h-5 w-5 text-neutral-700' />
+      <div className='w-full'>
         <form action={onSubmit}>
           <FormInput
-            id="title"
+            id='title'
             ref={inputRef}
             onBlur={onBlur}
             defaultValue={title}
-            className="font-semi-bold text-xl px-1 text-neutral-700 bg-transparent border-transparent relative -left-1 w-[95%] focus-visible:bg-white focus-visible:border-input mb-0.5 truncate"
+            className='font-semi-bold relative -left-1 mb-0.5 w-[95%] truncate border-transparent bg-transparent px-1 text-xl text-neutral-700 focus-visible:border-input focus-visible:bg-white'
           />
         </form>
-        <p className="text-sm text-muted-foreground">
-          in list <span className="underline">{data.list.title}</span>
+        <p className='text-sm text-muted-foreground'>
+          in list <span className='underline'>{data.list.title}</span>
         </p>
       </div>
     </div>
@@ -82,11 +82,11 @@ export const Header = ({ data }: HeaderProps) => {
 
 Header.Skeleton = function HeaderSkelton() {
   return (
-    <div className="flex items-start gap-x-3 mb-6">
-      <Skeleton className="h-6 w-6 mt-1 bg-neutral-200" />
+    <div className='mb-6 flex items-start gap-x-3'>
+      <Skeleton className='mt-1 h-6 w-6 bg-neutral-200' />
       <div>
-        <Skeleton className="w-24 h-6 mb-1 bg-neutral-200" />
-        <Skeleton className="w-12 h-4 bg-neutral-200" />
+        <Skeleton className='mb-1 h-6 w-24 bg-neutral-200' />
+        <Skeleton className='h-4 w-12 bg-neutral-200' />
       </div>
     </div>
   );
