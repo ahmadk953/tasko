@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react';
 import { useFormStatus } from 'react-dom';
 import { Check, Loader2 } from 'lucide-react';
 
-import { unsplash } from '@/lib/unsplash';
 import { cn } from '@/lib/utils';
 import { defaultImages } from '@/constants/images';
 import { FormErrors } from './form-errors';
@@ -28,16 +27,12 @@ export const FormPicker = ({ id, errors }: FormPickerProps) => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const result = await unsplash.photos.getRandom({
-          collectionIds: ['317099'],
-          count: 9,
-        });
-
-        if (result?.response) {
-          const newImages = result.response as Array<Record<string, any>>;
+        const response = await fetch('/api/unsplash');
+        if (response.ok) {
+          const newImages = await response.json();
           setImages(newImages);
         } else {
-          console.error('Failed to get images.');
+          console.error('Failed to fetch images');
         }
       } catch (error) {
         console.log(error);
@@ -80,7 +75,7 @@ export const FormPicker = ({ id, errors }: FormPickerProps) => {
               className='hidden'
               checked={selectedImageId === image.id}
               disabled={pending}
-              value={`${image.id}|${image.urls.thumb}|${image.urls.full}|${image.links.html}|${image.user.name}`}
+              value={`${image.id}|${image.urls.thumb}|${image.urls.full}|${image.links.html}|${image.user.name}|${image.links.download_location}`}
             />
             <Image
               src={image.urls.thumb}

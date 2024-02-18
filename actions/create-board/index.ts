@@ -34,15 +34,22 @@ const handler = async (data: InputType): Promise<ReturnType> => {
 
   const { title, image } = data;
 
-  const [imageId, imageThumbUrl, imageFullUrl, imageLinkHTML, imageUserName] =
-    image.split('|');
+  const [
+    imageId,
+    imageThumbUrl,
+    imageFullUrl,
+    imageLinkHTML,
+    imageUserName,
+    imageDownloadUrl,
+  ] = image.split('|');
 
   if (
     !imageId ||
     !imageThumbUrl ||
     !imageFullUrl ||
     !imageUserName ||
-    !imageLinkHTML
+    !imageLinkHTML ||
+    !imageDownloadUrl
   ) {
     return {
       error: 'Missing fields. Failed to create board.',
@@ -52,6 +59,13 @@ const handler = async (data: InputType): Promise<ReturnType> => {
   let board;
 
   try {
+    await fetch(imageDownloadUrl, {
+      method: 'GET',
+      headers: {
+        Authorization: `Client-ID ${process.env.UNSPLASH_ACCESS_KEY}`,
+      },
+    });
+
     board = await db.board.create({
       data: {
         title,
