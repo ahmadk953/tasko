@@ -1,4 +1,4 @@
-export const PrivacyPolicyPage = () => {
+const PrivacyPolicyPage = () => {
   return (
     <div className="content-center text-center ml-5 mr-5 pb-2">
         <h1 className="font-bold text-3xl text-slate-800">
