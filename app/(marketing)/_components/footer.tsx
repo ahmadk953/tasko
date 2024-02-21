@@ -1,5 +1,6 @@
 import { Logo } from '@/components/logo';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export const Footer = () => {
   return (
@@ -8,7 +9,9 @@ export const Footer = () => {
         <Logo />
         <div className='flex w-full items-center justify-between space-x-4 md:block md:w-auto'>
           <Button size='sm' variant='ghost'>
-            Privacy Policy
+            <Link href="/privacy-policy">
+              Privacy Policy
+            </Link>
           </Button>
           <Button size='sm' variant='ghost'>
             Terms of Service
