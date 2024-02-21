@@ -9,9 +9,7 @@ export const Footer = () => {
         <Logo />
         <div className='flex w-full items-center justify-between space-x-4 md:block md:w-auto'>
           <Button size='sm' variant='ghost'>
-            <Link href="/privacy-policy">
-              Privacy Policy
-            </Link>
+            <Link href='/privacy-policy'>Privacy Policy</Link>
           </Button>
           <Button size='sm' variant='ghost'>
             Terms of Service
