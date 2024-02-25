@@ -15,7 +15,7 @@ export const Navbar = () => {
         <Logo />
         <div className='flex w-full items-center justify-between space-x-4 md:block md:w-auto'>
           {!isSignedIn ? (
-            <div className='space-x-4'>
+            <div className='flex w-full justify-between space-x-4 md:block md:w-auto'>
               <Button size='sm' variant='outline' asChild>
                 <Link href='sign-in'>Login</Link>
               </Button>
