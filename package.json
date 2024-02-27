@@ -12,7 +12,7 @@
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.29.3",
+    "@clerk/nextjs": "^4.29.8",
     "@hello-pangea/dnd": "^16.5.0",
     "@liveblocks/client": "^1.9.8",
     "@liveblocks/node": "^1.10.0",
