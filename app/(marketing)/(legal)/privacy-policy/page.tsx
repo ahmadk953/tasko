@@ -5,7 +5,7 @@ const PrivacyPolicyPage = () => {
           TASKO PRIVACY POLICY
         </h1>
 
-        <p>
+        <div>
           TASKO (the “Company”) is committed to maintaining robust privacy protections for its users.  Our Privacy Policy (“Privacy Policy”) is designed to help you understand how we collect, use and safeguard the information you provide to us and to assist you in making informed decisions when using our Service.
           <br />
           For purposes of this Agreement, “Site” refers to the Company’s website, which can be accessed at tasko-omega.vercel.app.
@@ -69,7 +69,7 @@ const PrivacyPolicyPage = () => {
           <br />
           If you have any questions regarding this Privacy Policy or the practices of this Site, please contact us by sending an email to ahmad.khan@outoforgedu.onmicrosoft.com.
           Last Updated: This Privacy Policy was last updated on 02/20/2024.
-        </p>
+        </div>
     </div>
   );
 }
