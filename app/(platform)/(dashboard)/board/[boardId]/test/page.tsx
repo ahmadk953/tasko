@@ -27,7 +27,9 @@ const TestPage = () => {
         .map(({ connectionId, presence }) => (
           <Cursor
             key={connectionId}
+            // @ts-ignore
             x={presence.cursor.x}
+            // @ts-ignore
             y={presence.cursor.y}
           />
         ))}
