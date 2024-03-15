@@ -22,5 +22,15 @@ export const UpdateCard = z.object({
         message: 'Title must be at least 3 characters',
       })
   ),
+  dueDate: z.optional(
+    z.date({
+      invalid_type_error: 'Due date must be a date',
+    })
+  ),
+  startedAt: z.optional(
+    z.date({
+      invalid_type_error: 'Due date must be a date',
+    })
+  ),
   id: z.string(),
 });

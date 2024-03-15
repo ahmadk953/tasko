@@ -42,10 +42,12 @@ model List {
 }
 
 model Card {
-  id          String  @id @default(uuid())
+  id          String    @id @default(uuid())
   title       String
   order       Int
-  description String? @db.Text
+  description String?   @db.Text
+  dueDate     DateTime?
+  startedAt   DateTime?
 
   listId String
   list   List   @relation(fields: [listId], references: [id], onDelete: Cascade)

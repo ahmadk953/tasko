@@ -16,7 +16,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
 
   if (!userId || !orgId) return { error: 'Unauthorized' };
 
-  const { id, boardId, ...values } = data;
+  const { id, boardId, startedAt, dueDate, ...values } = data;
   let card;
 
   try {
@@ -31,6 +31,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
       },
       data: {
         ...values,
+        dueDate: dueDate,
       },
     });
 

@@ -12,6 +12,7 @@ import { copyCard } from '@/actions/copy-card';
 
 import { CardWithList } from '@/types';
 import { useCardModal } from '@/hooks/use-card-modal';
+import { DatePicker } from '@/components/ui/date-picker';
 
 interface ActionsProps {
   data: CardWithList;
@@ -78,6 +79,15 @@ export const Actions = ({ data }: ActionsProps) => {
         <Copy className='mr-2 h-4 w-4' />
         Copy
       </Button>
+      <DatePicker
+        variant='gray'
+        className='w-full justify-start text-black'
+        size='inline'
+        placeholder='Add Due Date'
+        afterSelectText='Due '
+        boardId={params.boardId as string}
+        card={data}
+      />
       <Button
         onClick={onDelete}
         disabled={isLoadingDelete}

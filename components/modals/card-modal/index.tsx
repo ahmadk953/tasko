@@ -34,7 +34,7 @@ export const CardModal = () => {
         {!cardData ? <Header.Skeleton /> : <Header data={cardData} />}
         <div className='grid grid-cols-1 md:grid-cols-4 md:gap-4'>
           <div className='col-span-3'>
-            <div className='w-full space-y-6'>
+            <div className='w-full space-y-10'>
               {!cardData ? (
                 <Description.Skeleton />
               ) : (
