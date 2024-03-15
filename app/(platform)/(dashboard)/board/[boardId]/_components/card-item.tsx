@@ -29,7 +29,9 @@ export const CardItem = ({ index, data }: CardItemProps) => {
           {data.title}
           <div className='flex w-fit rounded-md border-2 border-transparent bg-slate-100 px-0.5 pb-0.5 pt-0.5 text-sm'>
             <Calendar className='ml-0.5 mr-0.5 h-4 w-4' />
-            {data?.dueDate ? 'Due: ' + format(data.dueDate, 'PP') : 'No Due Date'}
+            {data?.dueDate
+              ? 'Due: ' + format(data.dueDate, 'PP')
+              : 'No Due Date'}
           </div>
         </div>
       )}

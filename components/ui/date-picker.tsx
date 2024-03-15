@@ -69,7 +69,7 @@ export function DatePicker({
       id: card.id,
       boardId,
       dueDate: date,
-    })
+    });
 
     setDate(date);
   };

@@ -1,6 +1,6 @@
-import { createClient } from "@liveblocks/client";
-import { createRoomContext, createLiveblocksContext } from "@liveblocks/react";
-  
+import { createClient } from '@liveblocks/client';
+import { createRoomContext, createLiveblocksContext } from '@liveblocks/react';
+
 const client = createClient({
   publicApiKey: process.env.NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY!,
   throttle: 16,
@@ -55,8 +55,10 @@ export const {
     useMarkThreadAsRead,
     useRoomNotificationSettings,
     useUpdateRoomNotificationSettings,
-  }
-} = createRoomContext<Presence, Storage, UserMeta, RoomEvent, ThreadMetadata>(client);
+  },
+} = createRoomContext<Presence, Storage, UserMeta, RoomEvent, ThreadMetadata>(
+  client
+);
 
 export const {
   suspense: {
@@ -67,5 +69,5 @@ export const {
     useUnreadInboxNotificationsCount,
     useUser,
     useRoomInfo,
-  }
+  },
 } = createLiveblocksContext<UserMeta, ThreadMetadata>(client);
