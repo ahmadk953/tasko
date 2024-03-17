@@ -41,6 +41,7 @@ const BoardIdLayout = async ({
       id: params.boardId,
       orgId,
     },
+    cacheStrategy: { ttl: 30, swr: 60 },
   });
 
   if (!board) notFound();

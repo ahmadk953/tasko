@@ -21,6 +21,7 @@ export const checkSubscription = async () => {
       stripeCustomerId: true,
       stripePriceId: true,
     },
+    cacheStrategy: { ttl: 30, swr: 60 },
   });
 
   if (!orgSubscription) {

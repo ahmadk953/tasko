@@ -15,6 +15,6 @@ Currently, there is no documentation or wiki available but, I do plan to add one
 
 [Privacy Policy](https://tasko-omega.vercel.app/privacy-policy)
 
-[Terms of Service](https://tasko-omega.vercel.app/terms-of-service) *There is no terms of service yet but, one will be added soon*
+[Terms of Service](https://tasko-omega.vercel.app/terms-of-service) _There is no terms of service yet but, one will be added soon_
 
 [License](https://github.com/ahmadk953/tasko/blob/main/LICENCE)
