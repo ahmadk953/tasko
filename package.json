@@ -40,7 +40,7 @@
     "react-dom": "^18",
     "sonner": "^1.4.3",
     "stripe": "^14.21.0",
-    "tailwind-merge": "^2.2.0",
+    "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
     "unsplash-js": "^7.0.19",
     "usehooks-ts": "^3.0.1",
