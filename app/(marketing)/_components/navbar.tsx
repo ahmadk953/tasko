@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { auth } from '@clerk/nextjs';
+import { auth } from '@clerk/nextjs/server';
 
 import { Logo } from '@/components/logo';
 import { Button } from '@/components/ui/button';

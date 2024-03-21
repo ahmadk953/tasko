@@ -1,4 +1,19 @@
-import { authMiddleware, redirectToSignIn } from '@clerk/nextjs';
+/**
+ * New Middleware
+ */
+import { clerkMiddleware } from '@clerk/nextjs/server';
+
+export default clerkMiddleware();
+
+export const config = {
+  matcher: ['/((?!.*\\..*|_next).*)', '/', '/(api|trpc)(.*)'],
+};
+
+/**
+ * Old Middleware
+ */
+
+/* import { authMiddleware, redirectToSignIn } from '@clerk/nextjs';
 import { NextResponse } from 'next/server';
 
 export default authMiddleware({
@@ -17,4 +32,4 @@ export default authMiddleware({
 
 export const config = {
   matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
-};
+}; */
