@@ -1,5 +1,6 @@
 import { Liveblocks } from '@liveblocks/node';
-import { useUser, auth } from '@clerk/nextjs';
+import { useUser } from '@clerk/nextjs';
+import { auth } from '@clerk/nextjs/server';
 
 const liveblocks = new Liveblocks({
   secret: process.env.LIVEBLOCKS_SECRET_DEV_API_KEY!,
