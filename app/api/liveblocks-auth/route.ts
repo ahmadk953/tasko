@@ -4,10 +4,10 @@ import { auth } from '@clerk/nextjs/server';
 
 const liveblocks = new Liveblocks({
   secret: process.env.LIVEBLOCKS_SECRET_DEV_API_KEY!,
-});
+}); */
 
 export async function POST(req: Request) {
-  const { user } = useUser();
+  /* const { user } = useUser();
   const { orgId } = auth();
 
   if (!orgId || !user) return new Response('Unauthorized', { status: 401 });
@@ -23,5 +23,6 @@ export async function POST(req: Request) {
 
   // Authorize the user and return the result
   const { status, body } = await session.authorize();
-  return new Response(body, { status });
-} */
+  return new Response(body, { status }); */
+  return new Response('Not implemented', { status: 501 });
+}
