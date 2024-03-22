@@ -1,4 +1,4 @@
-import { createClient } from '@liveblocks/client';
+/* import { createClient } from '@liveblocks/client';
 import { createRoomContext, createLiveblocksContext } from '@liveblocks/react';
 
 const client = createClient({
@@ -70,4 +70,4 @@ export const {
     useUser,
     useRoomInfo,
   },
-} = createLiveblocksContext<UserMeta, ThreadMetadata>(client);
+} = createLiveblocksContext<UserMeta, ThreadMetadata>(client); */
