@@ -49,7 +49,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
                 name: 'Tasko Pro',
                 description: 'Unlimited boards for your organization',
               },
-              unit_amount: 2000,
+              unit_amount_decimal: 99,
               recurring: { interval: 'month' },
             },
             quantity: 1,
