@@ -34,6 +34,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
 
       url = stripeSession.url;
     } else {
+      /* @ts-ignore */
       const stripeSession = await stripe.checkout.sessions.create({
         success_url: settingsUrl,
         cancel_url: settingsUrl,
