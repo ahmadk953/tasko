@@ -12,20 +12,37 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover';
+import { copyBoard } from '@/actions/copy-board';
 
 interface BoardOptionsProps {
   id: string;
 }
 
 export const BoardOptions = ({ id }: BoardOptionsProps) => {
-  const { execute, isLoading } = useAction(deleteBoard, {
-    onError: (error) => {
-      toast.error(error);
-    },
-  });
+  const { execute: executeDelete, isLoading: isLoadingDelete } = useAction(
+    deleteBoard,
+    {
+      onError: (error) => {
+        toast.error(error);
+      },
+    }
+  );
+
+  const { execute: executeCopy, isLoading: isLoadingCopy } = useAction(
+    copyBoard,
+    {
+      onError: (error) => {
+        toast.error(error);
+      },
+    }
+  );
 
   const onDelete = () => {
-    execute({ id });
+    executeDelete({ id });
+  };
+
+  const onCopy = () => {
+    executeCopy({ id });
   };
 
   return (
@@ -49,8 +66,16 @@ export const BoardOptions = ({ id }: BoardOptionsProps) => {
         </PopoverClose>
         <Button
           variant='ghost'
+          onClick={onCopy}
+          disabled={isLoadingCopy}
+          className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal text-neutral-600'
+        >
+          Copy this board
+        </Button>
+        <Button
+          variant='ghost'
           onClick={onDelete}
-          disabled={isLoading}
+          disabled={isLoadingDelete}
           className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal text-destructive hover:text-destructive'
         >
           Delete this board

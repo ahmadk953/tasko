@@ -75,6 +75,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         imageFullUrl,
         imageUserName,
         imageLinkHTML,
+        imageDownloadUrl,
       },
     });
 

@@ -10,14 +10,15 @@ datasource db {
 }
 
 model Board {
-  id            String @id @default(uuid())
-  orgId         String
-  title         String
-  imageId       String
-  imageThumbUrl String @db.Text
-  imageFullUrl  String @db.Text
-  imageUserName String @db.Text
-  imageLinkHTML String @db.Text
+  id               String @id @default(uuid())
+  orgId            String
+  title            String
+  imageId          String
+  imageThumbUrl    String @db.Text
+  imageFullUrl     String @db.Text
+  imageUserName    String @db.Text
+  imageLinkHTML    String @db.Text
+  imageDownloadUrl String @db.Text
 
   lists List[]
 
