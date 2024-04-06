@@ -32,15 +32,15 @@ jobs:
 
       - name: Install ESLint
         run: |
-          npm install @next/eslint-plugin-next
-          npm install @typescript-eslint/eslint-plugin
-          npm install @typescript-eslint/parser
-          npm install @microsoft/eslint-formatter-sarif
-          npm install eslint-config-next
-          npm install eslint-config-prettier
-          npm install typescript
-          npm install eslint
-          npm install next
+          yarn add @next/eslint-plugin-next
+          yarn add @typescript-eslint/eslint-plugin
+          yarn add @typescript-eslint/parser
+          yarn add @microsoft/eslint-formatter-sarif
+          yarn add eslint-config-next
+          yarn add eslint-config-prettier
+          yarn add typescript
+          yarn add eslint
+          yarn add next
 
       - name: Run ESLint
         run: npx next lint
