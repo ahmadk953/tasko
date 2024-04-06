@@ -30,20 +30,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install ESLint
-        run: |
-          yarn add @next/eslint-plugin-next
-          yarn add @typescript-eslint/eslint-plugin
-          yarn add @typescript-eslint/parser
-          yarn add @microsoft/eslint-formatter-sarif
-          yarn add eslint-config-next
-          yarn add eslint-config-prettier
-          yarn add typescript
-          yarn add eslint
-          yarn add next
+      - name: Install Dependencies
+        run: yarn install
 
       - name: Run ESLint
-        run: npx next lint
+        run: yarn dlx next lint
           --config .eslintrc.json
           --ext .js,.jsx,.ts,.tsx
           --format @microsoft/eslint-formatter-sarif
