@@ -16,7 +16,7 @@
     "@hello-pangea/dnd": "^16.6.0",
     "@liveblocks/client": "^1.11.0",
     "@liveblocks/node": "^1.11.1",
-    "@liveblocks/react": "^1.11.0",
+    "@liveblocks/react": "^1.11.1",
     "@microsoft/eslint-formatter-sarif": "^3.0.0",
     "@prisma/client": "^5.12.1",
     "@prisma/extension-accelerate": "^1.0.0",
