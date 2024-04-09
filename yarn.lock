@@ -202,12 +202,19 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@liveblocks/client@1.11.0", "@liveblocks/client@^1.11.0":
+"@liveblocks/client@1.11.0":
   version "1.11.0"
   resolved "https://registry.npmjs.org/@liveblocks/client/-/client-1.11.0.tgz"
   integrity sha512-dZJM6rra/jBk7C++Cm7PX10TbwklkDv76LmMs8IZj8qkXrdG91ejT5PuLXXo3sDIMCdr2apbKyS6pdb8yw4DCA==
   dependencies:
     "@liveblocks/core" "1.11.0"
+
+"@liveblocks/client@^1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@liveblocks/client/-/client-1.11.1.tgz#4a7d95d819fa6125559545916573dd09d9cfb84e"
+  integrity sha512-+94LplyUElOZpKECX/rF1UJmkU9WRj3S1aD9w6iOYIitT1RFW+9Z4Et7nxO43FUODaheR1a40iqyikfDcRXswA==
+  dependencies:
+    "@liveblocks/core" "1.11.1"
 
 "@liveblocks/core@1.11.0":
   version "1.11.0"
