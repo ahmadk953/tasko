@@ -41,7 +41,7 @@
     "react-day-picker": "^8.10.0",
     "react-dom": "^18.2.0",
     "sonner": "^1.4.41",
-    "stripe": "^14.24.0",
+    "stripe": "^15.0.0",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
     "unsplash-js": "^7.0.19",
