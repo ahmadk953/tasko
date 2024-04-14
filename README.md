@@ -11,6 +11,16 @@ Tasko is a company that helps you manage your tasks efficiently by using kanban 
 
 Currently, there is no documentation or wiki available but, I do plan to add one in the future on the main site.
 
+## Roadmap
+
+This will also be published on the site some time soon but for now, the roadmap will be listed here.
+
+- [ ] Finish adding started at date feature
+- [ ] Make board background image editable after board creation
+- [ ] Pagination for Audit Logs page
+- [ ] Board sorting options (Boards Page)
+- [ ] Add list and card views to boards page
+
 ## Legal
 
 [Privacy Policy](https://tasko-omega.vercel.app/privacy-policy)
