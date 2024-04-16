@@ -17,6 +17,7 @@ export const ActivityList = async () => {
     orderBy: {
       createdAt: 'desc',
     },
+    cacheStrategy: { ttl: 30, swr: 60 },
   });
 
   return (
