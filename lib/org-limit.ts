@@ -58,6 +58,7 @@ export const hasAvailableCount = async () => {
 
   const orgLimit = await db.orgLimit.findUnique({
     where: { orgId },
+    cacheStrategy: { ttl: 30, swr: 60 },
   });
 
   if (!orgLimit || orgLimit.count < MAX_FREE_BOARDS) {
@@ -76,6 +77,7 @@ export const getAvailableCount = async () => {
 
   const orgLimit = await db.orgLimit.findUnique({
     where: { orgId },
+    cacheStrategy: { ttl: 30, swr: 60 },
   });
 
   if (!orgLimit) {
