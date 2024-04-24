@@ -215,12 +215,17 @@
   resolved "https://registry.yarnpkg.com/@liveblocks/core/-/core-1.11.2.tgz#3a7b470448c9d2b5885b054accda06522abcd9c9"
   integrity sha512-OHeKDExpaMnlKMPTpW+Z51eF4iLGOYKWK010QfPobRa1gUTAGsrYy1bA1JGmkcH4vPg4h3vijOhKPr6M7yBsiw==
 
-"@liveblocks/node@^1.11.2":
-  version "1.11.2"
-  resolved "https://registry.yarnpkg.com/@liveblocks/node/-/node-1.11.2.tgz#c36f9faa136281e6cc2e8eed8bacd1df2b01c2c3"
-  integrity sha512-H32r+9fDHM+loBEF47FNxv8KfUoBiwjez/Vcyti6RSaNLZ4lokZs68sXLddg6fDfParANW4hUBRuDN1ix4XGHw==
+"@liveblocks/core@1.11.3":
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/@liveblocks/core/-/core-1.11.3.tgz#a7087cc92f8b6568728509d8e91a2766772d0161"
+  integrity sha512-lai5o9nhgboocb+AQzL94syp8CZ4blTJFk6xWgUD+/L3qK110ADp7JSEH93k90pXqjf5zBOj5XWPMYehQ6I43w==
+
+"@liveblocks/node@^1.11.3":
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/@liveblocks/node/-/node-1.11.3.tgz#da5eb5a30a7d2a389acffe788c4d28dd548d1f59"
+  integrity sha512-YwMPY5JHUau4Wo4dMDg/4RPA5sQ6+TdBurI/4///L+GmA7y/8lYgqhc9vhaz3Ub0FD5O8dPClqEl97AnMx1NsA==
   dependencies:
-    "@liveblocks/core" "1.11.2"
+    "@liveblocks/core" "1.11.3"
     "@stablelib/base64" "^1.0.1"
     fast-sha256 "^1.3.0"
     node-fetch "^2.6.1"
