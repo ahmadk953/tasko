@@ -19,10 +19,10 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@clerk/backend@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@clerk/backend/-/backend-1.0.1.tgz#31bcf826349271404268e2b6813d03dcf4150a4c"
-  integrity sha512-cfeMmgyvdAVraEun+3ZOgWsv+0cKoloF3lNThjvbshUPh4UIx0WePY28t0qFuuQIXtuyEq9iq8ia8xLwPcbHeA==
+"@clerk/backend@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@clerk/backend/-/backend-1.1.0.tgz#278c3e4d086ea87dddafc271cc3a314738021c40"
+  integrity sha512-1qd0tKl0B0jJlmmg+o37pXSfzQHRMTk/HGPTvFGWhYCscMXjlKcXrSgDIjN3TATmOIDtA2vCT3AMxBWyVTcKmQ==
   dependencies:
     "@clerk/shared" "2.0.0"
     cookie "0.5.0"
@@ -39,12 +39,12 @@
     eslint-config-custom "*"
     tslib "2.4.1"
 
-"@clerk/nextjs@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@clerk/nextjs/-/nextjs-5.0.2.tgz#7b3b992f364c91ed179753c5be3afcacd1b727e5"
-  integrity sha512-7FNV7tEzy1xMm+hG/lLT0Dh69xkd009PAZfqMQ9AHbjvrKWOTfUZOVkQTgwO7vUcj2V8DlmEmhFLIxfWie6ezA==
+"@clerk/nextjs@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@clerk/nextjs/-/nextjs-5.0.3.tgz#f3f599b8663c688d29405ae439829dcb32b91eec"
+  integrity sha512-sTnAEHDkesmr/kwmjH3mth8I8ZBeFcYBtMIszK7Hnbx2XBs0obBDT/YGkFQOawcT2aDCsQpZ5SmPrIgCspE2yQ==
   dependencies:
-    "@clerk/backend" "1.0.1"
+    "@clerk/backend" "1.1.0"
     "@clerk/clerk-react" "5.0.1"
     "@clerk/shared" "2.0.0"
     crypto-js "4.2.0"
