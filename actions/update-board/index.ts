@@ -16,10 +16,36 @@ const handler = async (data: InputType): Promise<ReturnType> => {
 
   if (!userId || !orgId) return { error: 'Unauthorized' };
 
-  const { title, id } = data;
+  const { title, id, image } = data;
   let board;
 
   try {
+    const currentBoard = await db.board.findUnique({
+      where: {
+        id,
+        orgId,
+      },
+      select: {
+        imageId: true,
+        imageThumbUrl: true,
+        imageFullUrl: true,
+        imageUserName: true,
+        imageLinkHTML: true,
+        imageDownloadUrl: true,
+      },
+    });
+
+    const currentImageString = `${currentBoard?.imageId}|${currentBoard?.imageThumbUrl}|${currentBoard?.imageFullUrl}|${currentBoard?.imageUserName}|${currentBoard?.imageLinkHTML}|${currentBoard?.imageDownloadUrl}`;
+
+    const [
+      imageId,
+      imageThumbUrl,
+      imageFullUrl,
+      imageLinkHTML,
+      imageUserName,
+      imageDownloadUrl,
+    ] = image?.split('|') || currentImageString.split('|');
+
     board = await db.board.update({
       where: {
         id,
@@ -27,6 +53,12 @@ const handler = async (data: InputType): Promise<ReturnType> => {
       },
       data: {
         title,
+        imageId,
+        imageThumbUrl,
+        imageFullUrl,
+        imageLinkHTML,
+        imageUserName,
+        imageDownloadUrl,
       },
     });
 

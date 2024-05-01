@@ -13,6 +13,7 @@ import {
   PopoverTrigger,
 } from '@/components/ui/popover';
 import { copyBoard } from '@/actions/copy-board';
+import { BoardUpdateImage } from './board-update-image';
 
 interface BoardOptionsProps {
   id: string;
@@ -70,15 +71,16 @@ export const BoardOptions = ({ id }: BoardOptionsProps) => {
           disabled={isLoadingCopy}
           className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal text-neutral-600'
         >
-          Copy this board
+          Copy this Board
         </Button>
+        <BoardUpdateImage boardId={id} />
         <Button
           variant='ghost'
           onClick={onDelete}
           disabled={isLoadingDelete}
           className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal text-destructive hover:text-destructive'
         >
-          Delete this board
+          Delete this Board
         </Button>
       </PopoverContent>
     </Popover>

@@ -16,7 +16,7 @@ Currently, there is no documentation or wiki available but, I do plan to add one
 This will also be published on the site some time soon but for now, the roadmap will be listed here.
 
 - [ ] Finish adding started at date feature
-- [ ] Make board background image editable after board creation - _In Progress_
+- [X] Make board background image editable after board creation
 - [ ] Pagination for Audit Logs page
 - [ ] Board sorting options (Boards Page)
 - [ ] Add list and card views to boards page
