@@ -10,7 +10,11 @@ export async function GET() {
 
     if (result?.response) {
       const newImages = result.response as Array<Record<string, any>>;
-      return new NextResponse(JSON.stringify(newImages), { status: 200 });
+      const response = new NextResponse(JSON.stringify(newImages), {
+        status: 200,
+      });
+      response.headers.set('Cache-Control', 'no-store');
+      return response;
     } else {
       return new NextResponse('Failed to get images', { status: 500 });
     }
