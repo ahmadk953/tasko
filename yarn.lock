@@ -203,12 +203,19 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@liveblocks/client@1.11.3", "@liveblocks/client@^1.11.0":
+"@liveblocks/client@1.11.3":
   version "1.11.3"
   resolved "https://registry.yarnpkg.com/@liveblocks/client/-/client-1.11.3.tgz#e23ee36423d253aa4c254649b5d18309fcd86605"
   integrity sha512-Vinzfrz/pBGN/l3XTDgYiUrBzs1xmzKzMtES/qHdIWxTVyVEBT5p8ilyi7kSCdRkdSe6bfmnJmkQljViTsX3vw==
   dependencies:
     "@liveblocks/core" "1.11.3"
+
+"@liveblocks/client@^1.12.0":
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/@liveblocks/client/-/client-1.12.0.tgz#d1ba315668eebe7c87acf326244b662e6772cd67"
+  integrity sha512-TL4sPbWBlrGF7UXLNx2RYuZi/Z51jXALMFAdaWkYE0Qz7mMwxTVSyjPVR7ZXVuqdSo0CTQ1rpPyZeqcoUDtEoQ==
+  dependencies:
+    "@liveblocks/core" "1.12.0"
 
 "@liveblocks/core@1.11.3":
   version "1.11.3"
