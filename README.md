@@ -1,5 +1,8 @@
 # Tasko
 
+> [!WARNING]
+> This website is still in a alpha state. There will be lots of bugs and broken/missing features. This website **IS NOT** production ready and lots of essential features are missing such as data encryption.
+
 > [!TIP]
 > Check out the live version of the site [here](https://tasko-omega.vercel.app/)
 
