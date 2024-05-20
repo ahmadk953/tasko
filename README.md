@@ -24,8 +24,8 @@ This will also be published on the site some time soon but for now, the roadmap 
 - [ ] Board sorting options (Boards Page)
 - [ ] Add list and card views to boards page (can view tasks in a board, list, or card view)
 - [ ] Add CMS to website (like Contentful)
-- [ ] Add the ability to share boards with others
-- [ ] Add real-time colaboration
+- [ ] Add the ability to share boards with others (using something like Liveblocks or some other real-time solution)
+- [ ] Add real-time collaboration
 
 ## Legal
 
