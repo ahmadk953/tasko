@@ -13,7 +13,6 @@ export async function GET() {
       const response = new NextResponse(JSON.stringify(newImages), {
         status: 200,
       });
-      response.headers.set('Cache-Control', 'no-store');
       return response;
     } else {
       return new NextResponse('Failed to get images', { status: 500 });
