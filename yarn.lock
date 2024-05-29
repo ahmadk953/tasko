@@ -3235,12 +3235,12 @@ react-day-picker@^8.10.1:
   resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-8.10.1.tgz#4762ec298865919b93ec09ba69621580835b8e80"
   integrity sha512-TMx7fNbhLk15eqcMt+7Z7S2KF7mfTId/XJDjKE8f+IUcFn0l08/kI4FiYTL/0yuOLmEcbR4Fwe3GJf/NiiMnPA==
 
-react-dom@^19.0.0-rc-6f23540c7d-20240528:
-  version "19.0.0-rc-6f23540c7d-20240528"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.0.0-rc-6f23540c7d-20240528.tgz#dab40e2278555ad3e5f832dc5985e52b33191fb6"
-  integrity sha512-TPZ7f0MYH/y51jHuPx0UdMH+WdZ7xX1UOcydOZWpjbjs2GXSgJFV2ilIm7FUSinHB6DSoGFVxhPqm1sa63IkbA==
+react-dom@^19.0.0-rc-935180c7e0-20240524:
+  version "19.0.0-rc-f994737d14-20240522"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.0.0-rc-f994737d14-20240522.tgz#992710eeed9ccc7546fd258745cff1e04a3f8659"
+  integrity sha512-J4CsfTSptPKkhaPbaR6n/KohQiHZTrRZ8GL4H8rbAqN/Qpy69g2MIoLBr5/PUX21ye6JxC1ZRWJFna7Xdg1pdA==
   dependencies:
-    scheduler "0.25.0-rc-6f23540c7d-20240528"
+    scheduler "0.25.0-rc-f994737d14-20240522"
 
 react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.4:
   version "16.13.1"
@@ -3292,10 +3292,10 @@ react-style-singleton@^2.2.1:
     invariant "^2.2.4"
     tslib "^2.0.0"
 
-react@^19.0.0-rc-6f23540c7d-20240528:
-  version "19.0.0-rc-6f23540c7d-20240528"
-  resolved "https://registry.yarnpkg.com/react/-/react-19.0.0-rc-6f23540c7d-20240528.tgz#f20fe7f2786cd207747a0cea79f294b87dc27bca"
-  integrity sha512-fo4drQwFP/R7ZJF5USwhn8YccEqOiH9C1ci5Jg7iM2+5pId8Bjcno+dDT/Cv5iYGmgwZzQIa+EwczD5IHEsmQA==
+react@^19.0.0-rc-935180c7e0-20240524:
+  version "19.0.0-rc-935180c7e0-20240524"
+  resolved "https://registry.yarnpkg.com/react/-/react-19.0.0-rc-935180c7e0-20240524.tgz#6403d07b38f0cb8cdb7eadbe0e8226a13a4e0730"
+  integrity sha512-UDaKY7FXO4A2tg4srdLTlkdj5WQCKS9JSrqs21qQvyD4s4qwm3sah5zhfnDHBumzZ3f+PVTcF9PrfDnmu/qKpA==
 
 read-cache@^1.0.0:
   version "1.0.0"
@@ -3412,10 +3412,10 @@ safe-regex-test@^1.0.3:
     es-errors "^1.3.0"
     is-regex "^1.1.4"
 
-scheduler@0.25.0-rc-6f23540c7d-20240528:
-  version "0.25.0-rc-6f23540c7d-20240528"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.25.0-rc-6f23540c7d-20240528.tgz#f71505671dd5dc47ffba2ac9027b6e0be7452d7c"
-  integrity sha512-5V2Aa+F16Qe+kT1zjwxPzBRoF6/xjw+LU9L2c1j2Dzw2GTiLEV8DxG3RAkRN8Lm5jlqbyK9ivRH3GGtipy+a6Q==
+scheduler@0.25.0-rc-f994737d14-20240522:
+  version "0.25.0-rc-f994737d14-20240522"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.25.0-rc-f994737d14-20240522.tgz#6bbdbf50adeb250035a26f082bf966077d264a7e"
+  integrity sha512-qS+xGFF7AljP2APO2iJe8zESNsK20k25MACz+WGOXPybUsRdi1ssvaoF93im2nSX2q/XT3wKkjdz6RQfbmaxdw==
 
 semver@^6.3.1:
   version "6.3.1"
