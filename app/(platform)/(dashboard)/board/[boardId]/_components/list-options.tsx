@@ -1,7 +1,7 @@
 'use client';
 
 import { MoreHorizontal, X } from 'lucide-react';
-import { ElementRef, useRef } from 'react';
+import { useRef } from 'react';
 import { toast } from 'sonner';
 import { List } from '@prisma/client';
 
@@ -24,7 +24,7 @@ interface ListOptionsProps {
 }
 
 export const ListOptions = ({ data, onAddCard }: ListOptionsProps) => {
-  const closeRef = useRef<ElementRef<'button'>>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
 
   const { execute: executeDelete } = useAction(deleteList, {
     onSuccess: () => {

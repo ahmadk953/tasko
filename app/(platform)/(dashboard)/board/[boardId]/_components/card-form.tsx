@@ -1,7 +1,7 @@
 'use client';
 
 import { Plus, X } from 'lucide-react';
-import { forwardRef, useRef, ElementRef, KeyboardEventHandler } from 'react';
+import { forwardRef, useRef, KeyboardEventHandler } from 'react';
 import { useOnClickOutside, useEventListener } from 'usehooks-ts';
 import { useParams } from 'next/navigation';
 import { toast } from 'sonner';
@@ -22,7 +22,7 @@ interface CardFormProps {
 export const CardForm = forwardRef<HTMLTextAreaElement, CardFormProps>(
   ({ listId, isEditing, enableEditing, disableEditing }, ref) => {
     const params = useParams();
-    const formRef = useRef<ElementRef<'form'>>(null);
+    const formRef = useRef<HTMLFormElement>(document.createElement('form'));
 
     const { execute, fieldErrors } = useAction(createCard, {
       onSuccess: (data) => {

@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, ElementRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
 import { useParams } from 'next/navigation';
 import { Layout } from 'lucide-react';
@@ -38,7 +38,7 @@ export const Header = ({ data }: HeaderProps) => {
     },
   });
 
-  const inputRef = useRef<ElementRef<'input'>>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const [title, setTitle] = useState(data.title);
 

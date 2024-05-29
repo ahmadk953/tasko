@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, ElementRef } from 'react';
+import { useState, useRef } from 'react';
 import { useEventListener } from 'usehooks-ts';
 import { List } from '@prisma/client';
 import { toast } from 'sonner';
@@ -20,8 +20,8 @@ export const ListHeader = ({ data, onAddCard }: ListHeaderProps) => {
   const [title, setTitle] = useState(data.title);
   const [isEditing, setIsEditing] = useState(false);
 
-  const formRef = useRef<ElementRef<'form'>>(null);
-  const inputRef = useRef<ElementRef<'input'>>(null);
+  const formRef = useRef<HTMLFormElement>(document.createElement('form'));
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const enableEditing = () => {
     setIsEditing(true);

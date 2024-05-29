@@ -1,7 +1,7 @@
 'use client';
 
 import { Plus, X } from 'lucide-react';
-import { useState, useRef, ElementRef } from 'react';
+import { useState, useRef } from 'react';
 import { useEventListener, useOnClickOutside } from 'usehooks-ts';
 import { useParams, useRouter } from 'next/navigation';
 import { toast } from 'sonner';
@@ -18,8 +18,8 @@ export const ListForm = () => {
   const router = useRouter();
   const params = useParams();
 
-  const formRef = useRef<ElementRef<'form'>>(null);
-  const inputRef = useRef<ElementRef<'input'>>(null);
+  const formRef = useRef<HTMLFormElement>(document.createElement('form'));
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const [isEditing, setIsEditing] = useState(false);
 

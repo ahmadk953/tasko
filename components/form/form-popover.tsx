@@ -2,7 +2,7 @@
 
 import { X } from 'lucide-react';
 import { toast } from 'sonner';
-import { ElementRef, useRef } from 'react';
+import { useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
 import {
@@ -36,7 +36,7 @@ export const FormPopover = ({
 }: FormPopoverProps) => {
   const proModal = useProModal();
   const router = useRouter();
-  const closeRef = useRef<ElementRef<'button'>>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
 
   const { execute, fieldErrors } = useAction(createBoard, {
     onSuccess: (data) => {

@@ -1,6 +1,6 @@
 import { X } from 'lucide-react';
 import { toast } from 'sonner';
-import { ElementRef, useRef } from 'react';
+import { useRef } from 'react';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
@@ -20,7 +20,7 @@ interface BoardUpdateImageProps {
 }
 
 export const BoardUpdateImage = ({ boardId }: BoardUpdateImageProps) => {
-  const closeRef = useRef<ElementRef<'button'>>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
 
   const { execute, fieldErrors } = useAction(updateBoard, {
     onSuccess: (data) => {

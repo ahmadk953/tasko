@@ -2,7 +2,7 @@
 
 import { useEventListener, useOnClickOutside } from 'usehooks-ts';
 import { useQueryClient } from '@tanstack/react-query';
-import { useState, ElementRef, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { useParams } from 'next/navigation';
 import { AlignLeft } from 'lucide-react';
 import { toast } from 'sonner';
@@ -26,8 +26,8 @@ export const Description = ({ data }: DescriptionProps) => {
 
   const [isEditing, setIsEditing] = useState(false);
 
-  const textareaRef = useRef<ElementRef<'textarea'>>(null);
-  const formRef = useRef<ElementRef<'form'>>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const formRef = useRef<HTMLFormElement>(document.createElement('form'));
 
   const enaleEditing = () => {
     setIsEditing(true);

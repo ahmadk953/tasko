@@ -1,7 +1,7 @@
 'use client';
 
 import { toast } from 'sonner';
-import { ElementRef, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Board } from '@prisma/client';
 
 import { Button } from '@/components/ui/button';
@@ -25,8 +25,8 @@ export const BoardTitleForm = ({ data }: BoardTitleFormProps) => {
     },
   });
 
-  const formRef = useRef<ElementRef<'form'>>(null);
-  const inputRef = useRef<ElementRef<'input'>>(null);
+  const formRef = useRef<HTMLFormElement>(document.createElement('form'));
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const [title, setTitle] = useState(data.title);
   const [isEditing, setIsEditing] = useState(false);
