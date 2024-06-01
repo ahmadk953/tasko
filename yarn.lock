@@ -1347,10 +1347,10 @@ axobject-query@^3.2.1:
   dependencies:
     dequal "^2.0.3"
 
-babel-plugin-react-compiler@^0.0.0-experimental-592953e-20240517:
-  version "0.0.0-experimental-592953e-20240517"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-compiler/-/babel-plugin-react-compiler-0.0.0-experimental-592953e-20240517.tgz#e800fa1550d03573cd5637218dc711f12f642249"
-  integrity sha512-OjG1SVaeQZaJrqkMFJatg8W/MTow8Ak5rx2SI0ETQBO1XvOk/XZGMbltNCPdFJLKghBYoBjC+Y3Ap/Xr7B01mA==
+babel-plugin-react-compiler@^0.0.0-experimental-487cb0e-20240529:
+  version "0.0.0-experimental-487cb0e-20240529"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-compiler/-/babel-plugin-react-compiler-0.0.0-experimental-487cb0e-20240529.tgz#ef3c2936035381ce6a7051a843dba32bdd28ed39"
+  integrity sha512-77FYmA+oiCQnq5fK0jvoR0b78oKkgXrECc8n9U+gyWh+8P0zFJSX0wyI16Z456m/lrcANE56VWbr6+VxzoMBJg==
   dependencies:
     "@babel/generator" "7.2.0"
     "@babel/types" "^7.19.0"
