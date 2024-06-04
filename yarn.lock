@@ -3292,10 +3292,10 @@ react-style-singleton@^2.2.1:
     invariant "^2.2.4"
     tslib "^2.0.0"
 
-react@^19.0.0-rc-935180c7e0-20240524:
-  version "19.0.0-rc-935180c7e0-20240524"
-  resolved "https://registry.yarnpkg.com/react/-/react-19.0.0-rc-935180c7e0-20240524.tgz#6403d07b38f0cb8cdb7eadbe0e8226a13a4e0730"
-  integrity sha512-UDaKY7FXO4A2tg4srdLTlkdj5WQCKS9JSrqs21qQvyD4s4qwm3sah5zhfnDHBumzZ3f+PVTcF9PrfDnmu/qKpA==
+react@^19.0.0-rc.0:
+  version "19.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-19.0.0-rc.0.tgz#9f1e9965c30948b472adcf5ba5184413375e4a40"
+  integrity sha512-8nrDCl5uE54FHeKqKrEO0TS+10bT4cxutJGb2okiJc0FHMQ6I3FeItaqly/1nbijlhSO3HmAVyPIexIQQWYAtQ==
 
 read-cache@^1.0.0:
   version "1.0.0"
