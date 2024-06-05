@@ -20,6 +20,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Configure Corepack
+        run: corepack enable
+
       - name: Install Dependencies
         run: yarn install
 
