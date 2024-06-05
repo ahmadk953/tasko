@@ -5097,7 +5097,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.0.0-rc-935180c7e0-20240524":
+"react-dom@npm:^19.0.0-rc.0":
   version: 19.0.0-rc-f994737d14-20240522
   resolution: "react-dom@npm:19.0.0-rc-f994737d14-20240522"
   dependencies:
@@ -5995,7 +5995,7 @@ __metadata:
     prisma: "npm:^5.14.0"
     react: "npm:^19.0.0-rc.0"
     react-day-picker: "npm:^8.10.1"
-    react-dom: "npm:^19.0.0-rc-935180c7e0-20240524"
+    react-dom: "npm:^19.0.0-rc.0"
     sharp: "npm:^0.33.4"
     sonner: "npm:^1.4.41"
     stripe: "npm:^15.9.0"
