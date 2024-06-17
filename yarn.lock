@@ -5807,13 +5807,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stripe@npm:^15.11.0":
-  version: 15.11.0
-  resolution: "stripe@npm:15.11.0"
+"stripe@npm:^15.12.0":
+  version: 15.12.0
+  resolution: "stripe@npm:15.12.0"
   dependencies:
     "@types/node": "npm:>=8.1.0"
     qs: "npm:^6.11.0"
-  checksum: 10c0/bd6653d841a94ee54de3ed11d7e50735b88a4f45778db1c6406b16de12f4c4a41731a3394a7ecf257508cdc12b98653e5863b99069b18c6f57d6646c1cb95641
+  checksum: 10c0/95de07b108b98388d2ead2dedc3fc371df55287c9e926385f95890c680d655234ba2832a23e11e283e946d44dac01868eec823ccf878628eb75f5baa67f08175
   languageName: node
   linkType: hard
 
@@ -6001,7 +6001,7 @@ __metadata:
     react-dom: "npm:^19.0.0-rc.0"
     sharp: "npm:^0.33.4"
     sonner: "npm:^1.5.0"
-    stripe: "npm:^15.11.0"
+    stripe: "npm:^15.12.0"
     tailwind-merge: "npm:^2.3.0"
     tailwindcss: "npm:^3.4.4"
     tailwindcss-animate: "npm:^1.0.7"
