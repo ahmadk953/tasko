@@ -532,15 +532,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/node@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "@liveblocks/node@npm:2.0.2"
+"@liveblocks/core@npm:2.0.3":
+  version: 2.0.3
+  resolution: "@liveblocks/core@npm:2.0.3"
+  checksum: 10c0/b124bed0cca5d3c9bfa71756094083a4b06f0202bef3181bf9b2c36fa28704ebe0cf4b8dc2adc20c61e5d180b20ccc56cd7e72f26fde5a79d5981b590c007ae4
+  languageName: node
+  linkType: hard
+
+"@liveblocks/node@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@liveblocks/node@npm:2.0.3"
   dependencies:
-    "@liveblocks/core": "npm:2.0.2"
+    "@liveblocks/core": "npm:2.0.3"
     "@stablelib/base64": "npm:^1.0.1"
     fast-sha256: "npm:^1.3.0"
     node-fetch: "npm:^2.6.1"
-  checksum: 10c0/7d2f9f24769c66886118ed3906d071950cc987db3af8b79f1fdc6e7dec2a81e987b6360f00033196497998eafbc2df016126b9725aadd56970a16afefb8c8387
+  checksum: 10c0/d5a3c2acf35831dd7667d040e044d2762025ab99ba067433357f262f8d7226acaac4de28d9113f9e06ac3ce4b7dd8fa6656db350234d6eb5b88e62ada0265101
   languageName: node
   linkType: hard
 
@@ -5958,7 +5965,7 @@ __metadata:
     "@clerk/nextjs": "npm:^5.1.5"
     "@hello-pangea/dnd": "npm:^16.6.0"
     "@liveblocks/client": "npm:^2.0.2"
-    "@liveblocks/node": "npm:^2.0.2"
+    "@liveblocks/node": "npm:^2.0.3"
     "@liveblocks/react": "npm:^2.0.2"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
     "@next/eslint-plugin-next": "npm:^14.2.4"
