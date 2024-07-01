@@ -1532,9 +1532,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-tooltip@npm:^1.0.7":
-  version: 1.1.1
-  resolution: "@radix-ui/react-tooltip@npm:1.1.1"
+"@radix-ui/react-tooltip@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@radix-ui/react-tooltip@npm:1.1.2"
   dependencies:
     "@radix-ui/primitive": "npm:1.1.0"
     "@radix-ui/react-compose-refs": "npm:1.1.0"
@@ -1558,7 +1558,7 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10c0/42965dd7b93d3e82cee80aa9d00ed52e73a97d56021e7b868dc6bc69574a3c1c049495f5009b3c786919fb7d3af1ac7d69c2fc4013687e9dcdc937e60f2bdc35
+  checksum: 10c0/76f3abcd27f7f673612631abc340a17e6ab0e5d20b901fe4828400de05d4d8a8711392417b028be86a3053a0881b80d0ed41c4e027eb64c1af9fe74db70d3786
   languageName: node
   linkType: hard
 
@@ -6372,7 +6372,7 @@ __metadata:
     "@radix-ui/react-popover": "npm:^1.1.1"
     "@radix-ui/react-separator": "npm:^1.0.3"
     "@radix-ui/react-slot": "npm:^1.1.0"
-    "@radix-ui/react-tooltip": "npm:^1.0.7"
+    "@radix-ui/react-tooltip": "npm:^1.1.2"
     "@tanstack/react-query": "npm:^5.48.0"
     "@types/lodash": "npm:^4.17.6"
     "@types/node": "npm:^20.14.9"
