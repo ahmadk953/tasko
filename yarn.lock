@@ -812,7 +812,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:2.2.0, @liveblocks/client@npm:^2.2.0":
+"@liveblocks/client@npm:2.2.0":
   version: 2.2.0
   resolution: "@liveblocks/client@npm:2.2.0"
   dependencies:
@@ -821,10 +821,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@liveblocks/client@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@liveblocks/client@npm:2.2.1"
+  dependencies:
+    "@liveblocks/core": "npm:2.2.1"
+  checksum: 10c0/2a11b539591605b9305ceeaf87ad93140cbd8c4d2d523ee1323294cdae6044306b409468da11aeea1ed04ef692aec8ab908f12234815503ff0c5855469adf736
+  languageName: node
+  linkType: hard
+
 "@liveblocks/core@npm:2.2.0":
   version: 2.2.0
   resolution: "@liveblocks/core@npm:2.2.0"
   checksum: 10c0/cc50c4e9923bdda036815b7baeb40606af5ab30c1cb6e12bfa336c11315437a4fef715e5c4a5f78d86d6b211799d30bfac98ef5ea071ba598525e616e98bd191
+  languageName: node
+  linkType: hard
+
+"@liveblocks/core@npm:2.2.1":
+  version: 2.2.1
+  resolution: "@liveblocks/core@npm:2.2.1"
+  checksum: 10c0/ca197c2ef5cb40933cde44a38f4473bbfc426170c81c1ac12549a4c243b080ff4b667277e09625eeaf4648cd3d96f20387a0fea505d2646494afbbdbb003f032
   languageName: node
   linkType: hard
 
@@ -6353,7 +6369,7 @@ __metadata:
   dependencies:
     "@clerk/nextjs": "npm:^5.2.1"
     "@hello-pangea/dnd": "npm:^16.6.0"
-    "@liveblocks/client": "npm:^2.2.0"
+    "@liveblocks/client": "npm:^2.2.1"
     "@liveblocks/node": "npm:^2.2.0"
     "@liveblocks/react": "npm:^2.2.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
