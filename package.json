@@ -14,7 +14,7 @@
   "dependencies": {
     "@clerk/nextjs": "^5.2.4",
     "@hello-pangea/dnd": "^16.6.0",
-    "@liveblocks/client": "^2.2.2",
+    "@liveblocks/client": "^2.3.0",
     "@liveblocks/node": "^2.3.0",
     "@liveblocks/react": "^2.2.2",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
