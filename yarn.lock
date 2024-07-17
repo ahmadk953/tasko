@@ -1010,15 +1010,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/client@npm:^5.16.2":
-  version: 5.16.2
-  resolution: "@prisma/client@npm:5.16.2"
+"@prisma/client@npm:^5.17.0":
+  version: 5.17.0
+  resolution: "@prisma/client@npm:5.17.0"
   peerDependencies:
     prisma: "*"
   peerDependenciesMeta:
     prisma:
       optional: true
-  checksum: 10c0/4aefff22a3ad5ac3a7b6298c41949e4962b328a13d9f9e9095b530ce3ad931a1052716450d464850f240e6fa109b6db5719a9cf0f868e75ad44c39ad2409f2df
+  checksum: 10c0/cc6c5e9bfbc2f9a01fdf73e009c42298b8a9fea8c9b19db0089cad84a9ee94c3bb6f66f53f1e2f4b32b3506706bf16d23a8e3bcb4619a8bc76d0812a8382ae63
   languageName: node
   linkType: hard
 
@@ -6356,7 +6356,7 @@ __metadata:
     "@liveblocks/react": "npm:^2.3.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
     "@next/eslint-plugin-next": "npm:^14.2.5"
-    "@prisma/client": "npm:^5.16.2"
+    "@prisma/client": "npm:^5.17.0"
     "@prisma/extension-accelerate": "npm:^1.1.0"
     "@radix-ui/react-accordion": "npm:^1.2.0"
     "@radix-ui/react-avatar": "npm:^1.0.4"
