@@ -20,12 +20,12 @@ This will also be published on the site some time soon but for now, the roadmap 
 
 - [ ] Finish adding started at date feature - _In Progress_
 - [x] Make board background image editable after board creation
-- [ ] Pagination for Audit Logs page
+- [ ] Pagination for Audit Logs page - _In Progress_
 - [ ] Board sorting options (Boards Page)
 - [ ] Add list and card views to boards page (can view tasks in a board, list, or card view)
 - [ ] Add CMS to website (like Contentful)
 - [ ] Add the ability to share boards with others (using something like Liveblocks or some other real-time solution)
-- [ ] Add real-time collaboration
+- [ ] Add real-time collaboration - _In Progress_
 
 ## Legal
 
