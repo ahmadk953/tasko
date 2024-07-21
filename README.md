@@ -30,7 +30,6 @@ This will also be published on the site some time soon but for now, the roadmap 
 ## Legal
 
 [Privacy Policy](https://tasko-omega.vercel.app/privacy-policy)
-_Terms of Service Coming Soon_
 [Terms of Service](https://tasko-omega.vercel.app/terms-of-service) _There is no terms of service yet but, one will be added soon_
 
 [License](https://github.com/ahmadk953/tasko/blob/main/LICENCE)
