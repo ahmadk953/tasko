@@ -813,28 +813,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:2.3.0":
-  version: 2.3.0
-  resolution: "@liveblocks/client@npm:2.3.0"
-  dependencies:
-    "@liveblocks/core": "npm:2.3.0"
-  checksum: 10c0/5f505f61861a8cc5277fa8d650f14972af767aba34c48a814ef7aa0946c6fa6b557d08f35a7ea25633621801238bc3c2afa9a8c4ca48617279f51185873498c5
-  languageName: node
-  linkType: hard
-
-"@liveblocks/client@npm:^2.4.0":
+"@liveblocks/client@npm:2.4.0, @liveblocks/client@npm:^2.4.0":
   version: 2.4.0
   resolution: "@liveblocks/client@npm:2.4.0"
   dependencies:
     "@liveblocks/core": "npm:2.4.0"
   checksum: 10c0/df277e962b76782f69333ae05ec80e7512bf286dd1cadbe109aac1b502169e9e0d2f6d1677db3441aa2930914ef98771017c4a34275d4dea89ee57fc8f58f114
-  languageName: node
-  linkType: hard
-
-"@liveblocks/core@npm:2.3.0":
-  version: 2.3.0
-  resolution: "@liveblocks/core@npm:2.3.0"
-  checksum: 10c0/631e9b3ad237de93cdb079d2c63230a29f370befa6a49e7afc6da83b963d8040f4cf642111ef45f7909b789062028da7192e3663a0c915eff6d620b17e52111f
   languageName: node
   linkType: hard
 
@@ -857,17 +841,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/react@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "@liveblocks/react@npm:2.3.0"
+"@liveblocks/react@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "@liveblocks/react@npm:2.4.0"
   dependencies:
-    "@liveblocks/client": "npm:2.3.0"
-    "@liveblocks/core": "npm:2.3.0"
-    nanoid: "npm:^3"
+    "@liveblocks/client": "npm:2.4.0"
+    "@liveblocks/core": "npm:2.4.0"
     use-sync-external-store: "npm:^1.2.2"
   peerDependencies:
     react: ^16.14.0 || ^17 || ^18
-  checksum: 10c0/b8df2c1691e9fe23dd94bac43eb9205ae0b24b38e98d6113365e260bb40b331da4a8bcc9c6808e5f186a2ac9a5586ae8de028384ccb09abda9e6c55027b96326
+  checksum: 10c0/92e8f5319ad4b077883e4f964861e829883ccfecd1c9fac30aba0509a50cfc206b4566449f939f7553a29580084e106060f1b6fc586aa7564b2788c6c8d7736c
   languageName: node
   linkType: hard
 
@@ -4802,7 +4785,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3, nanoid@npm:^3.3.6, nanoid@npm:^3.3.7":
+"nanoid@npm:^3.3.6, nanoid@npm:^3.3.7":
   version: 3.3.7
   resolution: "nanoid@npm:3.3.7"
   bin:
@@ -6370,7 +6353,7 @@ __metadata:
     "@hello-pangea/dnd": "npm:^16.6.0"
     "@liveblocks/client": "npm:^2.4.0"
     "@liveblocks/node": "npm:^2.4.0"
-    "@liveblocks/react": "npm:^2.3.0"
+    "@liveblocks/react": "npm:^2.4.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
     "@next/eslint-plugin-next": "npm:^14.2.5"
     "@prisma/client": "npm:^5.17.0"
