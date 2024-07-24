@@ -55,7 +55,7 @@
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.2.5",
     "@types/lodash": "^4.17.7",
-    "@types/node": "^20.14.11",
+    "@types/node": "^20.14.12",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
     "@typescript-eslint/eslint-plugin": "^7.17.0",
