@@ -20,7 +20,7 @@ This will also be published on the site some time soon but for now, the roadmap 
 
 - [ ] Finish adding started at date feature - _In Progress_
 - [x] Make board background image editable after board creation
-- [ ] Pagination for Audit Logs page - _In Progress_
+- [ ] Pagination for Audit Logs page
 - [ ] Board sorting options (Boards Page)
 - [ ] Add list and card views to boards page (can view tasks in a board, list, or card view)
 - [ ] Add CMS to website (like Contentful)
