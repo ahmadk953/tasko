@@ -58,7 +58,7 @@
     "@types/node": "^22.2.0",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
-    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.0.1",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
