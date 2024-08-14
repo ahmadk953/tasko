@@ -3350,9 +3350,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-compiler@npm:0.0.0-experimental-0998c1e-20240625":
-  version: 0.0.0-experimental-0998c1e-20240625
-  resolution: "eslint-plugin-react-compiler@npm:0.0.0-experimental-0998c1e-20240625"
+"eslint-plugin-react-compiler@npm:0.0.0-experimental-56229e1-20240813":
+  version: 0.0.0-experimental-56229e1-20240813
+  resolution: "eslint-plugin-react-compiler@npm:0.0.0-experimental-56229e1-20240813"
   dependencies:
     "@babel/core": "npm:^7.24.4"
     "@babel/parser": "npm:^7.24.4"
@@ -3362,7 +3362,7 @@ __metadata:
     zod-validation-error: "npm:^3.0.3"
   peerDependencies:
     eslint: ">=7"
-  checksum: 10c0/2f858c539aee04e9c8a9fdf35a95e4ab9048b11a93df109130763b90260d7e6172500cb1404288b2fe258324878e0f6002a36cbd4fe6ce54c72cffff8dffd517
+  checksum: 10c0/e49100cb58934fe94843e3a4e18f977ac57e31813eb42a769b4417dd8bbdf85db1d665b0daf8a7a582f848df46419c6d4528dda7d233393349f8b581ddd8a1a6
   languageName: node
   linkType: hard
 
@@ -6466,7 +6466,7 @@ __metadata:
     eslint: "npm:^8.57.0"
     eslint-config-next: "npm:^15.0.0-rc.0"
     eslint-config-prettier: "npm:^9.1.0"
-    eslint-plugin-react-compiler: "npm:0.0.0-experimental-0998c1e-20240625"
+    eslint-plugin-react-compiler: "npm:0.0.0-experimental-56229e1-20240813"
     lodash: "npm:^4.17.21"
     lucide-react: "npm:^0.427.0"
     next: "npm:15.0.0-rc.0"
