@@ -38,3 +38,4 @@ next-env.d.ts
 /.vscode/
 package.json
 yarn.lock
+README.md
