@@ -4,7 +4,10 @@ import { NextResponse } from 'next/server';
 
 import { db } from '@/lib/db';
 
-export async function GET({ params }: { params: { cardId: string } }) {
+export async function GET(
+  req: Request,
+  { params }: { params: { cardId: string } }
+) {
   try {
     const { orgId, userId } = auth();
 
