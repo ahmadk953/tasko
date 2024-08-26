@@ -14,7 +14,7 @@
   "dependencies": {
     "@clerk/nextjs": "^5.3.3",
     "@hello-pangea/dnd": "^16.6.0",
-    "@liveblocks/client": "^2.5.2",
+    "@liveblocks/client": "^2.6.0",
     "@liveblocks/node": "^2.5.2",
     "@liveblocks/react": "^2.5.2",
     "@prisma/client": "^5.18.0",
