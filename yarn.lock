@@ -841,12 +841,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:^14.2.6":
-  version: 14.2.6
-  resolution: "@next/eslint-plugin-next@npm:14.2.6"
+"@next/eslint-plugin-next@npm:^14.2.7":
+  version: 14.2.7
+  resolution: "@next/eslint-plugin-next@npm:14.2.7"
   dependencies:
     glob: "npm:10.3.10"
-  checksum: 10c0/52ca55d98bb72a3bccaa08859036d312bc4936be00923bd8c6399472928e6d2b295f4e2f5f94bec30c8b9274f02bb170ee272b1242ca6cad3ae3d1b4a0ceb53e
+  checksum: 10c0/8ed20ef90e2bae29070e07bc312247b30ca1774d6d695c0f13513fda4c72a2d2a1f6fb6b277cb96a728504f7e7601157931c2e0607c15d88fa9007db4d89ca81
   languageName: node
   linkType: hard
 
@@ -6335,7 +6335,7 @@ __metadata:
     "@liveblocks/node": "npm:^2.6.0"
     "@liveblocks/react": "npm:^2.6.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
-    "@next/eslint-plugin-next": "npm:^14.2.6"
+    "@next/eslint-plugin-next": "npm:^14.2.7"
     "@prisma/client": "npm:^5.18.0"
     "@prisma/extension-accelerate": "npm:^1.1.0"
     "@radix-ui/react-accordion": "npm:^1.2.0"
