@@ -19,12 +19,8 @@ Currently, there is no documentation or wiki available but, I do plan to add one
 This will also be published on the site some time soon but for now, the roadmap will be listed here.
 
 - [ ] Finish adding started at date feature
-- [x] Make board background image editable after board creation
-- [ ] Pagination for Audit Logs page
+- [ ] Pagination for Audit Logs page - *In Progress*
 - [ ] Board sorting options (Boards Page)
-- [ ] Add list and card views to boards page (can view tasks in a board, list, or card view)
-- [ ] Add CMS to website (like Contentful)
-- [ ] Add the ability to share boards with others (using something like Liveblocks or some other real-time solution)
 - [ ] Add real-time collaboration
 
 ## Legal
