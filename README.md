@@ -22,6 +22,7 @@ This will also be published on the site some time soon but for now, the roadmap 
 - [ ] Pagination for Audit Logs page - *In Progress*
 - [ ] Board sorting options (Boards Page)
 - [ ] Add real-time collaboration
+- [ ] Add end-to-end Database encryption (for customer data such as card titles and descriptions, and subscription information)
 
 ## Legal
 
