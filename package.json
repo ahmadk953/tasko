@@ -55,7 +55,7 @@
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "@next/eslint-plugin-next": "^14.2.7",
     "@types/lodash": "^4.17.7",
-    "@types/node": "^22.5.2",
+    "@types/node": "^22.5.4",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
     "@typescript-eslint/eslint-plugin": "^8.4.0",
