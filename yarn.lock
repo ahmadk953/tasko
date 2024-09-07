@@ -2328,9 +2328,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-react-compiler@npm:0.0.0-experimental-7449567-20240904":
-  version: 0.0.0-experimental-7449567-20240904
-  resolution: "babel-plugin-react-compiler@npm:0.0.0-experimental-7449567-20240904"
+"babel-plugin-react-compiler@npm:0.0.0-experimental-7449567-20240905":
+  version: 0.0.0-experimental-7449567-20240905
+  resolution: "babel-plugin-react-compiler@npm:0.0.0-experimental-7449567-20240905"
   dependencies:
     "@babel/generator": "npm:7.2.0"
     "@babel/types": "npm:^7.19.0"
@@ -2339,7 +2339,7 @@ __metadata:
     pretty-format: "npm:^24"
     zod: "npm:^3.22.4"
     zod-validation-error: "npm:^2.1.0"
-  checksum: 10c0/8813485f3327a66f6a3cf68e06600c4649b1d8c52edc0d3f6e1cf750510aab363693532eccbb798cd08069e8b3f245e9c3435df043bbf4006052d7f50e180ddf
+  checksum: 10c0/3fb7463c7cfb29385025a5263ae5122eff02afb296075b4fe3169e300b6397cd51d9a8e29c0fc906c599090881482db440ff906af83b41424dcdd32c1113ad8f
   languageName: node
   linkType: hard
 
@@ -6321,7 +6321,7 @@ __metadata:
     "@vercel/analytics": "npm:^1.3.1"
     "@vercel/speed-insights": "npm:^1.0.12"
     autoprefixer: "npm:^10.4.20"
-    babel-plugin-react-compiler: "npm:0.0.0-experimental-7449567-20240904"
+    babel-plugin-react-compiler: "npm:0.0.0-experimental-7449567-20240905"
     class-variance-authority: "npm:^0.7.0"
     clsx: "npm:^2.1.1"
     date-fns: "npm:^3.6.0"
