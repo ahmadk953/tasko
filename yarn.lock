@@ -1647,14 +1647,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:^5.54.1":
-  version: 5.54.1
-  resolution: "@tanstack/react-query@npm:5.54.1"
+"@tanstack/react-query@npm:^5.55.0":
+  version: 5.55.0
+  resolution: "@tanstack/react-query@npm:5.55.0"
   dependencies:
     "@tanstack/query-core": "npm:5.54.1"
   peerDependencies:
     react: ^18 || ^19
-  checksum: 10c0/d91aafb9b386b6a7eb21be1eb960b91ad60e672c35fa16d408b222e6d731705686a8be34f312afed0165be7945b5fd6f3adebcfa4b920e00e1f5e7cfdcdb35e6
+  checksum: 10c0/77097962dcf0bd2c9e73dbf6459c95b956e949233feeb7bf53e6e0ef7238be8eee67b2b328660a1302daef646c6090928dca5bfbc10386a4e70ab4649b1eb3e2
   languageName: node
   linkType: hard
 
@@ -6311,7 +6311,7 @@ __metadata:
     "@radix-ui/react-separator": "npm:^1.0.3"
     "@radix-ui/react-slot": "npm:^1.1.0"
     "@radix-ui/react-tooltip": "npm:^1.1.2"
-    "@tanstack/react-query": "npm:^5.54.1"
+    "@tanstack/react-query": "npm:^5.55.0"
     "@types/lodash": "npm:^4.17.7"
     "@types/node": "npm:^22.5.4"
     "@types/react": "npm:types-react@rc"
