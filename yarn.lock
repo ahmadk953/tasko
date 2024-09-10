@@ -804,15 +804,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/node@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "@liveblocks/node@npm:2.6.0"
+"@liveblocks/node@npm:^2.6.1":
+  version: 2.6.1
+  resolution: "@liveblocks/node@npm:2.6.1"
   dependencies:
-    "@liveblocks/core": "npm:2.6.0"
+    "@liveblocks/core": "npm:2.6.1"
     "@stablelib/base64": "npm:^1.0.1"
     fast-sha256: "npm:^1.3.0"
     node-fetch: "npm:^2.6.1"
-  checksum: 10c0/93f391a67be13b8ff7ed8761cc51630264dd4dd9d1b9e5f3081bca26b58399db05bf8daacbcce6a846c65bd5e4e0199059568951b840e90ba6315b078353b1fd
+  checksum: 10c0/09afbad14b0f00aa043e3a6e2e438ba297ce341cf78f0e2e0391ec99a517452d56f2185cf6ab3a7cc45c21ceda69a2e2122679aae4960d7aa35525d66b70958d
   languageName: node
   linkType: hard
 
@@ -6313,7 +6313,7 @@ __metadata:
     "@clerk/nextjs": "npm:^5.4.1"
     "@hello-pangea/dnd": "npm:^16.6.0"
     "@liveblocks/client": "npm:^2.6.1"
-    "@liveblocks/node": "npm:^2.6.0"
+    "@liveblocks/node": "npm:^2.6.1"
     "@liveblocks/react": "npm:^2.6.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
     "@next/eslint-plugin-next": "npm:^14.2.8"
