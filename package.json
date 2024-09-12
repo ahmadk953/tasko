@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
-    "@next/eslint-plugin-next": "^14.2.9",
+    "@next/eslint-plugin-next": "^14.2.10",
     "@types/lodash": "^4.17.7",
     "@types/node": "^22.5.4",
     "@types/react": "npm:types-react@rc",
