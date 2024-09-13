@@ -771,12 +771,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:2.6.1, @liveblocks/client@npm:^2.6.1":
+"@liveblocks/client@npm:2.6.1":
   version: 2.6.1
   resolution: "@liveblocks/client@npm:2.6.1"
   dependencies:
     "@liveblocks/core": "npm:2.6.1"
   checksum: 10c0/74d86d895a44d5a59e8c35d763421f542797ce28a8382056785846a196bf2430b7e891109c595532c00780f9edba88563f37af4e42ae8685ab6d39923de1eede
+  languageName: node
+  linkType: hard
+
+"@liveblocks/client@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "@liveblocks/client@npm:2.7.0"
+  dependencies:
+    "@liveblocks/core": "npm:2.7.0"
+  checksum: 10c0/8f32adc11e5f678d9445381761f2f6f4dd25ca499fe013eef0d0ad6dbd5f7c26aa7c85fb1be43d4aaa1407f3a41d401c7f174c826c302d034f5ead8aff1a0e5d
   languageName: node
   linkType: hard
 
@@ -6295,7 +6304,7 @@ __metadata:
   dependencies:
     "@clerk/nextjs": "npm:^5.5.2"
     "@hello-pangea/dnd": "npm:^16.6.0"
-    "@liveblocks/client": "npm:^2.6.1"
+    "@liveblocks/client": "npm:^2.7.0"
     "@liveblocks/node": "npm:^2.7.0"
     "@liveblocks/react": "npm:^2.6.1"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
