@@ -34,7 +34,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
-    "eslint-plugin-react-compiler": "0.0.0-experimental-56229e1-20240813",
+    "eslint-plugin-react-compiler": "0.0.0-experimental-7670337-20240918",
     "lodash": "^4.17.21",
     "lucide-react": "^0.441.0",
     "next": "15.0.0-rc.0",
