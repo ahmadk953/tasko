@@ -778,28 +778,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:2.7.2":
+"@liveblocks/client@npm:2.7.2, @liveblocks/client@npm:^2.7.2":
   version: 2.7.2
   resolution: "@liveblocks/client@npm:2.7.2"
   dependencies:
     "@liveblocks/core": "npm:2.7.2"
   checksum: 10c0/e6f3290b10755beab54571997f06a6a45b388fd96ef750a0c8992d36dc791da4afbc68a7c26574926e2f7a105ab8d11cb22fdd2bf5fc3d15105c084366a8d151
-  languageName: node
-  linkType: hard
-
-"@liveblocks/client@npm:^2.7.2":
-  version: 2.7.2
-  resolution: "@liveblocks/client@npm:2.7.2"
-  dependencies:
-    "@liveblocks/core": "npm:2.7.2"
-  checksum: 10c0/e6f3290b10755beab54571997f06a6a45b388fd96ef750a0c8992d36dc791da4afbc68a7c26574926e2f7a105ab8d11cb22fdd2bf5fc3d15105c084366a8d151
-  languageName: node
-  linkType: hard
-
-"@liveblocks/core@npm:2.7.1":
-  version: 2.7.1
-  resolution: "@liveblocks/core@npm:2.7.1"
-  checksum: 10c0/665c685dd12b25b7ca86c6866d7bb33e6ec54eb1fa60057591934931904c2254b8b605e3d4e05b4f85ae84fc1996acc5694647a0d9f376f29ff38a6c098624ce
   languageName: node
   linkType: hard
 
@@ -810,15 +794,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/node@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "@liveblocks/node@npm:2.7.1"
+"@liveblocks/node@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "@liveblocks/node@npm:2.7.2"
   dependencies:
-    "@liveblocks/core": "npm:2.7.1"
+    "@liveblocks/core": "npm:2.7.2"
     "@stablelib/base64": "npm:^1.0.1"
     fast-sha256: "npm:^1.3.0"
     node-fetch: "npm:^2.6.1"
-  checksum: 10c0/f9a97fe433eb74a83a54638bda4dc8c554cb44952806daa3122d96c365561a6304ca0254b0e01d64ea75ab1c756dfaf10d0d3b7a85dd3d61de706b2210ccc2a3
+  checksum: 10c0/d96850f93917938c1f33bd0cd7209b11786d70045a0aa726e1d97e6b0fdbe014db2238d65bcd6aaffe29321a0e6ceb7b62787c5754fe257b5858c404f7a1c963
   languageName: node
   linkType: hard
 
@@ -6286,7 +6270,7 @@ __metadata:
     "@clerk/nextjs": "npm:^5.6.0"
     "@hello-pangea/dnd": "npm:^17.0.0"
     "@liveblocks/client": "npm:^2.7.2"
-    "@liveblocks/node": "npm:^2.7.1"
+    "@liveblocks/node": "npm:^2.7.2"
     "@liveblocks/react": "npm:^2.7.2"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
     "@next/eslint-plugin-next": "npm:^14.2.12"
