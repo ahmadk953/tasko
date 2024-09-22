@@ -12,14 +12,14 @@ Tasko is a company that helps you manage your tasks efficiently by using kanban 
 
 ## Documentation
 
-Currently, there is no documentation or wiki available but, I do plan to add one in the future on the main site.
+Currently, there is no documentation or wiki available but, I do plan to add one in the future.
 
 ## Roadmap
 
-This will also be published on the site some time soon but for now, the roadmap will be listed here.
+This will be published on the site some time soon but for now, the roadmap will be listed here.
 
 - [ ] Finish adding started at date feature
-- [ ] Pagination for Audit Logs page - *In Progress*
+- [ ] Pagination for Audit Logs page
 - [ ] Board sorting options (Boards Page)
 - [ ] Add real-time collaboration
 - [ ] Add end-to-end Database encryption (for customer data such as card titles and descriptions, and subscription information)
