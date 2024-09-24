@@ -5238,9 +5238,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:^0.6.6":
-  version: 0.6.6
-  resolution: "prettier-plugin-tailwindcss@npm:0.6.6"
+"prettier-plugin-tailwindcss@npm:^0.6.7":
+  version: 0.6.7
+  resolution: "prettier-plugin-tailwindcss@npm:0.6.7"
   peerDependencies:
     "@ianvs/prettier-plugin-sort-imports": "*"
     "@prettier/plugin-pug": "*"
@@ -5292,7 +5292,7 @@ __metadata:
       optional: true
     prettier-plugin-svelte:
       optional: true
-  checksum: 10c0/e34743a768631ebc69690b97d7018500f497815bbdc59c95604d09c65ffc25823ffb181e62a457f4d77594bf4ee2de50bab579e68b55440e3fcfa91713b7d7e6
+  checksum: 10c0/8418beddf064af112ea74ac599fa499be26f9602a0bdfe1fdf6cddb09804f433bbfb2b5d31f863e41366f7f1c5d60e0b48b508c70ab33bfb12600bcf4e3de465
   languageName: node
   linkType: hard
 
@@ -6307,7 +6307,7 @@ __metadata:
     next: "npm:15.0.0-rc.0"
     postcss: "npm:^8.4.47"
     prettier: "npm:^3.3.3"
-    prettier-plugin-tailwindcss: "npm:^0.6.6"
+    prettier-plugin-tailwindcss: "npm:^0.6.7"
     prisma: "npm:^5.19.1"
     react: "npm:^19.0.0-rc.0"
     react-day-picker: "npm:^9.1.2"
