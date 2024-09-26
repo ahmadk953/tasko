@@ -18,7 +18,7 @@
     "@liveblocks/node": "^2.8.0",
     "@liveblocks/react": "^2.7.2",
     "@prisma/client": "^5.20.0",
-    "@prisma/extension-accelerate": "^1.1.0",
+    "@prisma/extension-accelerate": "^1.2.0",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-dialog": "^1.1.1",
