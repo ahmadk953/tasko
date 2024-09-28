@@ -1,6 +1,7 @@
 'use client';
 
 import { toast } from 'sonner';
+import { useRouter } from 'next/navigation';
 
 import { stripeRedirect } from '@/actions/stripe-redirect';
 import { Button } from '@/components/ui/button';
@@ -13,10 +14,11 @@ interface SubscriptionButtonProps {
 
 export const SubscriptionButton = ({ isPro }: SubscriptionButtonProps) => {
   const proModal = useProModal();
+  const router = useRouter();
 
   const { execute, isLoading } = useAction(stripeRedirect, {
     onSuccess: (data) => {
-      window.location.href = data;
+      router.push(data);
     },
     onError: (error) => {
       toast.error(error);

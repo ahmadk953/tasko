@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { toast } from 'sonner';
+import { useRouter } from 'next/navigation';
 
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { useProModal } from '@/hooks/use-pro-modal';
@@ -11,10 +12,11 @@ import { stripeRedirect } from '@/actions/stripe-redirect';
 
 export const ProModal = () => {
   const proModal = useProModal();
+  const router = useRouter();
 
   const { execute, isLoading } = useAction(stripeRedirect, {
     onSuccess: (data) => {
-      window.location.href = data;
+      router.push(data);
     },
     onError: (error) => {
       toast.error(error);
