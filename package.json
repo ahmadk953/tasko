@@ -16,7 +16,7 @@
     "@hello-pangea/dnd": "^17.0.0",
     "@liveblocks/client": "^2.8.1",
     "@liveblocks/node": "^2.8.1",
-    "@liveblocks/react": "^2.8.1",
+    "@liveblocks/react": "^2.8.2",
     "@prisma/client": "^5.20.0",
     "@prisma/extension-accelerate": "^1.2.0",
     "@radix-ui/react-accordion": "^1.2.1",
