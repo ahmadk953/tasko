@@ -15,7 +15,7 @@
     "@clerk/nextjs": "^5.7.1",
     "@hello-pangea/dnd": "^17.0.0",
     "@liveblocks/client": "^2.9.0",
-    "@liveblocks/node": "^2.9.0",
+    "@liveblocks/node": "^2.9.1",
     "@liveblocks/react": "^2.9.0",
     "@prisma/client": "^5.20.0",
     "@prisma/extension-accelerate": "^1.2.1",
