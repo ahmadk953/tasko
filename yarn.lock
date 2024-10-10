@@ -778,7 +778,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:2.9.0, @liveblocks/client@npm:^2.9.0":
+"@liveblocks/client@npm:2.9.1":
+  version: 2.9.1
+  resolution: "@liveblocks/client@npm:2.9.1"
+  dependencies:
+    "@liveblocks/core": "npm:2.9.1"
+  checksum: 10c0/a046a218967107085240cd069b0121a746ece099cda2e181ec014d27dd63e95b5ccbe8065691e8f39b966faf6cae5e0fdb4fa2ba02d18ed5018eefda782a28c0
+  languageName: node
+  linkType: hard
+
+"@liveblocks/client@npm:^2.9.0":
   version: 2.9.0
   resolution: "@liveblocks/client@npm:2.9.0"
   dependencies:
@@ -813,16 +822,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/react@npm:^2.9.0":
-  version: 2.9.0
-  resolution: "@liveblocks/react@npm:2.9.0"
+"@liveblocks/react@npm:^2.9.1":
+  version: 2.9.1
+  resolution: "@liveblocks/react@npm:2.9.1"
   dependencies:
-    "@liveblocks/client": "npm:2.9.0"
-    "@liveblocks/core": "npm:2.9.0"
+    "@liveblocks/client": "npm:2.9.1"
+    "@liveblocks/core": "npm:2.9.1"
     use-sync-external-store: "npm:^1.2.2"
   peerDependencies:
     react: ^16.14.0 || ^17 || ^18
-  checksum: 10c0/029b50108e5eeac6c4c3f7ce92dff6459d082c790c91f08bff12b61ee6135d5c4f7ac44dafc42aadb8507a1e33ea5afc36639d77b6348d5b88fafca4f4d800a9
+  checksum: 10c0/907801d2428d327632d95fdc7142b8e7cc771830955711c798313827bdb73beaa0e9b58b7d05291023326e897f804654b0f4c62e16cea45a03bb5c1f09ddb1a9
   languageName: node
   linkType: hard
 
@@ -6291,7 +6300,7 @@ __metadata:
     "@hello-pangea/dnd": "npm:^17.0.0"
     "@liveblocks/client": "npm:^2.9.0"
     "@liveblocks/node": "npm:^2.9.1"
-    "@liveblocks/react": "npm:^2.9.0"
+    "@liveblocks/react": "npm:^2.9.1"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
     "@next/eslint-plugin-next": "npm:^14.2.15"
     "@prisma/client": "npm:^5.20.0"
