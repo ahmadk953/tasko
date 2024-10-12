@@ -12,7 +12,7 @@ Tasko is a company that helps you manage your tasks efficiently by using kanban 
 
 ## Documentation
 
-Currently, there is no documentation or wiki available but, I do plan to add one in the future.
+Currently, there is no documentation or wiki available but there will be one added in the future.
 
 ## Roadmap
 
@@ -23,11 +23,12 @@ This will be published on the site some time soon but for now, the roadmap will 
 - [ ] Board sorting options (Boards Page)
 - [ ] Add real-time collaboration
 - [ ] Add end-to-end Database encryption (for customer data such as card titles and descriptions, and subscription information)
+- [ ] Add dark mode
 
 ## Legal
 
 [Privacy Policy](https://tasko-omega.vercel.app/privacy-policy)
 
-[Terms of Service](https://tasko-omega.vercel.app/terms-of-service) _The Tems of Service will be added once a CMS is added and implimented._
+[Terms of Service](https://tasko-omega.vercel.app/terms-of-service) _The Terms of Service will be added once a CMS is added and implemented._
 
 [License](https://github.com/ahmadk953/tasko/blob/main/LICENCE)
