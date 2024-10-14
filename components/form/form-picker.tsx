@@ -1,5 +1,6 @@
 'use client';
 
+import DOMPurify from 'dompurify';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -90,7 +91,8 @@ export const FormPicker = ({ id, errors }: FormPickerProps) => {
             )}
             <Link
               href={
-                image.user.links.html + '?utm_source=Tasko&utm_medium=referral'
+                DOMPurify.sanitize(image.user.links.html) +
+                '?utm_source=Tasko&utm_medium=referral'
               }
               target='_blank'
               className='absolute bottom-0 w-full truncate bg-black/50 p-1 text-[10px] text-white opacity-0 hover:underline group-hover:opacity-100'
