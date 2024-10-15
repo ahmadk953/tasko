@@ -5,7 +5,6 @@ import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
 
 const headingFont = localFont({ src: '../../public/fonts/font.woff2' });
 

@@ -5,12 +5,13 @@ import { db } from '@/lib/db';
 import { ListContainer } from './_components/list-container';
 
 interface BoardIdPageProps {
-  params: {
+  params: Promise<{
     boardId: string;
-  };
+  }>;
 }
 
-const BoardIdPage = async ({ params }: BoardIdPageProps) => {
+const BoardIdPage = async (props: BoardIdPageProps) => {
+  const params = await props.params;
   const { orgId } = auth();
 
   if (!orgId) {

@@ -5,8 +5,9 @@ import { db } from '@/lib/db';
 
 export async function GET(
   req: Request,
-  { params }: { params: { cardId: string } }
+  props: { params: Promise<{ cardId: string }> }
 ) {
+  const params = await props.params;
   try {
     const { orgId, userId } = auth();
 
