@@ -59,7 +59,7 @@
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "@next/eslint-plugin-next": "^14.2.15",
     "@types/dompurify": "^3",
-    "@types/lodash": "^4.17.10",
+    "@types/lodash": "^4.17.11",
     "@types/node": "^22.7.6",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
