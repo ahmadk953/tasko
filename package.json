@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@builder.io/sdk-react": "^2.0.21",
-    "@clerk/nextjs": "^5.7.5",
+    "@clerk/nextjs": "^6.0.1",
     "@hello-pangea/dnd": "^17.0.0",
     "@liveblocks/client": "^2.9.2",
     "@liveblocks/node": "^2.9.2",
