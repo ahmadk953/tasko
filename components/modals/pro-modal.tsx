@@ -3,8 +3,9 @@
 import Image from 'next/image';
 import { toast } from 'sonner';
 import { useRouter } from 'next/navigation';
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { useProModal } from '@/hooks/use-pro-modal';
 import { Button } from '@/components/ui/button';
 import { useAction } from '@/hooks/use-action';
@@ -30,6 +31,9 @@ export const ProModal = () => {
   return (
     <Dialog open={proModal.isOpen} onOpenChange={proModal.onClose}>
       <DialogContent className='max-w-md overflow-hidden p-0'>
+        <VisuallyHidden.Root>
+          <DialogTitle>Upgrade to Tasko Pro</DialogTitle>
+        </VisuallyHidden.Root>
         <div className='relative flex aspect-video items-center justify-center'>
           <Image src='/hero.svg' alt='hero' className='object-cover' fill />
         </div>

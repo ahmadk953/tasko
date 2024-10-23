@@ -8,7 +8,7 @@ export async function generateMetadata(props: {
   params: Promise<{ boardId: string }>;
 }) {
   const params = await props.params;
-  const { orgId } = auth();
+  const { orgId } = await auth();
 
   if (!orgId) return { title: 'Board' };
 
@@ -32,7 +32,7 @@ const BoardIdLayout = async (props: {
 
   const { children } = props;
 
-  const { orgId } = auth();
+  const { orgId } = await auth();
 
   if (!orgId) redirect('/select-org');
 

@@ -9,7 +9,7 @@ export async function GET(
 ) {
   const params = await props.params;
   try {
-    const { orgId, userId } = auth();
+    const { orgId, userId } = await auth();
 
     if (!orgId || !userId)
       return new NextResponse(JSON.stringify({ error: 'Unauthorized' }), {

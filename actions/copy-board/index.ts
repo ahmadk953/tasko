@@ -10,7 +10,7 @@ import { CopyBoard } from './schema';
 import { redirect } from 'next/navigation';
 
 const handler = async (data: InputType): Promise<ReturnType> => {
-  const { userId, orgId } = auth();
+  const { userId, orgId } = await auth();
 
   if (!userId || !orgId) {
     return {

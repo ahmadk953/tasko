@@ -12,7 +12,7 @@ import { InputType, ReturnType } from './types';
 import { StripeRedirect } from './schema';
 
 const handler = async (data: InputType): Promise<ReturnType> => {
-  const { userId, orgId } = auth();
+  const { userId, orgId } = await auth();
   const user = await currentUser();
 
   if (!userId || !orgId || !user) return { error: 'Unauthorized' };

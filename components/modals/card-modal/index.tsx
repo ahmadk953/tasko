@@ -1,12 +1,13 @@
 'use client';
 
 import { useQuery } from '@tanstack/react-query';
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 
 import { CardWithList } from '@/types';
 import { fetcher } from '@/lib/fetcher';
 import { AuditLog } from '@prisma/client';
 import { useCardModal } from '@/hooks/use-card-modal';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 
 import { Header } from './header';
 import { Description } from './description';
@@ -31,6 +32,9 @@ export const CardModal = () => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent>
+        <VisuallyHidden.Root>
+          <DialogTitle>Card Data Panel</DialogTitle>
+        </VisuallyHidden.Root>
         {!cardData ? <Header.Skeleton /> : <Header data={cardData} />}
         <div className='grid grid-cols-1 md:grid-cols-4 md:gap-4'>
           <div className='col-span-3'>

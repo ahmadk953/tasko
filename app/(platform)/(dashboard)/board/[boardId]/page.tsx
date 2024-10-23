@@ -12,7 +12,7 @@ interface BoardIdPageProps {
 
 const BoardIdPage = async (props: BoardIdPageProps) => {
   const params = await props.params;
-  const { orgId } = auth();
+  const { orgId } = await auth();
 
   if (!orgId) {
     redirect('/select-org');

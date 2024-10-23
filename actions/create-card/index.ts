@@ -12,7 +12,7 @@ import { InputType, ReturnType } from './types';
 import { CreateCard } from './schema';
 
 const handler = async (data: InputType): Promise<ReturnType> => {
-  const { userId, orgId } = auth();
+  const { userId, orgId } = await auth();
 
   if (!userId || !orgId) return { error: 'Unauthorized' };
 

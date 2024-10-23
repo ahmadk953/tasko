@@ -4,8 +4,8 @@ import { auth } from '@clerk/nextjs/server';
 import { Logo } from '@/components/logo';
 import { Button } from '@/components/ui/button';
 
-export const Navbar = () => {
-  const { userId } = auth();
+export const Navbar = async () => {
+  const { userId } = await auth();
 
   let isSignedIn = !!userId;
 

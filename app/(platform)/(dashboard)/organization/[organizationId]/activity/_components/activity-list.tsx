@@ -6,7 +6,7 @@ import { ActivityItem } from '@/components/activity-item';
 import { Skeleton } from '@/components/ui/skeleton';
 
 export const ActivityList = async () => {
-  const { orgId } = auth();
+  const { orgId } = await auth();
 
   if (!orgId) redirect('/select-org');
 
