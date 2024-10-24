@@ -358,9 +358,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clerk/nextjs@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "@clerk/nextjs@npm:6.0.1"
+"@clerk/nextjs@npm:^6.0.2":
+  version: 6.0.2
+  resolution: "@clerk/nextjs@npm:6.0.2"
   dependencies:
     "@clerk/backend": "npm:1.15.1"
     "@clerk/clerk-react": "npm:5.13.1"
@@ -373,7 +373,7 @@ __metadata:
     next: ^13.5.4 || ^14.0.3 || >=15.0.0-rc
     react: ">=18 || >=19.0.0-beta"
     react-dom: ">=18 || >=19.0.0-beta"
-  checksum: 10c0/fcf9498d2bb906d4d73fcefacdad4c40bb7570b36c9cce61d6f9faf0f132103c12ab65dd0d98dc28ca9a69a651f39ff2bafc8b41c101a163092b18e860ad9bff
+  checksum: 10c0/e67ac04a0e1585c577d3619eabd4d88270179ec925249a23e0c11316b906cdbdc6c71cee04193c81af0a45deaaa6e05f576cef7de054b04e4563eb17f6a995a8
   languageName: node
   linkType: hard
 
@@ -6558,7 +6558,7 @@ __metadata:
   resolution: "tasko@workspace:."
   dependencies:
     "@builder.io/sdk-react": "npm:^2.0.21"
-    "@clerk/nextjs": "npm:^6.0.1"
+    "@clerk/nextjs": "npm:^6.0.2"
     "@eslint/eslintrc": "npm:^3.1.0"
     "@eslint/js": "npm:^9.13.0"
     "@hello-pangea/dnd": "npm:^17.0.0"
