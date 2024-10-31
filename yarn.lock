@@ -320,14 +320,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@builder.io/sdk-react@npm:^2.0.25":
-  version: 2.0.25
-  resolution: "@builder.io/sdk-react@npm:2.0.25"
+"@builder.io/sdk-react@npm:^2.0.26":
+  version: 2.0.26
+  resolution: "@builder.io/sdk-react@npm:2.0.26"
   dependencies:
     isolated-vm: "npm:^5.0.0"
   peerDependencies:
     react: ">=16 || ^19.0.0-rc"
-  checksum: 10c0/dcb2e8e4f245512bc0d58cef8f731a676849e2863ea4b448503c117ee217f7bc78b14194d1ff9641cb7fdb11f24fc5d758408601697f0ff331c2dcd7f62331ff
+  checksum: 10c0/762ba4a8523544c005f971a1f0b7f9eac3ca8cb30b76db70b602fbc103102de3a6be42c403c69d25cb3469c4eb5e6906871a7673bbcfade08e0a2f7f8c64d77e
   languageName: node
   linkType: hard
 
@@ -6673,7 +6673,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tasko@workspace:."
   dependencies:
-    "@builder.io/sdk-react": "npm:^2.0.25"
+    "@builder.io/sdk-react": "npm:^2.0.26"
     "@clerk/nextjs": "npm:^6.0.2"
     "@eslint/eslintrc": "npm:^3.1.0"
     "@eslint/js": "npm:^9.13.0"
