@@ -13,7 +13,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 const ActivityPage = async ({
   searchParams,
 }: {
-  searchParams: { [key: string]: string | undefined };
+  searchParams: Promise<Record<string, string | undefined>>;
 }) => {
   const isPro = await checkSubscription();
   const { orgId } = await auth();
