@@ -1,45 +1,144 @@
-import { auth } from '@clerk/nextjs/server';
-import { redirect } from 'next/navigation';
+'use client';
 
-import { db } from '@/lib/db';
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from '@/components/ui/pagination';
 import { ActivityItem } from '@/components/activity-item';
-import { Skeleton } from '@/components/ui/skeleton';
+import { AuditLog } from '@prisma/client';
 
-export const ActivityList = async () => {
-  const { orgId } = await auth();
-
-  if (!orgId) redirect('/select-org');
-
-  const auditLogs = await db.auditLog.findMany({
-    where: {
-      orgId,
-    },
-    orderBy: {
-      createdAt: 'desc',
-    },
-    cacheStrategy: { ttl: 30, swr: 60 },
-  });
-
+export const ActivityList = ({
+  totalPages,
+  currentPage,
+  auditLogs,
+}: {
+  totalPages: number;
+  currentPage: number;
+  auditLogs: AuditLog[];
+}) => {
   return (
-    <ol className='mt-4 space-y-4'>
-      <p className='hidden text-center text-xs text-muted-foreground last:block'>
-        No activity found inside this organization
-      </p>
-      {auditLogs.map((log) => (
-        <ActivityItem key={log.id} data={log} />
-      ))}
-    </ol>
+    <div>
+      <ol className='mt-4 space-y-4'>
+        <p className='hidden text-center text-xs text-muted-foreground last:block'>
+          No activity found inside this organization
+        </p>
+        {auditLogs.map((log) => (
+          <ActivityItem key={log.id} data={log} />
+        ))}
+      </ol>
+      <ActivityListPagination
+        totalPages={totalPages}
+        currentPage={currentPage}
+      />
+    </div>
   );
 };
 
-ActivityList.Skeleton = function ActivityListSkeleton() {
+const ActivityListPagination = ({
+  totalPages,
+  currentPage,
+}: {
+  totalPages: number;
+  currentPage: number;
+}) => {
+  const renderPageNumbers = () => {
+    const pageNumbers = [];
+    const maxVisiblePages = 5;
+
+    if (totalPages <= maxVisiblePages) {
+      for (let i = 1; i <= totalPages; i++) {
+        pageNumbers.push(
+          <PaginationItem key={i}>
+            <PaginationLink
+              href={`activity?page=${i}`}
+              isActive={currentPage === i}
+            >
+              {i}
+            </PaginationLink>
+          </PaginationItem>
+        );
+      }
+    } else {
+      // Always show first page
+      pageNumbers.push(
+        <PaginationItem key={1}>
+          <PaginationLink href='activity?page=1' isActive={currentPage === 1}>
+            1
+          </PaginationLink>
+        </PaginationItem>
+      );
+
+      // Show ellipsis if current page is more than 3
+      if (currentPage > 3) {
+        pageNumbers.push(
+          <PaginationItem key='ellipsis-start'>
+            <PaginationEllipsis />
+          </PaginationItem>
+        );
+      }
+
+      // Show current page and surrounding pages
+      const startPage = Math.max(2, currentPage - 1);
+      const endPage = Math.min(totalPages - 1, currentPage + 1);
+
+      for (let i = startPage; i <= endPage; i++) {
+        pageNumbers.push(
+          <PaginationItem key={i}>
+            <PaginationLink
+              href={`activity?page=${i}`}
+              isActive={currentPage === i}
+            >
+              {i}
+            </PaginationLink>
+          </PaginationItem>
+        );
+      }
+
+      // Show ellipsis if current page is less than totalPages - 2
+      if (currentPage < totalPages - 2) {
+        pageNumbers.push(
+          <PaginationItem key='ellipsis-end'>
+            <PaginationEllipsis />
+          </PaginationItem>
+        );
+      }
+
+      // Always show last page
+      pageNumbers.push(
+        <PaginationItem key={totalPages}>
+          <PaginationLink
+            href={`activity?page=${totalPages}`}
+            isActive={currentPage === totalPages}
+          >
+            {totalPages}
+          </PaginationLink>
+        </PaginationItem>
+      );
+    }
+
+    return pageNumbers;
+  };
+
   return (
-    <ol className='mt-4 space-y-4'>
-      <Skeleton className='h-14 w-[80%]' />
-      <Skeleton className='h-14 w-[50%]' />
-      <Skeleton className='h-14 w-[70%]' />
-      <Skeleton className='h-14 w-[80%]' />
-      <Skeleton className='h-14 w-[75%]' />
-    </ol>
+    <Pagination>
+      <PaginationContent>
+        {currentPage > 1 && (
+          <PaginationItem>
+            <PaginationPrevious href={`activity?page=${currentPage - 1}`} />
+          </PaginationItem>
+        )}
+        {renderPageNumbers()}
+        {currentPage < totalPages && (
+          <PaginationItem>
+            <PaginationNext href={`activity?page=${currentPage + 1}`} />
+          </PaginationItem>
+        )}
+      </PaginationContent>
+    </Pagination>
   );
 };

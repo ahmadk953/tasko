@@ -19,7 +19,7 @@ Currently, there is no documentation or wiki available but there will be one add
 This will be published on the site some time soon but for now, the roadmap will be listed here.
 
 - [ ] Finish adding started at date feature
-- [ ] Pagination for Audit Logs page
+- [x] Pagination for Audit Logs page
 - [ ] Board sorting options (Boards Page)
 - [ ] Add real-time collaboration
 - [ ] Add end-to-end Database encryption (for customer data such as card titles and descriptions, and subscription information)
