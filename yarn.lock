@@ -915,6 +915,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/eslint-plugin-next@npm:15.0.3":
+  version: 15.0.3
+  resolution: "@next/eslint-plugin-next@npm:15.0.3"
+  dependencies:
+    fast-glob: "npm:3.3.1"
+  checksum: 10c0/59d024d129e472aa32fb841a1906d3ab3d3a7252a9fdfc93e3ac5a2436397d16f53f16ed0ec6c7006f912571854e52492612c0d4493c440c84dba5cea67e95d9
+  languageName: node
+  linkType: hard
+
 "@next/swc-darwin-arm64@npm:15.0.2":
   version: 15.0.2
   resolution: "@next/swc-darwin-arm64@npm:15.0.2"
@@ -6321,7 +6330,7 @@ __metadata:
     "@liveblocks/node": "npm:^2.11.0"
     "@liveblocks/react": "npm:^2.11.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
-    "@next/eslint-plugin-next": "npm:15.0.2"
+    "@next/eslint-plugin-next": "npm:15.0.3"
     "@prisma/client": "npm:^5.21.1"
     "@prisma/extension-accelerate": "npm:^1.2.1"
     "@radix-ui/react-accordion": "npm:^1.2.1"
