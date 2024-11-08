@@ -80,11 +80,22 @@ export const Actions = ({ data }: ActionsProps) => {
         Copy
       </Button>
       <DatePicker
+        type='dueDate'
         variant='gray'
         className='w-full justify-start text-black'
         size='inline'
         placeholder='Add Due Date'
         afterSelectText='Due '
+        boardId={params.boardId as string}
+        card={data}
+      />
+      <DatePicker
+        type='startedAtDate'
+        variant='gray'
+        className='w-full justify-start text-black'
+        size='inline'
+        placeholder='Add Started Date'
+        afterSelectText='Started '
         boardId={params.boardId as string}
         card={data}
       />

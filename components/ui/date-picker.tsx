@@ -18,6 +18,7 @@ import { useAction } from '@/hooks/use-action';
 import { CardWithList } from '@/types';
 
 interface DatePickerProps {
+  type: 'dueDate' | 'startedAtDate';
   variant?:
     | 'outline'
     | 'default'
@@ -37,6 +38,7 @@ interface DatePickerProps {
 }
 
 export function DatePicker({
+  type,
   variant,
   className,
   size,
@@ -49,7 +51,7 @@ export function DatePicker({
 
   const { execute, isLoading } = useAction(updateCard, {
     onSuccess: () => {
-      toast.success('Due date updated');
+      toast.success('Date updated');
     },
     onError: (error) => {
       toast.error(error);
@@ -57,19 +59,33 @@ export function DatePicker({
   });
 
   React.useEffect(() => {
-    if (card?.dueDate) {
+    if (card?.dueDate && type === 'dueDate') {
       setDate(card.dueDate);
     }
-  }, [card?.dueDate]);
+
+    if (card?.startedAt && type === 'startedAtDate') {
+      setDate(card.startedAt);
+    }
+  }, [card?.startedAt, card?.dueDate, type]);
 
   const onBlur = () => {
     if (!date || !boardId || !card) return;
 
-    execute({
-      id: card.id,
-      boardId,
-      dueDate: date,
-    });
+    if (type === 'dueDate') {
+      execute({
+        id: card.id,
+        boardId,
+        dueDate: date,
+      });
+    }
+
+    if (type === 'startedAtDate') {
+      execute({
+        id: card.id,
+        boardId,
+        startedAt: date,
+      });
+    }
 
     setDate(date);
   };
