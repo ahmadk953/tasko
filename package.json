@@ -41,7 +41,7 @@
     "lodash": "^4.17.21",
     "lucide-react": "^0.456.0",
     "next": "^15.0.3",
-    "react": "19.0.0-rc.0",
+    "react": "19.0.0-rc.1",
     "react-day-picker": "^9.3.0",
     "react-dom": "19.0.0-rc.0",
     "sharp": "^0.33.5",
