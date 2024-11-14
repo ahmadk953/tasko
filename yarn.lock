@@ -299,41 +299,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clerk/backend@npm:1.16.2":
-  version: 1.16.2
-  resolution: "@clerk/backend@npm:1.16.2"
+"@clerk/backend@npm:1.16.4":
+  version: 1.16.4
+  resolution: "@clerk/backend@npm:1.16.4"
   dependencies:
-    "@clerk/shared": "npm:2.12.1"
-    "@clerk/types": "npm:4.32.0"
+    "@clerk/shared": "npm:2.14.0"
+    "@clerk/types": "npm:4.34.0"
     cookie: "npm:0.7.0"
     snakecase-keys: "npm:5.4.4"
     tslib: "npm:2.4.1"
-  checksum: 10c0/ce32e7dbfa268ffb7ac416c0cc4f5cfa8da9db4f177270658e92aaa8cfc210739fa18e0f364b097df76e4276f993e5873c396eae0aca6a5bdabf3bb1fd7dbaf7
+  checksum: 10c0/5cd53efbf30abb8c12f52eec5c3b85c9dc0a00ce0e63ba6bad344f8c24fd483b2ee26920fe219e2d3342e6d49a8025b11d9205347ac2e75ed23d156685cfcc73
   languageName: node
   linkType: hard
 
-"@clerk/clerk-react@npm:5.15.3":
-  version: 5.15.3
-  resolution: "@clerk/clerk-react@npm:5.15.3"
+"@clerk/clerk-react@npm:5.15.5":
+  version: 5.15.5
+  resolution: "@clerk/clerk-react@npm:5.15.5"
   dependencies:
-    "@clerk/shared": "npm:2.12.1"
-    "@clerk/types": "npm:4.32.0"
+    "@clerk/shared": "npm:2.14.0"
+    "@clerk/types": "npm:4.34.0"
     tslib: "npm:2.4.1"
   peerDependencies:
     react: ^18 || ^19.0.0-0
     react-dom: ^18 || ^19.0.0-0
-  checksum: 10c0/7a795be808227abbc5b862c5204a4276eb212fd3a573bb444716681137f94d5564e99d821ed03c91aa09010d8cf4d03039e96fc58fca666da58ea15d873807d7
+  checksum: 10c0/892e53a576e1bbf5e7927eac83293f06bc8a995bfa964fd7a679b3997ca623e9510b588b5461b5d3898fc0709b86ab628100a2b98340d8b8fd07507f6138eba0
   languageName: node
   linkType: hard
 
-"@clerk/nextjs@npm:^6.3.2":
-  version: 6.3.2
-  resolution: "@clerk/nextjs@npm:6.3.2"
+"@clerk/nextjs@npm:^6.3.4":
+  version: 6.3.4
+  resolution: "@clerk/nextjs@npm:6.3.4"
   dependencies:
-    "@clerk/backend": "npm:1.16.2"
-    "@clerk/clerk-react": "npm:5.15.3"
-    "@clerk/shared": "npm:2.12.1"
-    "@clerk/types": "npm:4.32.0"
+    "@clerk/backend": "npm:1.16.4"
+    "@clerk/clerk-react": "npm:5.15.5"
+    "@clerk/shared": "npm:2.14.0"
+    "@clerk/types": "npm:4.34.0"
     crypto-js: "npm:4.2.0"
     ezheaders: "npm:0.1.0"
     server-only: "npm:0.0.1"
@@ -342,15 +342,15 @@ __metadata:
     next: ^13.5.4 || ^14.0.3 || ^15.0.0
     react: ^18 || ^19.0.0-0
     react-dom: ^18 || ^19.0.0-0
-  checksum: 10c0/d30c1fd55d2c7dd2b219ba33d65c8704c74dad95f50af80600ba40d7e052c8d31db8234ea706d7d23310d18d1bac30296d70556518ce316f9fb35d66f374e572
+  checksum: 10c0/8a643d31f23c80517460be00a1c961d0e410049ef6e484372a476541e8816e81380c5e60649b71051d55021936ca51f23a8de5ae7678fe2dd3cb9be634740d1d
   languageName: node
   linkType: hard
 
-"@clerk/shared@npm:2.12.1":
-  version: 2.12.1
-  resolution: "@clerk/shared@npm:2.12.1"
+"@clerk/shared@npm:2.14.0":
+  version: 2.14.0
+  resolution: "@clerk/shared@npm:2.14.0"
   dependencies:
-    "@clerk/types": "npm:4.32.0"
+    "@clerk/types": "npm:4.34.0"
     dequal: "npm:2.0.3"
     glob-to-regexp: "npm:0.4.1"
     js-cookie: "npm:3.0.5"
@@ -364,16 +364,16 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/6fda3dcdcb46f8791a7886ecbbd1d56d67bfe976044b7b42b94131c8477de4ebe3182810bd4340e0a6d5cf6b797003361656d174fa5f7e0a908b8d20736fc68c
+  checksum: 10c0/061ddfa0d1de96a88f49ad80d98be1c971a7a58e53386a0cac8196c2c21fc90a83130c85cc8cedd1177cfea25aca8248d5aaea4fdb153f9f3128a212fea87030
   languageName: node
   linkType: hard
 
-"@clerk/types@npm:4.32.0":
-  version: 4.32.0
-  resolution: "@clerk/types@npm:4.32.0"
+"@clerk/types@npm:4.34.0":
+  version: 4.34.0
+  resolution: "@clerk/types@npm:4.34.0"
   dependencies:
     csstype: "npm:3.1.1"
-  checksum: 10c0/924b47cf4f481da7ca798c0edd73c66cca127e477ec31eaa92eff4171cdf26e80629cd2ce19b32474fc9a0c85288f6543c187bf6a02274c579850bec22f0b43e
+  checksum: 10c0/75535f03cedc33a0733976e657b9684572bccabb3c383892b2f0c5ac5e69f39197cd5f5e2a3c5602c29802638425dd1df75977505f5dd7948079b1ee9886f6a9
   languageName: node
   linkType: hard
 
@@ -6397,7 +6397,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tasko@workspace:."
   dependencies:
-    "@clerk/nextjs": "npm:^6.3.2"
+    "@clerk/nextjs": "npm:^6.3.4"
     "@eslint/eslintrc": "npm:^3.1.0"
     "@eslint/js": "npm:^9.14.0"
     "@hello-pangea/dnd": "npm:^17.0.0"
