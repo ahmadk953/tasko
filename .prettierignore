@@ -42,3 +42,4 @@ next-env.d.ts
 package.json
 yarn.lock
 README.md
+/.content-collections

@@ -1,8 +1,12 @@
 import type { NextConfig } from 'next';
 
+import { withContentCollections } from '@content-collections/next';
+import createMDX from '@next/mdx';
+
 const nextConfig: NextConfig = {
   experimental: {
     reactCompiler: true,
+    mdxRs: true,
   },
   images: {
     remotePatterns: [
@@ -16,6 +20,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 };
 
-export default nextConfig;
+const withMDX = createMDX({});
+
+export default withContentCollections(withMDX(nextConfig));
