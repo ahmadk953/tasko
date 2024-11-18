@@ -5127,7 +5127,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-compiler@npm:^19.0.0-beta-a7bf2bd-20241110":
+"eslint-plugin-react-compiler@npm:^19.0.0-beta-0dec889-20241115":
   version: 19.0.0-beta-a7bf2bd-20241110
   resolution: "eslint-plugin-react-compiler@npm:19.0.0-beta-a7bf2bd-20241110"
   dependencies:
@@ -12039,7 +12039,7 @@ __metadata:
     eslint: "npm:^9.14.0"
     eslint-config-next: "npm:15.0.3"
     eslint-config-prettier: "npm:^9.1.0"
-    eslint-plugin-react-compiler: "npm:^19.0.0-beta-a7bf2bd-20241110"
+    eslint-plugin-react-compiler: "npm:^19.0.0-beta-0dec889-20241115"
     lodash: "npm:^4.17.21"
     lucide-react: "npm:^0.456.0"
     mintlify: "npm:^4.0.273"
