@@ -33,7 +33,7 @@
     "@radix-ui/react-visually-hidden": "^1.1.0",
     "@tanstack/react-query": "^5.60.4",
     "@types/mdx": "^2.0.13",
-    "@vercel/analytics": "^1.4.0",
+    "@vercel/analytics": "^1.4.1",
     "@vercel/functions": "^1.5.0",
     "@vercel/speed-insights": "^1.1.0",
     "class-variance-authority": "^0.7.0",
