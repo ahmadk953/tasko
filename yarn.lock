@@ -409,15 +409,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@content-collections/next@npm:^0.2.3":
-  version: 0.2.3
-  resolution: "@content-collections/next@npm:0.2.3"
+"@content-collections/next@npm:^0.2.4":
+  version: 0.2.4
+  resolution: "@content-collections/next@npm:0.2.4"
   dependencies:
     "@content-collections/integrations": "npm:0.2.1"
   peerDependencies:
     "@content-collections/core": 0.x
     next: ^12 || ^13 || ^14 || ^15
-  checksum: 10c0/edbc608ef8be7cb132d57802e0596c6a1474054a96d74fbfef93c1d3af700a9111934cdc8f5212cfaa315d560a465738bcafa99127e998352e5510b855f9c4e4
+  checksum: 10c0/6789cbb54aa229690c63979bf506539974e3ac5134997e32c7deb7f24ca916545fc6d788e83127c75a612f4fa8382b3b62334a9093f496e9a93c58ccb61901b6
   languageName: node
   linkType: hard
 
@@ -12136,7 +12136,7 @@ __metadata:
     "@clerk/nextjs": "npm:^6.4.1"
     "@content-collections/core": "npm:^0.7.3"
     "@content-collections/mdx": "npm:^0.2.0"
-    "@content-collections/next": "npm:^0.2.3"
+    "@content-collections/next": "npm:^0.2.4"
     "@eslint/eslintrc": "npm:^3.1.0"
     "@eslint/js": "npm:^9.14.0"
     "@hello-pangea/dnd": "npm:^17.0.0"
