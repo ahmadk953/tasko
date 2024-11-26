@@ -78,7 +78,7 @@
     "eslint-config-next": "15.0.3",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react-compiler": "^19.0.0-beta-0dec889-20241115",
-    "mintlify": "^4.0.282",
+    "mintlify": "^4.0.283",
     "postcss": "^8.4.49",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.9",
