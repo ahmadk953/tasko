@@ -51,6 +51,6 @@ Please make sure to lint and check formatting (using the commands listed above) 
 
 Privacy Policy _Temporarily removed to revamp it._
 
-[Terms of Service](https://tasko-omega.vercel.app/terms-of-service) _The Terms of Service will be added soon!_
+Terms of Service _The Terms of Service will be added soon!_
 
 [License](https://github.com/ahmadk953/tasko/blob/main/LICENCE) _Will be located on website at some point in time._
