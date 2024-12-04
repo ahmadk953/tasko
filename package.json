@@ -62,7 +62,7 @@
     "@content-collections/mdx": "^0.2.0",
     "@content-collections/next": "^0.2.4",
     "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.14.0",
+    "@eslint/js": "^9.16.0",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "@next/eslint-plugin-next": "15.0.3",
     "@tailwindcss/typography": "^0.5.15",
