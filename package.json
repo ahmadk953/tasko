@@ -55,7 +55,7 @@
     "unsplash-js": "^7.0.19",
     "usehooks-ts": "^3.1.0",
     "zod": "^3.23.8",
-    "zustand": "^5.0.1"
+    "zustand": "^5.0.2"
   },
   "devDependencies": {
     "@content-collections/core": "^0.7.3",
