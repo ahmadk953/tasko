@@ -43,7 +43,7 @@
     "dompurify": "^3.2.2",
     "lodash": "^4.17.21",
     "lucide-react": "^0.462.0",
-    "next": "^15.0.3",
+    "next": "^15.0.4",
     "react": "19.0.0-rc.1",
     "react-day-picker": "^9.4.1",
     "react-dom": "19.0.0-rc.1",
