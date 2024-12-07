@@ -1075,28 +1075,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:2.13.0":
-  version: 2.13.0
-  resolution: "@liveblocks/client@npm:2.13.0"
-  dependencies:
-    "@liveblocks/core": "npm:2.13.0"
-  checksum: 10c0/ab21d11179acf7f6266e1175afc103e804a30e675b44fc9f4cd31c5958827076aebc0a252aefe45e6ca28828b9c7cb6f381b45cd292faf6065914943adf4d3c4
-  languageName: node
-  linkType: hard
-
-"@liveblocks/client@npm:^2.13.1":
+"@liveblocks/client@npm:2.13.1, @liveblocks/client@npm:^2.13.1":
   version: 2.13.1
   resolution: "@liveblocks/client@npm:2.13.1"
   dependencies:
     "@liveblocks/core": "npm:2.13.1"
   checksum: 10c0/39bbd232736d20ee82557c3cd8c5c91041d467cf5551f717af9995d903b75441c346dfe69f3e29647e44e1386c1e92daa2ccb9ffc4201c5de173aeccac007c87
-  languageName: node
-  linkType: hard
-
-"@liveblocks/core@npm:2.13.0":
-  version: 2.13.0
-  resolution: "@liveblocks/core@npm:2.13.0"
-  checksum: 10c0/9bded2178646b17982cf5dc4bd4ceba1053819dc2ec24c5f7852dac4beae3fa32fbd0d40787b646cd225dddc10d4a4f9dbee2f157b66d08fad674aeade8d82d3
   languageName: node
   linkType: hard
 
@@ -1119,16 +1103,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/react@npm:^2.13.0":
-  version: 2.13.0
-  resolution: "@liveblocks/react@npm:2.13.0"
+"@liveblocks/react@npm:^2.13.1":
+  version: 2.13.1
+  resolution: "@liveblocks/react@npm:2.13.1"
   dependencies:
-    "@liveblocks/client": "npm:2.13.0"
-    "@liveblocks/core": "npm:2.13.0"
+    "@liveblocks/client": "npm:2.13.1"
+    "@liveblocks/core": "npm:2.13.1"
     use-sync-external-store: "npm:^1.2.2"
   peerDependencies:
     react: ^16.14.0 || ^17 || ^18 || ^19 || ^19.0.0-rc
-  checksum: 10c0/1cdcb07775b4321aa3b4fbab61b4b168eb118b8d96b63f15ee84c741cab212b63530bebe153da5bd3d761e496eca56239d201c0e4733de880fc64837a51d7296
+  checksum: 10c0/a6020b2fe99bcf3076e479458ed281716a967199d516dc9c5ae4e38867597ea538666f8bc1d9b06fb20ab78bd072e8f848e9a3f63be96babe3c8cb4a95ea653e
   languageName: node
   linkType: hard
 
@@ -13320,7 +13304,7 @@ __metadata:
     "@hello-pangea/dnd": "npm:^17.0.0"
     "@liveblocks/client": "npm:^2.13.1"
     "@liveblocks/node": "npm:^2.13.1"
-    "@liveblocks/react": "npm:^2.13.0"
+    "@liveblocks/react": "npm:^2.13.1"
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
