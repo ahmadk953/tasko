@@ -18,7 +18,7 @@ export const Navbar = async () => {
             <Link href='/blog'>Blog</Link>
           </Button>
           <Button size='sm' variant='ghost' asChild>
-            <Link href='https://tasko.mintlify.app/'>Docs</Link>
+            <Link href='https://docs.tasko.ahmadk953.org/'>Docs</Link>
           </Button>
         </div>
         <div className='flex w-full items-center justify-between space-x-4 md:block md:w-auto'>

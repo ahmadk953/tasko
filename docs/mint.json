@@ -28,7 +28,7 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://tasko-omega.vercel.app/select-org"
+    "url": "https://tasko.ahmadk953.org/select-org"
   },
   "tabs": [
     {
@@ -45,7 +45,7 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://tasko.mintlify.app/"
+      "url": "https://docs.tasko.ahmadk953.org/"
     },
     {
       "name": "Blog",
