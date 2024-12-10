@@ -1086,7 +1086,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:2.13.2, @liveblocks/client@npm:^2.13.2":
+"@liveblocks/client@npm:2.14.0":
+  version: 2.14.0
+  resolution: "@liveblocks/client@npm:2.14.0"
+  dependencies:
+    "@liveblocks/core": "npm:2.14.0"
+  checksum: 10c0/d46bc0d0ae614fbc24844b1fff2a94afa95c192854d2a27d69fc601ac8bf2a19a13fe597a92bc33ce342c3b22156e5faff9d31866dd4a374ca746f5caf12a3f4
+  languageName: node
+  linkType: hard
+
+"@liveblocks/client@npm:^2.13.2":
   version: 2.13.2
   resolution: "@liveblocks/client@npm:2.13.2"
   dependencies:
@@ -1102,6 +1111,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@liveblocks/core@npm:2.14.0":
+  version: 2.14.0
+  resolution: "@liveblocks/core@npm:2.14.0"
+  checksum: 10c0/5ed313da9d1f4f36b9392337873354ab5413428f19f37c8e1785539c211415e1d660cb20c39fb10652c0df84afab39a677b64b85a0de363c8e4b2aa9cb6c27d8
+  languageName: node
+  linkType: hard
+
 "@liveblocks/node@npm:^2.13.2":
   version: 2.13.2
   resolution: "@liveblocks/node@npm:2.13.2"
@@ -1114,16 +1130,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/react@npm:^2.13.2":
-  version: 2.13.2
-  resolution: "@liveblocks/react@npm:2.13.2"
+"@liveblocks/react@npm:^2.14.0":
+  version: 2.14.0
+  resolution: "@liveblocks/react@npm:2.14.0"
   dependencies:
-    "@liveblocks/client": "npm:2.13.2"
-    "@liveblocks/core": "npm:2.13.2"
+    "@liveblocks/client": "npm:2.14.0"
+    "@liveblocks/core": "npm:2.14.0"
     use-sync-external-store: "npm:^1.2.2"
   peerDependencies:
     react: ^16.14.0 || ^17 || ^18 || ^19 || ^19.0.0-rc
-  checksum: 10c0/132a5c7ec2d486b2138d8c57664ffba5b99c20fd220108fd61ef96413ce2cbdd2fd80ce73f6a19d4c289a9c61cff59e1f10b41d22b0a50e785b255dace065ef8
+  checksum: 10c0/0065a829ca22858e517083bab297076b6e2a2d0cd624e205e69f859b6b117c71884507cbc6444eb38afec0b1a56e3fa810aee342b0d0633d141ed1a2f3e83028
   languageName: node
   linkType: hard
 
@@ -13480,7 +13496,7 @@ __metadata:
     "@hello-pangea/dnd": "npm:^17.0.0"
     "@liveblocks/client": "npm:^2.13.2"
     "@liveblocks/node": "npm:^2.13.2"
-    "@liveblocks/react": "npm:^2.13.2"
+    "@liveblocks/react": "npm:^2.14.0"
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
