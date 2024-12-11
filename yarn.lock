@@ -1118,15 +1118,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/node@npm:^2.13.2":
-  version: 2.13.2
-  resolution: "@liveblocks/node@npm:2.13.2"
+"@liveblocks/node@npm:^2.14.0":
+  version: 2.14.0
+  resolution: "@liveblocks/node@npm:2.14.0"
   dependencies:
-    "@liveblocks/core": "npm:2.13.2"
+    "@liveblocks/core": "npm:2.14.0"
     "@stablelib/base64": "npm:^1.0.1"
     fast-sha256: "npm:^1.3.0"
     node-fetch: "npm:^2.6.1"
-  checksum: 10c0/7a94ee627a45e611a8ac92e26c625c5ba358f77af6b2d3e76ffe0d167fd9b8f42592862b70262bfff36267028d96d2a57805c61ebf577d76ae9bf587ce8b755a
+  checksum: 10c0/bac5d28cbb976d9da3a33c13d1117f6dc47e0d90ee208d3ad99f4530aab9f6c0d39f2db5d1c3d10b7a53861cf1bce65e3aa2f641dbc3869c20abb686aca15a97
   languageName: node
   linkType: hard
 
@@ -13511,7 +13511,7 @@ __metadata:
     "@eslint/js": "npm:^9.16.0"
     "@hello-pangea/dnd": "npm:^17.0.0"
     "@liveblocks/client": "npm:^2.13.2"
-    "@liveblocks/node": "npm:^2.13.2"
+    "@liveblocks/node": "npm:^2.14.0"
     "@liveblocks/react": "npm:^2.14.0"
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.0"
