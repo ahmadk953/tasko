@@ -81,7 +81,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react-compiler": "^19.0.0-beta-63b359f-20241101",
     "fluid-tailwind": "^1.0.4",
-    "mintlify": "^4.0.288",
+    "mintlify": "^4.0.292",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
