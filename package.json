@@ -49,7 +49,7 @@
     "react-day-picker": "^9.4.1",
     "react-dom": "^19.0.0",
     "sharp": "^0.33.5",
-    "sonner": "^1.7.0",
+    "sonner": "^1.7.1",
     "stripe": "^17.4.0",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",

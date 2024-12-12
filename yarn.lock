@@ -13004,13 +13004,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sonner@npm:^1.7.0":
-  version: 1.7.0
-  resolution: "sonner@npm:1.7.0"
+"sonner@npm:^1.7.1":
+  version: 1.7.1
+  resolution: "sonner@npm:1.7.1"
   peerDependencies:
     react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
     react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
-  checksum: 10c0/02b16249b0c6e3a62c50dbcb643bb089aecd82c4f0ae988d00903e427d5485933d6cb59047fe5da338b548b6a3311643e511f63ed60a938458295015f7a3fdfd
+  checksum: 10c0/f934fc30305a1b9ae562cd1b7980127bca65a41dce34b3b8aa8ceed8e1ca04b37daf2a0c0bb5e2b3ef9769b2438aa6799eff1880653d75e709538afe7fe70e05
   languageName: node
   linkType: hard
 
@@ -13551,7 +13551,7 @@ __metadata:
     react-day-picker: "npm:^9.4.1"
     react-dom: "npm:^19.0.0"
     sharp: "npm:^0.33.5"
-    sonner: "npm:^1.7.0"
+    sonner: "npm:^1.7.1"
     stripe: "npm:^17.4.0"
     tailwind-merge: "npm:^2.5.5"
     tailwindcss: "npm:^3.4.16"
