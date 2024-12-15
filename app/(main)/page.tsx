@@ -2,6 +2,7 @@ import { Medal } from 'lucide-react';
 import localFont from 'next/font/local';
 import { Poppins } from 'next/font/google';
 import Link from 'next/link';
+import { GetStaticProps } from 'next';
 
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -48,6 +49,13 @@ const MarketingPage = () => {
       </Button>
     </div>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {},
+    revalidate: 60,
+  };
 };
 
 export default MarketingPage;
