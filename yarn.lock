@@ -12008,15 +12008,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-day-picker@npm:^9.4.1":
-  version: 9.4.1
-  resolution: "react-day-picker@npm:9.4.1"
+"react-day-picker@npm:^9.4.4":
+  version: 9.4.4
+  resolution: "react-day-picker@npm:9.4.4"
   dependencies:
     "@date-fns/tz": "npm:^1.2.0"
     date-fns: "npm:^4.1.0"
   peerDependencies:
     react: ">=16.8.0"
-  checksum: 10c0/20aefcd25f4479dad3d5b87f5fdde8710d9c55ae75e93353672a1e1a9cd4eb5bb5a45de62f40a9ac3406383df5ae67d4bdb354b55fd19ddc6f2142b2eb454689
+  checksum: 10c0/0a8cfa99863854538cd58bfe28fc68febcf7c7f72e14be2e1a4f108ec9e803838bf5dae946e3f2b1900a6ddef520daf666a49bac4a551de35e8e37a347f694cb
   languageName: node
   linkType: hard
 
@@ -13641,7 +13641,7 @@ __metadata:
     prettier-plugin-tailwindcss: "npm:^0.6.9"
     prisma: "npm:^6.0.1"
     react: "npm:^19.0.0"
-    react-day-picker: "npm:^9.4.1"
+    react-day-picker: "npm:^9.4.4"
     react-dom: "npm:^19.0.0"
     sharp: "npm:^0.33.5"
     sonner: "npm:^1.7.1"
