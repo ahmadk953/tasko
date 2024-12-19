@@ -77,17 +77,6 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         imageLinkHTML,
         imageDownloadUrl,
       },
-      select: {
-        id: true,
-        title: true,
-        orgId: true,
-        imageId: true,
-        imageThumbUrl: true,
-        imageFullUrl: true,
-        imageUserName: true,
-        imageLinkHTML: true,
-        imageDownloadUrl: true,
-      },
     });
 
     if (!isPro) {

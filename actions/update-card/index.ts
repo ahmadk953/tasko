@@ -34,15 +34,6 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         dueDate: dueDate,
         startedAt: startedAt,
       },
-      select: {
-        id: true,
-        title: true,
-        description: true,
-        order: true,
-        listId: true,
-        dueDate: true,
-        startedAt: true,
-      },
     });
 
     await createAuditLog({

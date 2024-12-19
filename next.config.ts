@@ -25,9 +25,7 @@ const nextConfig: NextConfig = {
   },
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   compress: true,
-  serverMiddleware: [
-    compression()
-  ],
+  serverMiddleware: [compression()],
 };
 
 const withMDX = createMDX({});

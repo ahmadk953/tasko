@@ -32,11 +32,6 @@ const handler = async (data: InputType): Promise<ReturnType> => {
           order: card.order,
           listId: card.listId,
         },
-        select: {
-          id: true,
-          order: true,
-          listId: true,
-        },
       })
     );
 
