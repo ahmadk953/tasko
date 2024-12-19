@@ -1,78 +1,98 @@
-import { X } from 'lucide-react';
-import { toast } from 'sonner';
-import { useRef } from 'react';
-import Link from 'next/link';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 
-import { Button } from '@/components/ui/button';
-import {
-  Popover,
-  PopoverClose,
-  PopoverContent,
-  PopoverTrigger,
-} from '@/components/ui/popover';
-import { FormPicker } from '@/components/form/form-picker';
-import { FormSubmit } from '@/components/form/form-submit';
-import { useAction } from '@/hooks/use-action';
 import { updateBoard } from '@/actions/update-board';
+import { Button } from '@/components/ui/button';
+import { Form, FormControl, FormField, FormItem, FormLabel } from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { useToast } from '@/components/ui/use-toast';
+import { cn } from '@/lib/utils';
+import { images } from '@/constants/images';
+
+const formSchema = z.object({
+  image: z.string().min(1, {
+    message: 'Image is required',
+  }),
+});
 
 interface BoardUpdateImageProps {
   boardId: string;
+  image: string;
 }
 
-export const BoardUpdateImage = ({ boardId }: BoardUpdateImageProps) => {
-  const closeRef = useRef<HTMLButtonElement>(null);
+export function BoardUpdateImage({ boardId, image }: BoardUpdateImageProps) {
+  const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
+  const router = useRouter();
 
-  const { execute, fieldErrors } = useAction(updateBoard, {
-    onSuccess: (data) => {
-      toast.success('Board image updated');
-      closeRef.current?.click();
-    },
-    onError: (error) => {
-      toast.error(error);
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      image,
     },
   });
 
-  const onSubmit = (formData: FormData) => {
-    const image = formData.get('image') as string;
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsLoading(true);
 
-    execute({ id: boardId, image });
-  };
+    const response = await updateBoard({
+      id: boardId,
+      image: values.image,
+    });
+
+    setIsLoading(false);
+
+    if (response?.error) {
+      return toast({
+        title: 'Something went wrong.',
+        description: response.error,
+        variant: 'destructive',
+      });
+    }
+
+    toast({
+      description: 'Board image updated.',
+    });
+
+    router.refresh();
+  }
 
   return (
-    <Popover>
-      <PopoverTrigger asChild>
-        <Button
-          variant='ghost'
-          className='h-auto w-full justify-start p-2 px-5 text-sm font-normal text-neutral-600'
-        >
-          Change Background Image
+    <Form {...form}>
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-8"
+      >
+        <FormField
+          control={form.control}
+          name="image"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Image</FormLabel>
+              <FormControl>
+                <div className="relative">
+                  <Input {...field} />
+                  <img
+                    src={field.value}
+                    alt="Board Image"
+                    className="mt-4 w-full h-auto rounded-lg"
+                    loading="lazy"
+                  />
+                </div>
+              </FormControl>
+            </FormItem>
+          )}
+        />
+        <Button type="submit" disabled={isLoading}>
+          {isLoading && (
+            <span className="mr-2 h-4 w-4 animate-spin">🔄</span>
+          )}
+          Update Image
         </Button>
-      </PopoverTrigger>
-      <PopoverContent className='w-80 pt-3' side='left' align='start'>
-        <PopoverClose asChild>
-          <Button
-            className='absolute right-2 top-2 h-auto w-auto p-2 text-neutral-600'
-            variant='ghost'
-          >
-            <X className='h-4 w-4' />
-          </Button>
-        </PopoverClose>
-        <form action={onSubmit} className='space-y-4'>
-          <div className='space-y-4'>
-            <p className='text-center text-xs font-medium italic text-neutral-700'>
-              Images Provided by{' '}
-              <Link
-                className='text-sky-900 underline'
-                href='https://unsplash.com/'
-              >
-                Unsplash
-              </Link>
-            </p>
-            <FormPicker id='image' errors={fieldErrors} />
-          </div>
-          <FormSubmit className='w-full'>Update</FormSubmit>
-        </form>
-      </PopoverContent>
-    </Popover>
+      </form>
+    </Form>
   );
-};
+}

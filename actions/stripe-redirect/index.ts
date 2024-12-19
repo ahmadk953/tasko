@@ -24,6 +24,9 @@ const handler = async (data: InputType): Promise<ReturnType> => {
   try {
     const orgSubscription = await db.orgSubscription.findUnique({
       where: { orgId },
+      select: {
+        stripeCustomerId: true,
+      },
     });
 
     if (orgSubscription?.stripeCustomerId) {

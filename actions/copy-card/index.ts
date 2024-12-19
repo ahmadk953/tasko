@@ -29,6 +29,13 @@ const handler = async (data: InputType): Promise<ReturnType> => {
           },
         },
       },
+      select: {
+        id: true,
+        title: true,
+        description: true,
+        order: true,
+        listId: true,
+      },
     });
 
     if (!cardToCopy) return { error: 'Card not found' };

@@ -25,6 +25,9 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         id: boardId,
         orgId,
       },
+      select: {
+        id: true,
+      },
     });
 
     if (!board) return { error: 'Board not found' };

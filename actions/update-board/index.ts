@@ -60,6 +60,17 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         imageUserName,
         imageDownloadUrl,
       },
+      select: {
+        id: true,
+        title: true,
+        orgId: true,
+        imageId: true,
+        imageThumbUrl: true,
+        imageFullUrl: true,
+        imageUserName: true,
+        imageLinkHTML: true,
+        imageDownloadUrl: true,
+      },
     });
 
     await createAuditLog({
