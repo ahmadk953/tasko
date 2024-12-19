@@ -30,6 +30,10 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         id,
         orgId,
       },
+      select: {
+        id: true,
+        title: true,
+      },
     });
 
     if (!isPro) {

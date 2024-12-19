@@ -1,5 +1,6 @@
 import { withSentryConfig } from '@sentry/nextjs';
 import type { NextConfig } from 'next';
+import compression from 'compression';
 
 import { withContentCollections } from '@content-collections/next';
 import createMDX from '@next/mdx';
@@ -23,6 +24,8 @@ const nextConfig: NextConfig = {
     ],
   },
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  compress: true,
+  serverMiddleware: [compression()],
 };
 
 const withMDX = createMDX({});

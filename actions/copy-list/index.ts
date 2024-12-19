@@ -28,8 +28,18 @@ const handler = async (data: InputType): Promise<ReturnType> => {
           orgId,
         },
       },
-      include: {
-        cards: true,
+      select: {
+        id: true,
+        title: true,
+        order: true,
+        boardId: true,
+        cards: {
+          select: {
+            title: true,
+            description: true,
+            order: true,
+          },
+        },
       },
     });
 

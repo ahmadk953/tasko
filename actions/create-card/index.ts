@@ -27,6 +27,9 @@ const handler = async (data: InputType): Promise<ReturnType> => {
           orgId,
         },
       },
+      select: {
+        id: true,
+      },
     });
 
     if (!list) return { error: 'List not found' };
