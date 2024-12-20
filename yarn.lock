@@ -1425,12 +1425,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/bundle-analyzer@npm:^15.1.1":
-  version: 15.1.1
-  resolution: "@next/bundle-analyzer@npm:15.1.1"
+"@next/bundle-analyzer@npm:^15.1.2":
+  version: 15.1.2
+  resolution: "@next/bundle-analyzer@npm:15.1.2"
   dependencies:
     webpack-bundle-analyzer: "npm:4.10.1"
-  checksum: 10c0/2a85db96b1b37a6273d7ee81978ffd11181335b2017c636bcccfc6bca3fdd9a7f1b3c45fba35b4b51f5ca844da76f604d5e8568c894fbdae5a14ff27548cc0d6
+  checksum: 10c0/bf1a1ef6554bd7c39b26cebe9a9e3c387d5874dc33278662732a269e106aa091255524e87c0fb43546918962450fcebee25a24c7c14d76afeb6c1268907b6246
   languageName: node
   linkType: hard
 
@@ -12479,7 +12479,7 @@ __metadata:
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
-    "@next/bundle-analyzer": "npm:^15.1.1"
+    "@next/bundle-analyzer": "npm:^15.1.2"
     "@next/eslint-plugin-next": "npm:15.1.2"
     "@next/mdx": "npm:^15.1.0"
     "@prisma/client": "npm:^6.0.1"
