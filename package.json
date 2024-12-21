@@ -60,7 +60,7 @@
     "zustand": "^5.0.2"
   },
   "devDependencies": {
-    "@content-collections/core": "^0.7.3",
+    "@content-collections/core": "^0.8.0",
     "@content-collections/mdx": "^0.2.0",
     "@content-collections/next": "^0.2.4",
     "@eslint/eslintrc": "^3.1.0",
