@@ -23,6 +23,19 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Document-Policy',
+            value: 'js-profiling',
+          },
+        ],
+      },
+    ];
+  },
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   compress: true,
   serverMiddleware: [compression()],
