@@ -17,6 +17,7 @@ Sentry.init({
       colorScheme: 'system',
       enableScreenshot: true,
     }),
+    Sentry.replayCanvasIntegration(),
   ],
 
   // Set tracesSampleRate to 1.0 to capture 100%
