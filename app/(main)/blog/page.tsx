@@ -6,7 +6,7 @@ const BlogPage = () => {
   return (
     <div className='ml-4 mr-4 flex flex-col items-center space-y-10'>
       <h1 className='text-4xl font-semibold text-neutral-700'>Blog</h1>
-      <div className='grid grid-cols-2 gap-20 sm:grid-cols-3 lg:grid-cols-4'>
+      <div className='grid grid-cols-2 gap-20 md:grid-cols-3 lg:grid-cols-4'>
         {allBlogPosts.map((post) => (
           <div className='space-y-4 text-center' key={post._meta.path}>
             <Link href={`blog/posts/${post._meta.path}`}>

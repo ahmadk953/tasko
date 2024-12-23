@@ -32,6 +32,10 @@ export async function GET(
           },
         },
       },
+      cacheStrategy: {
+        ttl: 30,
+        swr: 60,
+      },
     });
 
     return new NextResponse(JSON.stringify(card), {
@@ -39,7 +43,7 @@ export async function GET(
       headers: {
         'Cache-Control': 'public, s-maxage=1',
         'CDN-Cache-Control': 'public, s-maxage=60',
-        'Vercel-CDN-Cache-Control': 'public, s-maxage=3600',
+        'Vercel-CDN-Cache-Control': 'public, s-maxage=120',
       },
     });
   } catch (error) {

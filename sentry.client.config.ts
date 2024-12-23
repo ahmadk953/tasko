@@ -35,7 +35,7 @@ Sentry.init({
   profilesSampleRate: 1.0,
 
   // Define how likely Replay events are sampled.
-  replaysSessionSampleRate: 0.5,
+  replaysSessionSampleRate: 0.25,
 
   // Define how likely Replay events are sampled when an error occurs.
   replaysOnErrorSampleRate: 1.0,

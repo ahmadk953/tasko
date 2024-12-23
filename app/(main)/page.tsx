@@ -15,7 +15,7 @@ const textFont = Poppins({
 
 const MarketingPage = () => {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center pt-20'>
       <div
         className={cn(
           'flex flex-col items-center justify-center',
@@ -26,16 +26,16 @@ const MarketingPage = () => {
           <Medal className='mr-2 h-6 w-6' />
           No 1 task management app
         </div>
-        <h1 className='mb-6 text-center text-3xl text-neutral-800 md:text-6xl'>
+        <h1 className='mb-6 text-center text-neutral-800 ~/md:~text-3xl/6xl'>
           Tasko helps teams move
         </h1>
-        <div className='w-fit rounded-md bg-gradient-to-r from-fuchsia-600 to-pink-600 p-2 px-4 pb-4 text-3xl text-white md:text-6xl'>
+        <div className='w-fit rounded-md bg-gradient-to-r from-fuchsia-600 to-pink-600 p-2 px-4 pb-4 text-white ~/md:~text-3xl/6xl'>
           Work forward
         </div>
       </div>
       <div
         className={cn(
-          'mx-auto mt-4 max-w-xs text-center text-sm text-neutral-400 md:max-w-2xl md:text-xl',
+          'mx-auto mt-4 text-center text-neutral-400 ~/md:~text-sm/xl ~/md:~max-w-xs/2xl',
           textFont.className
         )}
       >

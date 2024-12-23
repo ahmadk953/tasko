@@ -19,9 +19,9 @@ const PostPage = async (props: PostPageProps) => {
   }
 
   return (
-    <div className='mx-auto p-4 md:p-6 lg:p-8'>
+    <div className='mx-auto ~/lg:~p-4/8'>
       <Image
-        className='mb-2 h-64 w-full rounded-md object-cover md:h-[500px]'
+        className='mb-2 w-full rounded-md object-cover ~/md:~h-64/[31rem]'
         src={post.coverImage}
         width={1200}
         height={600}
