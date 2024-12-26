@@ -14,7 +14,7 @@ Tasko is a website that helps you manage your tasks efficiently by using kanban 
 > [!WARNING]
 > Documentation is not complete and is still a work in progress.
 
-Documentation can be found on our new, [Mintlify page](https://docs.tasko.ahmadk953.org/).
+Documentation can be found [here](https://docs.tasko.ahmadk953.org/).
 
 ## Roadmap
 
