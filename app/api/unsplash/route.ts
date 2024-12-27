@@ -1,8 +1,31 @@
+import arcjet, { fixedWindow } from '@/lib/arcjet';
 import { unsplash } from '@/lib/unsplash';
+
+import { auth } from '@clerk/nextjs/server';
 import { NextResponse } from 'next/server';
 
-export async function GET() {
+const aj = arcjet.withRule(
+  fixedWindow({
+    mode: 'LIVE',
+    max: 10,
+    window: '60s',
+  })
+);
+
+export async function GET(req: Request) {
   try {
+    const { orgId, userId } = await auth();
+    if (!orgId || !userId)
+      return new NextResponse(JSON.stringify({ error: 'Unauthorized' }), {
+        status: 401,
+      });
+
+    const decision = await aj.protect(req);
+    if (decision.isDenied())
+      return new NextResponse(
+        JSON.stringify({ error: 'Too many requests', reason: decision.reason }),
+        { status: 429 }
+      );
     const result = await unsplash.photos.getRandom({
       collectionIds: ['317099'],
       count: 9,

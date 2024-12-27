@@ -4,8 +4,24 @@ import { NextResponse } from 'next/server';
 
 import { db } from '@/lib/db';
 import { stripe } from '@/lib/stripe';
+import arcjet, { fixedWindow } from '@/lib/arcjet';
+
+const aj = arcjet.withRule(
+  fixedWindow({
+    mode: 'LIVE',
+    max: 10,
+    window: '60s',
+  })
+);
 
 export async function POST(req: Request) {
+  const decision = await aj.protect(req);
+  if (decision.isDenied())
+    return new NextResponse(
+      JSON.stringify({ error: 'Too many requests', reason: decision.reason }),
+      { status: 429 }
+    );
+
   const body = await req.text();
   const signature = (await headers()).get('Stripe-Signature') as string;
 
