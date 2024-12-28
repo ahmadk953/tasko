@@ -1,4 +1,4 @@
-name: Code Format Check
+name: Run tests and upload coverage
 
 on:
   push:
@@ -7,14 +7,14 @@ on:
     branches: [main]
 
 jobs:
-  check-format:
+  test:
+    name: Run tests and collect coverage
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 'latest'
@@ -25,5 +25,10 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Check code format
-        run: yarn prettier --check --ignore-path .prettierignore .
+      - name: Run tests
+        run: yarn coverage
+
+      - name: Upload results to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

@@ -22,10 +22,6 @@ export default [
       'react-compiler': reactCompiler,
     },
 
-    rules: {
-      '@next/next/no-duplicate-head': 'off', // Turn off this rule for now as it's giving false positives
-    },
-
     files: ['**/*.ts', '**/*.tsx'],
 
     languageOptions: {

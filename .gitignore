@@ -6,6 +6,7 @@
 
 # testing
 /coverage
+/__tests__/__snapshots__
 
 # next.js
 /.next/
@@ -37,3 +38,4 @@ next-env.d.ts
 # other
 /.vscode/
 /.content-collections
+/.swc
