@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center justify-center pt-20"
+  >
+    <div
+      class="flex flex-col items-center justify-center className"
+    >
+      <div
+        class="mb-4 flex items-center rounded-full border bg-amber-100 p-4 uppercase text-amber-700 shadow-sm"
+      >
+        <svg
+          class="lucide lucide-medal mr-2 h-6 w-6"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"
+          />
+          <path
+            d="M11 12 5.12 2.2"
+          />
+          <path
+            d="m13 12 5.88-9.8"
+          />
+          <path
+            d="M8 7h8"
+          />
+          <circle
+            cx="12"
+            cy="17"
+            r="5"
+          />
+          <path
+            d="M12 18v-2h-.5"
+          />
+        </svg>
+        No 1 task management app
+      </div>
+      <h1
+        class="mb-6 text-center text-neutral-800 ~/md:~text-3xl/6xl"
+      >
+        Tasko helps teams move
+      </h1>
+      <div
+        class="w-fit rounded-md bg-gradient-to-r from-fuchsia-600 to-pink-600 p-2 px-4 pb-4 text-white ~/md:~text-3xl/6xl"
+      >
+        Work forward
+      </div>
+    </div>
+    <div
+      class="mx-auto mt-4 text-center text-neutral-400 ~/md:~text-sm/xl ~/md:~max-w-xs/2xl className"
+    >
+      Collaborate, manage projects, and reach new productivity peaks. From high rises to the home office, the way your team works is unique - accomplish it all with Tasko.
+    </div>
+    <a
+      class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 mt-6"
+      href="/sign-up"
+    >
+      Get Tasko for free
+    </a>
+  </div>
+</div>
+`;
