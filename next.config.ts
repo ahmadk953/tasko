@@ -1,8 +1,8 @@
 import { withSentryConfig } from '@sentry/nextjs';
 import type { NextConfig } from 'next';
-
 import { withContentCollections } from '@content-collections/next';
 import createMDX from '@next/mdx';
+import { codecovNextJSWebpackPlugin } from '@codecov/nextjs-webpack-plugin';
 
 const nextConfig: NextConfig = {
   experimental: {
@@ -38,6 +38,18 @@ const nextConfig: NextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   compress: true,
   poweredByHeader: false,
+  webpack: (config, options) => {
+    config.plugins.push(
+      codecovNextJSWebpackPlugin({
+        enableBundleAnalysis: true,
+        bundleName: 'example-nextjs-webpack-bundle',
+        uploadToken: process.env.CODECOV_TOKEN,
+        webpack: options.webpack,
+      })
+    );
+
+    return config;
+  },
 };
 
 const withMDX = createMDX({});

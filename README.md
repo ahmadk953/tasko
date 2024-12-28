@@ -1,5 +1,7 @@
 # Tasko: The Open-Source Task Management App
 
+[![codecov](https://codecov.io/github/ahmadk953/tasko/graph/badge.svg?token=IJ8U9B49RU)](https://codecov.io/github/ahmadk953/tasko)
+
 > [!WARNING]
 > **This website is still in a alpha state**. There will be lots of bugs and broken/missing features. This website **IS NOT** production ready and lots of essential features are missing such as data encryption. This application can also break at any time and all of your data could be lost. **Uptime for this project is not guaranteed**.
 
