@@ -42,7 +42,7 @@ const nextConfig: NextConfig = {
     config.plugins.push(
       codecovNextJSWebpackPlugin({
         enableBundleAnalysis: true,
-        bundleName: 'example-nextjs-webpack-bundle',
+        bundleName: 'nextjs-webpack-bundle',
         uploadToken: process.env.CODECOV_TOKEN,
         webpack: options.webpack,
       })
