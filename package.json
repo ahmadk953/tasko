@@ -12,7 +12,8 @@
     "format": "prettier --check --ignore-path .prettierignore .",
     "format:fix": "prettier --write --ignore-path .prettierignore .",
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "generate-junit": "JEST_JUNIT_CLASSNAME=\"{filepath}\" jest --reporters=jest-junit"
   },
   "dependencies": {
     "@arcjet/next": "^1.0.0-alpha.34",
