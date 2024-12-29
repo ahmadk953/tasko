@@ -1,7 +1,7 @@
 'use client';
 
 import { toast } from 'sonner';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Board } from '@prisma/client';
 
 import { Button } from '@/components/ui/button';
@@ -25,7 +25,11 @@ export const BoardTitleForm = ({ data }: BoardTitleFormProps) => {
     },
   });
 
-  const formRef = useRef<HTMLFormElement>(document.createElement('form'));
+  const formRef = useRef<HTMLFormElement>(null);
+  useEffect(() => {
+    formRef.current = document.createElement('form');
+  }, []);
+
   const inputRef = useRef<HTMLInputElement>(null);
 
   const [title, setTitle] = useState(data.title);

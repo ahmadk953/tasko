@@ -1,0 +1,49 @@
+import '@testing-library/jest-dom';
+import { render, screen, fireEvent, act } from '@testing-library/react';
+
+import { BoardTitleForm } from '@/app/(platform)/(dashboard)/board/[boardId]/_components/board-title-form';
+import { Board } from '@prisma/client';
+
+jest.mock('sonner', () => ({
+  toast: {
+    success: jest.fn(),
+    error: jest.fn(),
+  },
+}));
+
+jest.mock('@/actions/update-board', () => ({
+  updateBoard: jest.fn(),
+}));
+
+describe('BoardTitleForm', () => {
+  const mockBoard: Board = {
+    id: '1',
+    title: 'Test Board',
+    imageId: 'image1',
+    imageThumbUrl: 'thumb-url',
+    imageFullUrl: 'full-url',
+    imageUserName: 'user1',
+    imageLinkHTML: 'link-html',
+    imageDownloadUrl: 'download-url',
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    orgId: 'org1',
+  };
+
+  it('should render correctly in browser environment', () => {
+    render(<BoardTitleForm data={mockBoard} />);
+
+    const titleButton = screen.getByText('Test Board');
+    expect(titleButton).toBeInTheDocument();
+  });
+
+  it('should switch to edit mode when clicked', async () => {
+    render(<BoardTitleForm data={mockBoard} />);
+
+    const titleButton = screen.getByText('Test Board');
+    fireEvent.click(titleButton);
+
+    const input = await screen.findByDisplayValue('Test Board');
+    expect(input).toBeInTheDocument();
+  });
+});

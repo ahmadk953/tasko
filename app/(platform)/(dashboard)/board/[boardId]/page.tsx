@@ -35,6 +35,7 @@ const BoardIdPage = async (props: BoardIdPageProps) => {
     orderBy: {
       order: 'asc',
     },
+    cacheStrategy: { ttl: 30, swr: 60 },
   });
 
   return (

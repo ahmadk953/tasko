@@ -8,11 +8,20 @@ describe('Home', () => {
     const { container } = render(<Page />);
     expect(container).toMatchSnapshot();
   });
+
   it('renders a heading', () => {
     render(<Page />);
 
     const heading = screen.getByRole('heading', { level: 1 });
 
     expect(heading).toBeInTheDocument();
+  });
+
+  it('renders a get started button', () => {
+    render(<Page />);
+
+    const link = screen.getByRole('link', { name: /get tasko for free/i });
+
+    expect(link).toBeInTheDocument();
   });
 });
