@@ -7788,7 +7788,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-compiler@npm:^19.0.0-beta-201e55d-20241215":
+"eslint-plugin-react-compiler@npm:^19.0.0-beta-55955c9-20241229":
   version: 19.0.0-beta-df7b47d-20241124
   resolution: "eslint-plugin-react-compiler@npm:19.0.0-beta-df7b47d-20241124"
   dependencies:
@@ -15285,7 +15285,7 @@ __metadata:
     eslint: "npm:^9.16.0"
     eslint-config-next: "npm:15.1.3"
     eslint-config-prettier: "npm:^9.1.0"
-    eslint-plugin-react-compiler: "npm:^19.0.0-beta-201e55d-20241215"
+    eslint-plugin-react-compiler: "npm:^19.0.0-beta-55955c9-20241229"
     fluid-tailwind: "npm:^1.0.4"
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
