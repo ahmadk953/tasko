@@ -5873,7 +5873,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-react-compiler@npm:^19.0.0-beta-201e55d-20241215":
+"babel-plugin-react-compiler@npm:^19.0.0-beta-55955c9-20241229":
   version: 19.0.0-beta-df7b47d-20241124
   resolution: "babel-plugin-react-compiler@npm:19.0.0-beta-df7b47d-20241124"
   dependencies:
@@ -15285,7 +15285,7 @@ __metadata:
     "@vercel/analytics": "npm:^1.4.1"
     "@vercel/speed-insights": "npm:^1.1.0"
     autoprefixer: "npm:^10.4.20"
-    babel-plugin-react-compiler: "npm:^19.0.0-beta-201e55d-20241215"
+    babel-plugin-react-compiler: "npm:^19.0.0-beta-55955c9-20241229"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
     date-fns: "npm:^4.1.0"
