@@ -31,6 +31,14 @@ const nextConfig: NextConfig = {
             key: 'Document-Policy',
             value: 'js-profiling',
           },
+          {
+            key: 'CDN-Cache-Control',
+            value: 'public, s-maxage=15',
+          },
+          {
+            key: 'Vercel-CDN-Cache-Control',
+            value: 'public, s-maxage=30',
+          },
         ],
       },
     ];
