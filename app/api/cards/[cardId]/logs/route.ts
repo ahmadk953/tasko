@@ -35,11 +35,6 @@ export async function GET(
 
     return new NextResponse(JSON.stringify(auditLogs), {
       status: 200,
-      headers: {
-        'Cache-Control': 'public, s-maxage=1',
-        'CDN-Cache-Control': 'public, s-maxage=30',
-        'Vercel-CDN-Cache-Control': 'public, s-maxage=60',
-      },
     });
   } catch (error) {
     return new NextResponse(JSON.stringify(error), { status: 500 });

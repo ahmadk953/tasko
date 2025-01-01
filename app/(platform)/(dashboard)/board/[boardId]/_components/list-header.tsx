@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useEventListener } from 'usehooks-ts';
 import { List } from '@prisma/client';
 import { toast } from 'sonner';
@@ -20,7 +20,10 @@ export const ListHeader = ({ data, onAddCard }: ListHeaderProps) => {
   const [title, setTitle] = useState(data.title);
   const [isEditing, setIsEditing] = useState(false);
 
-  const formRef = useRef<HTMLFormElement>(document.createElement('form'));
+  const formRef = useRef<HTMLFormElement>(null);
+  useEffect(() => {
+    formRef.current = document.createElement('form');
+  }, []);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const enableEditing = () => {
@@ -72,8 +75,13 @@ export const ListHeader = ({ data, onAddCard }: ListHeaderProps) => {
     <div className='flex items-start justify-between gap-x-2 px-2 pt-2 text-sm font-semibold'>
       {isEditing ? (
         <form ref={formRef} action={onSubmit} className='flex-1 px-[2px]'>
-          <input hidden id='id' name='id' value={data.id} />
-          <input hidden id='boardId' name='boardId' value={data.boardId} />
+          <input hidden id='id' name='id' defaultValue={data.id} />
+          <input
+            hidden
+            id='boardId'
+            name='boardId'
+            defaultValue={data.boardId}
+          />
           <FormInput
             ref={inputRef}
             onBlur={onBlur}

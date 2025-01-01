@@ -1,20 +1,8 @@
-import '@testing-library/jest-dom';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { toast } from 'sonner';
 
 import { BoardTitleForm } from '@/app/(platform)/(dashboard)/board/[boardId]/_components/board-title-form';
 import { Board } from '@prisma/client';
-
-jest.mock('sonner', () => ({
-  toast: {
-    success: jest.fn(),
-    error: jest.fn(),
-  },
-}));
-
-jest.mock('@/actions/update-board', () => ({
-  updateBoard: jest.fn(),
-}));
 
 jest.mock('@/hooks/use-action', () => ({
   useAction: jest.fn().mockImplementation(() => ({
