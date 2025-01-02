@@ -1,7 +1,7 @@
 'use client';
 
 import { Plus, X } from 'lucide-react';
-import { forwardRef, useRef, KeyboardEventHandler } from 'react';
+import { forwardRef, useRef, KeyboardEventHandler, useEffect } from 'react';
 import { useOnClickOutside, useEventListener } from 'usehooks-ts';
 import { useParams } from 'next/navigation';
 import { toast } from 'sonner';
@@ -22,7 +22,10 @@ interface CardFormProps {
 export const CardForm = forwardRef<HTMLTextAreaElement, CardFormProps>(
   ({ listId, isEditing, enableEditing, disableEditing }, ref) => {
     const params = useParams();
-    const formRef = useRef<HTMLFormElement>(document.createElement('form'));
+    const formRef = useRef<HTMLFormElement>(null);
+    useEffect(() => {
+      formRef.current = document.createElement('form');
+    }, []);
 
     const { execute, fieldErrors } = useAction(createCard, {
       onSuccess: (data) => {
@@ -40,7 +43,7 @@ export const CardForm = forwardRef<HTMLTextAreaElement, CardFormProps>(
       }
     };
 
-    useOnClickOutside(formRef, disableEditing);
+    useOnClickOutside(formRef as React.RefObject<HTMLElement>, disableEditing);
     useEventListener('keydown', onKeyDown);
 
     const onTextareaKeyDown: KeyboardEventHandler<HTMLTextAreaElement> = (
@@ -74,7 +77,7 @@ export const CardForm = forwardRef<HTMLTextAreaElement, CardFormProps>(
             placeholder='Enter a title for this card...'
             errors={fieldErrors}
           />
-          <input hidden id='listId' name='listId' value={listId} />
+          <input hidden id='listId' name='listId' defaultValue={listId} />
           <div className='flex items-center gap-x-1'>
             <FormSubmit>Add card</FormSubmit>
             <Button onClick={disableEditing} size='sm' variant='ghost'>
