@@ -14,21 +14,21 @@ jest.mock('@/hooks/use-action', () => ({
   })),
 }));
 
-describe('BoardTitleForm', () => {
-  const mockBoard: Board = {
-    id: '1',
-    title: 'Test Board',
-    imageId: 'image1',
-    imageThumbUrl: 'thumb-url',
-    imageFullUrl: 'full-url',
-    imageUserName: 'user1',
-    imageLinkHTML: 'link-html',
-    imageDownloadUrl: 'download-url',
-    createdAt: new Date(),
-    updatedAt: new Date(),
-    orgId: 'org1',
-  };
+const mockBoard: Board = {
+  id: '1',
+  title: 'Test Board',
+  imageId: 'image1',
+  imageThumbUrl: 'thumb-url',
+  imageFullUrl: 'full-url',
+  imageUserName: 'user1',
+  imageLinkHTML: 'link-html',
+  imageDownloadUrl: 'download-url',
+  createdAt: new Date(),
+  updatedAt: new Date(),
+  orgId: 'org1',
+};
 
+describe('BoardTitleForm', () => {
   it('should render correctly in browser environment', () => {
     render(<BoardTitleForm data={mockBoard} />);
 

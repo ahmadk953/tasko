@@ -1,5 +1,4 @@
 import '@testing-library/jest-dom';
-import { toast } from 'sonner';
 
 jest.mock('sonner', () => ({
   toast: {
@@ -22,4 +21,8 @@ jest.mock('@/actions/copy-list', () => ({
 
 jest.mock('@/actions/update-board', () => ({
   updateBoard: jest.fn(),
+}));
+
+jest.mock('@/actions/create-card', () => ({
+  createCard: jest.fn(),
 }));

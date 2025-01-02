@@ -1,11 +1,5 @@
 import '@testing-library/jest-dom';
-import {
-  render,
-  screen,
-  fireEvent,
-  act,
-  waitFor,
-} from '@testing-library/react';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { toast } from 'sonner';
 
 import { ListHeader } from '@/app/(platform)/(dashboard)/board/[boardId]/_components/list-header';
