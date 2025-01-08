@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@arcjet/next": "^1.0.0-alpha.34",
-    "@clerk/nextjs": "^6.9.6",
+    "@clerk/nextjs": "^6.9.7",
     "@hello-pangea/dnd": "^17.0.0",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
