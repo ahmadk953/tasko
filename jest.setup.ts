@@ -7,6 +7,12 @@ jest.mock('sonner', () => ({
   },
 }));
 
+jest.mock('lucide-react', () => ({
+  MoreHorizontal: () => null,
+  X: () => null,
+  Medal: () => null,
+}));
+
 jest.mock('@/actions/update-list', () => ({
   updateList: jest.fn(),
 }));
