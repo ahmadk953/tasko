@@ -1,8 +1,15 @@
 import { auth } from '@clerk/nextjs/server';
 import { notFound, redirect } from 'next/navigation';
+import {
+  LiveblocksProvider,
+  RoomProvider,
+  ClientSideSuspense,
+} from '@liveblocks/react/suspense';
 
 import { db } from '@/lib/db';
 import { BoardNavbar } from './_components/board-navbar';
+import { Skeleton } from '@/components/ui/skeleton';
+import { BoardLiveblocks } from './_components/board-liveblocks';
 
 export async function generateMetadata(props: {
   params: Promise<{ boardId: string }>;
@@ -53,7 +60,9 @@ const BoardIdLayout = async (props: {
     >
       <BoardNavbar data={board} />
       <div className='absolute inset-0 bg-black/10' />
-      <main className='relative h-full pt-28'>{children}</main>
+      <main className='relative h-full pt-28'>
+        <BoardLiveblocks boardId={params.boardId}>{children}</BoardLiveblocks>
+      </main>
     </div>
   );
 };
