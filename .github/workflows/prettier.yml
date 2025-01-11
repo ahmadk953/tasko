@@ -23,7 +23,7 @@ jobs:
         run: corepack enable
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
 
       - name: Check code format
-        run: yarn prettier --check --ignore-path .prettierignore .
+        run: yarn format
