@@ -22,18 +22,19 @@ Documentation can be found [here](https://docs.tasko.ahmadk953.org/).
 
 This will be published on the site some time soon but for now, the roadmap will be listed here.
 
-- [x] Finish adding started at date field
-- [x] Pagination for Audit Logs page
 - [ ] Board sorting options (Boards Page)
-- [ ] Add real-time collaboration
+- [ ] Add real-time collaboration _In Progress - Liveblocks with presence implemented roughly_
 - [ ] Add end-to-end Database encryption (for customer data such as card titles and descriptions, and subscription information)
-- [ ] Add dark mode
-- [ ] Markdown Support in Card Descriptions
+- [ ] Add dark mode _In Progress_
+- [ ] Rich Text Support in Card Descriptions
 - [ ] Self-Hosted Version
+- [ ] Move Roadmap to Website _In Progress - Starting off With a Basic MDX Page_
 
 ## Contributing and Development
 
 ### Development Commands
+
+Install Dependencies: ``yarn install --immutable``
 
 Start Dev Server: ``yarn dev``
 
@@ -47,12 +48,16 @@ Check Formatting: ``yarn format``
 
 Fix Formatting: ``yarn format:fix``
 
-Please make sure to lint and check formatting (using the commands listed above) before submitting a Pull Request.
+Testing: ``yarn test``
+
+Coverage: ``yarn coverage``
+
+Please make sure to lint, check formatting, and test (using the commands listed above) before submitting a Pull Request.
 
 ## Legal
 
-Privacy Policy _Temporarily removed to revamp it._
+Privacy Policy _Will be added back soon_
 
-Terms of Service _The Terms of Service will be added soon!_
+Terms of Service _Will be added along with privacy policy_
 
-[License](https://github.com/ahmadk953/tasko/blob/main/LICENCE) _Will be located on website at some point in time._
+[License](https://github.com/ahmadk953/tasko/blob/main/LICENCE) _Will be added onto the website with privacy policy and terms of service_

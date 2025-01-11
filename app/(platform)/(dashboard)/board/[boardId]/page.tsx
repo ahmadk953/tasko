@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation';
 
 import { db } from '@/lib/db';
 import { ListContainer } from './_components/list-container';
+import { BoardRoomWrapper } from './_components/board-room-wrapper';
 
 interface BoardIdPageProps {
   params: Promise<{
@@ -38,9 +39,11 @@ const BoardIdPage = async (props: BoardIdPageProps) => {
   });
 
   return (
-    <div className='h-full overflow-x-auto p-4'>
-      <ListContainer boardId={params.boardId} data={lists} />
-    </div>
+    <BoardRoomWrapper>
+      <div className='h-full overflow-x-auto p-4'>
+        <ListContainer boardId={params.boardId} data={lists} />
+      </div>
+    </BoardRoomWrapper>
   );
 };
 
