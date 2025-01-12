@@ -17,30 +17,19 @@
   },
   "topbarLinks": [
     {
-      "name": "GitHub",
-      "url": "https://github.com/ahmadk953/tasko"
+      "name": "Dashboard",
+      "url": "https://tasko.ahmadk953.org/sign-in"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://tasko.ahmadk953.org/select-org"
+    "type": "github",
+    "url": "https://github.com/ahmadk953/tasko"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
       "name": "Main Site",
       "icon": "house",
       "url": "https://tasko.ahmadk953.org/"
-    },
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://docs.tasko.ahmadk953.org/"
     },
     {
       "name": "Blog",
