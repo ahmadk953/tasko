@@ -45,7 +45,7 @@
     "date-fns": "^4.1.0",
     "dompurify": "^3.2.3",
     "lodash": "^4.17.21",
-    "lucide-react": "^0.471.0",
+    "lucide-react": "^0.471.1",
     "next": "^15.1.4",
     "react": "^19.0.0",
     "react-day-picker": "^9.5.0",
