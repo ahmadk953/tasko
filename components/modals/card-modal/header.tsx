@@ -61,7 +61,7 @@ export const Header = ({ data }: HeaderProps) => {
 
   return (
     <div className='mb-6 flex w-full items-start gap-x-3'>
-      <Layout className='mt-1 h-5 w-5 text-neutral-700' />
+      <Layout className='mt-1 h-5 w-5 text-neutral-700 dark:text-neutral-100' />
       <div className='w-full'>
         <form action={onSubmit}>
           <FormInput
@@ -69,7 +69,7 @@ export const Header = ({ data }: HeaderProps) => {
             ref={inputRef}
             onBlur={onBlur}
             defaultValue={title}
-            className='font-semi-bold relative -left-1 mb-0.5 w-[95%] truncate border-transparent bg-transparent px-1 text-xl text-neutral-700 focus-visible:border-input focus-visible:bg-white'
+            className='font-semi-bold relative -left-1 mb-0.5 w-[95%] truncate border-transparent bg-transparent px-1 text-xl text-neutral-700 focus-visible:border-input focus-visible:bg-white dark:text-neutral-100 dark:focus-visible:bg-black'
           />
         </form>
         <p className='text-sm text-muted-foreground'>

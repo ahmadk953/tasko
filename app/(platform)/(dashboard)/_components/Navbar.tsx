@@ -6,10 +6,11 @@ import { Button } from '@/components/ui/button';
 import { FormPopover } from '@/components/form/form-popover';
 
 import { MobileSidebar } from './mobile-sidebar';
+import { ModeToggle } from '@/components/ui/mode-toggle';
 
 export const Navbar = () => {
   return (
-    <nav className='fixed top-0 z-50 flex h-14 w-full items-center border-b bg-white px-4 shadow-sm'>
+    <nav className='fixed top-0 z-50 flex h-14 w-full items-center border-b bg-white px-4 shadow-sm dark:bg-black'>
       <MobileSidebar />
       <div className='flex items-center gap-x-4'>
         <div className='hidden md:flex'>
@@ -60,6 +61,7 @@ export const Navbar = () => {
             },
           }}
         />
+        <ModeToggle />
       </div>
     </nav>
   );
