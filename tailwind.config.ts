@@ -2,7 +2,7 @@ import fluid, { extract, screens, fontSize } from 'fluid-tailwind';
 import type { Config } from 'tailwindcss';
 
 const config = {
-  darkMode: ['class'],
+  darkMode: ['selector'],
   content: {
     files: [
       './pages/**/*.{ts,tsx,md,mdx}',

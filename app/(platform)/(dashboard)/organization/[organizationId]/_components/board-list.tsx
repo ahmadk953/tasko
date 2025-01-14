@@ -32,7 +32,7 @@ export const BoardList = async () => {
 
   return (
     <div className='space-y-4'>
-      <div className='flex items-center text-lg font-semibold text-neutral-700'>
+      <div className='flex items-center text-lg font-semibold text-neutral-700 dark:text-neutral-200'>
         <User2 className='mr-2 h-6 w-6' />
         Your boards
       </div>

@@ -82,7 +82,7 @@ export const Actions = ({ data }: ActionsProps) => {
       <DatePicker
         type='dueDate'
         variant='gray'
-        className='w-full justify-start text-black'
+        className='w-full justify-start text-black dark:text-white'
         size='inline'
         placeholder='Add Due Date'
         afterSelectText='Due '
@@ -92,7 +92,7 @@ export const Actions = ({ data }: ActionsProps) => {
       <DatePicker
         type='startedAtDate'
         variant='gray'
-        className='w-full justify-start text-black'
+        className='w-full justify-start text-black dark:text-white'
         size='inline'
         placeholder='Add Started Date'
         afterSelectText='Started '
@@ -103,7 +103,7 @@ export const Actions = ({ data }: ActionsProps) => {
         onClick={onDelete}
         disabled={isLoadingDelete}
         variant='gray'
-        className='w-full justify-start text-destructive'
+        className='w-full justify-start text-destructive dark:text-red-500'
         size='inline'
       >
         <Trash className='mr-2 h-4 w-4' />

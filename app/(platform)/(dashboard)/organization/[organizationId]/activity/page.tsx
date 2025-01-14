@@ -64,14 +64,14 @@ const ActivityPage = async ({
 
 export default ActivityPage;
 
-const ActivityListSkeleton = () => {
+function ActivityListSkeleton() {
   return (
-    <ol className='mt-4 space-y-4'>
+    <div className='mt-4 space-y-4'>
       <Skeleton className='h-14 w-[80%]' />
       <Skeleton className='h-14 w-[50%]' />
       <Skeleton className='h-14 w-[70%]' />
       <Skeleton className='h-14 w-[80%]' />
       <Skeleton className='h-14 w-[75%]' />
-    </ol>
+    </div>
   );
-};
+}

@@ -1,14 +1,8 @@
 import { auth } from '@clerk/nextjs/server';
 import { notFound, redirect } from 'next/navigation';
-import {
-  LiveblocksProvider,
-  RoomProvider,
-  ClientSideSuspense,
-} from '@liveblocks/react/suspense';
 
 import { db } from '@/lib/db';
 import { BoardNavbar } from './_components/board-navbar';
-import { Skeleton } from '@/components/ui/skeleton';
 import { BoardLiveblocks } from './_components/board-liveblocks';
 
 export async function generateMetadata(props: {

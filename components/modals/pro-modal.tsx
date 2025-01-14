@@ -37,9 +37,9 @@ export const ProModal = () => {
         <div className='relative flex aspect-video items-center justify-center'>
           <Image src='/hero.svg' alt='hero' className='object-cover' fill />
         </div>
-        <div className='mx-auto space-y-6 p-6 text-neutral-700'>
+        <div className='mx-auto space-y-6 p-6 text-neutral-700 dark:text-neutral-200'>
           <h1 className='text-xl font-semibold'>Upgrade to Tasko Pro Today!</h1>
-          <p className='text-xs font-semibold text-neutral-600'>
+          <p className='text-xs font-semibold text-neutral-600 dark:text-neutral-300'>
             Explore the best of Tasko
           </p>
           <div className='pl-3'>

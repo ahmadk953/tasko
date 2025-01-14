@@ -14,7 +14,7 @@ exports[`Home renders homepage unchanged 1`] = `
         No 1 task management app
       </div>
       <h1
-        class="mb-6 text-center text-neutral-800 ~/md:~text-3xl/6xl"
+        class="mb-6 text-center text-neutral-800 ~/md:~text-3xl/6xl dark:text-neutral-100"
       >
         Tasko helps teams move
       </h1>

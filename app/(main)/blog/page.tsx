@@ -5,7 +5,9 @@ import Link from 'next/link';
 const BlogPage = () => {
   return (
     <div className='ml-4 mr-4 flex flex-col items-center space-y-10'>
-      <h1 className='text-4xl font-semibold text-neutral-700'>Blog</h1>
+      <h1 className='text-4xl font-semibold text-neutral-800 dark:text-neutral-100'>
+        Blog
+      </h1>
       <div className='grid grid-cols-2 gap-20 md:grid-cols-3 lg:grid-cols-4'>
         {allBlogPosts.map((post) => (
           <div className='space-y-4 text-center' key={post._meta.path}>
@@ -17,10 +19,12 @@ const BlogPage = () => {
                 alt='post cover image'
                 className='aspect-video w-full rounded-md object-cover'
               />
-              <h2 className='text-lg font-semibold text-neutral-700'>
+              <h2 className='text-lg font-semibold text-neutral-800 dark:text-neutral-100'>
                 {post.title}
               </h2>
-              <p className='text-sm text-neutral-500'>{post.summary}</p>
+              <p className='text-sm text-neutral-700 dark:text-neutral-200'>
+                {post.summary}
+              </p>
             </Link>
           </div>
         ))}
