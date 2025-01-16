@@ -9,17 +9,17 @@ import { ModalProvider } from '@/components/providers/modal-provider';
 import { QueryProvider } from '@/components/providers/query-provider';
 
 const PlatformLayout = ({ children }: { children: React.ReactNode }) => {
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
 
   return (
     <ClerkProvider
       afterSignOutUrl='/'
       appearance={{
-        baseTheme: theme === 'dark' ? dark : undefined,
+        baseTheme: resolvedTheme === 'dark' ? dark : undefined,
       }}
     >
       <QueryProvider>
-        <Toaster theme='system' />
+        <Toaster theme={resolvedTheme === 'dark' ? 'dark' : 'light'} />
         <ModalProvider />
         {children}
       </QueryProvider>

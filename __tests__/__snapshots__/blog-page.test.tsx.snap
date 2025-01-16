@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog Page renders blog page unchanged 1`] = `
+<div>
+  <div
+    class="ml-4 mr-4 flex flex-col items-center space-y-10"
+  >
+    <h1
+      class="text-4xl font-semibold text-neutral-800 dark:text-neutral-100"
+    >
+      Blog
+    </h1>
+    <div
+      class="grid grid-cols-2 gap-20 md:grid-cols-3 lg:grid-cols-4"
+    >
+      <div
+        class="space-y-4 text-center"
+      >
+        <a
+          href="blog/posts/blog-welcome"
+        >
+          <img
+            alt="post cover image"
+            class="aspect-video w-full rounded-md object-cover"
+            data-nimg="1"
+            decoding="async"
+            height="100"
+            loading="lazy"
+            src="/hero.svg"
+            style="color: transparent;"
+            width="300"
+          />
+          <h2
+            class="text-lg font-semibold text-neutral-800 dark:text-neutral-100"
+          >
+            Welcome to the Blog!
+          </h2>
+          <p
+            class="text-sm text-neutral-700 dark:text-neutral-200"
+          >
+            Welcome to our new blog page!
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

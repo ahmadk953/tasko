@@ -25,6 +25,9 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
+      - name: Build content collections
+        run: yarn build-collections
+
       - name: Run tests
         run: yarn coverage
 
