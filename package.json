@@ -6,6 +6,7 @@
     "dev": "next dev --turbo",
     "debug": "NODE_OPTIONS='--inspect' next dev --turbo",
     "build": "next build",
+    "build-collections": "content-collections build",
     "start": "next start",
     "lint": "next lint && tsc --noemit",
     "postinstall": "prisma generate --no-engine",
@@ -65,6 +66,7 @@
   },
   "devDependencies": {
     "@codecov/nextjs-webpack-plugin": "^1.7.0",
+    "@content-collections/cli": "^0.1.6",
     "@content-collections/core": "^0.8.0",
     "@content-collections/mdx": "^0.2.0",
     "@content-collections/next": "^0.2.4",
