@@ -68,12 +68,12 @@ export const ListOptions = ({ data, onAddCard }: ListOptionsProps) => {
         </Button>
       </PopoverTrigger>
       <PopoverContent className='px-0 pb-3 pt-3' side='bottom' align='start'>
-        <div className='pb-4 text-center text-sm font-medium text-neutral-600'>
+        <div className='pb-4 text-center text-sm font-medium text-neutral-600 dark:text-neutral-200'>
           List Actions
         </div>
         <PopoverClose ref={closeRef} asChild>
           <Button
-            className='absolute right-2 top-2 h-auto w-auto p-2 text-neutral-600'
+            className='absolute right-2 top-2 h-auto w-auto p-2 text-neutral-600 dark:text-neutral-200'
             variant='ghost'
           >
             <X className='h-4 w-4' />
@@ -87,8 +87,13 @@ export const ListOptions = ({ data, onAddCard }: ListOptionsProps) => {
           Add card...
         </Button>
         <form action={onCopy}>
-          <input hidden name='id' id='id' value={data.id} />
-          <input hidden name='boardId' id='boardId' value={data.boardId} />
+          <input hidden name='id' id='id' defaultValue={data.id} />
+          <input
+            hidden
+            name='boardId'
+            id='boardId'
+            defaultValue={data.boardId}
+          />
           <FormSubmit
             className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal'
             variant='ghost'
@@ -98,10 +103,15 @@ export const ListOptions = ({ data, onAddCard }: ListOptionsProps) => {
         </form>
         <Separator />
         <form action={onDelete}>
-          <input hidden name='id' id='id' value={data.id} />
-          <input hidden name='boardId' id='boardId' value={data.boardId} />
+          <input hidden name='id' id='id' defaultValue={data.id} />
+          <input
+            hidden
+            name='boardId'
+            id='boardId'
+            defaultValue={data.boardId}
+          />
           <FormSubmit
-            className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal text-destructive hover:text-destructive'
+            className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal text-destructive hover:text-destructive dark:text-red-500 dark:hover:text-red-500'
             variant='ghost'
           >
             Delete this list

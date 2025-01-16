@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Tasko",
   "logo": {
-    "dark": "/public/logo-light.svg",
-    "light": "/public/logo-dark.svg",
+    "dark": "/public/logo-dark.svg",
+    "light": "/public/logo-light.svg",
     "href": "https://tasko.ahmadk953.org/"
   },
   "favicon": "/public/favicon.svg",
