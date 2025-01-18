@@ -2021,9 +2021,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/mdx@npm:^15.1.4":
-  version: 15.1.4
-  resolution: "@next/mdx@npm:15.1.4"
+"@next/mdx@npm:^15.1.5":
+  version: 15.1.5
+  resolution: "@next/mdx@npm:15.1.5"
   dependencies:
     source-map: "npm:^0.7.0"
   peerDependencies:
@@ -2034,7 +2034,7 @@ __metadata:
       optional: true
     "@mdx-js/react":
       optional: true
-  checksum: 10c0/8df763d003f607474a740c4b68b1b11d32cf42dbe0fbac3cb73e89277d941283b7a05540856ee3ca84241ccc1aaa740fc26ed8a06af8655bcd9c7b2d81056a85
+  checksum: 10c0/e75593f76fdaa801c76bab1419d73b216f96817f74e98bbd5b8c1d9d2d7d177a09d64920bf4674f89a4fee6611244c1e043a45dcd3d937f72c17567dec8f5cb3
   languageName: node
   linkType: hard
 
@@ -12863,7 +12863,7 @@ __metadata:
     "@mdx-js/react": "npm:^3.1.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
     "@next/eslint-plugin-next": "npm:15.1.5"
-    "@next/mdx": "npm:^15.1.4"
+    "@next/mdx": "npm:^15.1.5"
     "@prisma/client": "npm:^6.2.1"
     "@prisma/extension-accelerate": "npm:^1.2.1"
     "@radix-ui/react-accordion": "npm:^1.2.2"
