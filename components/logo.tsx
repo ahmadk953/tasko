@@ -5,17 +5,14 @@ import Link from 'next/link';
 import { useTheme } from 'next-themes';
 
 export const Logo = () => {
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
 
   return (
     // TODO: Make this go back to the organization page if you are logged in
-    <Link href='/'>
-      <div
-        className='hidden items-center gap-x-2 transition hover:opacity-75 md:flex'
-        suppressHydrationWarning
-      >
+    <Link href='/' suppressHydrationWarning>
+      <div className='hidden items-center gap-x-2 transition hover:opacity-75 md:flex'>
         <Image
-          src={`/logo-${theme === 'light' ? 'light' : 'dark'}.svg`}
+          src={`/logo-${resolvedTheme === 'dark' ? 'dark' : 'light'}.svg`}
           alt='logo'
           height={100}
           width={100}

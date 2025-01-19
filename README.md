@@ -23,9 +23,8 @@ Documentation can be found [here](https://docs.tasko.ahmadk953.org/).
 This will be published on the site some time soon but for now, the roadmap will be listed here.
 
 - [ ] Board sorting options (Boards Page)
-- [ ] Add real-time collaboration _In Progress - Liveblocks with presence implemented roughly_
+- [ ] Add real-time collaboration _In Progress - Part 1 Finished_
 - [ ] Add end-to-end Database encryption (for customer data such as card titles and descriptions, and subscription information)
-- [ ] Add dark mode _In Progress_
 - [ ] Rich Text Support in Card Descriptions
 - [ ] Self-Hosted Version
 - [ ] Move Roadmap to Website _In Progress - Starting off With a Basic MDX Page_

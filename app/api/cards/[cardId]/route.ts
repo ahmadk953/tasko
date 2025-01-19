@@ -2,6 +2,7 @@ import { auth } from '@clerk/nextjs/server';
 import { NextResponse } from 'next/server';
 
 import { db } from '@/lib/db';
+import { unstable_cache } from 'next/cache';
 
 export async function GET(
   req: Request,
@@ -16,27 +17,34 @@ export async function GET(
         status: 401,
       });
 
-    const card = await db.card.findUnique({
-      where: {
-        id: params.cardId,
-        list: {
-          board: {
-            orgId,
+    const getCard = unstable_cache(
+      async () => {
+        return await db.card.findUnique({
+          where: {
+            id: params.cardId,
+            list: {
+              board: {
+                orgId,
+              },
+            },
           },
-        },
-      },
-      include: {
-        list: {
-          select: {
-            title: true,
+          include: {
+            list: {
+              select: {
+                title: true,
+              },
+            },
           },
-        },
+        });
       },
-      cacheStrategy: {
-        ttl: 30,
-        swr: 60,
-      },
-    });
+      [`card-${params.cardId}`],
+      {
+        tags: [`card-${params.cardId}`],
+        revalidate: false,
+      }
+    );
+
+    const card = await getCard();
 
     return new NextResponse(JSON.stringify(card), {
       status: 200,
