@@ -4,6 +4,7 @@ import { notFound, redirect } from 'next/navigation';
 import { db } from '@/lib/db';
 import { BoardNavbar } from './_components/board-navbar';
 import { BoardLiveblocks } from './_components/board-liveblocks';
+import { unstable_cache } from 'next/cache';
 
 export async function generateMetadata(props: {
   params: Promise<{ boardId: string }>;
@@ -37,13 +38,23 @@ const BoardIdLayout = async (props: {
 
   if (!orgId) redirect('/select-org');
 
-  const board = await db.board.findUnique({
-    where: {
-      id: params.boardId,
-      orgId,
+  const getBoard = unstable_cache(
+    async () => {
+      return await db.board.findUnique({
+        where: {
+          id: params.boardId,
+          orgId,
+        },
+      });
     },
-    cacheStrategy: { ttl: 30, swr: 60 },
-  });
+    [`board-${params.boardId}`],
+    {
+      tags: [`board-${params.boardId}`],
+      revalidate: false,
+    }
+  );
+
+  const board = await getBoard();
 
   if (!board) notFound();
 
