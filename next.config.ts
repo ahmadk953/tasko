@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
     reactCompiler: true,
     mdxRs: true,
     webpackMemoryOptimizations: true,
+    webpackBuildWorker: true,
   },
   images: {
     remotePatterns: [
@@ -50,6 +51,10 @@ const nextConfig: NextConfig = {
 
     return config;
   },
+  cacheHandler:
+    process.env.NODE_ENV === 'production'
+      ? require.resolve('./cache-handler.mjs')
+      : undefined,
 };
 
 const withMDX = createMDX({});
