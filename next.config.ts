@@ -53,7 +53,7 @@ const nextConfig: NextConfig = {
   },
   cacheHandler:
     process.env.NODE_ENV === 'production'
-      ? require.resolve('./cache-handler.ts')
+      ? require.resolve('./cache-handler')
       : undefined,
 };
 
