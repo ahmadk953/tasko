@@ -8,7 +8,7 @@ export async function register() {
       '@neshca/cache-handler/instrumentation'
     );
 
-    const CacheHandler = (await import('./cache-handler')).default;
+    const CacheHandler = (await import('./cache-handler.mjs')).default;
 
     await registerInitialCache(CacheHandler);
   }
