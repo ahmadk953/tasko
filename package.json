@@ -23,7 +23,7 @@
     "@hello-pangea/dnd": "^17.0.0",
     "@liveblocks/client": "^2.15.1",
     "@liveblocks/node": "^2.16.1",
-    "@liveblocks/react": "^2.15.1",
+    "@liveblocks/react": "^2.16.1",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
     "@neshca/cache-handler": "^1.9.0",
