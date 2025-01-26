@@ -55,6 +55,7 @@ const nextConfig: NextConfig = {
     process.env.NODE_ENV === 'production'
       ? require.resolve('./cache-handler.mjs')
       : undefined,
+  cacheMaxMemorySize: process.env.NODE_ENV === 'production' ? 0 : undefined,
 };
 
 const withMDX = createMDX({});

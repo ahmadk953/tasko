@@ -9,7 +9,7 @@ Sentry.init({
 
   integrations: [
     Sentry.redisIntegration({
-      cachePrefixes: ['tasko:'],
+      cachePrefixes: [''],
     }),
   ],
 

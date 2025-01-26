@@ -1,67 +1,65 @@
-import { CacheHandler } from '@neshca/cache-handler';
-import createLruHandler from '@neshca/cache-handler/local-lru';
-import createRedisHandler from '@neshca/cache-handler/redis-stack';
-import { createClient } from 'redis';
+import Redis from 'ioredis';
 
-CacheHandler.onCreation(async () => {
-  let client;
+let redis;
 
-  try {
-    client = createClient({
-      url: process.env.REDIS_URL,
-    });
+if (!redis) {
+  redis = new Redis(process.env.REDIS_URL);
 
-    client.on('error', (error) => {
-      if (typeof process.env.NEXT_PRIVATE_DEBUG_CACHE !== 'undefined') {
-        console.error('Redis client error:', error);
-      }
-    });
-  } catch (error) {
-    console.warn('Failed to create Redis client:', error);
+  redis.on('error', (err) => {
+    console.error('Redis Client Error:', err);
+  });
+}
+
+export default class CacheHandler {
+  constructor(options) {
+    this.options = options;
   }
 
-  if (client) {
+  async get(key) {
     try {
-      console.info('Connecting Redis client...');
-
-      await client.connect();
-      console.info('Redis client connected.');
+      const data = await redis.get(key);
+      return data ? JSON.parse(data) : null;
     } catch (error) {
-      console.warn('Failed to connect Redis client:', error);
-
-      console.warn('Disconnecting the Redis client...');
-      client
-        .disconnect()
-        .then(() => {
-          console.info('Redis client disconnected.');
-        })
-        .catch(() => {
-          console.warn(
-            'Failed to quit the Redis client after failing to connect.'
-          );
-        });
+      console.error('Cache Get Error:', error);
+      return null;
     }
   }
 
-  /** @type {import("@neshca/cache-handler").Handler | null} */
-  let handler;
-
-  if (client?.isReady) {
-    handler = await createRedisHandler({
-      client,
-      keyPrefix: 'tasko:',
-      timeoutMs: 1000,
-    });
-  } else {
-    handler = createLruHandler();
-    console.warn(
-      'Falling back to LRU handler because Redis client is not available.'
-    );
+  async set(key, data, ctx) {
+    try {
+      const cacheData = {
+        value: data,
+        lastModified: Date.now(),
+        tags: ctx.tags || [],
+      };
+      await redis.set(key, JSON.stringify(cacheData));
+    } catch (error) {
+      console.error('Cache Set Error:', error);
+    }
   }
 
-  return {
-    handlers: [handler],
-  };
-});
+  async revalidateTag(tags) {
+    try {
+      tags = [tags].flat();
+      const keys = await redis.keys('*');
+      for (const key of keys) {
+        const value = await redis.get(key);
+        if (value && tags.length > 0) {
+          const parsed = JSON.parse(value);
+          if (
+            Array.isArray(parsed.tags) &&
+            parsed.tags.some((tag) => tags.includes(tag))
+          ) {
+            await redis.del(key);
+          }
+        }
+      }
+    } catch (error) {
+      console.error('Cache RevalidateTag Error:', error);
+    }
+  }
 
-export default CacheHandler;
+  resetRequestCache() {
+    // TODO: Implement request-specific cache reset if needed
+  }
+}
