@@ -776,22 +776,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clerk/themes@npm:^2.2.10":
-  version: 2.2.10
-  resolution: "@clerk/themes@npm:2.2.10"
+"@clerk/themes@npm:^2.2.12":
+  version: 2.2.12
+  resolution: "@clerk/themes@npm:2.2.12"
   dependencies:
-    "@clerk/types": "npm:^4.42.0"
+    "@clerk/types": "npm:^4.44.0"
     tslib: "npm:2.4.1"
-  checksum: 10c0/68641c88465d9a7f5c8c409ded5ab9ca450bd40955ccda537e6e118de4ba8b010207eefca0c4dbf7c56659c880be96a6e104903645f9dda55785bce63e90e1e8
-  languageName: node
-  linkType: hard
-
-"@clerk/types@npm:^4.42.0":
-  version: 4.42.0
-  resolution: "@clerk/types@npm:4.42.0"
-  dependencies:
-    csstype: "npm:3.1.1"
-  checksum: 10c0/156f516c83de8c25dabbae8a0ee741521d1a644aa3df6f5462157e66fa8bdc432d7dfc75416a65c3fb7ad78108aae153ea7ad08276425b2eba058bc917c24120
+  checksum: 10c0/4089ee25763a2a028d17c3d656dd972d75428650b49fcb3b708a377bfef87a6833d10771f59a04ab62345d94d7bba0aba33cd04efbdca0130494c79314cc72e6
   languageName: node
   linkType: hard
 
@@ -801,6 +792,15 @@ __metadata:
   dependencies:
     csstype: "npm:3.1.1"
   checksum: 10c0/635f59997306deff68fd4847543d5efbfe9e24358c80b4aa7a9265c906b93ea71bb09cbe8ebce93b140258846f6e83dbb1ad81780b389f26b9c8812a9e526b8e
+  languageName: node
+  linkType: hard
+
+"@clerk/types@npm:^4.44.0":
+  version: 4.44.0
+  resolution: "@clerk/types@npm:4.44.0"
+  dependencies:
+    csstype: "npm:3.1.1"
+  checksum: 10c0/fbd6bd42c6be5bc1f78dde99754ffb4c2d363c9451219ee40a3550e4ab4daddae2f2cca2dd3584db2ea6688d82b8570705527d53b995410c8b444159e8ca1275
   languageName: node
   linkType: hard
 
@@ -3518,14 +3518,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-tooltip@npm:^1.1.6":
-  version: 1.1.6
-  resolution: "@radix-ui/react-tooltip@npm:1.1.6"
+"@radix-ui/react-tooltip@npm:^1.1.7":
+  version: 1.1.7
+  resolution: "@radix-ui/react-tooltip@npm:1.1.7"
   dependencies:
     "@radix-ui/primitive": "npm:1.1.1"
     "@radix-ui/react-compose-refs": "npm:1.1.1"
     "@radix-ui/react-context": "npm:1.1.1"
-    "@radix-ui/react-dismissable-layer": "npm:1.1.3"
+    "@radix-ui/react-dismissable-layer": "npm:1.1.4"
     "@radix-ui/react-id": "npm:1.1.0"
     "@radix-ui/react-popper": "npm:1.2.1"
     "@radix-ui/react-portal": "npm:1.1.3"
@@ -3544,7 +3544,7 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10c0/6e2e83b2ef448bcc486e8f73bfd303b18b723f86239f40f5e06cf930f074494f6fefb1a48bcaf24b215ec7bd7f87f6884d1ef9394cddcf50d1b30e26f9e15093
+  checksum: 10c0/25c11cbc8b6aa4115c5fd10aa6fb414e5f4169d83334bd7711fd597dad938122839b801a4b4c13bd0295131db4b0527e18338a203cc6281721342251d01a2d48
   languageName: node
   linkType: hard
 
@@ -4516,12 +4516,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.0.7":
-  version: 19.0.7
-  resolution: "@types/react@npm:19.0.7"
+"@types/react@npm:^19.0.8":
+  version: 19.0.8
+  resolution: "@types/react@npm:19.0.8"
   dependencies:
     csstype: "npm:^3.0.2"
-  checksum: 10c0/818e546fa03a2a65ac2652fc472891ac96684211e8967bc25e1da6a8a09e2301ad972b1b038d128f8b4cbbd7691f6f57fee274db568169e9b6b01556abbb5bee
+  checksum: 10c0/5fa7236356b1476de03519c66ef65d4fd904826956105619e2ad60cb0b55ae7b251dd5fff02234076225b5e15333d0d936bf9dbe1d461406f8a2ba01c197ddcd
   languageName: node
   linkType: hard
 
@@ -10965,9 +10965,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:^0.6.10":
-  version: 0.6.10
-  resolution: "prettier-plugin-tailwindcss@npm:0.6.10"
+"prettier-plugin-tailwindcss@npm:^0.6.11":
+  version: 0.6.11
+  resolution: "prettier-plugin-tailwindcss@npm:0.6.11"
   peerDependencies:
     "@ianvs/prettier-plugin-sort-imports": "*"
     "@prettier/plugin-pug": "*"
@@ -11019,7 +11019,7 @@ __metadata:
       optional: true
     prettier-plugin-svelte:
       optional: true
-  checksum: 10c0/9e1e8d59285acb915c647235867e0c6da4f66e60a05984375036998c207662988cb59a362390f86050c09863e4ee982102dfcffb0131cc1413aec1b7d1d8fb08
+  checksum: 10c0/e5688a86f457b4eaa682d83a86702826d2d828db4cfc153b8b1f0b8409c94530a4bde8deb3e819497ba8e4bd0eda08ed55468a41a8138f82db43d633cf332121
   languageName: node
   linkType: hard
 
@@ -12594,7 +12594,7 @@ __metadata:
   dependencies:
     "@arcjet/next": "npm:^1.0.0-beta.1"
     "@clerk/nextjs": "npm:^6.10.1"
-    "@clerk/themes": "npm:^2.2.10"
+    "@clerk/themes": "npm:^2.2.12"
     "@codecov/nextjs-webpack-plugin": "npm:^1.8.0"
     "@content-collections/cli": "npm:^0.1.6"
     "@content-collections/core": "npm:^0.8.0"
@@ -12622,7 +12622,7 @@ __metadata:
     "@radix-ui/react-popover": "npm:^1.1.3"
     "@radix-ui/react-separator": "npm:^1.0.3"
     "@radix-ui/react-slot": "npm:^1.1.0"
-    "@radix-ui/react-tooltip": "npm:^1.1.6"
+    "@radix-ui/react-tooltip": "npm:^1.1.7"
     "@radix-ui/react-visually-hidden": "npm:^1.1.0"
     "@sentry/nextjs": "npm:8"
     "@tailwindcss/typography": "npm:^0.5.16"
@@ -12636,7 +12636,7 @@ __metadata:
     "@types/lodash": "npm:^4.17.14"
     "@types/mdx": "npm:^2.0.13"
     "@types/node": "npm:^22.10.7"
-    "@types/react": "npm:^19.0.7"
+    "@types/react": "npm:^19.0.8"
     "@types/react-dom": "npm:^19.0.3"
     "@typescript-eslint/eslint-plugin": "npm:^8.21.0"
     "@typescript-eslint/parser": "npm:^8.21.0"
@@ -12663,7 +12663,7 @@ __metadata:
     next-themes: "npm:^0.4.4"
     postcss: "npm:^8.5.1"
     prettier: "npm:^3.4.2"
-    prettier-plugin-tailwindcss: "npm:^0.6.10"
+    prettier-plugin-tailwindcss: "npm:^0.6.11"
     prisma: "npm:^6.2.1"
     react: "npm:^19.0.0"
     react-day-picker: "npm:^9.5.0"
