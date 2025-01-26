@@ -2012,19 +2012,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@neshca/cache-handler@npm:^1.9.0":
-  version: 1.9.0
-  resolution: "@neshca/cache-handler@npm:1.9.0"
-  dependencies:
-    cluster-key-slot: "npm:1.1.2"
-    lru-cache: "npm:10.4.3"
-  peerDependencies:
-    next: ">= 13.5.1 < 15"
-    redis: ">= 4.6"
-  checksum: 10c0/883360e0979181448c8a81886d69e3460d3ea60283ceaaf1941a8bc8255cb1dedf5ba448951cf0cabf9969381a4481777d3c408cd7a5537e7e4d0c13f89544a4
-  languageName: node
-  linkType: hard
-
 "@next/env@npm:15.1.6":
   version: 15.1.6
   resolution: "@next/env@npm:15.1.6"
@@ -5722,7 +5709,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cluster-key-slot@npm:1.1.2, cluster-key-slot@npm:^1.1.0":
+"cluster-key-slot@npm:^1.1.0":
   version: 1.1.2
   resolution: "cluster-key-slot@npm:1.1.2"
   checksum: 10c0/d7d39ca28a8786e9e801eeb8c770e3c3236a566625d7299a47bb71113fb2298ce1039596acb82590e598c52dbc9b1f088c8f587803e697cb58e1867a95ff94d3
@@ -9311,7 +9298,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:10.4.3, lru-cache@npm:^10.0.1, lru-cache@npm:^10.2.0":
+"lru-cache@npm:^10.0.1, lru-cache@npm:^10.2.0":
   version: 10.4.3
   resolution: "lru-cache@npm:10.4.3"
   checksum: 10c0/ebd04fbca961e6c1d6c0af3799adcc966a1babe798f685bb84e6599266599cd95d94630b10262f5424539bc4640107e8a33aa28585374abf561d30d16f4b39fb
@@ -12609,7 +12596,6 @@ __metadata:
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
-    "@neshca/cache-handler": "npm:^1.9.0"
     "@next/eslint-plugin-next": "npm:15.1.6"
     "@next/mdx": "npm:^15.1.6"
     "@prisma/client": "npm:^6.2.1"
