@@ -1,4 +1,4 @@
-import redis from './lib/redis'
+import redis from './lib/redis.ts';
 
 export default class CacheHandler {
   constructor(options) {
@@ -20,7 +20,7 @@ export default class CacheHandler {
       const cacheData = {
         value: data,
         lastModified: Date.now(),
-        tags: ctx.tags,
+        tags: ctx.tags || [],
       };
       await redis.set(key, JSON.stringify(cacheData));
     } catch (error) {
@@ -34,9 +34,12 @@ export default class CacheHandler {
       const keys = await redis.keys('*');
       for (const key of keys) {
         const value = await redis.get(key);
-        if (value) {
+        if (value && tags.length > 0) {
           const parsed = JSON.parse(value);
-          if (parsed.tags.some((tag) => tags.includes(tag))) {
+          if (
+            Array.isArray(parsed.tags) &&
+            parsed.tags.some((tag) => tags.includes(tag))
+          ) {
             await redis.del(key);
           }
         }
