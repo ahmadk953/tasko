@@ -3700,41 +3700,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry-internal/browser-utils@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@sentry-internal/browser-utils@npm:8.50.0"
+"@sentry-internal/browser-utils@npm:8.52.0":
+  version: 8.52.0
+  resolution: "@sentry-internal/browser-utils@npm:8.52.0"
   dependencies:
-    "@sentry/core": "npm:8.50.0"
-  checksum: 10c0/9424ed585d30922cc4c5c9287bfd8c1796b3dfeb884013dbe95197879c9e9edbac011328b67472c20b646e874465c86e3e3428b5b8cf0538567ed78a9a8750cb
+    "@sentry/core": "npm:8.52.0"
+  checksum: 10c0/e7e21450660fa7b232256b90c551280016e04182de8478e5b064e5239bddf20a8897d07167539b6dd89b7de193104a15b9a3011296910a9c53a0aa1542ac5a16
   languageName: node
   linkType: hard
 
-"@sentry-internal/feedback@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@sentry-internal/feedback@npm:8.50.0"
+"@sentry-internal/feedback@npm:8.52.0":
+  version: 8.52.0
+  resolution: "@sentry-internal/feedback@npm:8.52.0"
   dependencies:
-    "@sentry/core": "npm:8.50.0"
-  checksum: 10c0/7321d749be14a121f57c36edc2a73f5b70b67faf9050ad0ff026acba02a0df2b297c784b737a024b10f82fb30ec1c36ff2799d26d450c8f92867af69b32ec0e2
+    "@sentry/core": "npm:8.52.0"
+  checksum: 10c0/9fe9fac58dbe9b1763b28a8c2659c282660ba9818021b5fb90725655a04b555de25ce54b32036d415c8e5a51ac36d521330f174a4b0d0b1b821a06816909a1f2
   languageName: node
   linkType: hard
 
-"@sentry-internal/replay-canvas@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@sentry-internal/replay-canvas@npm:8.50.0"
+"@sentry-internal/replay-canvas@npm:8.52.0":
+  version: 8.52.0
+  resolution: "@sentry-internal/replay-canvas@npm:8.52.0"
   dependencies:
-    "@sentry-internal/replay": "npm:8.50.0"
-    "@sentry/core": "npm:8.50.0"
-  checksum: 10c0/35d7780d183eee4206804893025ab74cbbbeee5f92afee9e2339036217a22f1da45aafab6bf2554f2624c74783029b74fd2a0f575a429183eed382a37c1123ec
+    "@sentry-internal/replay": "npm:8.52.0"
+    "@sentry/core": "npm:8.52.0"
+  checksum: 10c0/4e12132101f9a9a7fe0266dc546524b2a6dd904cddfcdfc92250e99bb6cee1bc8ca44a96070fa4959ef5f60c35abf205ba69f5a92b3fd8440fd64684f3f3a5d0
   languageName: node
   linkType: hard
 
-"@sentry-internal/replay@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@sentry-internal/replay@npm:8.50.0"
+"@sentry-internal/replay@npm:8.52.0":
+  version: 8.52.0
+  resolution: "@sentry-internal/replay@npm:8.52.0"
   dependencies:
-    "@sentry-internal/browser-utils": "npm:8.50.0"
-    "@sentry/core": "npm:8.50.0"
-  checksum: 10c0/f9164bf48bc0d6a5a9688b2086505a740249804d8aeaa7a5c80db085414b9d0ace6d5551471bd8a3dc780461e00ff55b5cd1b7b753a22e88d7ca49277b774a02
+    "@sentry-internal/browser-utils": "npm:8.52.0"
+    "@sentry/core": "npm:8.52.0"
+  checksum: 10c0/47d472c9a54292640872ea96762821b57ce6246ceb281ac6a2605a14dfce77c46a5d09d734867856917bd85ae61579f1899279405ed3efdf7310d4d1f53a2c18
   languageName: node
   linkType: hard
 
@@ -3745,16 +3745,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/browser@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@sentry/browser@npm:8.50.0"
+"@sentry/browser@npm:8.52.0":
+  version: 8.52.0
+  resolution: "@sentry/browser@npm:8.52.0"
   dependencies:
-    "@sentry-internal/browser-utils": "npm:8.50.0"
-    "@sentry-internal/feedback": "npm:8.50.0"
-    "@sentry-internal/replay": "npm:8.50.0"
-    "@sentry-internal/replay-canvas": "npm:8.50.0"
-    "@sentry/core": "npm:8.50.0"
-  checksum: 10c0/d35258ce6ba7ac7fcb80c6797975daa3aade55ed08fe27929e36aba7724db45d9d4979e40f2a6238d528526d710aa95732bb0b0e55df9f5126ca23b15a8510d1
+    "@sentry-internal/browser-utils": "npm:8.52.0"
+    "@sentry-internal/feedback": "npm:8.52.0"
+    "@sentry-internal/replay": "npm:8.52.0"
+    "@sentry-internal/replay-canvas": "npm:8.52.0"
+    "@sentry/core": "npm:8.52.0"
+  checksum: 10c0/5720d14be8b453b8721f19b4d57c61da79d0b6ca5143281caedc52bc3648cd499cd4db0cd37d62564cc341990a990cea3031ceb152b90cdc12b2a5849eed2f6c
   languageName: node
   linkType: hard
 
@@ -3860,7 +3860,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/core@npm:8.50.0, @sentry/core@npm:^8.42.0":
+"@sentry/core@npm:8.52.0":
+  version: 8.52.0
+  resolution: "@sentry/core@npm:8.52.0"
+  checksum: 10c0/81f0ffa7a028c7dd42ae196dc6bd9d0dc2ef92c8f895bb162bd303dbed2b23131fc402c23e7a76e318e2ff175e49bba5b2dcfddddba5741c9842a75df555af50
+  languageName: node
+  linkType: hard
+
+"@sentry/core@npm:^8.42.0":
   version: 8.50.0
   resolution: "@sentry/core@npm:8.50.0"
   checksum: 10c0/cdd32cc75bfc73d660d3bc3919cbc9d03220a3414951a47a39af96450248107eb2037efdffe15275a6e6e195ee5a0f40814baeaf9905b41efcec83719f459823
@@ -3868,18 +3875,18 @@ __metadata:
   linkType: hard
 
 "@sentry/nextjs@npm:8":
-  version: 8.50.0
-  resolution: "@sentry/nextjs@npm:8.50.0"
+  version: 8.52.0
+  resolution: "@sentry/nextjs@npm:8.52.0"
   dependencies:
     "@opentelemetry/api": "npm:^1.9.0"
     "@opentelemetry/semantic-conventions": "npm:^1.28.0"
     "@rollup/plugin-commonjs": "npm:28.0.1"
-    "@sentry-internal/browser-utils": "npm:8.50.0"
-    "@sentry/core": "npm:8.50.0"
-    "@sentry/node": "npm:8.50.0"
-    "@sentry/opentelemetry": "npm:8.50.0"
-    "@sentry/react": "npm:8.50.0"
-    "@sentry/vercel-edge": "npm:8.50.0"
+    "@sentry-internal/browser-utils": "npm:8.52.0"
+    "@sentry/core": "npm:8.52.0"
+    "@sentry/node": "npm:8.52.0"
+    "@sentry/opentelemetry": "npm:8.52.0"
+    "@sentry/react": "npm:8.52.0"
+    "@sentry/vercel-edge": "npm:8.52.0"
     "@sentry/webpack-plugin": "npm:2.22.7"
     chalk: "npm:3.0.0"
     resolve: "npm:1.22.8"
@@ -3887,13 +3894,13 @@ __metadata:
     stacktrace-parser: "npm:^0.1.10"
   peerDependencies:
     next: ^13.2.0 || ^14.0 || ^15.0.0-rc.0
-  checksum: 10c0/7122e50b12c565f694d93296c572967f7818616cb8ea88448845d31787ac91e38c6fd2a68e717c415e9252bf6c0b35e12923d42c482e1f08494e4ae1c8ed5998
+  checksum: 10c0/b1f8bd9862ddbbdbfb322b30946bbb0808fde03945a4c87e4f6973c43d6f15ac5de099b8a89e5f7b1605d287dbe4f44539ed490d906673fd91af651b8afcd208
   languageName: node
   linkType: hard
 
-"@sentry/node@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@sentry/node@npm:8.50.0"
+"@sentry/node@npm:8.52.0":
+  version: 8.52.0
+  resolution: "@sentry/node@npm:8.52.0"
   dependencies:
     "@opentelemetry/api": "npm:^1.9.0"
     "@opentelemetry/context-async-hooks": "npm:^1.29.0"
@@ -3927,48 +3934,48 @@ __metadata:
     "@opentelemetry/sdk-trace-base": "npm:^1.29.0"
     "@opentelemetry/semantic-conventions": "npm:^1.28.0"
     "@prisma/instrumentation": "npm:5.22.0"
-    "@sentry/core": "npm:8.50.0"
-    "@sentry/opentelemetry": "npm:8.50.0"
+    "@sentry/core": "npm:8.52.0"
+    "@sentry/opentelemetry": "npm:8.52.0"
     import-in-the-middle: "npm:^1.11.2"
-  checksum: 10c0/dda51222cc3a64c4d0753b1ef9146c49c2297b7dd8395d1907449428d92274c52d66d43bd7f86427917a80b2dbd37e396ae1cb3d036d3498e977a474fa5f4581
+  checksum: 10c0/b1bd67ea1855dd8c8ff0437067843cf70152f6ff58918a5b65b487c730e97dd2811e005c327a2aa02b0ae033f997de883748c800de81a958e295e5595c957587
   languageName: node
   linkType: hard
 
-"@sentry/opentelemetry@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@sentry/opentelemetry@npm:8.50.0"
+"@sentry/opentelemetry@npm:8.52.0":
+  version: 8.52.0
+  resolution: "@sentry/opentelemetry@npm:8.52.0"
   dependencies:
-    "@sentry/core": "npm:8.50.0"
+    "@sentry/core": "npm:8.52.0"
   peerDependencies:
     "@opentelemetry/api": ^1.9.0
     "@opentelemetry/core": ^1.29.0
     "@opentelemetry/instrumentation": ^0.56.0
     "@opentelemetry/sdk-trace-base": ^1.29.0
     "@opentelemetry/semantic-conventions": ^1.28.0
-  checksum: 10c0/288d0a95b28d55179eb4c37974497ec5eb2625b652f682a3e8d87aefdbbdcfe50141606ee4afe236863e885aad5135befeaac3cb1268a515c9219ab87cdcb11c
+  checksum: 10c0/4b1fd80877f05d9aa7ed9cc79fde28be7521926a0a373136e43cd39bdd8c04cafe2c37cd3ba953102c293d85516835d2cde7b67325449b2a4553fad27069c76e
   languageName: node
   linkType: hard
 
-"@sentry/react@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@sentry/react@npm:8.50.0"
+"@sentry/react@npm:8.52.0":
+  version: 8.52.0
+  resolution: "@sentry/react@npm:8.52.0"
   dependencies:
-    "@sentry/browser": "npm:8.50.0"
-    "@sentry/core": "npm:8.50.0"
+    "@sentry/browser": "npm:8.52.0"
+    "@sentry/core": "npm:8.52.0"
     hoist-non-react-statics: "npm:^3.3.2"
   peerDependencies:
     react: ^16.14.0 || 17.x || 18.x || 19.x
-  checksum: 10c0/7d052537b37c6ec4d200abe9940a8ad2294697b1bfa49a6d6a1d9c28bfb0ed4da961a585950bb683a85b0789ae57c249b5b8a7d6c81f105ac81fd79bba2c08ce
+  checksum: 10c0/555407dd5a08a1e515be85b6ba0037f14c7df06ef1cfda22557be26123ab2e753da20867a1ec704946aa3ae8f55e299d74ce9eb433f3c0ffe25586f3ee94fbb8
   languageName: node
   linkType: hard
 
-"@sentry/vercel-edge@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@sentry/vercel-edge@npm:8.50.0"
+"@sentry/vercel-edge@npm:8.52.0":
+  version: 8.52.0
+  resolution: "@sentry/vercel-edge@npm:8.52.0"
   dependencies:
     "@opentelemetry/api": "npm:^1.9.0"
-    "@sentry/core": "npm:8.50.0"
-  checksum: 10c0/dfbd23376c54778d1e89cb1683f6d995707960003d732a055abee21203588aa206c6d759b2fa905c68e1d0f4f86c22b74dbf1d15ec50734070e24789ade95847
+    "@sentry/core": "npm:8.52.0"
+  checksum: 10c0/11e4dfd8fa71a09abeea9c8ac2fb42550aa0a18a2dc979b11aafe3ab0a3309710c92823b88ae5b8ebac7234f6fdad5445f4fda38a8b0a08bb24ac802252ec4d1
   languageName: node
   linkType: hard
 
