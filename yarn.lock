@@ -776,13 +776,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clerk/themes@npm:^2.2.12":
-  version: 2.2.12
-  resolution: "@clerk/themes@npm:2.2.12"
+"@clerk/themes@npm:^2.2.14":
+  version: 2.2.14
+  resolution: "@clerk/themes@npm:2.2.14"
   dependencies:
-    "@clerk/types": "npm:^4.44.0"
+    "@clerk/types": "npm:^4.44.2"
     tslib: "npm:2.4.1"
-  checksum: 10c0/4089ee25763a2a028d17c3d656dd972d75428650b49fcb3b708a377bfef87a6833d10771f59a04ab62345d94d7bba0aba33cd04efbdca0130494c79314cc72e6
+  checksum: 10c0/c46dc7a02af9bec24fe9b68803d2adc00f74e5dc483d94e98560be0e38a55e3bb29cabaec241815003393eddcad5970c106a9e434360bcbccf9a0a27811db132
   languageName: node
   linkType: hard
 
@@ -795,12 +795,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clerk/types@npm:^4.44.0":
-  version: 4.44.0
-  resolution: "@clerk/types@npm:4.44.0"
+"@clerk/types@npm:^4.44.2":
+  version: 4.44.2
+  resolution: "@clerk/types@npm:4.44.2"
   dependencies:
     csstype: "npm:3.1.1"
-  checksum: 10c0/fbd6bd42c6be5bc1f78dde99754ffb4c2d363c9451219ee40a3550e4ab4daddae2f2cca2dd3584db2ea6688d82b8570705527d53b995410c8b444159e8ca1275
+  checksum: 10c0/7046f228a2db5ed87164bf138cc6ccb29f18450339fdc3548bb1cc3a752dbc141d21cf8b9767572178dcde85ff7c7b1e7da6ec0dfa4d914cdb73aa82f11a93c7
   languageName: node
   linkType: hard
 
@@ -12610,7 +12610,7 @@ __metadata:
   dependencies:
     "@arcjet/next": "npm:^1.0.0-beta.1"
     "@clerk/nextjs": "npm:^6.10.1"
-    "@clerk/themes": "npm:^2.2.12"
+    "@clerk/themes": "npm:^2.2.14"
     "@codecov/nextjs-webpack-plugin": "npm:^1.8.0"
     "@content-collections/cli": "npm:^0.1.6"
     "@content-collections/core": "npm:^0.8.0"
