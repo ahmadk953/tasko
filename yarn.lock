@@ -959,13 +959,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@date-fns/tz@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@date-fns/tz@npm:1.2.0"
-  checksum: 10c0/411e9d4303b10951f6fd0189d18fb845f0d934a575df2176bc10daf664282c765fb6b057a977e446bbb1229151d89e7788978600a019f1fc24b5c75276d496bd
-  languageName: node
-  linkType: hard
-
 "@emnapi/runtime@npm:^1.2.0":
   version: 1.3.1
   resolution: "@emnapi/runtime@npm:1.3.1"
@@ -3477,7 +3470,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-slot@npm:1.1.1, @radix-ui/react-slot@npm:^1.1.0":
+"@radix-ui/react-slot@npm:1.1.1, @radix-ui/react-slot@npm:^1.1.1":
   version: 1.1.1
   resolution: "@radix-ui/react-slot@npm:1.1.1"
   dependencies:
@@ -6024,13 +6017,6 @@ __metadata:
     es-errors: "npm:^1.3.0"
     is-data-view: "npm:^1.0.1"
   checksum: 10c0/fa7aa40078025b7810dcffc16df02c480573b7b53ef1205aa6a61533011005c1890e5ba17018c692ce7c900212b547262d33279fde801ad9843edc0863bf78c4
-  languageName: node
-  linkType: hard
-
-"date-fns-jalali@npm:^4.1.0-0":
-  version: 4.1.0-0
-  resolution: "date-fns-jalali@npm:4.1.0-0"
-  checksum: 10c0/f9ad98d9f7e8e5abe0d070dc806b0c8baded2b1208626c42e92cbd2605b5171f5714d6b79b20cc2666267d821699244c9d0b5e93274106cf57d6232da77596ed
   languageName: node
   linkType: hard
 
@@ -11225,16 +11211,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-day-picker@npm:^9.5.1":
-  version: 9.5.1
-  resolution: "react-day-picker@npm:9.5.1"
-  dependencies:
-    "@date-fns/tz": "npm:^1.2.0"
-    date-fns: "npm:^4.1.0"
-    date-fns-jalali: "npm:^4.1.0-0"
+"react-day-picker@npm:8.10.1":
+  version: 8.10.1
+  resolution: "react-day-picker@npm:8.10.1"
   peerDependencies:
-    react: ">=16.8.0"
-  checksum: 10c0/050309240cc4b00d2012a43ff7f0d22276072d90ff0d619a2f6accb34318b919e6c723080a43e6d34583e48c194cbffecd5881b7350fac09e0b47576ddc872cf
+    date-fns: ^2.28.0 || ^3.0.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/a0ff28c4b61b3882e6a825b19e5679e2fdf3256cf1be8eb0a0c028949815c1ae5a6561474c2c19d231c010c8e0e0b654d3a322610881e0655abca05a2e03d9df
   languageName: node
   linkType: hard
 
@@ -12636,7 +12619,7 @@ __metadata:
     "@radix-ui/react-label": "npm:^2.1.0"
     "@radix-ui/react-popover": "npm:^1.1.5"
     "@radix-ui/react-separator": "npm:^1.0.3"
-    "@radix-ui/react-slot": "npm:^1.1.0"
+    "@radix-ui/react-slot": "npm:^1.1.1"
     "@radix-ui/react-tooltip": "npm:^1.1.7"
     "@radix-ui/react-visually-hidden": "npm:^1.1.0"
     "@sentry/nextjs": "npm:8"
@@ -12682,7 +12665,7 @@ __metadata:
     prettier-plugin-tailwindcss: "npm:^0.6.11"
     prisma: "npm:^6.2.1"
     react: "npm:^19.0.0"
-    react-day-picker: "npm:^9.5.1"
+    react-day-picker: "npm:8.10.1"
     react-dom: "npm:^19.0.0"
     sharp: "npm:^0.33.5"
     sonner: "npm:^1.7.3"
