@@ -7,7 +7,7 @@
 
 ## About
 
-![Tasko Home Page](https://cloud-1j1952uqc-hack-club-bot.vercel.app/0image.png)
+![Tasko Home Page](https://cloud-eohgwrlid-hack-club-bot.vercel.app/0screenshot.jpeg)
 
 Tasko is a website that helps you manage your tasks efficiently by using kanban boards. Kanban boards are a visual way of organizing your work into different stages, such as to-do, in progress, and done. With Tasko, you can create and customize your own kanban boards and add tasks. Tasko is designed to be simple, intuitive, and flexible, so you can focus on getting things done and achieving your goals. [Try Tasko Today!](https://tasko.ahmadk953.org/)
 
