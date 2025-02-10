@@ -21,7 +21,7 @@
     "@clerk/nextjs": "^6.11.1",
     "@clerk/themes": "^2.2.16",
     "@hello-pangea/dnd": "^17.0.0",
-    "@liveblocks/client": "^2.16.2",
+    "@liveblocks/client": "^2.17.0",
     "@liveblocks/node": "^2.17.0",
     "@liveblocks/react": "^2.16.2",
     "@mdx-js/loader": "^3.1.0",
