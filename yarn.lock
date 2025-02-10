@@ -5058,9 +5058,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/analytics@npm:^1.4.1":
-  version: 1.4.1
-  resolution: "@vercel/analytics@npm:1.4.1"
+"@vercel/analytics@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@vercel/analytics@npm:1.5.0"
   peerDependencies:
     "@remix-run/react": ^2
     "@sveltejs/kit": ^1 || ^2
@@ -5084,7 +5084,7 @@ __metadata:
       optional: true
     vue-router:
       optional: true
-  checksum: 10c0/e79bb0bdf52c0fcdb78fcaec8c0bb827d926e6cce5e72277d86e1a030bf529a04ae2c0f5d679d910358970fa1dc7b086926305560732c201e0b8b12bfee822f9
+  checksum: 10c0/43d33ea83b32f5203fec21b7f43c399e398f0c37d2dd341d522969e0e6ee23fd652a2766a4203a3ce573f711beee5ee1ab7d36316f767a4901160e3e96ee31e5
   languageName: node
   linkType: hard
 
@@ -12819,7 +12819,7 @@ __metadata:
     "@types/react-dom": "npm:^19.0.3"
     "@typescript-eslint/eslint-plugin": "npm:^8.23.0"
     "@typescript-eslint/parser": "npm:^8.23.0"
-    "@vercel/analytics": "npm:^1.4.1"
+    "@vercel/analytics": "npm:^1.5.0"
     "@vercel/speed-insights": "npm:^1.1.0"
     autoprefixer: "npm:^10.4.20"
     babel-plugin-react-compiler: "npm:^19.0.0-beta-714736e-20250131"
