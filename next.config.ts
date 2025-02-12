@@ -88,9 +88,6 @@ export default withContentCollections(
     // side errors will fail.
     tunnelRoute: '/monitoring',
 
-    // Hides source maps from generated client bundles
-    hideSourceMaps: true,
-
     // Automatically tree-shake Sentry logger statements to reduce bundle size
     disableLogger: true,
 
