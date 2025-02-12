@@ -8,9 +8,8 @@ Sentry.init({
   dsn: 'https://bb697105eaabbc6f70af12e84e936ded@o4508368569368576.ingest.us.sentry.io/4508368582017024',
 
   integrations: [
-    Sentry.redisIntegration({
-      cachePrefixes: [''],
-    }),
+    Sentry.redisIntegration({ cachePrefixes: [''] }),
+    Sentry.prismaIntegration(),
   ],
 
   // Set tracesSampleRate to 1.0 to capture 100%
