@@ -2909,12 +2909,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/extension-accelerate@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@prisma/extension-accelerate@npm:1.2.1"
+"@prisma/extension-accelerate@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@prisma/extension-accelerate@npm:1.2.2"
   peerDependencies:
     "@prisma/client": ">=4.16.1"
-  checksum: 10c0/fd90721d35bfa66a9d65e918fb6403768dc303d6c8c6f4e8c0ba84ba76d988a4939cf2b1047679b88c2e67ab68e7c69b14cd6decaa2b5f7c0550f720973f5886
+  checksum: 10c0/db011b6717744c1d6f448a9f59b9f004ecf26a2ad90b460dd9f14eb2c7edeb7915d55cccfb7fcf39beb7c374f6b36850c32242ec99cfaaf1db71309229092456
   languageName: node
   linkType: hard
 
@@ -12424,7 +12424,7 @@ __metadata:
     "@next/eslint-plugin-next": "npm:15.1.7"
     "@next/mdx": "npm:^15.1.6"
     "@prisma/client": "npm:^6.3.1"
-    "@prisma/extension-accelerate": "npm:^1.2.1"
+    "@prisma/extension-accelerate": "npm:^1.2.2"
     "@radix-ui/react-accordion": "npm:^1.2.2"
     "@radix-ui/react-avatar": "npm:^1.1.2"
     "@radix-ui/react-dialog": "npm:^1.1.6"
