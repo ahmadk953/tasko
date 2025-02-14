@@ -777,22 +777,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clerk/themes@npm:^2.2.16":
-  version: 2.2.17
-  resolution: "@clerk/themes@npm:2.2.17"
+"@clerk/themes@npm:^2.2.18":
+  version: 2.2.18
+  resolution: "@clerk/themes@npm:2.2.18"
   dependencies:
-    "@clerk/types": "npm:^4.45.1"
+    "@clerk/types": "npm:^4.46.0"
     tslib: "npm:2.4.1"
-  checksum: 10c0/fa602889dc74d1190a10231b8937a8ded25d5733503654c8fba7eea9d8d9288ee98f663e781323fa2fce32367332c5fccc7dbf37585a6bf7824c1dcfd6693615
-  languageName: node
-  linkType: hard
-
-"@clerk/types@npm:^4.45.1":
-  version: 4.45.1
-  resolution: "@clerk/types@npm:4.45.1"
-  dependencies:
-    csstype: "npm:3.1.3"
-  checksum: 10c0/6b70c6618c9782718694925b1bbc20dd0c910fcc3ac33d91911d171075bc806f5cfd2b5371be8701c85e723cd22e3258fdae6ab747d9f1750ec944e491c34be1
+  checksum: 10c0/acdff620f0aeeb441f2622705f5dbf17d775db6c7732e2ddabcdb07f8160de3aed48ebed162b095dc8feaae2745e2c4216d60ba4d72f23cbaef43a4a384b7a3b
   languageName: node
   linkType: hard
 
@@ -12424,7 +12415,7 @@ __metadata:
   dependencies:
     "@arcjet/next": "npm:^1.0.0-beta.2"
     "@clerk/nextjs": "npm:^6.11.3"
-    "@clerk/themes": "npm:^2.2.16"
+    "@clerk/themes": "npm:^2.2.18"
     "@codecov/nextjs-webpack-plugin": "npm:^1.8.0"
     "@content-collections/cli": "npm:^0.1.6"
     "@content-collections/core": "npm:^0.8.0"
