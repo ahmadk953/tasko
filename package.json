@@ -88,7 +88,7 @@
     "@types/node": "^22.13.4",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
-    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
     "@typescript-eslint/parser": "^8.25.0",
     "autoprefixer": "^10.4.20",
     "babel-plugin-react-compiler": "^19.0.0-beta-714736e-20250131",
