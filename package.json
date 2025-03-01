@@ -106,7 +106,7 @@
     "prisma": "^6.4.1",
     "tailwindcss": "^3.4.16",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.2"
   },
   "packageManager": "yarn@4.6.0"
 }
