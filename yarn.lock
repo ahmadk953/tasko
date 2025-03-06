@@ -2050,12 +2050,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:2.17.0":
-  version: 2.17.0
-  resolution: "@liveblocks/client@npm:2.17.0"
+"@liveblocks/client@npm:2.20.0":
+  version: 2.20.0
+  resolution: "@liveblocks/client@npm:2.20.0"
   dependencies:
-    "@liveblocks/core": "npm:2.17.0"
-  checksum: 10c0/37189b65ca2321f0de3eacfcb500b6b41e75adaac2d9df851f2f7044e82dd4601c258e13705ef55d06f3b72c12cfcf7d807760350bcd03668cff251c5f9b9335
+    "@liveblocks/core": "npm:2.20.0"
+  checksum: 10c0/542de5e5ce8b5cdb8e35c7582e0277bfe78ff75ce37c4cfee610c10aadea61db88250e05c9d80d17d715f4bcd906d5d318b6233c2ec60e75a99632eaf5b367cf
   languageName: node
   linkType: hard
 
@@ -2065,13 +2065,6 @@ __metadata:
   dependencies:
     "@liveblocks/core": "npm:2.18.0"
   checksum: 10c0/3a88392f33ac6a2462e0e72fd41e2c7f8109a4425fc2c39e851b5a2a7a96f83d7bcd29c1bd3de31106a164c57f4a067fbe50e17b2944f675ceb9102671591dbf
-  languageName: node
-  linkType: hard
-
-"@liveblocks/core@npm:2.17.0":
-  version: 2.17.0
-  resolution: "@liveblocks/core@npm:2.17.0"
-  checksum: 10c0/56c1191943c6a14c88135561010d2919b0448e8c948180fe047ebaaac20520fe979b75201851fea43b19b514560f8fa8f90eea2fb9f0ec5d32ca995fb71def62
   languageName: node
   linkType: hard
 
@@ -2101,15 +2094,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/react@npm:^2.16.2":
-  version: 2.17.0
-  resolution: "@liveblocks/react@npm:2.17.0"
+"@liveblocks/react@npm:^2.20.0":
+  version: 2.20.0
+  resolution: "@liveblocks/react@npm:2.20.0"
   dependencies:
-    "@liveblocks/client": "npm:2.17.0"
-    "@liveblocks/core": "npm:2.17.0"
+    "@liveblocks/client": "npm:2.20.0"
+    "@liveblocks/core": "npm:2.20.0"
   peerDependencies:
     react: ^18 || ^19 || ^19.0.0-rc
-  checksum: 10c0/19e782a1e4a26c63aa4db3ea81dcad7ca6c719998786aad8de0a2e4dee95769ebca5d4f2daa7977e618e6d9b9c6fa090829416252f91ce40b0c4b26229ccc087
+  checksum: 10c0/e444765d5e6efb9df65eefabb88a65efe42bcfb1cd260ab2dcbc999bcc88c2f9370b1a2e141236168ee3ddb75d1f100c25bd146add0eb0c6c0ac4149d2069266
   languageName: node
   linkType: hard
 
@@ -12888,7 +12881,7 @@ __metadata:
     "@hello-pangea/dnd": "npm:^18.0.1"
     "@liveblocks/client": "npm:^2.18.0"
     "@liveblocks/node": "npm:^2.20.0"
-    "@liveblocks/react": "npm:^2.16.2"
+    "@liveblocks/react": "npm:^2.20.0"
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
