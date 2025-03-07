@@ -709,22 +709,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clerk/backend@npm:^1.24.3":
-  version: 1.24.3
-  resolution: "@clerk/backend@npm:1.24.3"
+"@clerk/backend@npm:^1.25.1":
+  version: 1.25.1
+  resolution: "@clerk/backend@npm:1.25.1"
   dependencies:
     "@clerk/shared": "npm:^3.0.0"
     "@clerk/types": "npm:^4.47.0"
     cookie: "npm:1.0.2"
     snakecase-keys: "npm:8.0.1"
     tslib: "npm:2.4.1"
-  checksum: 10c0/846809140cb83b6d3ea69bbacd70808ece07c5ef4059cc9531b21218a7eb08f0d264fed14eeae7f80317320431b27a124e58b82f841e87a8a6babb77b68e56c7
+  checksum: 10c0/e4ba1a174b295730a843eade53be26b9f48635210a2cc75678d884e5d7a512e059dc5e50f606dfa708696f55a56e075eac24c9480d400c9443035e5e9404fe72
   languageName: node
   linkType: hard
 
-"@clerk/clerk-react@npm:^5.24.0":
-  version: 5.24.0
-  resolution: "@clerk/clerk-react@npm:5.24.0"
+"@clerk/clerk-react@npm:^5.24.1":
+  version: 5.24.1
+  resolution: "@clerk/clerk-react@npm:5.24.1"
   dependencies:
     "@clerk/shared": "npm:^3.0.0"
     "@clerk/types": "npm:^4.47.0"
@@ -732,16 +732,16 @@ __metadata:
   peerDependencies:
     react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
     react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-0
-  checksum: 10c0/6a9940b5be49e0cbc321984e0a66d4cf5dcc47591c1b167a27b2947d99cc0ac3a08f935c8bcff7616d6df8b6809a4882f21c32cdaa27c7272c7c1c92b4c0f9ce
+  checksum: 10c0/0f3f51e225a643ce9f509dbc3979ce41af38cc0ca4771e4fbea05b8c08336113638324e073028e4866752a95423178348599f7b7ca99c5f59359c2df869bde64
   languageName: node
   linkType: hard
 
-"@clerk/nextjs@npm:^6.12.1":
-  version: 6.12.1
-  resolution: "@clerk/nextjs@npm:6.12.1"
+"@clerk/nextjs@npm:^6.12.4":
+  version: 6.12.4
+  resolution: "@clerk/nextjs@npm:6.12.4"
   dependencies:
-    "@clerk/backend": "npm:^1.24.3"
-    "@clerk/clerk-react": "npm:^5.24.0"
+    "@clerk/backend": "npm:^1.25.1"
+    "@clerk/clerk-react": "npm:^5.24.1"
     "@clerk/shared": "npm:^3.0.0"
     "@clerk/types": "npm:^4.47.0"
     crypto-js: "npm:4.2.0"
@@ -751,7 +751,7 @@ __metadata:
     next: ^13.5.4 || ^14.0.3 || ^15.0.0
     react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
     react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-0
-  checksum: 10c0/95d88c10b7873f6ec803d5ece840a24c4098fc012d214f061ac7d340a4a5331e585b6f31503d3598779cfcfcbf048ff38ee8b137ee4d39d65ebe18bf9bd6b79f
+  checksum: 10c0/852914c5d61555616c6ff0222c225cef1dd0567f52968ba08efcf6363497c190f359ffe49d2d937b8091b71380e5992f9e19177492340e4d73f38903ae094d46
   languageName: node
   linkType: hard
 
@@ -12824,7 +12824,7 @@ __metadata:
   resolution: "tasko@workspace:."
   dependencies:
     "@arcjet/next": "npm:^1.0.0-beta.2"
-    "@clerk/nextjs": "npm:^6.12.1"
+    "@clerk/nextjs": "npm:^6.12.4"
     "@clerk/themes": "npm:^2.2.20"
     "@codecov/nextjs-webpack-plugin": "npm:^1.8.0"
     "@content-collections/cli": "npm:^0.1.6"
