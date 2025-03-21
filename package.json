@@ -23,7 +23,7 @@
     "@hello-pangea/dnd": "^18.0.1",
     "@liveblocks/client": "^2.20.0",
     "@liveblocks/node": "^2.20.0",
-    "@liveblocks/react": "^2.20.0",
+    "@liveblocks/react": "^2.21.0",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^15.2.3",
