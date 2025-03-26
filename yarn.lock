@@ -2138,13 +2138,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/core@npm:2.22.0":
-  version: 2.22.0
-  resolution: "@liveblocks/core@npm:2.22.0"
-  checksum: 10c0/9cbe17f20aa5876e8d07ef6c9c29823c95a092df2f4ec6e8217658ccc65d7e092adcaa04f834df26d1c847bb6d4d3dd61f5b5076fdd5af419bbdaa9a189fa5f4
-  languageName: node
-  linkType: hard
-
 "@liveblocks/core@npm:2.22.1":
   version: 2.22.1
   resolution: "@liveblocks/core@npm:2.22.1"
@@ -2152,15 +2145,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/node@npm:^2.22.0":
-  version: 2.22.0
-  resolution: "@liveblocks/node@npm:2.22.0"
+"@liveblocks/node@npm:^2.22.1":
+  version: 2.22.1
+  resolution: "@liveblocks/node@npm:2.22.1"
   dependencies:
-    "@liveblocks/core": "npm:2.22.0"
+    "@liveblocks/core": "npm:2.22.1"
     "@stablelib/base64": "npm:^1.0.1"
     fast-sha256: "npm:^1.3.0"
     node-fetch: "npm:^2.6.1"
-  checksum: 10c0/ec22a0a45bd6359c9ea5adecbe043f520fbebcf8155c6b6e0edfa64cc63c3f8abcfc8f1a876a178fe456ffaedb318a0a0e5a7d02ea18596f9d91b4eaa0395543
+  checksum: 10c0/8f3d956d16e2232410edb608446059554714f8612d7c149aa715a9a68f300c9dcf948a7f0b2fa4e17136f72e81707b4faab1892b4bf5a48fcaf917230757e49c
   languageName: node
   linkType: hard
 
@@ -13174,7 +13167,7 @@ __metadata:
     "@eslint/js": "npm:^9.22.0"
     "@hello-pangea/dnd": "npm:^18.0.1"
     "@liveblocks/client": "npm:^2.22.1"
-    "@liveblocks/node": "npm:^2.22.0"
+    "@liveblocks/node": "npm:^2.22.1"
     "@liveblocks/react": "npm:^2.21.0"
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.0"
