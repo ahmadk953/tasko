@@ -10677,13 +10677,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-themes@npm:^0.4.5":
-  version: 0.4.5
-  resolution: "next-themes@npm:0.4.5"
+"next-themes@npm:^0.4.6":
+  version: 0.4.6
+  resolution: "next-themes@npm:0.4.6"
   peerDependencies:
     react: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
     react-dom: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
-  checksum: 10c0/62c9523fbe88a21dd86b220a1492f4e99467d9fdbbcb8ae61e0b5403cc49bdd094ee57b7e18e897c5c2c7509b993ad4a0234115d7ee962bdfb1e450081269f38
+  checksum: 10c0/83590c11d359ce7e4ced14f6ea9dd7a691d5ce6843fe2dc520fc27e29ae1c535118478d03e7f172609c41b1ef1b8da6b8dd2d2acd6cd79cac1abbdbd5b99f2c4
   languageName: node
   linkType: hard
 
@@ -13177,7 +13177,7 @@ __metadata:
     lodash: "npm:^4.17.21"
     lucide-react: "npm:^0.482.0"
     next: "npm:^15.2.4"
-    next-themes: "npm:^0.4.5"
+    next-themes: "npm:^0.4.6"
     postcss: "npm:^8.5.3"
     prettier: "npm:^3.5.3"
     prettier-plugin-tailwindcss: "npm:^0.6.11"
