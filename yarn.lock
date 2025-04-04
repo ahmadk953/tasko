@@ -2121,7 +2121,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:2.22.2, @liveblocks/client@npm:^2.22.2":
+"@liveblocks/client@npm:2.22.3":
+  version: 2.22.3
+  resolution: "@liveblocks/client@npm:2.22.3"
+  dependencies:
+    "@liveblocks/core": "npm:2.22.3"
+  checksum: 10c0/bd0dac9fc4827bb07b568a7505a74eb9e9894d182d77b6da1303b97b920949917ee380f27ee6840ad2b5099c8d20137b7cf6a2d51afeabb7a7c34f510be710c4
+  languageName: node
+  linkType: hard
+
+"@liveblocks/client@npm:^2.22.2":
   version: 2.22.2
   resolution: "@liveblocks/client@npm:2.22.2"
   dependencies:
@@ -2156,15 +2165,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/react@npm:^2.22.2":
-  version: 2.22.2
-  resolution: "@liveblocks/react@npm:2.22.2"
+"@liveblocks/react@npm:^2.22.3":
+  version: 2.22.3
+  resolution: "@liveblocks/react@npm:2.22.3"
   dependencies:
-    "@liveblocks/client": "npm:2.22.2"
-    "@liveblocks/core": "npm:2.22.2"
+    "@liveblocks/client": "npm:2.22.3"
+    "@liveblocks/core": "npm:2.22.3"
   peerDependencies:
     react: ^18 || ^19 || ^19.0.0-rc
-  checksum: 10c0/f25c9e22b3b3091defb3f99e06d7566c29974a3186235f8082fcea475e6f4dafef0da4daab4e8d2a3d1795ccc5fc1f3e618e9fce043bcd6beda1fa2a066b349e
+  checksum: 10c0/c4ef2dbb0265f431254bbf5c22332adb2483eeefba0d2ea0b9daf397972678166675c785c2d62848fe344eab93a4f5991e9970603de156d9f3310b15a46d4b60
   languageName: node
   linkType: hard
 
@@ -13158,7 +13167,7 @@ __metadata:
     "@hello-pangea/dnd": "npm:^18.0.1"
     "@liveblocks/client": "npm:^2.22.2"
     "@liveblocks/node": "npm:^2.22.3"
-    "@liveblocks/react": "npm:^2.22.2"
+    "@liveblocks/react": "npm:^2.22.3"
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
