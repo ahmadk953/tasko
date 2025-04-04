@@ -4395,21 +4395,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:5.71.3":
-  version: 5.71.3
-  resolution: "@tanstack/query-core@npm:5.71.3"
-  checksum: 10c0/641efabd4ee2129f5f9d45a38e23ce4b7650f5a7c42f8b5c21c81381d482df1ca2390b79c2217c2f4427d6001513c48d2d05cb10a0f0d408005b9390f09008ef
+"@tanstack/query-core@npm:5.71.10":
+  version: 5.71.10
+  resolution: "@tanstack/query-core@npm:5.71.10"
+  checksum: 10c0/2b6a9c6b252c434cdf1048f9f82d1de27ff06dd67c5c76408bb028778f77308e245b043a55db7b012148e5fd9317ee176d8179caffa18cf4d35c5d721cd81346
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:^5.71.3":
-  version: 5.71.3
-  resolution: "@tanstack/react-query@npm:5.71.3"
+"@tanstack/react-query@npm:^5.71.10":
+  version: 5.71.10
+  resolution: "@tanstack/react-query@npm:5.71.10"
   dependencies:
-    "@tanstack/query-core": "npm:5.71.3"
+    "@tanstack/query-core": "npm:5.71.10"
   peerDependencies:
     react: ^18 || ^19
-  checksum: 10c0/e3677fa0c4c367839e2f73912678e8c86d51f4d81a122462d44d76fb5ccb889efe4e1a9e0aef387e3d89f0e39fd7b766803b8053c0d57cea84ca509668d77bc8
+  checksum: 10c0/59275edfe5293fd0d825b4b048e4ceba890b5732a2ec5538d697296864498a647a51dc58fcebac5e36536d0ca7340deb0606870d86ffd4449933d368505b2ac4
   languageName: node
   linkType: hard
 
@@ -13187,7 +13187,7 @@ __metadata:
     "@radix-ui/react-visually-hidden": "npm:^1.1.0"
     "@sentry/nextjs": "npm:9"
     "@tailwindcss/typography": "npm:^0.5.16"
-    "@tanstack/react-query": "npm:^5.71.3"
+    "@tanstack/react-query": "npm:^5.71.10"
     "@testing-library/dom": "npm:^10.4.0"
     "@testing-library/jest-dom": "npm:^6.6.3"
     "@testing-library/react": "npm:^16.2.0"
