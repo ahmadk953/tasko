@@ -17,7 +17,7 @@
     "generate-junit": "JEST_JUNIT_CLASSNAME=\"{filepath}\" jest --reporters=jest-junit"
   },
   "dependencies": {
-    "@arcjet/next": "^1.0.0-beta.5",
+    "@arcjet/next": "^1.0.0-beta.6",
     "@clerk/nextjs": "^6.13.0",
     "@clerk/themes": "^2.2.26",
     "@hello-pangea/dnd": "^18.0.1",
