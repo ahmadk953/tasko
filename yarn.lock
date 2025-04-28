@@ -825,22 +825,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clerk/themes@npm:^2.2.26":
-  version: 2.2.26
-  resolution: "@clerk/themes@npm:2.2.26"
+"@clerk/themes@npm:^2.2.36":
+  version: 2.2.36
+  resolution: "@clerk/themes@npm:2.2.36"
   dependencies:
-    "@clerk/types": "npm:^4.50.1"
+    "@clerk/types": "npm:^4.55.1"
     tslib: "npm:2.8.1"
-  checksum: 10c0/deaeefd247083a6c125bec571a7c1f746704de7810bb0d614b016e1780f26bf1caecca9f630b67aa7aaabdb8c5aad8b3f30bce91ec6b8aafe24fb3129eebac3d
-  languageName: node
-  linkType: hard
-
-"@clerk/types@npm:^4.50.1":
-  version: 4.50.1
-  resolution: "@clerk/types@npm:4.50.1"
-  dependencies:
-    csstype: "npm:3.1.3"
-  checksum: 10c0/db5f3ca38fdf6fcfee57e50c06dd3306e74424a48cce63c3e8639aefd341c6f52174f86eae1f4938a6de4accc86ad7c5955163b38d410e87316a3bef271eb7a6
+  checksum: 10c0/cec6b924f11ee72e76e7371d02454c5aec84e239653acf7d1ff9dd5d7818fc84e2ef116c6f9a12273b5ff904668b0d6dd3048703451aa9b335e598b792a8b08f
   languageName: node
   linkType: hard
 
@@ -850,6 +841,15 @@ __metadata:
   dependencies:
     csstype: "npm:3.1.3"
   checksum: 10c0/e9a24226226e5cf547a9097230d5e6138ead1e9f5a63d9a4fbbbd570700582fba8e2567b7fb20aee416bc2983b09d919521fba7bb0aa108ca85f291c25920f8d
+  languageName: node
+  linkType: hard
+
+"@clerk/types@npm:^4.55.1":
+  version: 4.55.1
+  resolution: "@clerk/types@npm:4.55.1"
+  dependencies:
+    csstype: "npm:3.1.3"
+  checksum: 10c0/e7d97967f745068afaa377f9bd9b3acbb6749a288280ce07a9a8cb5da1002bd4c7ddfeefec9e0b4f4d194d3b95954dcc3dba69fa5334422eff15898c835f1049
   languageName: node
   linkType: hard
 
@@ -13964,7 +13964,7 @@ __metadata:
   dependencies:
     "@arcjet/next": "npm:^1.0.0-beta.6"
     "@clerk/nextjs": "npm:^6.13.0"
-    "@clerk/themes": "npm:^2.2.26"
+    "@clerk/themes": "npm:^2.2.36"
     "@codecov/nextjs-webpack-plugin": "npm:^1.8.0"
     "@content-collections/cli": "npm:^0.1.6"
     "@content-collections/core": "npm:^0.8.2"
