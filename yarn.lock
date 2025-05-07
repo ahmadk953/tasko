@@ -4545,7 +4545,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-visually-hidden@npm:1.1.2, @radix-ui/react-visually-hidden@npm:^1.1.0":
+"@radix-ui/react-visually-hidden@npm:1.1.2":
   version: 1.1.2
   resolution: "@radix-ui/react-visually-hidden@npm:1.1.2"
   dependencies:
@@ -4561,6 +4561,25 @@ __metadata:
     "@types/react-dom":
       optional: true
   checksum: 10c0/ea6dc8ec284b32bca6f24809db257394802e14af7c95e4a237af51009fa222c42e3b7a55b3bfc94d753f509086636555058ae8e535be25956c46529abf41b448
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-visually-hidden@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@radix-ui/react-visually-hidden@npm:1.2.2"
+  dependencies:
+    "@radix-ui/react-primitive": "npm:2.1.2"
+  peerDependencies:
+    "@types/react": "*"
+    "@types/react-dom": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  checksum: 10c0/464b955cbe66ae5de819af5b7c2796eba77f84ab677eade0aa57e98ea588ef5d189c822e7bee0e18608864d5d262a1c70b5dda487269219f147a2a7cea625292
   languageName: node
   linkType: hard
 
@@ -13969,7 +13988,7 @@ __metadata:
     "@radix-ui/react-separator": "npm:^1.1.2"
     "@radix-ui/react-slot": "npm:^1.2.2"
     "@radix-ui/react-tooltip": "npm:^1.1.8"
-    "@radix-ui/react-visually-hidden": "npm:^1.1.0"
+    "@radix-ui/react-visually-hidden": "npm:^1.2.2"
     "@sentry/nextjs": "npm:9"
     "@tailwindcss/typography": "npm:^0.5.16"
     "@tanstack/react-query": "npm:^5.71.3"
