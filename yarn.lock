@@ -6481,11 +6481,11 @@ __metadata:
   linkType: hard
 
 "babel-plugin-react-compiler@npm:^19.0.0-beta-714736e-20250131":
-  version: 19.0.0-beta-e993439-20250328
-  resolution: "babel-plugin-react-compiler@npm:19.0.0-beta-e993439-20250328"
+  version: 19.0.0-beta-ebf51a3-20250411
+  resolution: "babel-plugin-react-compiler@npm:19.0.0-beta-ebf51a3-20250411"
   dependencies:
     "@babel/types": "npm:^7.26.0"
-  checksum: 10c0/ab87aeb3dab8f92aad325a21f92594899b4c92a238121c1587f3a832df7a5b0f86785750db45e0f5c93729ba0a71896a62d95fa5a47699f5f3fe9c335b99ea49
+  checksum: 10c0/351004a1c90c74f69ae69e4455ede1203d644d3dcaad385826544f84db9e1999e2df3c6b33b1c397979c7cfcab153c5edb47408aa8b9593125cd539cc45b1254
   languageName: node
   linkType: hard
 
