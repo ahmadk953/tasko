@@ -7848,8 +7848,8 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-react-compiler@npm:^19.0.0-beta-714736e-20250131":
-  version: 19.0.0-beta-e993439-20250328
-  resolution: "eslint-plugin-react-compiler@npm:19.0.0-beta-e993439-20250328"
+  version: 19.0.0-beta-ebf51a3-20250411
+  resolution: "eslint-plugin-react-compiler@npm:19.0.0-beta-ebf51a3-20250411"
   dependencies:
     "@babel/core": "npm:^7.24.4"
     "@babel/parser": "npm:^7.24.4"
@@ -7859,7 +7859,7 @@ __metadata:
     zod-validation-error: "npm:^3.0.3"
   peerDependencies:
     eslint: ">=7"
-  checksum: 10c0/9866b0a62ef77f8748fc79757e55ad0863791d4b9af524332fa0032900d6e44c80b076f126e82c33ecab4d3ae375b7a48d79d10622034d5659edac54a59d3798
+  checksum: 10c0/d98a930d696e7325b1ef603a0167fdedb8ad937875cb168a96271370434122633c46f9e632e1810beb6f1f6f8aa1f836c304ac1d83fd73bfeb6c6268aae8b060
   languageName: node
   linkType: hard
 
