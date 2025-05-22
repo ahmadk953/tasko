@@ -3498,12 +3498,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-avatar@npm:^1.1.9":
-  version: 1.1.9
-  resolution: "@radix-ui/react-avatar@npm:1.1.9"
+"@radix-ui/react-avatar@npm:^1.1.10":
+  version: 1.1.10
+  resolution: "@radix-ui/react-avatar@npm:1.1.10"
   dependencies:
     "@radix-ui/react-context": "npm:1.1.2"
-    "@radix-ui/react-primitive": "npm:2.1.2"
+    "@radix-ui/react-primitive": "npm:2.1.3"
     "@radix-ui/react-use-callback-ref": "npm:1.1.1"
     "@radix-ui/react-use-is-hydrated": "npm:0.1.0"
     "@radix-ui/react-use-layout-effect": "npm:1.1.1"
@@ -3517,7 +3517,7 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10c0/7af59be7119357418620bf92a9174ec6f5c3c707165a9ff7cccb74b0596540d6379ff8f62c5b2e8bdd941229a6559031ddecabe1a7d1d660c6f036e83e8fe455
+  checksum: 10c0/9fb0cf9a9d0fdbeaa2efda476402fc09db2e6ff9cd9aa3ea1d315d9c9579840722a4833725cb196c455e0bd775dfe04221a4f6855685ce89d2133c42e2b07e5f
   languageName: node
   linkType: hard
 
@@ -14002,7 +14002,7 @@ __metadata:
     "@prisma/client": "npm:^6.8.2"
     "@prisma/extension-accelerate": "npm:^1.3.0"
     "@radix-ui/react-accordion": "npm:^1.2.10"
-    "@radix-ui/react-avatar": "npm:^1.1.9"
+    "@radix-ui/react-avatar": "npm:^1.1.10"
     "@radix-ui/react-dialog": "npm:^1.1.14"
     "@radix-ui/react-dropdown-menu": "npm:^2.1.14"
     "@radix-ui/react-label": "npm:^2.1.6"
