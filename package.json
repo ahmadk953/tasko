@@ -83,7 +83,7 @@
     "@types/dompurify": "^3",
     "@types/ioredis": "^5.0.0",
     "@types/jest": "^29.5.14",
-    "@types/lodash": "^4.17.16",
+    "@types/lodash": "^4.17.17",
     "@types/mdx": "^2.0.13",
     "@types/node": "^22.15.18",
     "@types/react": "^19.1.4",
