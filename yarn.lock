@@ -14127,7 +14127,7 @@ __metadata:
     typescript: "npm:^5.8.3"
     unsplash-js: "npm:^7.0.19"
     usehooks-ts: "npm:^3.1.1"
-    zod: "npm:^3.24.4"
+    zod: "npm:^3.25.36"
     zustand: "npm:^5.0.5"
   languageName: unknown
   linkType: soft
@@ -15220,6 +15220,13 @@ __metadata:
   version: 3.24.4
   resolution: "zod@npm:3.24.4"
   checksum: 10c0/ab3112f017562180a41a0f83d870b333677f7d6b77f106696c56894567051b91154714a088149d8387a4f50806a2520efcb666f108cd384a35c236a191186d91
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.25.36":
+  version: 3.25.36
+  resolution: "zod@npm:3.25.36"
+  checksum: 10c0/9ad8ca759d1a5d19c86d6e49a1bda817b3c0566ea0a8726d45994b9fcaac8d569db45a65218a7b4067ca18b07c5fc636a587a94cd05f76793174ace8b81742e3
   languageName: node
   linkType: hard
 
