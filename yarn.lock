@@ -77,118 +77,126 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arcjet/analyze-wasm@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/analyze-wasm@npm:1.0.0-beta.7"
-  checksum: 10c0/6e2403bfb5e486e869951fe9cd51ed74344a723ed46ccced44c75197454b23dca419ddf204047af33e1047551e069ff7f83c047a7b9b5b73e2cf76c7394509a2
+"@arcjet/analyze-wasm@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/analyze-wasm@npm:1.0.0-beta.8"
+  checksum: 10c0/f37bc96c107dd960522a97c3460d6e49ac8b1f28f28955368927b7da98af4d9686e82ac6d63f3f6e897962c834d70bbc68fe1c8e6ebadabc359eaa896b0c841f
   languageName: node
   linkType: hard
 
-"@arcjet/analyze@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/analyze@npm:1.0.0-beta.7"
+"@arcjet/analyze@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/analyze@npm:1.0.0-beta.8"
   dependencies:
-    "@arcjet/analyze-wasm": "npm:1.0.0-beta.7"
-    "@arcjet/protocol": "npm:1.0.0-beta.7"
-  checksum: 10c0/0dd453046dcb421f14838f43778a429d9b186105f36abb0a0adf9e7daebbee2ba1be46fe760b41b2ac4795d859b05c2d173c7e62467284e7a1c5727ef486b901
+    "@arcjet/analyze-wasm": "npm:1.0.0-beta.8"
+    "@arcjet/protocol": "npm:1.0.0-beta.8"
+  checksum: 10c0/0fea5389e412d054b3ca39ddeb37ed4f00c59988c413ff44507107845c542728b74e270235c110b7c6b39826a589b85e64fd751e8907a34f391893e9c200d614
   languageName: node
   linkType: hard
 
-"@arcjet/duration@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/duration@npm:1.0.0-beta.7"
-  checksum: 10c0/eb2077338dfe1123f5aec6dd8ee180a19588192523825fff097a1d6e3a1b20da9660c9b8c0e85677ab48a7bd4b1aca6723a0735a06329d796d993c866866d37e
+"@arcjet/cache@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/cache@npm:1.0.0-beta.8"
+  checksum: 10c0/eb59f940b6923d5f8fb34c4465684d90ce6f3f7da1c93e3b77239fec8f4b739ee098a59e131eb4bb8848cd4473439b600fae922b227802a03f361c0af00babd2
   languageName: node
   linkType: hard
 
-"@arcjet/env@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/env@npm:1.0.0-beta.7"
-  checksum: 10c0/b739317c276ebdeac82d234e409becff40280d10cb6f5a891c9e109898d0e1a43f6b8ff6c9600f71d94e06a5858ea931725684916e7369e66a05fd0d0de57c24
+"@arcjet/duration@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/duration@npm:1.0.0-beta.8"
+  checksum: 10c0/562cb2355e08cb11d6ce077d2ba8e906ff8956d0f44e1ce50bc1b0b934a1e617fd8db165a01e856dd548a334f9f078747e228a1a969b9d8f51d839014048da02
   languageName: node
   linkType: hard
 
-"@arcjet/headers@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/headers@npm:1.0.0-beta.7"
-  checksum: 10c0/73f25e44dcdb91492f6cd278b786bcd66174cd72073e1809e1e95c69c0c950d10b026f608aceb2d16aa971b04c06a34e538102e882895833be40539538772527
+"@arcjet/env@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/env@npm:1.0.0-beta.8"
+  checksum: 10c0/9e6a5994397771e98b23834ef2aca6eb92ac95989372af42bdffb64a5cbca42aa054c7c1b9c3f02c2294ed0afe2d164c6a3671bad86a9f071b6719d049c07ffb
   languageName: node
   linkType: hard
 
-"@arcjet/ip@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/ip@npm:1.0.0-beta.7"
-  checksum: 10c0/cf047be0c4c8b0b8f1406c2000e58e716681b4a9b1d73066da2330629de56e2ad2aaf60634671e41feb1a4ee8b2b92714f1d93159b546f206c942d7b7576a31a
+"@arcjet/headers@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/headers@npm:1.0.0-beta.8"
+  checksum: 10c0/f2beb1fe661c657738478f283ea8e339cb98828271fed781b69c793fe7374efcbc8154774f3fd1935150781ede79b22e0c05a8052c5a496a68474062330966a4
   languageName: node
   linkType: hard
 
-"@arcjet/logger@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/logger@npm:1.0.0-beta.7"
+"@arcjet/ip@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/ip@npm:1.0.0-beta.8"
+  checksum: 10c0/d5eff812193a50c1c0b08edb4e577327f34ed09c0780835049c12b0bf7c5f4160943d675274e4cfceb97f8602f1e54638738815b876604f9113a467c12066fc4
+  languageName: node
+  linkType: hard
+
+"@arcjet/logger@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/logger@npm:1.0.0-beta.8"
   dependencies:
-    "@arcjet/sprintf": "npm:1.0.0-beta.7"
-  checksum: 10c0/d42cd3af7bcdda044196a72824823c652faac59558f48cc067f63972bec8dda9fd9ba28175bc88df92a455618a255741b49c3b952905c19fd7463c783f5b2b54
+    "@arcjet/sprintf": "npm:1.0.0-beta.8"
+  checksum: 10c0/d3187a24e9d82ff6fe242e65fe48c0ecbe1dee3010aef021163f2fa8ba19739b760e1284e7d3ffb72dd6ecb2dc60ff7d4b0d27577cbc560361b98230c54d5b27
   languageName: node
   linkType: hard
 
-"@arcjet/next@npm:^1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/next@npm:1.0.0-beta.7"
+"@arcjet/next@npm:^1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/next@npm:1.0.0-beta.8"
   dependencies:
-    "@arcjet/env": "npm:1.0.0-beta.7"
-    "@arcjet/headers": "npm:1.0.0-beta.7"
-    "@arcjet/ip": "npm:1.0.0-beta.7"
-    "@arcjet/logger": "npm:1.0.0-beta.7"
-    "@arcjet/protocol": "npm:1.0.0-beta.7"
-    "@arcjet/transport": "npm:1.0.0-beta.7"
-    arcjet: "npm:1.0.0-beta.7"
+    "@arcjet/env": "npm:1.0.0-beta.8"
+    "@arcjet/headers": "npm:1.0.0-beta.8"
+    "@arcjet/ip": "npm:1.0.0-beta.8"
+    "@arcjet/logger": "npm:1.0.0-beta.8"
+    "@arcjet/protocol": "npm:1.0.0-beta.8"
+    "@arcjet/transport": "npm:1.0.0-beta.8"
+    arcjet: "npm:1.0.0-beta.8"
   peerDependencies:
     next: ">=13"
-  checksum: 10c0/b318b90c6f9e0e18ef631b5878db7c4ffbea35a41c6661ab2005b34ad86e0ab4d77a9f55770a569639d75ef164eb172a3385cb200532e19802c08ba86bf47cdd
+  checksum: 10c0/aec96e39cf59a550a5d899298829e3eec6daee6c36bdae0277919d2ec31bc64aafd3038954b798fb74bd25b22085c093da991de6690657439a7fae2222d09160
   languageName: node
   linkType: hard
 
-"@arcjet/protocol@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/protocol@npm:1.0.0-beta.7"
+"@arcjet/protocol@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/protocol@npm:1.0.0-beta.8"
   dependencies:
+    "@arcjet/cache": "npm:1.0.0-beta.8"
     "@bufbuild/protobuf": "npm:1.10.1"
     "@connectrpc/connect": "npm:1.6.1"
     typeid-js: "npm:1.2.0"
-  checksum: 10c0/eefaad15859920e81287325e9c2a324ef26662497e8da11297c9239e3ef6431e455513f8c8a7b49376bd8b9447dff16703447c5af05ec25da84404c362f1417f
+  checksum: 10c0/16a0062fbb79328b0964613064598d4ff75f0a57496114effaf648ea2353f08ea0eacf28556d9293e294b57acfd3c8d95dd39dea869065d3c645020f1e0507aa
   languageName: node
   linkType: hard
 
-"@arcjet/runtime@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/runtime@npm:1.0.0-beta.7"
-  checksum: 10c0/0f12b060bed707e703ec00d48d2f2063197f472a52b6c645d7e51d125a853a58ea8cc03ba3f89d1ec1a4e8d438199f5b3080ba47314c4c156f9f02c4e797fd5d
+"@arcjet/runtime@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/runtime@npm:1.0.0-beta.8"
+  checksum: 10c0/41b2e51083e8054988a6ce773b060d22449fa2390e2667c769f5b3185258f5146aadf17e1bffb8ff1a290e0330f0d267bae21a626966107223f6c99c7632c627
   languageName: node
   linkType: hard
 
-"@arcjet/sprintf@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/sprintf@npm:1.0.0-beta.7"
-  checksum: 10c0/63df00a83e9e7060eeb97cb561c4436a5d6d2bf32869a06c390524e57a179ad38185c94c49c410ee4534435a72aae23e6426f9d38930e153b915e90c4be24cc0
+"@arcjet/sprintf@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/sprintf@npm:1.0.0-beta.8"
+  checksum: 10c0/58947de5269c0f70a6c9d314adf5b8db8ae2edff25968311e56880d0964409abdb7bd2afb5e33e1fa281fde018937d029594bf78ff13afc8b53b6ae7a7a7ab4a
   languageName: node
   linkType: hard
 
-"@arcjet/stable-hash@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/stable-hash@npm:1.0.0-beta.7"
-  checksum: 10c0/461d76c0946d0ab7ed5001ffc9e4387f873032eebb9ca3c808975f31e60462befec8441519d760252e386e66cae1d572f1f7a1cc8c033bd6ffe38f2754d570fc
+"@arcjet/stable-hash@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/stable-hash@npm:1.0.0-beta.8"
+  checksum: 10c0/bad9b4aabf4c7df15840c8287bc7df247a8dfd45e478240223d7328b1e6c9f43bb35e84b55553716aeaeefab37ffc7a5afbd546df474c414028ace24b70e05ff
   languageName: node
   linkType: hard
 
-"@arcjet/transport@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "@arcjet/transport@npm:1.0.0-beta.7"
+"@arcjet/transport@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@arcjet/transport@npm:1.0.0-beta.8"
   dependencies:
     "@bufbuild/protobuf": "npm:1.10.1"
     "@connectrpc/connect": "npm:1.6.1"
     "@connectrpc/connect-node": "npm:1.6.1"
     "@connectrpc/connect-web": "npm:1.6.1"
-  checksum: 10c0/f566d6227e015d76bdc46e72504be2b1151a14961aa4183d27992af8360416cb10da246979754bca8f9f15b4c04c5832289871a00bca1aa6ee0239076083c38e
+  checksum: 10c0/c16e390a28a384a7bd3e2303d123c0cc7a3febf84ada83148c906ed69bc82ffbf78f4dea3ee7c5cbf2ab0d7236b2979a435055c00af5648d0027090c5c744de2
   languageName: node
   linkType: hard
 
@@ -5914,17 +5922,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"arcjet@npm:1.0.0-beta.7":
-  version: 1.0.0-beta.7
-  resolution: "arcjet@npm:1.0.0-beta.7"
+"arcjet@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "arcjet@npm:1.0.0-beta.8"
   dependencies:
-    "@arcjet/analyze": "npm:1.0.0-beta.7"
-    "@arcjet/duration": "npm:1.0.0-beta.7"
-    "@arcjet/headers": "npm:1.0.0-beta.7"
-    "@arcjet/protocol": "npm:1.0.0-beta.7"
-    "@arcjet/runtime": "npm:1.0.0-beta.7"
-    "@arcjet/stable-hash": "npm:1.0.0-beta.7"
-  checksum: 10c0/c00278257f1ad83f476028071b3cbfb2b1fc710a720b7d52dd9af00376995dabe943336fb5facd97bd7c8224a443863f7b401d41cc71e8a0e73c7711bc5c1b64
+    "@arcjet/analyze": "npm:1.0.0-beta.8"
+    "@arcjet/cache": "npm:1.0.0-beta.8"
+    "@arcjet/duration": "npm:1.0.0-beta.8"
+    "@arcjet/headers": "npm:1.0.0-beta.8"
+    "@arcjet/protocol": "npm:1.0.0-beta.8"
+    "@arcjet/runtime": "npm:1.0.0-beta.8"
+    "@arcjet/stable-hash": "npm:1.0.0-beta.8"
+  checksum: 10c0/7483a11a6c218d3e7f1379ae3f9500da15295f8fb5d03602669884431feaa27ce6250c075aee5b747e557ba29d6b951d4fe37d9b2ea0757dae7b8f04121f8557
   languageName: node
   linkType: hard
 
@@ -14041,7 +14050,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tasko@workspace:."
   dependencies:
-    "@arcjet/next": "npm:^1.0.0-beta.7"
+    "@arcjet/next": "npm:^1.0.0-beta.8"
     "@clerk/nextjs": "npm:^6.20.2"
     "@clerk/themes": "npm:^2.2.44"
     "@codecov/nextjs-webpack-plugin": "npm:^1.8.0"
