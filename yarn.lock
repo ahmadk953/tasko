@@ -5231,7 +5231,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=8.1.0":
+"@types/node@npm:*":
   version: 22.13.1
   resolution: "@types/node@npm:22.13.1"
   dependencies:
@@ -13905,13 +13905,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stripe@npm:^17.7.0":
-  version: 17.7.0
-  resolution: "stripe@npm:17.7.0"
+"stripe@npm:^18.2.1":
+  version: 18.2.1
+  resolution: "stripe@npm:18.2.1"
   dependencies:
-    "@types/node": "npm:>=8.1.0"
     qs: "npm:^6.11.0"
-  checksum: 10c0/df67c6d455bd0dd87140640924c220fa9581fc00c3267d171f407c8d088f946f61e3ae7e88a89e7dd705b10fd5254630fc943222eb6f003390ebafbd391f81b2
+  peerDependencies:
+    "@types/node": ">=12.x.x"
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+  checksum: 10c0/7edef67ca27bd4e84ac24eae4e10fa1d712392c08eec62aa6748c78241ebccc2a057651716a619fcaac1b70c5f08ba5fc5adf255d67462d5a441e3a96c0dc6c5
   languageName: node
   linkType: hard
 
@@ -14154,7 +14158,7 @@ __metadata:
     react-dom: "npm:^19.1.0"
     sharp: "npm:^0.33.5"
     sonner: "npm:^2.0.2"
-    stripe: "npm:^17.7.0"
+    stripe: "npm:^18.2.1"
     tailwind-merge: "npm:^3.3.0"
     tailwindcss: "npm:^3.4.16"
     tailwindcss-animate: "npm:^1.0.7"
