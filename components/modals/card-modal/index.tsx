@@ -19,14 +19,16 @@ export const CardModal = () => {
   const isOpen = useCardModal((state) => state.isOpen);
   const onClose = useCardModal((state) => state.onClose);
 
-  const { data: cardData } = useQuery<CardWithList>({
+  const { data: cardData, isLoading } = useQuery<CardWithList>({
     queryKey: ['card', id],
     queryFn: () => fetcher(`/api/cards/${id}`),
+    enabled: !!id, // Only run the query when ID exists
   });
 
   const { data: auditLogsData } = useQuery<AuditLog[]>({
     queryKey: ['card-logs', id],
     queryFn: () => fetcher(`/api/cards/${id}/logs`),
+    enabled: !!id, // Only run the query when ID exists
   });
 
   return (
@@ -35,7 +37,7 @@ export const CardModal = () => {
         <VisuallyHidden.Root>
           <DialogTitle>Card Data Panel</DialogTitle>
         </VisuallyHidden.Root>
-        {!cardData ? <Header.Skeleton /> : <Header data={cardData} />}
+        {!cardData || !cardData.title ? <Header.Skeleton /> : <Header data={cardData} />}
         <div className='grid grid-cols-1 md:grid-cols-4 md:gap-4'>
           <div className='col-span-3'>
             <div className='w-full space-y-10'>
