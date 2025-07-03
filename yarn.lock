@@ -1126,9 +1126,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@content-collections/core@npm:^0.9.0":
-  version: 0.9.0
-  resolution: "@content-collections/core@npm:0.9.0"
+"@content-collections/core@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "@content-collections/core@npm:0.9.1"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     "@standard-schema/spec": "npm:^1.0.0"
@@ -1144,7 +1144,7 @@ __metadata:
     zod: "npm:^3.24.4"
   peerDependencies:
     typescript: ^5.0.2
-  checksum: 10c0/9fdfb617d128fa2d60f7d0b3e3421b2cde790f28c0732f884816405b23a40a47f3187e4ab5df70d432da59cc33338629af7eda3957fd5dac8e9699461e07dee3
+  checksum: 10c0/8db3877646fac989807a6a4c305bcee8756aaf9290b7e2ce7562db9a638cda29eb78ca01071b651d99515e2673f524ef40b73ebc106f5d1a9e6abbcbeabbb6b2
   languageName: node
   linkType: hard
 
@@ -13973,7 +13973,7 @@ __metadata:
     "@clerk/themes": "npm:^2.2.48"
     "@codecov/nextjs-webpack-plugin": "npm:^1.9.1"
     "@content-collections/cli": "npm:^0.1.6"
-    "@content-collections/core": "npm:^0.9.0"
+    "@content-collections/core": "npm:^0.9.1"
     "@content-collections/mdx": "npm:^0.2.2"
     "@content-collections/next": "npm:^0.2.6"
     "@eslint/eslintrc": "npm:^3.3.1"
