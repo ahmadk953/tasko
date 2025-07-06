@@ -2583,12 +2583,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:15.3.3":
-  version: 15.3.3
-  resolution: "@next/eslint-plugin-next@npm:15.3.3"
+"@next/eslint-plugin-next@npm:15.3.5":
+  version: 15.3.5
+  resolution: "@next/eslint-plugin-next@npm:15.3.5"
   dependencies:
     fast-glob: "npm:3.3.1"
-  checksum: 10c0/d6c95d07d46b9369f27eb716e2f6c8df6d97e077b055e26eff8f1931fc3cd7a6af73461d318917e60b68561ea90e0b5f43a2c6eaf641c1f740aadd1d2b12919a
+  checksum: 10c0/fb86ead7d0c0b47cd670d866e4c1dfd28d288f30d2db8756a57b5c63a0e47db874202e69e5cf7990815a1e75fb012876acc602d90b43ad4eeeb2b167e20949b6
   languageName: node
   linkType: hard
 
@@ -14003,7 +14003,7 @@ __metadata:
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
-    "@next/eslint-plugin-next": "npm:15.3.3"
+    "@next/eslint-plugin-next": "npm:15.3.5"
     "@next/mdx": "npm:^15.3.3"
     "@prisma/client": "npm:^6.11.1"
     "@prisma/extension-accelerate": "npm:^2.0.1"
