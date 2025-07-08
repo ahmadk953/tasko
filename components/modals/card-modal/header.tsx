@@ -40,7 +40,7 @@ export const Header = ({ data }: HeaderProps) => {
 
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const [title, setTitle] = useState(data.title);
+  const [title, setTitle] = useState(data?.title || '');
 
   const onBlur = () => {
     inputRef.current?.form?.requestSubmit();
