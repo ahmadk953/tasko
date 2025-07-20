@@ -943,57 +943,57 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clerk/backend@npm:^2.0.0":
-  version: 2.4.1
-  resolution: "@clerk/backend@npm:2.4.1"
+"@clerk/backend@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "@clerk/backend@npm:2.5.0"
   dependencies:
-    "@clerk/shared": "npm:^3.11.0"
-    "@clerk/types": "npm:^4.64.0"
+    "@clerk/shared": "npm:^3.13.0"
+    "@clerk/types": "npm:^4.68.0"
     cookie: "npm:1.0.2"
-    snakecase-keys: "npm:8.0.1"
+    snakecase-keys: "npm:9.0.1"
     standardwebhooks: "npm:^1.0.0"
     tslib: "npm:2.8.1"
-  checksum: 10c0/1b6324a44c908c3623e60a2b25f814074e0beab78bf2dfc3ff2401215b5c8e5d8757a1df33af537f6a0a4540ac933d0583dab5aaba5664c0a719ce5d70b4cea0
+  checksum: 10c0/221976ee177d65cbf057b74a1ec8484a959f9e17a5674fc2cb62913cd25abd645e7cbdac2abbf437df969c300cc20a906b295fe40893af052e95ceb45c4ef59b
   languageName: node
   linkType: hard
 
-"@clerk/clerk-react@npm:^5.31.9":
-  version: 5.31.9
-  resolution: "@clerk/clerk-react@npm:5.31.9"
+"@clerk/clerk-react@npm:^5.35.3":
+  version: 5.35.3
+  resolution: "@clerk/clerk-react@npm:5.35.3"
   dependencies:
-    "@clerk/shared": "npm:^3.9.6"
-    "@clerk/types": "npm:^4.60.0"
+    "@clerk/shared": "npm:^3.13.0"
+    "@clerk/types": "npm:^4.68.0"
     tslib: "npm:2.8.1"
   peerDependencies:
     react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
     react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-0
-  checksum: 10c0/d5bb7282d9907df51af50ed40105de168a638d0a78235118042e31f2efd0a2269f8398c2794cbdc948a37b41a42ee40654cfb367284bf7247b41eb1693a69f0a
+  checksum: 10c0/1842f410c597c00d2b8adf90f3a07dffbd8b969631bd084a902a83f2ee66620a2b9c0dba2abb9f83e4720b1f940393d5fdf934219eb5509f6fe75e60621dd20a
   languageName: node
   linkType: hard
 
-"@clerk/nextjs@npm:^6.21.0":
-  version: 6.21.0
-  resolution: "@clerk/nextjs@npm:6.21.0"
+"@clerk/nextjs@npm:^6.23.3":
+  version: 6.25.4
+  resolution: "@clerk/nextjs@npm:6.25.4"
   dependencies:
-    "@clerk/backend": "npm:^2.0.0"
-    "@clerk/clerk-react": "npm:^5.31.9"
-    "@clerk/shared": "npm:^3.9.6"
-    "@clerk/types": "npm:^4.60.0"
+    "@clerk/backend": "npm:^2.5.0"
+    "@clerk/clerk-react": "npm:^5.35.3"
+    "@clerk/shared": "npm:^3.13.0"
+    "@clerk/types": "npm:^4.68.0"
     server-only: "npm:0.0.1"
     tslib: "npm:2.8.1"
   peerDependencies:
     next: ^13.5.7 || ^14.2.25 || ^15.2.3
     react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
     react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-0
-  checksum: 10c0/660e47ee0f89595c6ed112a8832134104cf28a2fd66ac4a9b7130ea71afc393f7f1064a9c07291e59a6beb4e935e1af3efb8677951a5dd486f14a0e51e49e6a0
+  checksum: 10c0/63abf49b6a07e74174eb82a789a82e449b512c86609d8a49b8c93f027e709d47aba1def873fed7caf793eba390669342dcfed1f6533103ae84eb88eef95808e2
   languageName: node
   linkType: hard
 
-"@clerk/shared@npm:^3.11.0":
-  version: 3.11.0
-  resolution: "@clerk/shared@npm:3.11.0"
+"@clerk/shared@npm:^3.13.0":
+  version: 3.13.0
+  resolution: "@clerk/shared@npm:3.13.0"
   dependencies:
-    "@clerk/types": "npm:^4.64.0"
+    "@clerk/types": "npm:^4.68.0"
     dequal: "npm:2.0.3"
     glob-to-regexp: "npm:0.4.1"
     js-cookie: "npm:3.0.5"
@@ -1007,29 +1007,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/f5b6099f506bfdbf8a03fb615597500adddab7350d2d1e39ee0ff0f5775d10b712e6fcbf8a551ea6c17d96d242a59fccaed4e536122b8306137a942582ecf2b7
-  languageName: node
-  linkType: hard
-
-"@clerk/shared@npm:^3.9.6":
-  version: 3.9.6
-  resolution: "@clerk/shared@npm:3.9.6"
-  dependencies:
-    "@clerk/types": "npm:^4.60.0"
-    dequal: "npm:2.0.3"
-    glob-to-regexp: "npm:0.4.1"
-    js-cookie: "npm:3.0.5"
-    std-env: "npm:^3.9.0"
-    swr: "npm:^2.3.3"
-  peerDependencies:
-    react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
-    react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-0
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 10c0/c4203e5240fc2d976c4f80591e867d15511b3ddf468ff26f4b48556c7332b47724ad5f8e776c5bfe12e1e92ddedda9bf6b6720eb0747df6eefc7e30dc99d09c9
+  checksum: 10c0/7ea97f90997622e202a78c9d23e85227915f0b7e62d302f08614bb00401daa993909d60130e49c9b2cd17598ea2c54dd9f91df8b92e1ea58cab401ed43c0b64b
   languageName: node
   linkType: hard
 
@@ -1040,24 +1018,6 @@ __metadata:
     "@clerk/types": "npm:^4.68.0"
     tslib: "npm:2.8.1"
   checksum: 10c0/389d30a45ecbd9e299911f318c64102372d5a0ecc41429cfc2a64e6f298570897e2199b904a09f1a81a96dbe97892804e60259d7343ad67f1c262fec84111afa
-  languageName: node
-  linkType: hard
-
-"@clerk/types@npm:^4.60.0":
-  version: 4.60.0
-  resolution: "@clerk/types@npm:4.60.0"
-  dependencies:
-    csstype: "npm:3.1.3"
-  checksum: 10c0/78322df70835ef02051f26b0875e87424aca93cad174eb8fba9c62f18420287d514f77d8cc4c7660cf6a87138ddc2ccfe7c0c9d311df2ce4395cc0961914fbfb
-  languageName: node
-  linkType: hard
-
-"@clerk/types@npm:^4.64.0":
-  version: 4.64.0
-  resolution: "@clerk/types@npm:4.64.0"
-  dependencies:
-    csstype: "npm:3.1.3"
-  checksum: 10c0/83ad0a436deedfe2148f99af905dd54f945acb04a2eb5a822d119e071abc3d4123b72d2132276dac5f0c0c4dba5bd6b2e56d4b3789721919b1badde760288ee0
   languageName: node
   linkType: hard
 
@@ -6857,6 +6817,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"change-case@npm:^5.4.4":
+  version: 5.4.4
+  resolution: "change-case@npm:5.4.4"
+  checksum: 10c0/2a9c2b9c9ad6ab2491105aaf506db1a9acaf543a18967798dcce20926c6a173aa63266cb6189f3086e3c14bf7ae1f8ea4f96ecc466fcd582310efa00372f3734
+  languageName: node
+  linkType: hard
+
 "char-regex@npm:^1.0.2":
   version: 1.0.2
   resolution: "char-regex@npm:1.0.2"
@@ -7470,16 +7437,6 @@ __metadata:
     "@types/trusted-types":
       optional: true
   checksum: 10c0/c8f8e5b0879a0d93c84a2e5e78649a47d0c057ed0f7850ca3d573d2cca64b84fb1ff85bd4b20980ade69c4e5b80ae73011340f1c2ff375c7ef98bb8268e1d13a
-  languageName: node
-  linkType: hard
-
-"dot-case@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "dot-case@npm:3.0.4"
-  dependencies:
-    no-case: "npm:^3.0.4"
-    tslib: "npm:^2.0.3"
-  checksum: 10c0/5b859ea65097a7ea870e2c91b5768b72ddf7fa947223fd29e167bcdff58fe731d941c48e47a38ec8aa8e43044c8fbd15cd8fa21689a526bc34b6548197cd5b05
   languageName: node
   linkType: hard
 
@@ -10659,15 +10616,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lower-case@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "lower-case@npm:2.0.2"
-  dependencies:
-    tslib: "npm:^2.0.3"
-  checksum: 10c0/3d925e090315cf7dc1caa358e0477e186ffa23947740e4314a7429b6e62d72742e0bbe7536a5ae56d19d7618ce998aba05caca53c2902bd5742fdca5fc57fd7b
-  languageName: node
-  linkType: hard
-
 "lru-cache@npm:^10.0.1, lru-cache@npm:^10.2.0":
   version: 10.4.3
   resolution: "lru-cache@npm:10.4.3"
@@ -10761,13 +10709,6 @@ __metadata:
   dependencies:
     tmpl: "npm:1.0.5"
   checksum: 10c0/b0e6e599780ce6bab49cc413eba822f7d1f0dfebd1c103eaa3785c59e43e22c59018323cf9e1708f0ef5329e94a745d163fcbb6bff8e4c6742f9be9e86f3500c
-  languageName: node
-  linkType: hard
-
-"map-obj@npm:^4.1.0":
-  version: 4.3.0
-  resolution: "map-obj@npm:4.3.0"
-  checksum: 10c0/1c19e1c88513c8abdab25c316367154c6a0a6a0f77e3e8c391bb7c0e093aefed293f539d026dc013d86219e5e4c25f23b0003ea588be2101ccd757bacc12d43b
   languageName: node
   linkType: hard
 
@@ -11639,16 +11580,6 @@ __metadata:
   bin:
     next: dist/bin/next
   checksum: 10c0/5a3c6a5d411c21917457eb66be577def739d3237f95663eed94dbe8274b7cdee64a76c2b05ec792930c6488587b613d125413927d1d5202414b8d576e527f8e0
-  languageName: node
-  linkType: hard
-
-"no-case@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "no-case@npm:3.0.4"
-  dependencies:
-    lower-case: "npm:^2.0.2"
-    tslib: "npm:^2.0.3"
-  checksum: 10c0/8ef545f0b3f8677c848f86ecbd42ca0ff3cd9dd71c158527b344c69ba14710d816d8489c746b6ca225e7b615108938a0bda0a54706f8c255933703ac1cf8e703
   languageName: node
   linkType: hard
 
@@ -13561,24 +13492,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"snake-case@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "snake-case@npm:3.0.4"
+"snakecase-keys@npm:9.0.1":
+  version: 9.0.1
+  resolution: "snakecase-keys@npm:9.0.1"
   dependencies:
-    dot-case: "npm:^3.0.4"
-    tslib: "npm:^2.0.3"
-  checksum: 10c0/ab19a913969f58f4474fe9f6e8a026c8a2142a01f40b52b79368068343177f818cdfef0b0c6b9558f298782441d5ca8ed5932eb57822439fad791d866e62cecd
-  languageName: node
-  linkType: hard
-
-"snakecase-keys@npm:8.0.1":
-  version: 8.0.1
-  resolution: "snakecase-keys@npm:8.0.1"
-  dependencies:
-    map-obj: "npm:^4.1.0"
-    snake-case: "npm:^3.0.4"
+    change-case: "npm:^5.4.4"
+    map-obj: "npm:^5.0.2"
     type-fest: "npm:^4.15.0"
-  checksum: 10c0/3615126462e413fe5e1637c945362e99c3ac497bc49d867397547ab1a87ff2827ae890d1aa022ef06c27cb3924bcb3714db2f4e76770e6ebd3625f3e16d79d27
+  checksum: 10c0/7958ad0fae342de10419941b2e5a5d933bbcfb206ee4a448163fba1e33783b57ac1e5be825a671aaa73e3ca87360c7028db2d3c9af1d1c8074c3c93041fcac39
   languageName: node
   linkType: hard
 
@@ -14103,7 +14024,7 @@ __metadata:
   resolution: "tasko@workspace:."
   dependencies:
     "@arcjet/next": "npm:^1.0.0-beta.8"
-    "@clerk/nextjs": "npm:^6.21.0"
+    "@clerk/nextjs": "npm:^6.23.3"
     "@clerk/themes": "npm:^2.3.3"
     "@codecov/nextjs-webpack-plugin": "npm:^1.9.1"
     "@content-collections/cli": "npm:^0.1.6"
@@ -14386,7 +14307,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:2.8.1, tslib@npm:^2.0.0, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.4.0, tslib@npm:^2.8.0":
+"tslib@npm:2.8.1, tslib@npm:^2.0.0, tslib@npm:^2.1.0, tslib@npm:^2.4.0, tslib@npm:^2.8.0":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
