@@ -1114,20 +1114,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@content-collections/cli@npm:^0.1.6":
-  version: 0.1.6
-  resolution: "@content-collections/cli@npm:0.1.6"
+"@content-collections/cli@npm:^0.1.7":
+  version: 0.1.7
+  resolution: "@content-collections/cli@npm:0.1.7"
   dependencies:
     "@clerc/core": "npm:^0.44.0"
     "@clerc/plugin-completions": "npm:^0.44.0"
     "@clerc/plugin-help": "npm:^0.44.0"
     "@clerc/plugin-version": "npm:^0.44.0"
-    "@content-collections/integrations": "npm:0.2.1"
+    "@content-collections/integrations": "npm:0.3.0"
   peerDependencies:
     "@content-collections/core": 0.x
   bin:
     content-collections: dist/index.js
-  checksum: 10c0/e3b9598a53493e2efeeb6d159c31990734d96a8326e6d5a522718837132fcb584ce75b393ded4cd1f077d5e824f6c6ec89fe0e4d2c149e726ef72521c97520e7
+  checksum: 10c0/bf2883164046d99331ec5ffe8c3e76ad26abe8a7d2452c46c0f9a729016f0048796d1bc63e6c395b91b45d941687a5cd54e904c654edca1d32d0b4b5e91214f5
   languageName: node
   linkType: hard
 
@@ -1159,6 +1159,15 @@ __metadata:
   peerDependencies:
     "@content-collections/core": 0.x
   checksum: 10c0/247805f79ed180842d57d78dc18fe9b61adf01b2b69445ecbc9abff336f86820a3d539205d95170d79c05753f0826fb555f3df6eebfe9565627acc7c6b6bffb6
+  languageName: node
+  linkType: hard
+
+"@content-collections/integrations@npm:0.3.0":
+  version: 0.3.0
+  resolution: "@content-collections/integrations@npm:0.3.0"
+  peerDependencies:
+    "@content-collections/core": 0.x
+  checksum: 10c0/9c1487ec8e4939e1002ca441acb6e6cbf448a42840cea1ea78fc334417308870c1f3158a33263080a24dcec73f9c7363516eb38a2a7560f1756d8a03b5ac6c1f
   languageName: node
   linkType: hard
 
@@ -13882,7 +13891,7 @@ __metadata:
     "@clerk/nextjs": "npm:^6.23.3"
     "@clerk/themes": "npm:^2.3.3"
     "@codecov/nextjs-webpack-plugin": "npm:^1.9.1"
-    "@content-collections/cli": "npm:^0.1.6"
+    "@content-collections/cli": "npm:^0.1.7"
     "@content-collections/core": "npm:^0.10.0"
     "@content-collections/mdx": "npm:^0.2.2"
     "@content-collections/next": "npm:^0.2.6"
