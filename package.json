@@ -94,7 +94,7 @@
     "babel-plugin-react-compiler": "^19.0.0-beta-714736e-20250131",
     "eslint": "^9.33.0",
     "eslint-config-next": "15.4.6",
-    "eslint-config-prettier": "^10.1.5",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react-compiler": "^19.0.0-beta-714736e-20250131",
     "fluid-tailwind": "^1.0.4",
     "jest": "^30.0.0",
