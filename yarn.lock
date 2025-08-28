@@ -2595,7 +2595,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:3.3.0, @liveblocks/client@npm:^3.3.0":
+"@liveblocks/client@npm:3.4.2":
+  version: 3.4.2
+  resolution: "@liveblocks/client@npm:3.4.2"
+  dependencies:
+    "@liveblocks/core": "npm:3.4.2"
+  checksum: 10c0/e173423a72d5c71a381f3d6d5e4306b974dd2d2044fd65a9150d96a3e5ad220c3fa2c86b11a309331fed14ff0ed31c5904f515e07d549b659e504fc00b04d0e4
+  languageName: node
+  linkType: hard
+
+"@liveblocks/client@npm:^3.3.0":
   version: 3.3.0
   resolution: "@liveblocks/client@npm:3.3.0"
   dependencies:
@@ -2622,6 +2631,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@liveblocks/core@npm:3.4.2":
+  version: 3.4.2
+  resolution: "@liveblocks/core@npm:3.4.2"
+  peerDependencies:
+    "@types/json-schema": ^7
+  checksum: 10c0/6be4216685d757f983323f0060dc00c77e79410c42fe86b6247602b49400716b7a5e300886bba30344ac607dd0b57f6461ef98dd501e2dafd1fa2bce5c4082df
+  languageName: node
+  linkType: hard
+
 "@liveblocks/node@npm:^3.1.1":
   version: 3.1.1
   resolution: "@liveblocks/node@npm:3.1.1"
@@ -2634,12 +2652,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/react@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "@liveblocks/react@npm:3.3.0"
+"@liveblocks/react@npm:^3.4.2":
+  version: 3.4.2
+  resolution: "@liveblocks/react@npm:3.4.2"
   dependencies:
-    "@liveblocks/client": "npm:3.3.0"
-    "@liveblocks/core": "npm:3.3.0"
+    "@liveblocks/client": "npm:3.4.2"
+    "@liveblocks/core": "npm:3.4.2"
   peerDependencies:
     "@types/react": "*"
     "@types/react-dom": "*"
@@ -2649,7 +2667,7 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10c0/2023221118cf036f998af845b8526d974bd8a8f41447729c26eaaead7598741e63ce6d35704a6fb4000ac756b42bf1155aa541ae61921253e1a9b4f8bf5c96cf
+  checksum: 10c0/390e34e581b1eaedf2bcb56266b4c5a7c255f5649be449d180668b806a32b37addaedb9f012c9c8a2d59d88e22244a2dd08d7231a230e9c5a7bb1be6ed64fb54
   languageName: node
   linkType: hard
 
@@ -13669,7 +13687,7 @@ __metadata:
     "@hello-pangea/dnd": "npm:^18.0.1"
     "@liveblocks/client": "npm:^3.3.0"
     "@liveblocks/node": "npm:^3.1.1"
-    "@liveblocks/react": "npm:^3.3.0"
+    "@liveblocks/react": "npm:^3.4.2"
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.0"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
