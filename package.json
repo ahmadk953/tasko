@@ -25,7 +25,7 @@
     "@liveblocks/node": "^3.1.1",
     "@liveblocks/react": "^3.4.2",
     "@mdx-js/loader": "^3.1.0",
-    "@mdx-js/react": "^3.1.0",
+    "@mdx-js/react": "^3.1.1",
     "@next/mdx": "^15.3.3",
     "@prisma/client": "^6.13.0",
     "@prisma/extension-accelerate": "^2.0.1",
