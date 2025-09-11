@@ -3472,9 +3472,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/client@npm:^6.13.0":
-  version: 6.13.0
-  resolution: "@prisma/client@npm:6.13.0"
+"@prisma/client@npm:^6.16.1":
+  version: 6.16.1
+  resolution: "@prisma/client@npm:6.16.1"
   peerDependencies:
     prisma: "*"
     typescript: ">=5.1.0"
@@ -3483,7 +3483,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 10c0/6d3d181aa91265bd6a331069b1d8358d83f02ffea788121d19f051a58e9957ae2df68e10e5e9e01b389fb942e4c7fa0de27af95deac216dfff7182bf5d7befc0
+  checksum: 10c0/45b130fa79ce74585292d6f2b7f0edb04a6ffe826215f26c1130e79719987b3a193a09acfeebb1d9ba3b2635e1bd96f53431e30c01cfeaedef85c381d943bc03
   languageName: node
   linkType: hard
 
@@ -13928,7 +13928,7 @@ __metadata:
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
     "@next/eslint-plugin-next": "npm:15.5.0"
     "@next/mdx": "npm:^15.3.3"
-    "@prisma/client": "npm:^6.13.0"
+    "@prisma/client": "npm:^6.16.1"
     "@prisma/extension-accelerate": "npm:^2.0.1"
     "@radix-ui/react-accordion": "npm:^1.2.11"
     "@radix-ui/react-avatar": "npm:^1.1.9"
