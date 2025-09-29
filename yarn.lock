@@ -2649,12 +2649,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:3.4.2":
-  version: 3.4.2
-  resolution: "@liveblocks/client@npm:3.4.2"
+"@liveblocks/client@npm:3.8.0":
+  version: 3.8.0
+  resolution: "@liveblocks/client@npm:3.8.0"
   dependencies:
-    "@liveblocks/core": "npm:3.4.2"
-  checksum: 10c0/e173423a72d5c71a381f3d6d5e4306b974dd2d2044fd65a9150d96a3e5ad220c3fa2c86b11a309331fed14ff0ed31c5904f515e07d549b659e504fc00b04d0e4
+    "@liveblocks/core": "npm:3.8.0"
+  checksum: 10c0/632623799905ddfd691280bb538b3c8dfb0cc70e7461c49458c106d2b24ce387b2fc02e859f250a2eed181721bc8aee9a8f4664d0b169ba8358294af263c94fb
   languageName: node
   linkType: hard
 
@@ -2676,21 +2676,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/core@npm:3.4.2":
-  version: 3.4.2
-  resolution: "@liveblocks/core@npm:3.4.2"
-  peerDependencies:
-    "@types/json-schema": ^7
-  checksum: 10c0/6be4216685d757f983323f0060dc00c77e79410c42fe86b6247602b49400716b7a5e300886bba30344ac607dd0b57f6461ef98dd501e2dafd1fa2bce5c4082df
-  languageName: node
-  linkType: hard
-
 "@liveblocks/core@npm:3.7.1":
   version: 3.7.1
   resolution: "@liveblocks/core@npm:3.7.1"
   peerDependencies:
     "@types/json-schema": ^7
   checksum: 10c0/59128ebeba840c42ec42519a3e6ab5997855ff67958092977d2f0a59f30d2f2d34280ca7d9d52d90615bb45bf5cafdc63499fb2fae88b26518690637d7109e29
+  languageName: node
+  linkType: hard
+
+"@liveblocks/core@npm:3.8.0":
+  version: 3.8.0
+  resolution: "@liveblocks/core@npm:3.8.0"
+  peerDependencies:
+    "@types/json-schema": ^7
+  checksum: 10c0/2b8ac17e3cf0d67316d30a038422ad17e67c51af523ba7f98c37a3b651e2aa126cc54198f94552f7f9e87e5d0111262b6681638d003e780604c9680db86689e5
   languageName: node
   linkType: hard
 
@@ -2706,12 +2706,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/react@npm:^3.4.2":
-  version: 3.4.2
-  resolution: "@liveblocks/react@npm:3.4.2"
+"@liveblocks/react@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "@liveblocks/react@npm:3.8.0"
   dependencies:
-    "@liveblocks/client": "npm:3.4.2"
-    "@liveblocks/core": "npm:3.4.2"
+    "@liveblocks/client": "npm:3.8.0"
+    "@liveblocks/core": "npm:3.8.0"
   peerDependencies:
     "@types/react": "*"
     "@types/react-dom": "*"
@@ -2721,7 +2721,7 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10c0/390e34e581b1eaedf2bcb56266b4c5a7c255f5649be449d180668b806a32b37addaedb9f012c9c8a2d59d88e22244a2dd08d7231a230e9c5a7bb1be6ed64fb54
+  checksum: 10c0/d09b01c6b632682957ecea9fd347fc06502012d9801f3a907926d5140b6c23fafbb446d8464796874cad8253c9d30ddc7273f48c3dde1c72e814bf0f87246f03
   languageName: node
   linkType: hard
 
@@ -13968,7 +13968,7 @@ __metadata:
     "@hello-pangea/dnd": "npm:^18.0.1"
     "@liveblocks/client": "npm:^3.3.0"
     "@liveblocks/node": "npm:^3.7.1"
-    "@liveblocks/react": "npm:^3.4.2"
+    "@liveblocks/react": "npm:^3.8.0"
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.1"
     "@microsoft/eslint-formatter-sarif": "npm:^3.1.0"
