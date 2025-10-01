@@ -8557,13 +8557,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"filter-obj@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "filter-obj@npm:5.1.0"
-  checksum: 10c0/716e8ad2bc352e206556b3e5695b3cdff8aab80c53ea4b00c96315bbf467b987df3640575100aef8b84e812cf5ea4251db4cd672bbe33b1e78afea88400c67dd
-  languageName: node
-  linkType: hard
-
 "find-up@npm:^4.0.0, find-up@npm:^4.1.0":
   version: 4.1.0
   resolution: "find-up@npm:4.1.0"
@@ -8609,19 +8602,6 @@ __metadata:
   version: 3.3.2
   resolution: "flatted@npm:3.3.2"
   checksum: 10c0/24cc735e74d593b6c767fe04f2ef369abe15b62f6906158079b9874bdb3ee5ae7110bb75042e70cd3f99d409d766f357caf78d5ecee9780206f5fdc5edbad334
-  languageName: node
-  linkType: hard
-
-"fluid-tailwind@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "fluid-tailwind@npm:1.0.4"
-  dependencies:
-    filter-obj: "npm:^5.1.0"
-    map-obj: "npm:^5.0.2"
-    picocolors: "npm:^1.0.0"
-  peerDependencies:
-    tailwindcss: ^3.2.0
-  checksum: 10c0/279659e5473ad55437edf19674246da86e1b2d54bd56c41f33090ed47d636eff0c62608cab96df53b6027f3f91225f3c44d21e1dc559ae9ce8f536e40ea701ca
   languageName: node
   linkType: hard
 
@@ -10748,13 +10728,6 @@ __metadata:
   dependencies:
     tmpl: "npm:1.0.5"
   checksum: 10c0/b0e6e599780ce6bab49cc413eba822f7d1f0dfebd1c103eaa3785c59e43e22c59018323cf9e1708f0ef5329e94a745d163fcbb6bff8e4c6742f9be9e86f3500c
-  languageName: node
-  linkType: hard
-
-"map-obj@npm:^5.0.2":
-  version: 5.0.2
-  resolution: "map-obj@npm:5.0.2"
-  checksum: 10c0/033f56d93ba08bb389be421819119765bb722ab9742a97b68688fde0d6d4dcbf79a665da9ee3273aef3987e0eb2ba6dab8dcd4ee883163b4a77b4d64e50d63c9
   languageName: node
   linkType: hard
 
@@ -14015,7 +13988,6 @@ __metadata:
     eslint-config-next: "npm:15.5.2"
     eslint-config-prettier: "npm:^10.1.5"
     eslint-plugin-react-compiler: "npm:^19.0.0-beta-714736e-20250131"
-    fluid-tailwind: "npm:^1.0.4"
     ioredis: "npm:^5.6.0"
     jest: "npm:^30.0.0"
     jest-environment-jsdom: "npm:^30.0.5"

@@ -1,21 +1,15 @@
-import fluid, { extract, screens, fontSize } from 'fluid-tailwind';
 import type { Config } from 'tailwindcss';
 
 const config = {
   darkMode: ['selector'],
-  content: {
-    files: [
-      './pages/**/*.{ts,tsx,md,mdx}',
-      './components/**/*.{ts,tsx,md,mdx}',
-      './app/**/*.{ts,tsx,md,mdx}',
-      './src/**/*.{ts,tsx,md,mdx}',
-    ],
-    extract,
-  },
+  content: [
+    './pages/**/*.{ts,tsx,md,mdx}',
+    './components/**/*.{ts,tsx,md,mdx}',
+    './app/**/*.{ts,tsx,md,mdx}',
+    './src/**/*.{ts,tsx,md,mdx}',
+  ],
   prefix: '',
   theme: {
-    screens,
-    fontSize,
     container: {
       center: true,
       padding: '2rem',
@@ -83,7 +77,6 @@ const config = {
   plugins: [
     require('tailwindcss-animate'),
     require('@tailwindcss/typography'),
-    fluid,
   ],
 } satisfies Config;
 
