@@ -13,7 +13,7 @@ Tasko is an open-source task management application built with Next.js. It helps
 - **Framework**: Next.js 15+ (App Router)
 - **Language**: TypeScript (strict mode enabled)
 - **UI**: React 19+
-- **Styling**: Tailwind CSS (with fluid-tailwind)
+- **Styling**: Tailwind CSS
 - **Database**: PostgreSQL with Prisma ORM
 - **Authentication**: Clerk
 - **Security**: Arcjet (rate limiting, bot detection)
