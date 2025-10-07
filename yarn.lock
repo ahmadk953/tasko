@@ -1154,15 +1154,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@content-collections/integrations@npm:0.2.1":
-  version: 0.2.1
-  resolution: "@content-collections/integrations@npm:0.2.1"
-  peerDependencies:
-    "@content-collections/core": 0.x
-  checksum: 10c0/247805f79ed180842d57d78dc18fe9b61adf01b2b69445ecbc9abff336f86820a3d539205d95170d79c05753f0826fb555f3df6eebfe9565627acc7c6b6bffb6
-  languageName: node
-  linkType: hard
-
 "@content-collections/integrations@npm:0.3.0":
   version: 0.3.0
   resolution: "@content-collections/integrations@npm:0.3.0"
@@ -1187,15 +1178,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@content-collections/next@npm:^0.2.6":
-  version: 0.2.6
-  resolution: "@content-collections/next@npm:0.2.6"
+"@content-collections/next@npm:^0.2.7":
+  version: 0.2.7
+  resolution: "@content-collections/next@npm:0.2.7"
   dependencies:
-    "@content-collections/integrations": "npm:0.2.1"
+    "@content-collections/integrations": "npm:0.3.0"
   peerDependencies:
     "@content-collections/core": 0.x
     next: ^12 || ^13 || ^14 || ^15
-  checksum: 10c0/5cc5bd6c220fbb491af84e204f10f77eb0195a7e1faae9becf2d04b0db1a97ec9247eb4cf6d9cefae1e31935c90c301a9253c14a1fc810d85b85567e034092e1
+  checksum: 10c0/c4e9780a932adbb274f7bda5848a96aca4b8d38a6e5c18bf1c9359110c91e56ee8c842bff6cce3541bbb39a3073e0038b8bd1e52a19b59b537f09ff1a0b192b3
   languageName: node
   linkType: hard
 
@@ -13935,7 +13926,7 @@ __metadata:
     "@content-collections/cli": "npm:^0.1.7"
     "@content-collections/core": "npm:^0.10.0"
     "@content-collections/mdx": "npm:^0.2.2"
-    "@content-collections/next": "npm:^0.2.6"
+    "@content-collections/next": "npm:^0.2.7"
     "@eslint/eslintrc": "npm:^3.3.1"
     "@eslint/js": "npm:^9.33.0"
     "@hello-pangea/dnd": "npm:^18.0.1"
