@@ -3532,41 +3532,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/config@npm:6.17.0":
-  version: 6.17.0
-  resolution: "@prisma/config@npm:6.17.0"
+"@prisma/config@npm:6.18.0":
+  version: 6.18.0
+  resolution: "@prisma/config@npm:6.18.0"
   dependencies:
     c12: "npm:3.1.0"
     deepmerge-ts: "npm:7.1.5"
-    effect: "npm:3.16.12"
+    effect: "npm:3.18.4"
     empathic: "npm:2.0.0"
-  checksum: 10c0/8bcffb8b8d8e433027f3acbf2ff45ef399edaefc248ff4097f26715ad0a3082830cf7db40ea7955230985cfb67e1be4f436e8c41c56ace55a8067829b8326b24
+  checksum: 10c0/23872d1a4cc554422085af9767a83755df6809b27ac11e680f650c18b9735558d7295f9e182767fa92f411677ede55fb0cd8653ac7d3bdb13bb8a081b00f6576
   languageName: node
   linkType: hard
 
-"@prisma/debug@npm:6.17.0":
-  version: 6.17.0
-  resolution: "@prisma/debug@npm:6.17.0"
-  checksum: 10c0/6a89c24083c9759adcdfa8b4f056f3f724c931e6a6f4c10653ed1d1e1d734e3cce4fb5564398085fabf500e405a45dcbb7208198dc4407d39acda718eacb902a
+"@prisma/debug@npm:6.18.0":
+  version: 6.18.0
+  resolution: "@prisma/debug@npm:6.18.0"
+  checksum: 10c0/5b88dbeb74864bd8a84e8f1de49d130d237c22634aa7c4fe5a891041f79b059ab8a3a20053d93f22426b70f1afabd646dc140c3647b2a97f2480c2f05c7f557f
   languageName: node
   linkType: hard
 
-"@prisma/engines-version@npm:6.17.0-16.c0aafc03b8ef6cdced8654b9a817999e02457d6a":
-  version: 6.17.0-16.c0aafc03b8ef6cdced8654b9a817999e02457d6a
-  resolution: "@prisma/engines-version@npm:6.17.0-16.c0aafc03b8ef6cdced8654b9a817999e02457d6a"
-  checksum: 10c0/0ae1747e95b4cc8437fa2bc6fd068bc00fd87a2507f861f8efcd47e0bb317f50ddac77e747e02db7c00638185c6e6e8de92f9a3ba0a68f3e8f6f4926d1b64d3e
+"@prisma/engines-version@npm:6.18.0-8.34b5a692b7bd79939a9a2c3ef97d816e749cda2f":
+  version: 6.18.0-8.34b5a692b7bd79939a9a2c3ef97d816e749cda2f
+  resolution: "@prisma/engines-version@npm:6.18.0-8.34b5a692b7bd79939a9a2c3ef97d816e749cda2f"
+  checksum: 10c0/020f404826238d1065174fdf0f32277b542965340ec1e7e6c0db55b877b429112832d5cfaf21c4500fa719ebae5927484c6b0f037a56091343446667e30c1ae3
   languageName: node
   linkType: hard
 
-"@prisma/engines@npm:6.17.0":
-  version: 6.17.0
-  resolution: "@prisma/engines@npm:6.17.0"
+"@prisma/engines@npm:6.18.0":
+  version: 6.18.0
+  resolution: "@prisma/engines@npm:6.18.0"
   dependencies:
-    "@prisma/debug": "npm:6.17.0"
-    "@prisma/engines-version": "npm:6.17.0-16.c0aafc03b8ef6cdced8654b9a817999e02457d6a"
-    "@prisma/fetch-engine": "npm:6.17.0"
-    "@prisma/get-platform": "npm:6.17.0"
-  checksum: 10c0/516ddff330428ba2ad73de4fb9b0c0ea49645a396b1d82db4b988a7d0d8281a365d96058b3e41210039e2fcbd4a43ac16506b8e72b5325a8e707f68fac46df22
+    "@prisma/debug": "npm:6.18.0"
+    "@prisma/engines-version": "npm:6.18.0-8.34b5a692b7bd79939a9a2c3ef97d816e749cda2f"
+    "@prisma/fetch-engine": "npm:6.18.0"
+    "@prisma/get-platform": "npm:6.18.0"
+  checksum: 10c0/1e9ed6b74046b390be5870dca3e7fe38b96c9e7378b879636e820a078be765d0878c2a29314cfac464320e74b597ca2af72b86fd8464ef7a44b29680d7b6fa04
   languageName: node
   linkType: hard
 
@@ -3579,23 +3579,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/fetch-engine@npm:6.17.0":
-  version: 6.17.0
-  resolution: "@prisma/fetch-engine@npm:6.17.0"
+"@prisma/fetch-engine@npm:6.18.0":
+  version: 6.18.0
+  resolution: "@prisma/fetch-engine@npm:6.18.0"
   dependencies:
-    "@prisma/debug": "npm:6.17.0"
-    "@prisma/engines-version": "npm:6.17.0-16.c0aafc03b8ef6cdced8654b9a817999e02457d6a"
-    "@prisma/get-platform": "npm:6.17.0"
-  checksum: 10c0/0a631532ff7f0b969f99784e032e49fb2509b11c6b191c8e131d73793d5f52d6ee064603195b2a6d94b0efc384e614c904aa59b6de4312d601ab7aab54a3dfbf
+    "@prisma/debug": "npm:6.18.0"
+    "@prisma/engines-version": "npm:6.18.0-8.34b5a692b7bd79939a9a2c3ef97d816e749cda2f"
+    "@prisma/get-platform": "npm:6.18.0"
+  checksum: 10c0/145c56ef0886d1245e5db06b0b02f136f927b7ac5a1e9f459b2c2a17606ba6263d4bd0d5fc0392bcb13efeb6fff637367e85429d574706bdfedbddc12c5124bd
   languageName: node
   linkType: hard
 
-"@prisma/get-platform@npm:6.17.0":
-  version: 6.17.0
-  resolution: "@prisma/get-platform@npm:6.17.0"
+"@prisma/get-platform@npm:6.18.0":
+  version: 6.18.0
+  resolution: "@prisma/get-platform@npm:6.18.0"
   dependencies:
-    "@prisma/debug": "npm:6.17.0"
-  checksum: 10c0/edafada774827d95c8214f957a80772786bf29e1a7a31ba5e0e815e1339a6799121f42bd47cb20f2c5f90634b06cc4b14a27e4e92a7959f66adc254bc76c41bd
+    "@prisma/debug": "npm:6.18.0"
+  checksum: 10c0/bbb7fa8c8a3e74ee984a0dae31f6d8f7ec4fe8f9c0ffedf3d08c2adf193762edd0394fb5e2bdebaebc03bd9817f81ea4d1f7ce9914f69fa49a1d3e03d8e3ff69
   languageName: node
   linkType: hard
 
@@ -7466,13 +7466,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"effect@npm:3.16.12":
-  version: 3.16.12
-  resolution: "effect@npm:3.16.12"
+"effect@npm:3.18.4":
+  version: 3.18.4
+  resolution: "effect@npm:3.18.4"
   dependencies:
     "@standard-schema/spec": "npm:^1.0.0"
     fast-check: "npm:^3.23.1"
-  checksum: 10c0/43b73cece506926ff086fdaf62943c2706a83c4192f81f6cba5ff85761e05f5da3c72a547936678ad432a6ea7585cf8f9c38f2f6344492f132e986fd04425c58
+  checksum: 10c0/086603b2b4e13426b5230e65a8ed9da8db7f00918c2e2c783565b40d5e5f59050148900dd7c9eee56ea0ff2ea48c1dd7e95b0879e1b1025752fbd9027a830f36
   languageName: node
   linkType: hard
 
@@ -12315,12 +12315,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prisma@npm:^6.17.0":
-  version: 6.17.0
-  resolution: "prisma@npm:6.17.0"
+"prisma@npm:^6.18.0":
+  version: 6.18.0
+  resolution: "prisma@npm:6.18.0"
   dependencies:
-    "@prisma/config": "npm:6.17.0"
-    "@prisma/engines": "npm:6.17.0"
+    "@prisma/config": "npm:6.18.0"
+    "@prisma/engines": "npm:6.18.0"
   peerDependencies:
     typescript: ">=5.1.0"
   peerDependenciesMeta:
@@ -12328,7 +12328,7 @@ __metadata:
       optional: true
   bin:
     prisma: build/index.js
-  checksum: 10c0/88958d86f8a91626345bdf9a552602570148ac742bd71902ba55a967bad78ab3f9415e129fccba9ee9fd5756aaadceeba1667583502c49e0e5110b0cba2dcae6
+  checksum: 10c0/c0ba2e6bbcefac7d072ce874de40594de87bf864407225d56df686b860d6ed85fe8d287914e30eb1d9195eb8392901af7cb80db7f79a80d2595d9e36234c3e02
   languageName: node
   linkType: hard
 
@@ -13990,7 +13990,7 @@ __metadata:
     postcss: "npm:^8.5.6"
     prettier: "npm:^3.6.2"
     prettier-plugin-tailwindcss: "npm:^0.6.13"
-    prisma: "npm:^6.17.0"
+    prisma: "npm:^6.18.0"
     react: "npm:^19.1.0"
     react-day-picker: "npm:^9.11.1"
     react-dom: "npm:^19.1.0"
