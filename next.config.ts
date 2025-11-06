@@ -6,7 +6,6 @@ import { codecovNextJSWebpackPlugin } from '@codecov/nextjs-webpack-plugin';
 
 const nextConfig: NextConfig = {
   experimental: {
-    reactCompiler: true,
     mdxRs: true,
     webpackMemoryOptimizations: true,
     webpackBuildWorker: true,
@@ -51,11 +50,7 @@ const nextConfig: NextConfig = {
 
     return config;
   },
-  cacheHandler:
-    process.env.NODE_ENV === 'production'
-      ? require.resolve('./cache-handler.mjs')
-      : undefined,
-  cacheMaxMemorySize: process.env.NODE_ENV === 'production' ? 0 : undefined,
+  reactCompiler: true,
 };
 
 const withMDX = createMDX({});
@@ -63,9 +58,10 @@ const withMDX = createMDX({});
 export default withContentCollections(
   withSentryConfig(withMDX(nextConfig), {
     // For all available options, see:
-    // https://github.com/getsentry/sentry-webpack-plugin#options
+    // https://www.npmjs.com/package/@sentry/webpack-plugin#options
 
     org: 'ahmadk953',
+
     project: 'tasko',
 
     // Only print logs for uploading source maps in CI
@@ -76,11 +72,6 @@ export default withContentCollections(
 
     // Upload a larger set of source maps for prettier stack traces (increases build time)
     widenClientFileUpload: true,
-
-    // Automatically annotate React components to show their full name in breadcrumbs and session replay
-    reactComponentAnnotation: {
-      enabled: true,
-    },
 
     // Route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
     // This can increase your server load as well as your hosting bill.

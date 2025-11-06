@@ -1,8 +1,9 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { Activity, CreditCard, Layout, Settings } from 'lucide-react';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 import {
   AccordionContent,
@@ -33,7 +34,6 @@ export const NavItem = ({
   organization,
   onExpand,
 }: NavItemsProps) => {
-  const router = useRouter();
   const pathname = usePathname();
 
   const routes = [
@@ -59,16 +59,12 @@ export const NavItem = ({
     },
   ];
 
-  const onClick = (href: string) => {
-    router.push(href);
-  };
-
   return (
     <AccordionItem value={organization.id} className='border-none'>
       <AccordionTrigger
         onClick={() => onExpand(organization.id)}
         className={cn(
-          'flex items-center gap-x-2 rounded-md p-1.5 text-start text-neutral-700 no-underline transition hover:bg-neutral-500/10 hover:no-underline dark:text-neutral-200 dark:hover:bg-neutral-200/10',
+          'flex items-center gap-x-2 rounded-md p-1.5 text-start text-neutral-700 no-underline transition hover:cursor-pointer hover:bg-neutral-500/10 hover:no-underline dark:text-neutral-200 dark:hover:bg-neutral-200/10',
           isActive &&
             !isExpanded &&
             'bg-sky-500/10 text-sky-700 dark:bg-sky-300/10 dark:text-sky-600'
@@ -91,16 +87,18 @@ export const NavItem = ({
           <Button
             key={route.href}
             size='sm'
-            onClick={() => onClick(route.href)}
             className={cn(
-              'mb-1 w-full justify-start pl-10 font-normal',
+              'mb-1 w-full justify-start pl-10 font-normal hover:cursor-pointer',
               pathname === route.href &&
                 'bg-sky-500/10 text-sky-700 dark:bg-sky-300/10 dark:text-sky-600'
             )}
             variant='ghost'
+            asChild
           >
-            {route.icon}
-            {route.label}
+            <Link href={route.href} className='flex items-center'>
+              {route.icon}
+              {route.label}
+            </Link>
           </Button>
         ))}
       </AccordionContent>

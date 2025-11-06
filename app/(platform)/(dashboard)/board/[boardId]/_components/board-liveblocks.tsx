@@ -4,7 +4,7 @@ import {
   ClientSideSuspense,
   LiveblocksProvider,
   RoomProvider,
-} from '@liveblocks/react';
+} from '@liveblocks/react/suspense';
 import { Skeleton } from '@/components/ui/skeleton';
 
 export const BoardLiveblocks = ({
@@ -55,13 +55,13 @@ BoardLiveblocks.Skeleton = function SkeletonBoardLiveblocks() {
               <Skeleton className='h-7 truncate border-transparent bg-transparent px-[7px] py-1 text-sm font-medium' />
             </div>
             <ol className='mx-1 mt-2 flex flex-col gap-y-2 px-1 py-0.5'>
-              <Skeleton className='h-12 space-y-2 truncate rounded-md border-2 border-transparent bg-white px-3 py-2 text-sm shadow-sm dark:bg-black' />
-              <Skeleton className='h-24 space-y-2 truncate rounded-md border-2 border-transparent bg-white px-3 py-2 text-sm shadow-sm dark:bg-black' />
-              <Skeleton className='h-16 space-y-2 truncate rounded-md border-2 border-transparent bg-white px-3 py-2 text-sm shadow-sm dark:bg-black' />
+              <Skeleton className='h-12 space-y-2 truncate rounded-md border-2 border-transparent bg-white px-3 py-2 text-sm shadow-xs dark:bg-black' />
+              <Skeleton className='h-24 space-y-2 truncate rounded-md border-2 border-transparent bg-white px-3 py-2 text-sm shadow-xs dark:bg-black' />
+              <Skeleton className='h-16 space-y-2 truncate rounded-md border-2 border-transparent bg-white px-3 py-2 text-sm shadow-xs dark:bg-black' />
             </ol>
           </div>
         </li>
-        <div className='w-1 flex-shrink-0' />
+        <div className='w-1 shrink-0' />
       </ol>
     </div>
   );

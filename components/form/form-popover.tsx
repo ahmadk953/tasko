@@ -1,19 +1,16 @@
 'use client';
 
-import { X } from 'lucide-react';
 import { toast } from 'sonner';
 import { useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
 import {
   Popover,
-  PopoverClose,
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover';
 import { useAction } from '@/hooks/use-action';
 import { createBoard } from '@/actions/create-board';
-import { Button } from '@/components//ui/button';
 import { useProModal } from '@/hooks/use-pro-modal';
 
 import { FormInput } from './form-input';
@@ -69,17 +66,9 @@ export const FormPopover = ({
         <div className='pb-4 text-center text-sm font-medium text-neutral-600 dark:text-neutral-300'>
           Create board
         </div>
-        <PopoverClose ref={closeRef} asChild>
-          <Button
-            className='absolute right-2 top-2 h-auto w-auto p-2 text-neutral-600 dark:text-neutral-300'
-            variant='ghost'
-          >
-            <X className='h-4 w-4' />
-          </Button>
-        </PopoverClose>
         <form action={onSubmit} className='space-y-4'>
           <div className='space-y-4'>
-            <p className='text-center text-xs font-medium italic text-neutral-700 dark:text-neutral-200'>
+            <p className='text-center text-xs font-medium text-neutral-700 italic dark:text-neutral-200'>
               Images Provided by{' '}
               <Link
                 className='text-sky-900 underline dark:text-sky-600'
@@ -96,7 +85,9 @@ export const FormPopover = ({
               errors={fieldErrors}
             />
           </div>
-          <FormSubmit className='w-full'>Create</FormSubmit>
+          <FormSubmit className='w-full hover:cursor-pointer'>
+            Create
+          </FormSubmit>
         </form>
       </PopoverContent>
     </Popover>

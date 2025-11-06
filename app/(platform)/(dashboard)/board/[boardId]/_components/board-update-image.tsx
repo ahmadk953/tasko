@@ -1,4 +1,3 @@
-import { X } from 'lucide-react';
 import { toast } from 'sonner';
 import { useRef } from 'react';
 import Link from 'next/link';
@@ -6,7 +5,6 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import {
   Popover,
-  PopoverClose,
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover';
@@ -23,7 +21,7 @@ export const BoardUpdateImage = ({ boardId }: BoardUpdateImageProps) => {
   const closeRef = useRef<HTMLButtonElement>(null);
 
   const { execute, fieldErrors } = useAction(updateBoard, {
-    onSuccess: (data) => {
+    onSuccess: () => {
       toast.success('Board image updated');
       closeRef.current?.click();
     },
@@ -43,23 +41,15 @@ export const BoardUpdateImage = ({ boardId }: BoardUpdateImageProps) => {
       <PopoverTrigger asChild>
         <Button
           variant='ghost'
-          className='h-auto w-full justify-start p-2 px-5 text-sm font-normal text-neutral-600 dark:text-neutral-200'
+          className='h-auto w-full justify-start p-2 px-5 text-sm font-normal text-neutral-600 hover:cursor-pointer dark:text-neutral-200'
         >
           Change Background Image
         </Button>
       </PopoverTrigger>
       <PopoverContent className='w-80 pt-3' side='left' align='start'>
-        <PopoverClose asChild>
-          <Button
-            className='absolute right-2 top-2 h-auto w-auto p-2 text-neutral-600 dark:text-neutral-200'
-            variant='ghost'
-          >
-            <X className='h-4 w-4' />
-          </Button>
-        </PopoverClose>
         <form action={onSubmit} className='space-y-4'>
           <div className='space-y-4'>
-            <p className='text-center text-xs font-medium italic text-neutral-700 dark:text-neutral-100'>
+            <p className='text-center text-xs font-medium text-neutral-700 italic dark:text-neutral-100'>
               Images Provided by{' '}
               <Link
                 className='text-sky-900 underline dark:text-sky-600'

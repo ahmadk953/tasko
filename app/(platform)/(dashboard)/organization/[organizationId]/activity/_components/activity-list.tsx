@@ -22,19 +22,23 @@ export const ActivityList = ({
   auditLogs: AuditLog[];
 }) => {
   return (
-    <div>
-      <ol className='mt-4 space-y-4'>
-        <p className='hidden text-center text-xs text-muted-foreground last:block'>
-          No activity found inside this organization
-        </p>
+    <div className='space-y-6'>
+      <ol className='space-y-2'>
+        {auditLogs.length === 0 && (
+          <p className='text-muted-foreground py-8 text-center text-sm'>
+            No activity found inside this organization
+          </p>
+        )}
         {auditLogs.map((log) => (
           <ActivityItem key={log.id} data={log} />
         ))}
       </ol>
-      <ActivityListPagination
-        totalPages={totalPages}
-        currentPage={currentPage}
-      />
+      {totalPages > 1 && (
+        <ActivityListPagination
+          totalPages={totalPages}
+          currentPage={currentPage}
+        />
+      )}
     </div>
   );
 };

@@ -2,8 +2,6 @@ import { auth, currentUser } from '@clerk/nextjs/server';
 import { ACTION, ENTITY_TYPE } from '@prisma/client';
 
 import { db } from '@/lib/db';
-import { revalidateTag } from 'next/cache';
-
 interface Props {
   entityId: string;
   entityType: ENTITY_TYPE;
@@ -32,8 +30,6 @@ export const createAuditLog = async (props: Props) => {
         userName: user?.firstName + ' ' + user?.lastName,
       },
     });
-
-    revalidateTag(`card-logs-${entityId}`);
   } catch (error) {
     console.error('[AUDIT_LOG_ERROR]', error);
   }

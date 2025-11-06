@@ -54,7 +54,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
       entityId: list.id,
       action: ACTION.CREATE,
     });
-  } catch (error) {
+  } catch {
     return {
       error: 'Failed to create list',
     };

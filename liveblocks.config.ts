@@ -4,8 +4,6 @@ declare global {
       cursor: { x: number; y: number } | null;
     };
 
-    Storage: {};
-
     UserMeta: {
       id: string;
       info: {
@@ -13,12 +11,6 @@ declare global {
         avatar: string;
       };
     };
-
-    RoomEvent: {};
-
-    ThreadMetadata: {};
-
-    RoomInfo: {};
   }
 }
 

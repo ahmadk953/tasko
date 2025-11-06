@@ -8,10 +8,10 @@ import { createSafeAction } from '@/lib/create-safe-action';
 import { absoluteUrl } from '@/lib/utils';
 import { stripe } from '@/lib/stripe';
 
-import { InputType, ReturnType } from './types';
+import { ReturnType } from './types';
 import { StripeRedirect } from './schema';
 
-const handler = async (data: InputType): Promise<ReturnType> => {
+const handler = async (): Promise<ReturnType> => {
   const { userId, orgId } = await auth();
   const user = await currentUser();
 
@@ -37,7 +37,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
 
       url = stripeSession.url;
     } else {
-      /* @ts-ignore */
+      /* @ts-expect-error Stripe checkout sessions are unique */
       const stripeSession = await stripe.checkout.sessions.create({
         success_url: settingsUrl,
         cancel_url: settingsUrl,
@@ -66,7 +66,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
 
       url = stripeSession.url ?? '';
     }
-  } catch (error) {
+  } catch {
     return {
       error: 'Something went wrong',
     };

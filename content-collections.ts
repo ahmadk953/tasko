@@ -1,11 +1,12 @@
 import { defineCollection, defineConfig } from '@content-collections/core';
 import { compileMDX } from '@content-collections/mdx';
+import { z } from 'zod';
 
 const posts = defineCollection({
   name: 'BlogPosts',
   directory: 'app/(main)/blog/posts',
   include: '*.mdx',
-  schema: (z) => ({
+  schema: z.object({
     title: z
       .string()
       .min(3, { message: 'Title must be at least 3 characters' })
@@ -16,6 +17,7 @@ const posts = defineCollection({
       .max(50, { message: 'Summary must be at most 50 characters' }),
     coverImage: z.string(),
     datePublished: z.string(),
+    content: z.string(),
   }),
   transform: async (document, context) => {
     const mdx = await compileMDX(context, document);

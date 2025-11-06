@@ -34,7 +34,12 @@ export const SubscriptionButton = ({ isPro }: SubscriptionButtonProps) => {
   };
 
   return (
-    <Button disabled={isLoading} onClick={onClick} variant='primary'>
+    <Button
+      disabled={isLoading}
+      onClick={onClick}
+      className='hover:cursor-pointer'
+      variant='primary'
+    >
       {isPro ? 'Manage Subscription' : 'Upgrade to Pro'}
     </Button>
   );

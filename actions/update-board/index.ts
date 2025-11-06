@@ -68,13 +68,13 @@ const handler = async (data: InputType): Promise<ReturnType> => {
       entityId: board.id,
       action: ACTION.UPDATE,
     });
-  } catch (error) {
+  } catch {
     return {
       error: 'Failed to update board',
     };
   }
 
-  revalidateTag(`board-${id}`);
+  revalidateTag(`board-${id}`, {});
   revalidatePath(`/board/${id}`);
   return { data: board };
 };

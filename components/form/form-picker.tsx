@@ -17,13 +17,30 @@ interface FormPickerProps {
   errors?: Record<string, string[] | undefined>;
 }
 
+interface ImageItem {
+  id: string;
+  urls: {
+    thumb: string;
+    full: string;
+  };
+  links: {
+    html: string;
+    download_location?: string;
+  };
+  user: {
+    name: string;
+    links: {
+      html: string;
+    };
+  };
+}
+
 export const FormPicker = ({ id, errors }: FormPickerProps) => {
   const { pending } = useFormStatus();
 
-  const [images, setImages] =
-    useState<Array<Record<string, any>>>(defaultImages);
-  const [isLoading, setIsLoading] = useState(true);
-  const [selectedImageId, setSelectedImageId] = useState(null);
+  const [images, setImages] = useState<ImageItem[]>(defaultImages);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [selectedImageId, setSelectedImageId] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -61,7 +78,7 @@ export const FormPicker = ({ id, errors }: FormPickerProps) => {
           <div
             key={image.id}
             className={cn(
-              'group relative aspect-video cursor-pointer bg-muted transition hover:opacity-75',
+              'group bg-muted relative aspect-video cursor-pointer transition hover:opacity-75',
               pending && 'cursor-auto opacity-50 hover:opacity-50'
             )}
             onClick={() => {
@@ -95,7 +112,7 @@ export const FormPicker = ({ id, errors }: FormPickerProps) => {
                 '?utm_source=Tasko&utm_medium=referral'
               }
               target='_blank'
-              className='absolute bottom-0 w-full truncate bg-black/50 p-1 text-[10px] text-white opacity-0 hover:underline group-hover:opacity-100'
+              className='absolute bottom-0 w-full truncate bg-black/50 p-1 text-[10px] text-white opacity-0 group-hover:opacity-100 hover:underline'
             >
               {image.user.name}
             </Link>

@@ -10,7 +10,7 @@ import { ModeToggle } from '@/components/ui/mode-toggle';
 
 export const Navbar = () => {
   return (
-    <nav className='fixed top-0 z-50 flex h-14 w-full items-center border-b bg-white px-4 shadow-sm dark:bg-black'>
+    <nav className='fixed top-0 z-50 flex h-14 w-full items-center border-b bg-white px-4 shadow-xs dark:bg-black'>
       <MobileSidebar />
       <div className='flex items-center gap-x-4'>
         <div className='hidden md:flex'>
@@ -20,7 +20,7 @@ export const Navbar = () => {
           <Button
             variant='primary'
             size='sm'
-            className='hidden h-auto rounded-sm px-2 py-1.5 md:block'
+            className='hidden h-auto rounded-sm px-2 py-1.5 hover:cursor-pointer md:block'
           >
             Create
           </Button>
@@ -36,6 +36,7 @@ export const Navbar = () => {
         </FormPopover>
       </div>
       <div className='ml-auto flex items-center gap-x-2'>
+        <ModeToggle />
         <OrganizationSwitcher
           hidePersonal
           afterCreateOrganizationUrl='/organization/:id'
@@ -61,7 +62,6 @@ export const Navbar = () => {
             },
           }}
         />
-        <ModeToggle />
       </div>
     </nav>
   );

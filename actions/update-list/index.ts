@@ -39,7 +39,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
       entityId: list.id,
       action: ACTION.UPDATE,
     });
-  } catch (error) {
+  } catch {
     return {
       error: 'Failed to update list',
     };

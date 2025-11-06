@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { DragDropContext, Droppable } from '@hello-pangea/dnd';
+import { DragDropContext, Droppable, DropResult } from '@hello-pangea/dnd';
 import { toast } from 'sonner';
 
 import { useAction } from '@/hooks/use-action';
@@ -50,7 +50,7 @@ export const ListContainer = ({ data, boardId }: ListContainerProps) => {
     setOrderedData(data);
   }, [data]);
 
-  const onDragEnd = (result: any) => {
+  const onDragEnd = (result: DropResult) => {
     const { destination, source, type } = result;
 
     if (!destination) return;
@@ -73,7 +73,7 @@ export const ListContainer = ({ data, boardId }: ListContainerProps) => {
 
     // User moves a card
     if (type === 'card') {
-      let newOrderedData = [...orderedData];
+      const newOrderedData = [...orderedData];
 
       // Get source and destination list
       const sourceList = newOrderedData.find(
@@ -154,7 +154,7 @@ export const ListContainer = ({ data, boardId }: ListContainerProps) => {
             })}
             {provided.placeholder}
             <ListForm />
-            <div className='w-1 flex-shrink-0' />
+            <div className='w-1 shrink-0' />
           </ol>
         )}
       </Droppable>

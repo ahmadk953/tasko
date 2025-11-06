@@ -55,7 +55,7 @@ export const ProModal = () => {
           <Button
             disabled={isLoading}
             onClick={onClick}
-            className='w-full'
+            className='w-full hover:cursor-pointer'
             variant='primary'
           >
             Upgrade

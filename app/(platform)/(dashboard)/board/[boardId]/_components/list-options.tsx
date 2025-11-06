@@ -1,6 +1,6 @@
 'use client';
 
-import { MoreHorizontal, X } from 'lucide-react';
+import { MoreHorizontal } from 'lucide-react';
 import { useRef } from 'react';
 import { toast } from 'sonner';
 import { List } from '@prisma/client';
@@ -9,7 +9,6 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-  PopoverClose,
 } from '@/components/ui/popover';
 import { Button } from '@/components/ui/button';
 import { FormSubmit } from '@/components/form/form-submit';
@@ -63,25 +62,20 @@ export const ListOptions = ({ data, onAddCard }: ListOptionsProps) => {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button className='h-auto w-auto p-2' variant='ghost'>
+        <Button
+          className='h-auto w-auto p-2 hover:cursor-pointer'
+          variant='ghost'
+        >
           <MoreHorizontal className='h-4 w-4' />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className='px-0 pb-3 pt-3' side='bottom' align='start'>
+      <PopoverContent className='px-0 pt-3 pb-3' side='bottom' align='start'>
         <div className='pb-4 text-center text-sm font-medium text-neutral-600 dark:text-neutral-200'>
           List Actions
         </div>
-        <PopoverClose ref={closeRef} asChild>
-          <Button
-            className='absolute right-2 top-2 h-auto w-auto p-2 text-neutral-600 dark:text-neutral-200'
-            variant='ghost'
-          >
-            <X className='h-4 w-4' />
-          </Button>
-        </PopoverClose>
         <Button
           onClick={onAddCard}
-          className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal'
+          className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal hover:cursor-pointer'
           variant='ghost'
         >
           Add card...
@@ -95,7 +89,7 @@ export const ListOptions = ({ data, onAddCard }: ListOptionsProps) => {
             defaultValue={data.boardId}
           />
           <FormSubmit
-            className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal'
+            className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal hover:cursor-pointer'
             variant='ghost'
           >
             Copy list...
@@ -111,7 +105,7 @@ export const ListOptions = ({ data, onAddCard }: ListOptionsProps) => {
             defaultValue={data.boardId}
           />
           <FormSubmit
-            className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal text-destructive hover:text-destructive dark:text-red-500 dark:hover:text-red-500'
+            className='text-destructive hover:text-destructive h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal hover:cursor-pointer dark:text-red-500 dark:hover:text-red-500'
             variant='ghost'
           >
             Delete this list

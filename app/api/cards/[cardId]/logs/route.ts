@@ -1,7 +1,6 @@
 import { auth } from '@clerk/nextjs/server';
 import { ENTITY_TYPE } from '@prisma/client';
 import { NextResponse } from 'next/server';
-import { unstable_cache } from 'next/cache';
 
 import { db } from '@/lib/db';
 
@@ -18,28 +17,17 @@ export async function GET(
         status: 401,
       });
 
-    const getAuditLogs = unstable_cache(
-      async () => {
-        return await db.auditLog.findMany({
-          where: {
-            orgId,
-            entityId: params.cardId,
-            entityType: ENTITY_TYPE.CARD,
-          },
-          orderBy: {
-            createdAt: 'desc',
-          },
-          take: 3,
-        });
+    const auditLogs = await db.auditLog.findMany({
+      where: {
+        orgId,
+        entityId: params.cardId,
+        entityType: ENTITY_TYPE.CARD,
       },
-      [`card-logs-${params.cardId}`],
-      {
-        tags: [`card-logs-${params.cardId}`],
-        revalidate: false,
-      }
-    );
-
-    const auditLogs = await getAuditLogs();
+      orderBy: {
+        createdAt: 'desc',
+      },
+      take: 3,
+    });
 
     return new NextResponse(JSON.stringify(auditLogs), {
       status: 200,

@@ -51,7 +51,7 @@ export const BoardList = async () => {
         <FormPopover sideOffset={10} side='right'>
           <div
             role='button'
-            className='relative flex aspect-video h-full w-full flex-col items-center justify-center gap-y-1 rounded-sm bg-muted transition hover:opacity-75'
+            className='bg-muted relative flex aspect-video h-full w-full flex-col items-center justify-center gap-y-1 rounded-sm transition hover:cursor-pointer hover:opacity-75'
           >
             <p className='text-sm'>Create new board</p>
             <span className='text-xs'>
@@ -65,7 +65,7 @@ export const BoardList = async () => {
                 Free Workspaces can have up to 5 open boards. For unlimited boards upgrade this workspace.
               `}
             >
-              <HelpCircle className='absolute bottom-2 right-2 h-[14px] w-[14px]' />
+              <HelpCircle className='absolute right-2 bottom-2 h-[14px] w-[14px]' />
             </Hint>
           </div>
         </FormPopover>

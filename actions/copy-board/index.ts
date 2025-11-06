@@ -57,7 +57,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         lists: true,
       },
     });
-  } catch (error) {
+  } catch {
     return {
       error: 'Failed to create board',
     };

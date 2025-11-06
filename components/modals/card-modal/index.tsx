@@ -1,60 +1,71 @@
 'use client';
 
-import { useQuery } from '@tanstack/react-query';
+import { useMemo } from 'react';
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 
-import { CardWithList } from '@/types';
-import { fetcher } from '@/lib/fetcher';
-import { AuditLog } from '@prisma/client';
 import { useCardModal } from '@/hooks/use-card-modal';
+import { useCardData } from '@/hooks/use-card-data';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 
 import { Header } from './header';
 import { Description } from './description';
 import { Actions } from './actions';
 import { Activity } from './activity';
+import { CardModalError } from './card-modal-error';
 
 export const CardModal = () => {
   const id = useCardModal((state) => state.id);
   const isOpen = useCardModal((state) => state.isOpen);
   const onClose = useCardModal((state) => state.onClose);
 
-  const { data: cardData, isLoading } = useQuery<CardWithList>({
-    queryKey: ['card', id],
-    queryFn: () => fetcher(`/api/cards/${id}`),
-    enabled: !!id, // Only run the query when ID exists
-  });
+  const { cardData, auditLogs, isError } = useCardData(id);
 
-  const { data: auditLogsData } = useQuery<AuditLog[]>({
-    queryKey: ['card-logs', id],
-    queryFn: () => fetcher(`/api/cards/${id}/logs`),
-    enabled: !!id, // Only run the query when ID exists
-  });
+  // Memoize loading states to prevent unnecessary re-renders
+  const isCardLoaded = useMemo(() => !!cardData?.title, [cardData?.title]);
+  const isAuditLogsLoaded = useMemo(() => !!auditLogs, [auditLogs]);
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent>
+      <DialogContent className='max-h-[90vh] overflow-y-auto w-full max-w-2xl sm:max-w-4xl lg:max-w-5xl'>
         <VisuallyHidden.Root>
           <DialogTitle>Card Data Panel</DialogTitle>
         </VisuallyHidden.Root>
-        {!cardData || !cardData.title ? <Header.Skeleton /> : <Header data={cardData} />}
-        <div className='grid grid-cols-1 md:grid-cols-4 md:gap-4'>
-          <div className='col-span-3'>
-            <div className='w-full space-y-10'>
-              {!cardData ? (
-                <Description.Skeleton />
-              ) : (
-                <Description data={cardData} />
-              )}
-              {!auditLogsData ? (
-                <Activity.Skeleton />
-              ) : (
-                <Activity items={auditLogsData} />
-              )}
+
+        {isError ? (
+          <CardModalError onClose={onClose} />
+        ) : (
+          <>
+            {isCardLoaded && cardData ? (
+              <Header data={cardData} />
+            ) : (
+              <Header.Skeleton />
+            )}
+
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
+              <div className='lg:col-span-2'>
+                <div className='w-full space-y-8'>
+                  {isCardLoaded && cardData ? (
+                    <Description data={cardData} />
+                  ) : (
+                    <Description.Skeleton />
+                  )}
+                  {isAuditLogsLoaded && auditLogs ? (
+                    <Activity items={auditLogs} />
+                  ) : (
+                    <Activity.Skeleton />
+                  )}
+                </div>
+              </div>
+              <div>
+                {isCardLoaded && cardData ? (
+                  <Actions data={cardData} />
+                ) : (
+                  <Actions.Skeleton />
+                )}
+              </div>
             </div>
-          </div>
-          {!cardData ? <Actions.Skeleton /> : <Actions data={cardData} />}
-        </div>
+          </>
+        )}
       </DialogContent>
     </Dialog>
   );

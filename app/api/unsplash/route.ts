@@ -32,7 +32,9 @@ export async function GET(req: Request) {
     });
 
     if (result?.response) {
-      const newImages = result.response as Array<Record<string, any>>;
+      const newImages = Array.isArray(result.response)
+        ? result.response
+        : [result.response];
       const response = new NextResponse(JSON.stringify(newImages), {
         status: 200,
       });

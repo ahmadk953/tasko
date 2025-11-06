@@ -20,16 +20,23 @@ export const Info = ({ isPro }: InfoProps) => {
   return (
     <div className='flex items-center gap-x-4'>
       <div className='relative h-[60px] w-[60px]'>
-        <Image
-          fill
-          src={organization?.imageUrl!}
-          alt='Organization Logo'
-          className='rounded-md object-cover'
-        />
+        {organization?.imageUrl ? (
+          <Image
+            fill
+            src={organization.imageUrl}
+            alt='Organization Logo'
+            className='rounded-md object-cover'
+          />
+        ) : (
+          <div
+            className='bg-muted-foreground/10 h-full w-full rounded-md'
+            aria-hidden
+          />
+        )}
       </div>
       <div className='space-y-1'>
         <p className='text-xl font-semibold'>{organization?.name}</p>
-        <div className='flex items-center text-xs text-muted-foreground'>
+        <div className='text-muted-foreground flex items-center text-xs'>
           <CreditCard className='mr-1 h-3 w-3' />
           {isPro ? 'Pro' : 'Free'}
         </div>

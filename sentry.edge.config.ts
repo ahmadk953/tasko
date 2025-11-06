@@ -8,19 +8,11 @@ import * as Sentry from '@sentry/nextjs';
 Sentry.init({
   dsn: 'https://bb697105eaabbc6f70af12e84e936ded@o4508368569368576.ingest.us.sentry.io/4508368582017024',
 
-  // Set tracesSampleRate to 1.0 to capture 100%
-  // of transactions for tracing.
-  // We recommend adjusting this value in production
-  tracesSampleRate: 0.5,
-  // Set `tracePropagationTargets` to control for which URLs trace propagation should be enabled
-  tracePropagationTargets: ['localhost', /^https:\/\/tasko\.ahmadk953\.org/],
+  // Define how likely traces are sampled. Adjust this value in production, or use tracesSampler for greater control.
+  tracesSampleRate: 0.25,
 
-  // Set profilesSampleRate to 1.0 to profile every transaction.
-  // Since profilesSampleRate is relative to tracesSampleRate,
-  // the final profiling rate can be computed as tracesSampleRate * profilesSampleRate
-  // For example, a tracesSampleRate of 0.5 and profilesSampleRate of 0.5 would
-  // result in 25% of transactions being profiled (0.5*0.5=0.25)
-  profilesSampleRate: 0.5,
+  // Enable logs to be sent to Sentry
+  enableLogs: true,
 
   // Setting this option to true will print useful information to the console while you're setting up Sentry.
   debug: false,

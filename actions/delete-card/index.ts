@@ -37,7 +37,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
       entityId: card.id,
       action: ACTION.DELETE,
     });
-  } catch (error) {
+  } catch {
     return {
       error: 'Failed to delete card',
     };

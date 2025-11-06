@@ -88,14 +88,14 @@ export const ListHeader = ({ data, onAddCard }: ListHeaderProps) => {
             id='title'
             placeholder='Enter list title...'
             defaultValue={title}
-            className='h-7 truncate border-transparent bg-transparent px-[7px] py-1 text-sm font-medium transition hover:border-input focus:border-input focus:bg-white dark:focus:bg-black'
+            className='hover:border-input focus:border-input h-7 truncate border-transparent bg-transparent px-[7px] py-1 text-sm font-medium transition focus:bg-white dark:focus:bg-black'
           />
           <button hidden type='submit' />
         </form>
       ) : (
         <div
           onClick={enableEditing}
-          className='h-7 w-full border-transparent px-2.5 py-1 text-sm font-medium'
+          className='h-7 w-full border-transparent px-2.5 py-1 text-sm font-medium hover:cursor-text'
         >
           {title}
         </div>

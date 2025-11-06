@@ -29,10 +29,10 @@ jobs:
         run: corepack enable
 
       - name: Install Dependencies
-        run: yarn install --immutable
+        run: yarn install --immutable && yarn add @microsoft/eslint-formatter-sarif
 
       - name: Run ESLint
-        run: npx next lint
+        run: npx eslint .
           --config eslint.config.mjs
           --format @microsoft/eslint-formatter-sarif
           --output-file eslint-results.sarif

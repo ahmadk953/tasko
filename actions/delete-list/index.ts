@@ -36,7 +36,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
       entityId: list.id,
       action: ACTION.DELETE,
     });
-  } catch (error) {
+  } catch {
     return {
       error: 'Failed to delete list',
     };

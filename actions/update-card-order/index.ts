@@ -37,9 +37,9 @@ const handler = async (data: InputType): Promise<ReturnType> => {
 
     updatedCards = await db.$transaction(transaction);
     items.map((card) => {
-      revalidateTag(`card-${card.id}`);
+      revalidateTag(`card-${card.id}`, {});
     });
-  } catch (error) {
+  } catch {
     return {
       error: 'Failed to reorder list',
     };

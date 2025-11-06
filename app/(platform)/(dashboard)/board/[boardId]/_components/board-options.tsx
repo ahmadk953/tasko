@@ -1,6 +1,6 @@
 'use client';
 
-import { MoreHorizontal, X } from 'lucide-react';
+import { MoreHorizontal } from 'lucide-react';
 import { toast } from 'sonner';
 
 import { deleteBoard } from '@/actions/delete-board';
@@ -8,7 +8,6 @@ import { useAction } from '@/hooks/use-action';
 import { Button } from '@/components/ui/button';
 import {
   Popover,
-  PopoverClose,
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover';
@@ -49,27 +48,22 @@ export const BoardOptions = ({ id }: BoardOptionsProps) => {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button className='h-auto w-auto p-2' variant='transparent'>
+        <Button
+          className='h-auto w-auto p-2 hover:cursor-pointer'
+          variant='transparent'
+        >
           <MoreHorizontal className='h-4 w-4' />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className='px-0 pb-3 pt-3' side='bottom' align='start'>
+      <PopoverContent className='px-0 pt-3 pb-3' side='bottom' align='start'>
         <div className='pb-4 text-center text-sm font-medium text-neutral-600 dark:text-neutral-200'>
           Board Actions
         </div>
-        <PopoverClose asChild>
-          <Button
-            className='absolute right-2 top-2 h-auto w-auto p-2 text-neutral-600 dark:text-neutral-200'
-            variant='ghost'
-          >
-            <X className='h-4 w-4' />
-          </Button>
-        </PopoverClose>
         <Button
           variant='ghost'
           onClick={onCopy}
           disabled={isLoadingCopy}
-          className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal text-neutral-600 dark:text-neutral-200'
+          className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal text-neutral-600 hover:cursor-pointer dark:text-neutral-200'
         >
           Copy this Board
         </Button>
@@ -78,7 +72,7 @@ export const BoardOptions = ({ id }: BoardOptionsProps) => {
           variant='ghost'
           onClick={onDelete}
           disabled={isLoadingDelete}
-          className='h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal text-destructive hover:text-destructive dark:text-red-500 dark:hover:text-red-500'
+          className='text-destructive hover:text-destructive h-auto w-full justify-start rounded-none p-2 px-5 text-sm font-normal hover:cursor-pointer dark:text-red-500 dark:hover:text-red-500'
         >
           Delete this Board
         </Button>
