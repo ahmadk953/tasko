@@ -5,31 +5,29 @@ export const UpdateCard = z.object({
   description: z.optional(
     z
       .string({
-        invalid_type_error: 'Description must be a string',
-        required_error: 'Description is required',
+        error: 'Description must be a string',
       })
       .min(3, {
-        message: 'Description must be at least 3 characters',
+        error: 'Description must be at least 3 characters',
       })
   ),
   title: z.optional(
     z
       .string({
-        required_error: 'Title is required',
-        invalid_type_error: 'Title must be a string',
+        error: 'Title must be a string',
       })
       .min(3, {
-        message: 'Title must be at least 3 characters',
+        error: 'Title must be at least 3 characters',
       })
   ),
   dueDate: z.optional(
     z.date({
-      invalid_type_error: 'Due date must be a date',
+      error: 'Due date must be a date',
     })
   ),
   startedAt: z.optional(
     z.date({
-      invalid_type_error: 'Due date must be a date',
+      error: 'Started at must be a date',
     })
   ),
   id: z.string(),
