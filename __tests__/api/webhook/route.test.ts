@@ -28,7 +28,7 @@ jest.mock('@/lib/arcjet', () => {
     isDenied: jest.fn().mockReturnValue(false),
     reason: undefined,
   });
-  
+
   return {
     __esModule: true,
     default: {
@@ -52,7 +52,8 @@ describe('/api/webhook POST', () => {
   const mockUpdate = db.orgSubscription.update as jest.MockedFunction<
     typeof db.orgSubscription.update
   >;
-  const mockConstructEvent = stripe.webhooks.constructEvent as jest.MockedFunction<
+  const mockConstructEvent = stripe.webhooks
+    .constructEvent as jest.MockedFunction<
     typeof stripe.webhooks.constructEvent
   >;
   const mockRetrieve = stripe.subscriptions.retrieve as jest.MockedFunction<

@@ -26,7 +26,9 @@ jest.mock('next/headers', () => ({
 
 describe('/api/liveblocks-auth POST', () => {
   const mockAuth = auth as jest.MockedFunction<typeof auth>;
-  const mockCurrentUser = currentUser as jest.MockedFunction<typeof currentUser>;
+  const mockCurrentUser = currentUser as jest.MockedFunction<
+    typeof currentUser
+  >;
   const mockFindUnique = db.board.findUnique as jest.MockedFunction<
     typeof db.board.findUnique
   >;

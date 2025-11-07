@@ -1,7 +1,7 @@
 import { GET } from '@/app/api/cards/[cardId]/route';
 import { db } from '@/lib/db';
 import { auth } from '@clerk/nextjs/server';
-import { createParams, expectWithSerializedDates } from '@/__tests__/test-utils';
+import { createParams, expectWithSerializedDates } from '@/lib/test-utils';
 
 jest.mock('@clerk/nextjs/server', () => ({
   auth: jest.fn(),
@@ -32,7 +32,9 @@ describe('/api/cards/[cardId] GET', () => {
     } as any);
 
     const req = new Request('http://localhost:3000/api/cards/card-id');
-    const response = await GET(req, { params: Promise.resolve({ cardId: 'card-id' }) });
+    const response = await GET(req, {
+      params: Promise.resolve({ cardId: 'card-id' }),
+    });
 
     expect(response.status).toBe(401);
     const data = await response.json();
@@ -46,7 +48,9 @@ describe('/api/cards/[cardId] GET', () => {
     } as any);
 
     const req = new Request('http://localhost:3000/api/cards/card-id');
-    const response = await GET(req, { params: Promise.resolve({ cardId: 'card-id' }) });
+    const response = await GET(req, {
+      params: Promise.resolve({ cardId: 'card-id' }),
+    });
 
     expect(response.status).toBe(401);
     const data = await response.json();
@@ -77,7 +81,9 @@ describe('/api/cards/[cardId] GET', () => {
     mockFindUnique.mockResolvedValue(mockCard as any);
 
     const req = new Request('http://localhost:3000/api/cards/card-123');
-    const response = await GET(req, { params: createParams({ cardId: 'card-123' }) });
+    const response = await GET(req, {
+      params: createParams({ cardId: 'card-123' }),
+    });
 
     expect(response.status).toBe(200);
     const data = await response.json();
@@ -112,7 +118,9 @@ describe('/api/cards/[cardId] GET', () => {
     mockFindUnique.mockRejectedValue(error);
 
     const req = new Request('http://localhost:3000/api/cards/card-123');
-    const response = await GET(req, { params: createParams({ cardId: 'card-123' }) });
+    const response = await GET(req, {
+      params: createParams({ cardId: 'card-123' }),
+    });
 
     expect(response.status).toBe(500);
   });

@@ -14,11 +14,9 @@ interface ActivityProps {
 const ActivityComponent = ({ items }: ActivityProps) => {
   return (
     <div className='flex w-full items-start gap-x-4'>
-      <ActivityIcon className='mt-0.5 h-6 w-6 flex-shrink-0 text-foreground' />
-      <div className='flex-1 min-w-0'>
-        <h3 className='mb-4 text-lg font-semibold text-foreground'>
-          Activity
-        </h3>
+      <ActivityIcon className='text-foreground mt-0.5 h-6 w-6 flex-shrink-0' />
+      <div className='min-w-0 flex-1'>
+        <h3 className='text-foreground mb-4 text-lg font-semibold'>Activity</h3>
         <ol className='space-y-3'>
           {items.length === 0 && (
             <p className='text-muted-foreground py-2 text-sm'>
@@ -40,13 +38,13 @@ export const Activity = Object.assign(ActivityMemo, {
   Skeleton: function ActivitySkeleton() {
     return (
       <div className='flex w-full items-start gap-x-3'>
-        <Skeleton className='mt-1 h-5 w-5 flex-shrink-0 rounded-full bg-muted' />
+        <Skeleton className='bg-muted mt-1 h-5 w-5 flex-shrink-0 rounded-full' />
         <div className='w-full'>
-          <Skeleton className='mb-3 h-5 w-24 rounded-md bg-muted' />
+          <Skeleton className='bg-muted mb-3 h-5 w-24 rounded-md' />
           <div className='space-y-1'>
-            <Skeleton className='h-12 w-full rounded-lg bg-muted' />
-            <Skeleton className='h-12 w-full rounded-lg bg-muted' />
-            <Skeleton className='h-12 w-full rounded-lg bg-muted' />
+            <Skeleton className='bg-muted h-12 w-full rounded-lg' />
+            <Skeleton className='bg-muted h-12 w-full rounded-lg' />
+            <Skeleton className='bg-muted h-12 w-full rounded-lg' />
           </div>
         </div>
       </div>

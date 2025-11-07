@@ -12,7 +12,7 @@ jest.mock('@/lib/arcjet', () => {
     isDenied: jest.fn().mockReturnValue(false),
     reason: undefined,
   });
-  
+
   return {
     __esModule: true,
     default: {
@@ -101,12 +101,18 @@ describe('/api/unsplash GET', () => {
     const mockImages = [
       {
         id: 'img-1',
-        urls: { full: 'https://example.com/img1.jpg', thumb: 'https://example.com/img1-thumb.jpg' },
+        urls: {
+          full: 'https://example.com/img1.jpg',
+          thumb: 'https://example.com/img1-thumb.jpg',
+        },
         user: { name: 'User 1' },
       },
       {
         id: 'img-2',
-        urls: { full: 'https://example.com/img2.jpg', thumb: 'https://example.com/img2-thumb.jpg' },
+        urls: {
+          full: 'https://example.com/img2.jpg',
+          thumb: 'https://example.com/img2-thumb.jpg',
+        },
         user: { name: 'User 2' },
       },
     ];
@@ -139,7 +145,10 @@ describe('/api/unsplash GET', () => {
   it('should handle single image response', async () => {
     const mockImage = {
       id: 'img-1',
-      urls: { full: 'https://example.com/img1.jpg', thumb: 'https://example.com/img1-thumb.jpg' },
+      urls: {
+        full: 'https://example.com/img1.jpg',
+        thumb: 'https://example.com/img1-thumb.jpg',
+      },
       user: { name: 'User 1' },
     };
 

@@ -2,7 +2,7 @@ import { GET } from '@/app/api/cards/[cardId]/logs/route';
 import { db } from '@/lib/db';
 import { auth } from '@clerk/nextjs/server';
 import { ENTITY_TYPE } from '@prisma/client';
-import { createParams, expectWithSerializedDates } from '@/__tests__/test-utils';
+import { createParams, expectWithSerializedDates } from '@/lib/test-utils';
 
 jest.mock('@clerk/nextjs/server', () => ({
   auth: jest.fn(),
@@ -33,7 +33,9 @@ describe('/api/cards/[cardId]/logs GET', () => {
     } as any);
 
     const req = new Request('http://localhost:3000/api/cards/card-id/logs');
-    const response = await GET(req, { params: createParams({ cardId: 'card-id' }) });
+    const response = await GET(req, {
+      params: createParams({ cardId: 'card-id' }),
+    });
 
     expect(response.status).toBe(401);
     const data = await response.json();
@@ -47,7 +49,9 @@ describe('/api/cards/[cardId]/logs GET', () => {
     } as any);
 
     const req = new Request('http://localhost:3000/api/cards/card-id/logs');
-    const response = await GET(req, { params: createParams({ cardId: 'card-id' }) });
+    const response = await GET(req, {
+      params: createParams({ cardId: 'card-id' }),
+    });
 
     expect(response.status).toBe(401);
     const data = await response.json();
@@ -92,7 +96,9 @@ describe('/api/cards/[cardId]/logs GET', () => {
     mockFindMany.mockResolvedValue(mockLogs as any);
 
     const req = new Request('http://localhost:3000/api/cards/card-123/logs');
-    const response = await GET(req, { params: createParams({ cardId: 'card-123' }) });
+    const response = await GET(req, {
+      params: createParams({ cardId: 'card-123' }),
+    });
 
     expect(response.status).toBe(200);
     const data = await response.json();
@@ -120,7 +126,9 @@ describe('/api/cards/[cardId]/logs GET', () => {
     mockFindMany.mockResolvedValue([]);
 
     const req = new Request('http://localhost:3000/api/cards/card-123/logs');
-    const response = await GET(req, { params: createParams({ cardId: 'card-123' }) });
+    const response = await GET(req, {
+      params: createParams({ cardId: 'card-123' }),
+    });
 
     expect(response.status).toBe(200);
     const data = await response.json();
@@ -137,7 +145,9 @@ describe('/api/cards/[cardId]/logs GET', () => {
     mockFindMany.mockRejectedValue(error);
 
     const req = new Request('http://localhost:3000/api/cards/card-123/logs');
-    const response = await GET(req, { params: createParams({ cardId: 'card-123' }) });
+    const response = await GET(req, {
+      params: createParams({ cardId: 'card-123' }),
+    });
 
     expect(response.status).toBe(500);
   });

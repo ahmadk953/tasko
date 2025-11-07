@@ -10,13 +10,13 @@ interface CardModalErrorProps {
 export const CardModalError = ({ onClose }: CardModalErrorProps) => {
   return (
     <div className='flex flex-col items-center justify-center gap-4 py-8'>
-      <div className='flex items-center gap-3 rounded-lg bg-destructive/10 px-4 py-3 w-full'>
-        <AlertCircle className='h-5 w-5 flex-shrink-0 text-destructive' />
-        <div className='flex-1 min-w-0'>
-          <p className='font-medium text-destructive text-sm'>
+      <div className='bg-destructive/10 flex w-full items-center gap-3 rounded-lg px-4 py-3'>
+        <AlertCircle className='text-destructive h-5 w-5 flex-shrink-0' />
+        <div className='min-w-0 flex-1'>
+          <p className='text-destructive text-sm font-medium'>
             Failed to load card details
           </p>
-          <p className='text-muted-foreground text-xs mt-1'>
+          <p className='text-muted-foreground mt-1 text-xs'>
             Please try refreshing or closing and reopening this card.
           </p>
         </div>

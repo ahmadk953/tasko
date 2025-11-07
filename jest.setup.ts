@@ -3,7 +3,10 @@ import '@testing-library/jest-dom';
 // Polyfill for Next.js server-side APIs (Request, Response, Headers)
 if (typeof global.Request === 'undefined') {
   global.Request = class Request {
-    constructor(public url: string, public init?: any) {}
+    constructor(
+      public url: string,
+      public init?: any
+    ) {}
     async text() {
       return this.init?.body || '';
     }
@@ -19,7 +22,10 @@ if (typeof global.Request === 'undefined') {
 
 if (typeof global.Response === 'undefined') {
   global.Response = class Response {
-    constructor(public body: any, public init?: any) {}
+    constructor(
+      public body: any,
+      public init?: any
+    ) {}
     get status() {
       return this.init?.status || 200;
     }
@@ -58,8 +64,11 @@ if (typeof global.Headers === 'undefined') {
 // Mock NextResponse from Next.js
 jest.mock('next/server', () => {
   class MockNextResponse {
-    constructor(public body: any, public init?: any) {}
-    
+    constructor(
+      public body: any,
+      public init?: any
+    ) {}
+
     get status() {
       return this.init?.status || 200;
     }
