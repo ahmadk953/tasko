@@ -8,7 +8,11 @@ if (typeof global.Request === 'undefined') {
       return this.init?.body || '';
     }
     async json() {
-      return JSON.parse(this.init?.body || '{}');
+      try {
+        return JSON.parse(this.init?.body || '{}');
+      } catch {
+        return this.init?.body || {};
+      }
     }
   } as any;
 }
@@ -20,7 +24,11 @@ if (typeof global.Response === 'undefined') {
       return this.init?.status || 200;
     }
     async json() {
-      return JSON.parse(this.body);
+      try {
+        return JSON.parse(this.body);
+      } catch {
+        return this.body;
+      }
     }
     async text() {
       return this.body;

@@ -1,6 +1,7 @@
 import { GET } from '@/app/api/cards/[cardId]/route';
 import { db } from '@/lib/db';
 import { auth } from '@clerk/nextjs/server';
+import { createParams, expectWithSerializedDates } from '@/__tests__/test-utils';
 
 jest.mock('@clerk/nextjs/server', () => ({
   auth: jest.fn(),
@@ -76,16 +77,12 @@ describe('/api/cards/[cardId] GET', () => {
     mockFindUnique.mockResolvedValue(mockCard as any);
 
     const req = new Request('http://localhost:3000/api/cards/card-123');
-    const response = await GET(req, { params: Promise.resolve({ cardId: 'card-123' }) });
+    const response = await GET(req, { params: createParams({ cardId: 'card-123' }) });
 
     expect(response.status).toBe(200);
     const data = await response.json();
-    // Dates are serialized as strings in JSON responses
-    expect(data).toEqual({
-      ...mockCard,
-      createdAt: mockCard.createdAt.toISOString(),
-      updatedAt: mockCard.updatedAt.toISOString(),
-    });
+    // Use utility to compare with serialized dates
+    expectWithSerializedDates(data, mockCard);
     expect(mockFindUnique).toHaveBeenCalledWith({
       where: {
         id: 'card-123',
@@ -115,7 +112,7 @@ describe('/api/cards/[cardId] GET', () => {
     mockFindUnique.mockRejectedValue(error);
 
     const req = new Request('http://localhost:3000/api/cards/card-123');
-    const response = await GET(req, { params: Promise.resolve({ cardId: 'card-123' }) });
+    const response = await GET(req, { params: createParams({ cardId: 'card-123' }) });
 
     expect(response.status).toBe(500);
   });

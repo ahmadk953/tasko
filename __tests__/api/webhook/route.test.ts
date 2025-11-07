@@ -1,7 +1,6 @@
 import { POST } from '@/app/api/webhook/route';
 import { db } from '@/lib/db';
 import { stripe } from '@/lib/stripe';
-import arcjet from '@/lib/arcjet';
 
 jest.mock('@/lib/db', () => ({
   db: {
@@ -23,6 +22,7 @@ jest.mock('@/lib/stripe', () => ({
   },
 }));
 
+// Mock arcjet - define the mockProtect inside the factory
 jest.mock('@/lib/arcjet', () => {
   const mockProtect = jest.fn().mockResolvedValue({
     isDenied: jest.fn().mockReturnValue(false),
@@ -35,10 +35,9 @@ jest.mock('@/lib/arcjet', () => {
       withRule: jest.fn(() => ({
         protect: mockProtect,
       })),
+      _mockProtect: mockProtect, // Expose for tests to access
     },
     fixedWindow: jest.fn(() => ({})),
-    // Expose mockProtect so tests can override it
-    getMockProtect: () => mockProtect,
   };
 });
 
@@ -60,13 +59,13 @@ describe('/api/webhook POST', () => {
     typeof stripe.subscriptions.retrieve
   >;
   const mockHeaders = require('next/headers').headers as jest.Mock;
-  const arcjetMock = require('@/lib/arcjet');
-  let mockProtect: jest.Mock;
+  const arcjet = require('@/lib/arcjet').default;
+  const mockProtect = arcjet._mockProtect;
 
   beforeEach(() => {
     jest.clearAllMocks();
     process.env.STRIPE_WEBHOOK_SECRET = 'test-webhook-secret';
-    mockProtect = arcjetMock.getMockProtect();
+    // Reset mockProtect to default behavior
     mockProtect.mockResolvedValue({
       isDenied: jest.fn().mockReturnValue(false),
       reason: undefined,

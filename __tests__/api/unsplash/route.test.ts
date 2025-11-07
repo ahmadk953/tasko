@@ -1,12 +1,12 @@
 import { GET } from '@/app/api/unsplash/route';
 import { auth } from '@clerk/nextjs/server';
-import arcjet from '@/lib/arcjet';
 import { unsplash } from '@/lib/unsplash';
 
 jest.mock('@clerk/nextjs/server', () => ({
   auth: jest.fn(),
 }));
 
+// Mock arcjet - define the mockProtect inside the factory
 jest.mock('@/lib/arcjet', () => {
   const mockProtect = jest.fn().mockResolvedValue({
     isDenied: jest.fn().mockReturnValue(false),
@@ -19,10 +19,9 @@ jest.mock('@/lib/arcjet', () => {
       withRule: jest.fn(() => ({
         protect: mockProtect,
       })),
+      _mockProtect: mockProtect, // Expose for tests to access
     },
     fixedWindow: jest.fn(() => ({})),
-    // Expose mockProtect so tests can override it
-    getMockProtect: () => mockProtect,
   };
 });
 
@@ -39,12 +38,12 @@ describe('/api/unsplash GET', () => {
   const mockGetRandom = unsplash.photos.getRandom as jest.MockedFunction<
     typeof unsplash.photos.getRandom
   >;
-  const arcjetMock = require('@/lib/arcjet');
-  let mockProtect: jest.Mock;
+  const arcjet = require('@/lib/arcjet').default;
+  const mockProtect = arcjet._mockProtect;
 
   beforeEach(() => {
     jest.clearAllMocks();
-    mockProtect = arcjetMock.getMockProtect();
+    // Reset mockProtect to default behavior
     mockProtect.mockResolvedValue({
       isDenied: jest.fn().mockReturnValue(false),
       reason: undefined,
