@@ -36,21 +36,3 @@ export function expectWithSerializedDates<T extends Record<string, any>>(
 
   expect(received).toEqual(serializeValue(expected));
 }
-
-/**
- * Creates a properly configured Arcjet mock for testing
- */
-export function createArcjetMock() {
-  const mockProtect = jest.fn().mockResolvedValue({
-    isDenied: jest.fn().mockReturnValue(false),
-    reason: undefined,
-  });
-
-  return {
-    withRule: jest.fn(() => ({
-      protect: mockProtect,
-    })),
-    fixedWindow: jest.fn(() => ({})),
-    mockProtect,
-  };
-}
