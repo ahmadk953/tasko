@@ -14,7 +14,9 @@ interface UseCardDataResult {
   logsError: Error | null;
 }
 
-export const useCardData = (id: string | null | undefined): UseCardDataResult => {
+export const useCardData = (
+  id: string | null | undefined
+): UseCardDataResult => {
   const {
     data: cardData,
     isLoading: isLoadingCard,

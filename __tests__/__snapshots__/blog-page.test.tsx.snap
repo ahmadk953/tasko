@@ -12,7 +12,7 @@ exports[`Blog Page renders blog page unchanged 1`] = `
         class="mb-16 flex flex-col items-center"
       >
         <h1
-          class="text-center text-4xl font-bold sm:text-5xl md:text-6xl text-neutral-900 dark:text-neutral-50"
+          class="text-center text-4xl font-bold text-neutral-900 sm:text-5xl md:text-6xl dark:text-neutral-50"
         >
           Blog
         </h1>
@@ -26,7 +26,7 @@ exports[`Blog Page renders blog page unchanged 1`] = `
         class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
       >
         <a
-          class="group flex flex-col overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:border-neutral-300 dark:border-neutral-800 dark:bg-neutral-900/50 dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
+          class="group flex flex-col overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-sm transition-all duration-300 hover:border-neutral-300 hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900/50 dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
           href="blog/posts/blog-welcome"
         >
           <div
@@ -51,18 +51,18 @@ exports[`Blog Page renders blog page unchanged 1`] = `
               class="space-y-2"
             >
               <h2
-                class="text-lg font-semibold text-neutral-900 dark:text-neutral-50 line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
+                class="line-clamp-2 text-lg font-semibold text-neutral-900 transition-colors group-hover:text-blue-600 dark:text-neutral-50 dark:group-hover:text-blue-400"
               >
                 Welcome to the Blog!
               </h2>
               <p
-                class="text-sm text-neutral-600 dark:text-neutral-400 line-clamp-3"
+                class="line-clamp-3 text-sm text-neutral-600 dark:text-neutral-400"
               >
                 Welcome to our new blog page!
               </p>
             </div>
             <div
-              class="mt-4 flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform"
+              class="mt-4 flex items-center text-sm font-medium text-blue-600 transition-transform group-hover:translate-x-1 dark:text-blue-400"
             >
               Read more →
             </div>

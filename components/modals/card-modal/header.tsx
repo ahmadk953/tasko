@@ -64,7 +64,7 @@ const HeaderComponent = ({ data }: HeaderProps) => {
   return (
     <div className='mb-8 flex w-full items-start gap-x-4 border-b pb-6'>
       <Layout className='mt-1 h-6 w-6 flex-shrink-0 text-neutral-700 dark:text-neutral-100' />
-      <div className='min-w-0 max-w-max flex-1'>
+      <div className='max-w-max min-w-0 flex-1'>
         <form action={onSubmit}>
           <FormInput
             id='title'

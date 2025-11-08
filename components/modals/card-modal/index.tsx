@@ -26,7 +26,7 @@ export const CardModal = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className='max-h-[90vh] overflow-y-auto w-full max-w-2xl sm:max-w-4xl lg:max-w-5xl'>
+      <DialogContent className='max-h-[90vh] w-full max-w-2xl overflow-y-auto sm:max-w-4xl lg:max-w-5xl'>
         <VisuallyHidden.Root>
           <DialogTitle>Card Data Panel</DialogTitle>
         </VisuallyHidden.Root>
@@ -41,7 +41,7 @@ export const CardModal = () => {
               <Header.Skeleton />
             )}
 
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
+            <div className='grid grid-cols-1 gap-6 lg:grid-cols-3'>
               <div className='lg:col-span-2'>
                 <div className='w-full space-y-8'>
                   {isCardLoaded && cardData ? (
