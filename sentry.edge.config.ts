@@ -9,7 +9,6 @@ Sentry.init({
   dsn: 'https://bb697105eaabbc6f70af12e84e936ded@o4508368569368576.ingest.us.sentry.io/4508368582017024',
 
   integrations: [
-    Sentry.prismaIntegration(),
     Sentry.consoleLoggingIntegration({ levels: ['log', 'warn', 'error'] }),
   ],
 
