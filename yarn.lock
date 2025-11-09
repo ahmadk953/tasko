@@ -5175,7 +5175,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/speed-insights@npm:^1.1.0":
+"@vercel/speed-insights@npm:^1.2.0":
   version: 1.2.0
   resolution: "@vercel/speed-insights@npm:1.2.0"
   peerDependencies:
@@ -12527,7 +12527,7 @@ __metadata:
     "@types/react": "npm:^19.1.8"
     "@types/react-dom": "npm:^19.1.6"
     "@vercel/analytics": "npm:^1.5.0"
-    "@vercel/speed-insights": "npm:^1.1.0"
+    "@vercel/speed-insights": "npm:^1.2.0"
     babel-plugin-react-compiler: "npm:^1.0.0"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
