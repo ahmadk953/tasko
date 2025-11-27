@@ -718,28 +718,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clerk/shared@npm:^3.31.1":
-  version: 3.31.1
-  resolution: "@clerk/shared@npm:3.31.1"
-  dependencies:
-    csstype: "npm:3.1.3"
-    dequal: "npm:2.0.3"
-    glob-to-regexp: "npm:0.4.1"
-    js-cookie: "npm:3.0.5"
-    std-env: "npm:^3.9.0"
-    swr: "npm:2.3.4"
-  peerDependencies:
-    react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
-    react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-0
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 10c0/37a801857f56ce60d4850e47227c5eb09d6b081e1b3f1d125e8294035b0079a849d711374af9089f8999b47f6d20b98cf62ff26e1509130cdaf9eb039f779672
-  languageName: node
-  linkType: hard
-
 "@clerk/shared@npm:^3.36.0":
   version: 3.36.0
   resolution: "@clerk/shared@npm:3.36.0"
@@ -762,13 +740,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clerk/themes@npm:^2.4.33":
-  version: 2.4.33
-  resolution: "@clerk/themes@npm:2.4.33"
+"@clerk/themes@npm:^2.4.40":
+  version: 2.4.40
+  resolution: "@clerk/themes@npm:2.4.40"
   dependencies:
-    "@clerk/shared": "npm:^3.31.1"
+    "@clerk/shared": "npm:^3.36.0"
     tslib: "npm:2.8.1"
-  checksum: 10c0/333805ec2ba51d42fcdd457af6ae7c36729341cc591a5b173d21f782bf73331a705f74d5e43ba91b18cd012dcd67cf52466ac204f9178e8788a3fdd993540ddd
+  checksum: 10c0/bde166c11498f39ed71606462ee5bcbd2819757ebab5a3dea8b6c81e5b18769f159465c084e98235687e5f254ee9714ab10ef4ca55f3c1a6d4a02643119dab81
   languageName: node
   linkType: hard
 
@@ -12850,7 +12828,7 @@ __metadata:
   dependencies:
     "@arcjet/next": "npm:^1.0.0-beta.15"
     "@clerk/nextjs": "npm:^6.35.5"
-    "@clerk/themes": "npm:^2.4.33"
+    "@clerk/themes": "npm:^2.4.40"
     "@codecov/nextjs-webpack-plugin": "npm:^1.9.1"
     "@content-collections/cli": "npm:^0.1.7"
     "@content-collections/core": "npm:^0.12.0"
