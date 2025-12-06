@@ -10,6 +10,7 @@ import { FormPopover } from '@/components/form/form-popover';
 import { MAX_FREE_BOARDS } from '@/constants/boards';
 import { getAvailableCount } from '@/lib/org-limit';
 import { checkSubscription } from '@/lib/subscription';
+import { Board } from '@prisma/client';
 
 export const BoardList = async () => {
   const { orgId } = await auth();
@@ -37,7 +38,7 @@ export const BoardList = async () => {
         Your boards
       </div>
       <div className='grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4'>
-        {boards.map((board) => (
+        {boards.map((board: Board) => (
           <Link
             key={board.id}
             href={`/board/${board.id}`}
@@ -65,7 +66,7 @@ export const BoardList = async () => {
                 Free Workspaces can have up to 5 open boards. For unlimited boards upgrade this workspace.
               `}
             >
-              <HelpCircle className='absolute right-2 bottom-2 h-[14px] w-[14px]' />
+              <HelpCircle className='absolute right-2 bottom-2 h-3.5 w-3.5' />
             </Hint>
           </div>
         </FormPopover>

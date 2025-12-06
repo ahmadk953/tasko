@@ -12,7 +12,7 @@ export const ActivityItem = ({ data }: ActivityItemProps) => {
   // Get initials from user name for fallback
   const initials = data.userName
     .split(' ')
-    .map((word) => word[0])
+    .map((word: string) => word[0])
     .join('')
     .toUpperCase()
     .slice(0, 2);
@@ -20,7 +20,7 @@ export const ActivityItem = ({ data }: ActivityItemProps) => {
   return (
     <li className='group border-border bg-card/50 hover:bg-card rounded-lg border p-3 transition-all hover:shadow-sm'>
       <div className='flex items-start gap-x-3'>
-        <Avatar className='mt-0.5 h-8 w-8 flex-shrink-0'>
+        <Avatar className='mt-0.5 h-8 w-8 shrink-0'>
           <AvatarImage src={data.userImage} />
           <AvatarFallback className='text-xs font-semibold'>
             {initials}

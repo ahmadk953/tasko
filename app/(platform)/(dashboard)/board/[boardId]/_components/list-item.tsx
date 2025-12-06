@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import { Draggable, Droppable } from '@hello-pangea/dnd';
 
 import { ListWithCards } from '@/types';
+import { Card } from '@prisma/client';
 import { cn } from '@/lib/utils';
 
 import { ListHeader } from './list-header';
@@ -54,7 +55,7 @@ export const ListItem = ({ index, data }: ListItemProps) => {
                     data.cards.length > 0 ? 'mt-2' : 'mt-0'
                   )}
                 >
-                  {data.cards.map((card, index) => (
+                  {data.cards.map((card: Card, index: number) => (
                     <CardItem index={index} key={card.id} data={card} />
                   ))}
                   {provided.placeholder}

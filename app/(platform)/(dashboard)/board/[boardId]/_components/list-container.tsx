@@ -7,6 +7,7 @@ import { toast } from 'sonner';
 import { useAction } from '@/hooks/use-action';
 import { updateListOrder } from '@/actions/update-list-order';
 import { updateCardOrder } from '@/actions/update-card-order';
+import { Card } from '@prisma/client';
 import { ListWithCards } from '@/types';
 
 import { ListForm } from './list-form';
@@ -85,21 +86,22 @@ export const ListContainer = ({ data, boardId }: ListContainerProps) => {
 
       if (!sourceList || !destinationList) return;
 
-      // Check if card exists on the sourceList
-      if (!sourceList.cards) sourceList.cards = [];
+      // Ensure both lists expose a cards array
+      const sourceCards: Card[] = [...(sourceList.cards ?? [])];
+      const destinationCards: Card[] = [...(destinationList.cards ?? [])];
 
-      // Check if card exists on the destinationList
-      if (!destinationList.cards) destinationList.cards = [];
+      sourceList.cards = sourceCards;
+      destinationList.cards = destinationCards;
 
       // Moving the card in the same list
       if (source.droppableId === destination.droppableId) {
         const reorderedCards = reorder(
-          sourceList.cards,
+          sourceCards,
           source.index,
           destination.index
         );
 
-        reorderedCards.forEach((card, index) => {
+        reorderedCards.forEach((card: Card, index) => {
           card.order = index;
         });
 
@@ -114,27 +116,31 @@ export const ListContainer = ({ data, boardId }: ListContainerProps) => {
         // Moving the card from one list to another
 
         // Remove card from source list
-        const [movedCard] = sourceList.cards.splice(source.index, 1);
+        const [movedCard] = sourceCards.splice(source.index, 1);
+
+        if (!movedCard) {
+          return;
+        }
 
         // Assign the new listId to the moved card
         movedCard.listId = destination.droppableId;
 
         // Add the card to the destination list
-        destinationList.cards.splice(destination.index, 0, movedCard);
+        destinationCards.splice(destination.index, 0, movedCard);
 
-        sourceList.cards.forEach((card, index) => {
+        sourceCards.forEach((card: Card, index: number) => {
           card.order = index;
         });
 
         // Update the order for each card in the destination list
-        destinationList.cards.forEach((card, index) => {
+        destinationCards.forEach((card: Card, index: number) => {
           card.order = index;
         });
 
         setOrderedData(newOrderedData);
         executeUpdateCardOrder({
           boardId,
-          items: destinationList.cards,
+          items: destinationCards,
         });
       }
     }
