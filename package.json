@@ -22,7 +22,7 @@
     "@clerk/themes": "^2.4.40",
     "@hello-pangea/dnd": "^18.0.1",
     "@liveblocks/client": "^3.10.0",
-    "@liveblocks/node": "^3.10.0",
+    "@liveblocks/node": "^3.11.1",
     "@liveblocks/react": "^3.10.1",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.1",
