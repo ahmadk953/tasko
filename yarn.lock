@@ -2054,15 +2054,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/node@npm:^3.10.0":
-  version: 3.11.0
-  resolution: "@liveblocks/node@npm:3.11.0"
+"@liveblocks/core@npm:3.11.1":
+  version: 3.11.1
+  resolution: "@liveblocks/core@npm:3.11.1"
+  peerDependencies:
+    "@types/json-schema": ^7
+  checksum: 10c0/65f0c02002306c297f973f4b79a96e2aed343e643a987360eb2418c2164be979cfc3dc387d7173496e3f0186539da41cc2f52ecca985efba4854f01562fae002
+  languageName: node
+  linkType: hard
+
+"@liveblocks/node@npm:^3.11.1":
+  version: 3.11.1
+  resolution: "@liveblocks/node@npm:3.11.1"
   dependencies:
-    "@liveblocks/core": "npm:3.11.0"
+    "@liveblocks/core": "npm:3.11.1"
     "@stablelib/base64": "npm:^1.0.1"
     fast-sha256: "npm:^1.3.0"
     node-fetch: "npm:^2.6.1"
-  checksum: 10c0/01a297c78889789bafb72dbb17d1e7623c28496d3657f3957fb3acb0ecbfd13018731088d92c888a718fd022235dc1be6b653d63e9dded7438c8526eeedec144
+  checksum: 10c0/1129d4c6de0e00fef567fe8a88e4a2a1126611760f2e2bfc5836fabff3311a3fec955793f66fc92ea1886897fa9906f65fb95c7bc663a93e5fa2146b64d55f85
   languageName: node
   linkType: hard
 
@@ -12519,7 +12528,7 @@ __metadata:
     "@eslint/eslintrc": "npm:^3.3.1"
     "@hello-pangea/dnd": "npm:^18.0.1"
     "@liveblocks/client": "npm:^3.10.0"
-    "@liveblocks/node": "npm:^3.10.0"
+    "@liveblocks/node": "npm:^3.11.1"
     "@liveblocks/react": "npm:^3.10.1"
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.1"
