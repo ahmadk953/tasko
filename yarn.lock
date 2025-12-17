@@ -12400,9 +12400,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stripe@npm:^19.2.0":
-  version: 19.3.1
-  resolution: "stripe@npm:19.3.1"
+"stripe@npm:^20.1.0":
+  version: 20.1.0
+  resolution: "stripe@npm:20.1.0"
   dependencies:
     qs: "npm:^6.11.0"
   peerDependencies:
@@ -12410,7 +12410,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10c0/986b42cf25993ad7ee6aa378bac581dc6b403b8424cfb0363595062c0d4afcf79b5a15f05ee08dc9b9e93d3559c3ec9f300f786c61a3be1fdb89851660f8af8d
+  checksum: 10c0/db3edb03a856aa7bd6b6c06da5fe7934ab2b6978b11d8a279513297d55282d8247a9f979554f1d21630475fc9163ccc92de1d8df7d6d943c7b3d954d14b44a50
   languageName: node
   linkType: hard
 
@@ -12604,7 +12604,7 @@ __metadata:
     react-dom: "npm:^19.1.0"
     sharp: "npm:^0.34.5"
     sonner: "npm:^2.0.5"
-    stripe: "npm:^19.2.0"
+    stripe: "npm:^20.1.0"
     tailwind-merge: "npm:^3.4.0"
     tailwindcss: "npm:^4.1.17"
     ts-node: "npm:^10.9.2"
