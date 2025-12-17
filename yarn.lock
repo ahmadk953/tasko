@@ -2229,9 +2229,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/mdx@npm:^16.0.8":
-  version: 16.0.8
-  resolution: "@next/mdx@npm:16.0.8"
+"@next/mdx@npm:^16.0.10":
+  version: 16.0.10
+  resolution: "@next/mdx@npm:16.0.10"
   dependencies:
     source-map: "npm:^0.7.0"
   peerDependencies:
@@ -2242,7 +2242,7 @@ __metadata:
       optional: true
     "@mdx-js/react":
       optional: true
-  checksum: 10c0/1e21adc513f85019d4f0d3130da4e2ebce94759181c3a7089935db96172433ced45bb109e4a63f542d8f3bbe87463294176cca92f75f4c6704cb5ba2f5aa887c
+  checksum: 10c0/dd3bd2dbcde973e15258de0a8e0b3102c53d867b5994e7504912bab7c40fbeaee8678ec349278d6b64f4ff85b1654678b077ca62b887aea6037f169ce855bad8
   languageName: node
   linkType: hard
 
@@ -12554,7 +12554,7 @@ __metadata:
     "@liveblocks/react": "npm:^3.10.1"
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.1"
-    "@next/mdx": "npm:^16.0.8"
+    "@next/mdx": "npm:^16.0.10"
     "@prisma/client": "npm:^7.0.1"
     "@prisma/extension-accelerate": "npm:^2.0.1"
     "@radix-ui/react-accordion": "npm:^1.2.12"
