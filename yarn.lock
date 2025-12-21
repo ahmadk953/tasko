@@ -3039,12 +3039,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/extension-accelerate@npm:^2.0.1":
-  version: 2.0.2
-  resolution: "@prisma/extension-accelerate@npm:2.0.2"
+"@prisma/extension-accelerate@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@prisma/extension-accelerate@npm:3.0.1"
   peerDependencies:
     "@prisma/client": ">=4.16.1"
-  checksum: 10c0/bd98344d59fe1fd5161b79c59e74defd54f2860b003a34bf0d4fd911eb94ef84c4c190bf69942fd99a9a14e46e78e0774dbe8ac1b5137d056c9005b69e58cfe6
+  checksum: 10c0/41a869bfbc352e35af2ef212d42bfa59abe93e9b189343c1dc51ed4283af0c38e2374d1e60b6d08912c8a3a822ba146cdbd430f97fe0a0e7fea70704cd3f6eb0
   languageName: node
   linkType: hard
 
@@ -12886,7 +12886,7 @@ __metadata:
     "@mdx-js/react": "npm:^3.1.1"
     "@next/mdx": "npm:^16.0.10"
     "@prisma/client": "npm:^7.0.1"
-    "@prisma/extension-accelerate": "npm:^2.0.1"
+    "@prisma/extension-accelerate": "npm:^3.0.1"
     "@radix-ui/react-accordion": "npm:^1.2.12"
     "@radix-ui/react-avatar": "npm:^1.1.10"
     "@radix-ui/react-dialog": "npm:^1.1.15"
