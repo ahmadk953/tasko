@@ -81,7 +81,7 @@
     "@types/react": "^19.2.6",
     "@types/react-dom": "^19.2.3",
     "babel-plugin-react-compiler": "^1.0.0",
-    "eslint": "^9.35.0",
+    "eslint": "^9.39.2",
     "eslint-config-next": "^16.0.10",
     "eslint-config-prettier": "^10.1.8",
     "jest": "^30.0.0",
