@@ -2954,18 +2954,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/client-runtime-utils@npm:7.1.0":
-  version: 7.1.0
-  resolution: "@prisma/client-runtime-utils@npm:7.1.0"
-  checksum: 10c0/1ca472466d6257bb02a14d287f9814d220c2afd76b4b9d4ea8b1210c933264e36873eef1d789c7c15eb45f72d6290a56b79d4d4df2332a4f74abb6293520d85b
+"@prisma/client-runtime-utils@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@prisma/client-runtime-utils@npm:7.2.0"
+  checksum: 10c0/2d28cd04f3e8ef156d27bfc405d85603f9f4c604a54c935a9bbb8ace322c47f795223d168945e5f76ec1978dcdba10d2cef29853e91a93735fc654c69dd5deb4
   languageName: node
   linkType: hard
 
-"@prisma/client@npm:^7.0.1":
-  version: 7.1.0
-  resolution: "@prisma/client@npm:7.1.0"
+"@prisma/client@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@prisma/client@npm:7.2.0"
   dependencies:
-    "@prisma/client-runtime-utils": "npm:7.1.0"
+    "@prisma/client-runtime-utils": "npm:7.2.0"
   peerDependencies:
     prisma: "*"
     typescript: ">=5.4.0"
@@ -2974,7 +2974,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 10c0/0a0b367e126a7e539046b8fcb565311c2b108ccb7d5f1be6eaa321a9269a306e9514ab8eb057459ca4a55c93a459e30e09e19b35862b5075a6e73e06bdfee735
+  checksum: 10c0/3c790af2bbfbbcdcaae0f0a8d33b17e8945daa0f731007d85d95ec1c726c7f8a8ed617802e39bde905613d302eaa8eaac804ab9bce5efc4ed174d9985cdf942a
   languageName: node
   linkType: hard
 
@@ -12904,7 +12904,7 @@ __metadata:
     "@mdx-js/loader": "npm:^3.1.0"
     "@mdx-js/react": "npm:^3.1.1"
     "@next/mdx": "npm:^16.1.1"
-    "@prisma/client": "npm:^7.0.1"
+    "@prisma/client": "npm:^7.2.0"
     "@prisma/extension-accelerate": "npm:^3.0.1"
     "@radix-ui/react-accordion": "npm:^1.2.12"
     "@radix-ui/react-avatar": "npm:^1.1.10"
