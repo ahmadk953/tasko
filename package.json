@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@arcjet/next": "^1.0.0-beta.15",
-    "@clerk/nextjs": "^6.36.2",
+    "@clerk/nextjs": "^6.36.5",
     "@clerk/themes": "^2.4.40",
     "@hello-pangea/dnd": "^18.0.1",
     "@liveblocks/client": "^3.12.1",
