@@ -1,7 +1,7 @@
 import { GET } from '@/app/api/cards/[cardId]/logs/route';
 import { db } from '@/lib/db';
 import { auth } from '@clerk/nextjs/server';
-import { ENTITY_TYPE } from '@prisma/client';
+import { ENTITY_TYPE } from '@/generated/prisma/client';
 import { createParams, expectWithSerializedDates } from '@/lib/test-utils';
 
 jest.mock('@clerk/nextjs/server', () => ({

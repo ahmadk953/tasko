@@ -39,3 +39,5 @@ next-env.d.ts
 /.vscode/
 /.content-collections
 /.swc
+
+/generated/prisma

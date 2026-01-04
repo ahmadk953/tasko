@@ -2,7 +2,7 @@
 
 import { auth } from '@clerk/nextjs/server';
 import { revalidatePath } from 'next/cache';
-import { ACTION, Card, ENTITY_TYPE } from '@prisma/client';
+import { ACTION, Card, ENTITY_TYPE } from '@/generated/prisma/client';
 
 import { db } from '@/lib/db';
 import { createAuditLog } from '@/lib/create-audit-log';
@@ -39,7 +39,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
             description: true,
             order: true,
           },
-        },
+        } as const,
       },
     });
 
@@ -60,7 +60,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         order: newOrder,
         cards: {
           createMany: {
-            data: listToCopy.cards.map((card: Card) => ({
+            data: listToCopy.cards.map((card) => ({
               title: card.title,
               description: card.description,
               order: card.order,

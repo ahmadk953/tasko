@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 import { Draggable, Droppable } from '@hello-pangea/dnd';
 
 import { ListWithCards } from '@/types';
-import { Card } from '@prisma/client';
+import { Card } from '@/generated/prisma/client';
 import { cn } from '@/lib/utils';
 
 import { ListHeader } from './list-header';

@@ -13,11 +13,11 @@ export const BoardRoomWrapper = ({
   const others = useOthers();
   const ref = useRef<HTMLDivElement>(null);
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+   
   const [numbers, setNumbers] = useState<number[]>([]);
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+   
   const [myPresence, updateMyPresence] = useMyPresence();
 
   useLayoutEffect(() => {

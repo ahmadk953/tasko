@@ -1,4 +1,4 @@
-import { Card, List } from '@prisma/client';
+import { Card, List } from '@/generated/prisma/client';
 
 export type ListWithCards = List & {
   cards: Card[];

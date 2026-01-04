@@ -2,6 +2,7 @@ import { auth } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
 
 import { db } from '@/lib/db';
+import { Prisma } from '@/generated/prisma/client';
 import { ListContainer } from './_components/list-container';
 import { BoardRoomWrapper } from './_components/board-room-wrapper';
 
@@ -19,7 +20,7 @@ const BoardIdPage = async (props: BoardIdPageProps) => {
     redirect('/select-org');
   }
 
-  const lists = await db.list.findMany({
+  const lists = (await db.list.findMany({
     where: {
       boardId: params.boardId,
       board: {
@@ -36,7 +37,7 @@ const BoardIdPage = async (props: BoardIdPageProps) => {
     orderBy: {
       order: 'asc',
     },
-  });
+  })) as Prisma.ListGetPayload<{ include: { cards: true } }>[];
 
   return (
     <BoardRoomWrapper>

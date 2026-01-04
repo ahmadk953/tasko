@@ -7,7 +7,7 @@ import { toast } from 'sonner';
 import { useAction } from '@/hooks/use-action';
 import { updateListOrder } from '@/actions/update-list-order';
 import { updateCardOrder } from '@/actions/update-card-order';
-import { Card } from '@prisma/client';
+import { Card } from '@/generated/prisma/client';
 import { ListWithCards } from '@/types';
 
 import { ListForm } from './list-form';

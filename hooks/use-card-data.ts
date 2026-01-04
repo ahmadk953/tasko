@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { AuditLog } from '@prisma/client';
+import { AuditLog } from '@/generated/prisma/client';
 
 import { CardWithList } from '@/types';
 import { fetcher } from '@/lib/fetcher';

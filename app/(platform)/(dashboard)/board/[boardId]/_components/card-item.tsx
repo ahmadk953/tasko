@@ -1,7 +1,7 @@
 'use client';
 
 import { Draggable } from '@hello-pangea/dnd';
-import { Card } from '@prisma/client';
+import { Card } from '@/generated/prisma/client';
 import { format } from 'date-fns';
 
 import { useCardModal } from '@/hooks/use-card-modal';

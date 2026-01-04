@@ -4,7 +4,7 @@ import { auth } from '@clerk/nextjs/server';
 
 import { db } from '@/lib/db';
 import { createSafeAction } from '@/lib/create-safe-action';
-import { List } from '@prisma/client';
+import { List } from '@/generated/prisma/client';
 
 import { InputType, ReturnType } from './types';
 import { CopyBoard } from './schema';

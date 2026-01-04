@@ -1,8 +1,5 @@
-import { FlatCompat } from '@eslint/eslintrc';
-
-const compat = new FlatCompat({
-  baseDirectory: import.meta.dirname,
-});
+import nextCoreWebVitals from 'eslint-config-next/core-web-vitals';
+import prettier from 'eslint-config-prettier/flat';
 
 const eslintConfig = [
   {
@@ -22,11 +19,11 @@ const eslintConfig = [
       'out/**',
       'build/**',
       'next-env.d.ts',
+      'generated/**',
     ],
   },
-  ...compat.config({
-    extends: ['next/core-web-vitals', 'next/typescript', 'prettier'],
-  }),
+  ...nextCoreWebVitals,
+  prettier,
 ];
 
 export default eslintConfig;

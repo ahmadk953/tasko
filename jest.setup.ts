@@ -1,5 +1,15 @@
 import '@testing-library/jest-dom';
 
+// Ensure Node polyfills for Web APIs used by dependencies
+import { TextEncoder as NodeTextEncoder, TextDecoder as NodeTextDecoder } from 'util';
+
+// Provide TextEncoder/TextDecoder if missing (used by Prisma/cuid2)
+(global as any).TextEncoder ??= NodeTextEncoder;
+(global as any).TextDecoder ??= NodeTextDecoder;
+
+// Provide Web Crypto in Jest (jsdom) environment if missing
+(global as any).crypto ??= require('crypto').webcrypto;
+
 // Polyfill for Next.js server-side APIs (Request, Response, Headers)
 if (typeof global.Request === 'undefined') {
   global.Request = class Request {

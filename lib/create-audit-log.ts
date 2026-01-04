@@ -1,5 +1,5 @@
 import { auth, currentUser } from '@clerk/nextjs/server';
-import { ACTION, ENTITY_TYPE } from '@prisma/client';
+import { ACTION, ENTITY_TYPE } from '@/generated/prisma/client';
 
 import { db } from '@/lib/db';
 interface Props {

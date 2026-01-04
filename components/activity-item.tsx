@@ -1,5 +1,5 @@
 import { format } from 'date-fns';
-import { AuditLog } from '@prisma/client';
+import { AuditLog } from '@/generated/prisma/client';
 
 import { generateLogMessage } from '@/lib/generate-log-message';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';

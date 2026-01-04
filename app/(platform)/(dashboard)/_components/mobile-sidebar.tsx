@@ -18,7 +18,9 @@ export const MobileSidebar = () => {
   const isOpen = useMobileSidebar((state) => state.isOpen);
 
   useEffect(() => {
-    setIsMounted(true);
+    const frame = requestAnimationFrame(() => setIsMounted(true));
+
+    return () => cancelAnimationFrame(frame);
   }, []);
 
   useEffect(() => {

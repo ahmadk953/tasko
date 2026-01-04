@@ -10,7 +10,7 @@ import { FormPopover } from '@/components/form/form-popover';
 import { MAX_FREE_BOARDS } from '@/constants/boards';
 import { getAvailableCount } from '@/lib/org-limit';
 import { checkSubscription } from '@/lib/subscription';
-import { Board } from '@prisma/client';
+import { Board } from '@/generated/prisma/client';
 
 export const BoardList = async () => {
   const { orgId } = await auth();

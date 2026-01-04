@@ -2,7 +2,7 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { toast } from 'sonner';
 
 import { BoardTitleForm } from '@/app/(platform)/(dashboard)/board/[boardId]/_components/board-title-form';
-import { Board } from '@prisma/client';
+import { Board } from '@/generated/prisma/client';
 
 jest.mock('@/hooks/use-action', () => ({
   useAction: jest.fn().mockImplementation(() => ({

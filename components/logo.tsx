@@ -1,21 +1,14 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
 
 export const Logo = () => {
   const { resolvedTheme } = useTheme();
-  const [clientSrc, setClientSrc] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (resolvedTheme) {
-      setClientSrc(`/logo-${resolvedTheme === 'dark' ? 'dark' : 'light'}.svg`);
-    } else {
-      setClientSrc(null);
-    }
-  }, [resolvedTheme]);
+  const clientSrc = resolvedTheme
+    ? `/logo-${resolvedTheme === 'dark' ? 'dark' : 'light'}.svg`
+    : null;
 
   return (
     // TODO: Make this go back to the organization page if you are logged in

@@ -2,7 +2,7 @@
 
 import { auth } from '@clerk/nextjs/server';
 import { revalidatePath, revalidateTag } from 'next/cache';
-import { ACTION, ENTITY_TYPE } from '@prisma/client';
+import { ACTION, ENTITY_TYPE } from '@/generated/prisma/client';
 
 import { db } from '@/lib/db';
 import { createAuditLog } from '@/lib/create-audit-log';

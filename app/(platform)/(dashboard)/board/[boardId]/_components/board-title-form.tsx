@@ -2,7 +2,7 @@
 
 import { toast } from 'sonner';
 import { useEffect, useRef, useState } from 'react';
-import { Board } from '@prisma/client';
+import { Board } from '@/generated/prisma/client';
 
 import { Button } from '@/components/ui/button';
 import { FormInput } from '@/components/form/form-input';

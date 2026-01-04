@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { Card } from '@prisma/client';
+import { Card } from '@/generated/prisma/client';
 
 import { ActionState } from '@/lib/create-safe-action';
 
