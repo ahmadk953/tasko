@@ -58,7 +58,7 @@
     "react-dom": "^19.2.3",
     "sharp": "^0.34.5",
     "sonner": "^2.0.7",
-    "stripe": "^20.1.0",
+    "stripe": "^20.1.2",
     "tailwind-merge": "^3.4.0",
     "unsplash-js": "^7.0.20",
     "usehooks-ts": "^3.1.1",

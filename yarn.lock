@@ -11284,7 +11284,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qs@npm:^6.11.0":
+"qs@npm:^6.14.1":
   version: 6.14.1
   resolution: "qs@npm:6.14.1"
   dependencies:
@@ -12559,17 +12559,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stripe@npm:^20.1.0":
-  version: 20.1.0
-  resolution: "stripe@npm:20.1.0"
+"stripe@npm:^20.1.2":
+  version: 20.1.2
+  resolution: "stripe@npm:20.1.2"
   dependencies:
-    qs: "npm:^6.11.0"
+    qs: "npm:^6.14.1"
   peerDependencies:
     "@types/node": ">=16"
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10c0/db3edb03a856aa7bd6b6c06da5fe7934ab2b6978b11d8a279513297d55282d8247a9f979554f1d21630475fc9163ccc92de1d8df7d6d943c7b3d954d14b44a50
+  checksum: 10c0/27a3dabbfa1d3459f43803341728e4c32cdfecd17f461a3a00d754e38d54306939079bf37a538ac526997bd5d5dce1f1dc1203f28a106ab5c23494d3326f92e6
   languageName: node
   linkType: hard
 
@@ -12764,7 +12764,7 @@ __metadata:
     react-dom: "npm:^19.2.3"
     sharp: "npm:^0.34.5"
     sonner: "npm:^2.0.7"
-    stripe: "npm:^20.1.0"
+    stripe: "npm:^20.1.2"
     tailwind-merge: "npm:^3.4.0"
     tailwindcss: "npm:^4.1.18"
     ts-node: "npm:^10.9.2"
