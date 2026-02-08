@@ -1,7 +1,10 @@
 import '@testing-library/jest-dom';
 
 // Ensure Node polyfills for Web APIs used by dependencies
-import { TextEncoder as NodeTextEncoder, TextDecoder as NodeTextDecoder } from 'util';
+import {
+  TextEncoder as NodeTextEncoder,
+  TextDecoder as NodeTextDecoder,
+} from 'util';
 
 // Provide TextEncoder/TextDecoder if missing (used by Prisma/cuid2)
 (global as any).TextEncoder ??= NodeTextEncoder;

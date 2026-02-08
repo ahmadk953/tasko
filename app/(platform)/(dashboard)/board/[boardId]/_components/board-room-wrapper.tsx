@@ -13,11 +13,10 @@ export const BoardRoomWrapper = ({
   const others = useOthers();
   const ref = useRef<HTMLDivElement>(null);
 
-   
   const [numbers, setNumbers] = useState<number[]>([]);
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
-   
+
   const [myPresence, updateMyPresence] = useMyPresence();
 
   useLayoutEffect(() => {
