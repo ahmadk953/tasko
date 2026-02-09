@@ -2082,12 +2082,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:3.13.3":
-  version: 3.13.3
-  resolution: "@liveblocks/client@npm:3.13.3"
+"@liveblocks/client@npm:3.13.4":
+  version: 3.13.4
+  resolution: "@liveblocks/client@npm:3.13.4"
   dependencies:
-    "@liveblocks/core": "npm:3.13.3"
-  checksum: 10c0/0400c900d2532f443a9dd1ea22573721b4b18c94355a47f65e34e56f8397f769fe93a3a1115413016ca7b76ac7d243bfeb8e8fbf7feacd7215b99e3aaa737389
+    "@liveblocks/core": "npm:3.13.4"
+  checksum: 10c0/4c6f19b5719b0847f91bebf69882436b4b76cab607d53d0c09d5042d094d01ea9fec89c4079f94d135d91c59ee5b2336079477e8c360654a68fca97767b1a2da
   languageName: node
   linkType: hard
 
@@ -2109,12 +2109,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/core@npm:3.13.3":
-  version: 3.13.3
-  resolution: "@liveblocks/core@npm:3.13.3"
+"@liveblocks/core@npm:3.13.4":
+  version: 3.13.4
+  resolution: "@liveblocks/core@npm:3.13.4"
   peerDependencies:
     "@types/json-schema": ^7
-  checksum: 10c0/7926cd51a07609f9b50135f16cff2b7611bb776708421803bd47de48487058fa5155ce70b71722d8336f988e1746abeb49cabba64f6750ef2da6ccaf0c3b6e76
+  checksum: 10c0/00ba5cb333458ed495c1c7c27bd5ac8d43dd93419c7c2c1144c0e57965fb4e20adcc8bc9198d25a534c3a0946498d301c8c52692153fec979e92c15633875563
   languageName: node
   linkType: hard
 
@@ -2130,12 +2130,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/react@npm:^3.13.3":
-  version: 3.13.3
-  resolution: "@liveblocks/react@npm:3.13.3"
+"@liveblocks/react@npm:^3.13.4":
+  version: 3.13.4
+  resolution: "@liveblocks/react@npm:3.13.4"
   dependencies:
-    "@liveblocks/client": "npm:3.13.3"
-    "@liveblocks/core": "npm:3.13.3"
+    "@liveblocks/client": "npm:3.13.4"
+    "@liveblocks/core": "npm:3.13.4"
   peerDependencies:
     "@types/react": "*"
     "@types/react-dom": "*"
@@ -2145,7 +2145,7 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 10c0/b00a47c448805ba2d891e746bca753112b786a5776b53a7ad42ece0462f317ebf2c5bea96ffdb1ca9be2f8682911452a7d4851b2c7113a0084f8059bc0b90e7b
+  checksum: 10c0/41b6439e512f3ac9ae3a4c0898fc279997609ddddb0d384cc9fef1c6403dee61445f583cb8696f2767f43a68c56e145b0f153905f87421f669a8708bef924ea3
   languageName: node
   linkType: hard
 
@@ -12710,7 +12710,7 @@ __metadata:
     "@hello-pangea/dnd": "npm:^18.0.1"
     "@liveblocks/client": "npm:^3.12.1"
     "@liveblocks/node": "npm:^3.12.1"
-    "@liveblocks/react": "npm:^3.13.3"
+    "@liveblocks/react": "npm:^3.13.4"
     "@mdx-js/loader": "npm:^3.1.1"
     "@mdx-js/react": "npm:^3.1.1"
     "@next/mdx": "npm:^16.1.1"
