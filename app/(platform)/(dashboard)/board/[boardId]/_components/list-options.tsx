@@ -3,7 +3,7 @@
 import { MoreHorizontal } from 'lucide-react';
 import { useRef } from 'react';
 import { toast } from 'sonner';
-import { List } from '@/generated/prisma/client';
+import type { List } from '@/generated/prisma/client';
 
 import {
   Popover,

@@ -1,6 +1,6 @@
 'use client';
 
-import { AuditLog } from '@/generated/prisma/client';
+import type { AuditLog } from '@/generated/prisma/client';
 import { ActivityIcon } from 'lucide-react';
 import { memo } from 'react';
 

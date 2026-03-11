@@ -44,3 +44,4 @@ package.json
 yarn.lock
 README.md
 /.content-collections
+/generated

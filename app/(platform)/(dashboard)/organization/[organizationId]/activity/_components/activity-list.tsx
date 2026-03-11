@@ -10,7 +10,7 @@ import {
   PaginationPrevious,
 } from '@/components/ui/pagination';
 import { ActivityItem } from '@/components/activity-item';
-import { AuditLog } from '@/generated/prisma/client';
+import type { AuditLog } from '@/generated/prisma/client';
 
 export const ActivityList = ({
   totalPages,

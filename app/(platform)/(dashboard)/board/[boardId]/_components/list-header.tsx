@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { useEventListener } from 'usehooks-ts';
-import { List } from '@/generated/prisma/client';
+import type { List } from '@/generated/prisma/client';
 import { toast } from 'sonner';
 
 import { FormInput } from '@/components/form/form-input';

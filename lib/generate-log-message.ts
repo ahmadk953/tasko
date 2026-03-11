@@ -1,14 +1,14 @@
-import { ACTION, AuditLog } from '@/generated/prisma/client';
+import type { AuditLog } from '@/generated/prisma/client';
 
 export const generateLogMessage = (log: AuditLog) => {
   const { action, entityTitle, entityType } = log;
 
   switch (action) {
-    case ACTION.CREATE:
+    case 'CREATE':
       return `Created ${entityType.toLowerCase()} "${entityTitle}"`;
-    case ACTION.UPDATE:
+    case 'UPDATE':
       return `Updated ${entityType.toLowerCase()} "${entityTitle}"`;
-    case ACTION.DELETE:
+    case 'DELETE':
       return `Deleted ${entityType.toLowerCase()} "${entityTitle}"`;
     default:
       return `Unknown action ${entityType.toLowerCase()} "${entityTitle}"`;

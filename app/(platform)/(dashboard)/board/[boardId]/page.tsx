@@ -2,7 +2,7 @@ import { auth } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
 
 import { db } from '@/lib/db';
-import { Prisma } from '@/generated/prisma/client';
+import type { Prisma } from '@/generated/prisma/client';
 import { ListContainer } from './_components/list-container';
 import { BoardRoomWrapper } from './_components/board-room-wrapper';
 
