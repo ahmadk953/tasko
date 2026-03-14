@@ -6,9 +6,7 @@ import { DayButton, DayPicker, getDefaultClassNames } from 'react-day-picker';
 import { cn } from '@/lib/utils';
 import { Button, buttonVariants } from '@/components/ui/button';
 
-function CalendarChevronLeftIcon(
-  props: React.ComponentProps<'svg'>
-) {
+function CalendarChevronLeftIcon(props: React.ComponentProps<'svg'>) {
   return (
     <svg
       aria-hidden='true'
@@ -25,9 +23,7 @@ function CalendarChevronLeftIcon(
   );
 }
 
-function CalendarChevronRightIcon(
-  props: React.ComponentProps<'svg'>
-) {
+function CalendarChevronRightIcon(props: React.ComponentProps<'svg'>) {
   return (
     <svg
       aria-hidden='true'
@@ -44,9 +40,7 @@ function CalendarChevronRightIcon(
   );
 }
 
-function CalendarChevronDownIcon(
-  props: React.ComponentProps<'svg'>
-) {
+function CalendarChevronDownIcon(props: React.ComponentProps<'svg'>) {
   return (
     <svg
       aria-hidden='true'

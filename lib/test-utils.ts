@@ -15,11 +15,11 @@ export function createParams<T extends Record<string, string>>(
  * Compares objects with Date fields by converting dates to ISO strings
  * Useful for testing API responses where dates are serialized as strings
  */
-export function expectWithSerializedDates<T extends Record<string, any>>(
+export function expectWithSerializedDates<T extends Record<string, unknown>>(
   received: T,
   expected: T
 ): void {
-  const serializeValue = (value: any): any => {
+  const serializeValue = (value: unknown): unknown => {
     if (value instanceof Date) {
       return value.toISOString();
     }

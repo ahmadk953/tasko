@@ -52,8 +52,9 @@ export async function POST(req: Request) {
   let event: Stripe.Event;
   try {
     event = stripe.webhooks.constructEvent(rawBody, sig, webhookSecret);
-  } catch (err: any) {
-    console.error('Failed to construct Stripe event:', err?.message ?? err);
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.error('Failed to construct Stripe event:', message);
     return new NextResponse(
       JSON.stringify({ error: 'Invalid webhook signature' }),
       {
@@ -94,11 +95,22 @@ export async function POST(req: Request) {
         {
           expand: ['items.data.price'],
         }
-      )) as any;
+      )) as Stripe.Subscription;
 
-      const priceId = subscription.items?.data?.[0]?.price?.id ?? null;
-      const currentPeriodEnd = subscription.current_period_end
-        ? new Date(subscription.current_period_end * 1000)
+      const subscriptionItem = subscription.items.data[0];
+      const priceId = subscriptionItem?.price?.id ?? null;
+      const subscriptionRecord = subscription as unknown as Record<
+        string,
+        unknown
+      >;
+      const topLevelCurrentPeriodEnd =
+        typeof subscriptionRecord['current_period_end'] === 'number'
+          ? subscriptionRecord['current_period_end']
+          : null;
+      const currentPeriodEndUnix =
+        subscriptionItem?.current_period_end ?? topLevelCurrentPeriodEnd;
+      const currentPeriodEnd = currentPeriodEndUnix
+        ? new Date(currentPeriodEndUnix * 1000)
         : null;
 
       // Upsert by orgId (orgId is unique in schema) to avoid duplicate creations
@@ -122,8 +134,12 @@ export async function POST(req: Request) {
 
     // Handle invoice.payment_succeeded
     if (event.type === 'invoice.payment_succeeded') {
-      const invoice = event.data.object as any;
-      const subscriptionId = invoice.subscription as string | null;
+      const invoice = event.data.object as Stripe.Invoice;
+      const invoiceRecord = invoice as unknown as Record<string, unknown>;
+      const subscriptionId =
+        typeof invoiceRecord.subscription === 'string'
+          ? invoiceRecord.subscription
+          : null;
       if (!subscriptionId) {
         // nothing to update if there's no subscription id
         console.warn('invoice.payment_succeeded without subscription id', {
@@ -137,11 +153,22 @@ export async function POST(req: Request) {
         {
           expand: ['items.data.price'],
         }
-      )) as any;
+      )) as Stripe.Subscription;
 
-      const priceId = subscription.items?.data?.[0]?.price?.id ?? null;
-      const currentPeriodEnd = subscription.current_period_end
-        ? new Date(subscription.current_period_end * 1000)
+      const subscriptionItem = subscription.items.data[0];
+      const priceId = subscriptionItem?.price?.id ?? null;
+      const subscriptionRecord = subscription as unknown as Record<
+        string,
+        unknown
+      >;
+      const topLevelCurrentPeriodEnd =
+        typeof subscriptionRecord['current_period_end'] === 'number'
+          ? subscriptionRecord['current_period_end']
+          : null;
+      const currentPeriodEndUnix =
+        subscriptionItem?.current_period_end ?? topLevelCurrentPeriodEnd;
+      const currentPeriodEnd = currentPeriodEndUnix
+        ? new Date(currentPeriodEndUnix * 1000)
         : null;
 
       try {
@@ -152,16 +179,19 @@ export async function POST(req: Request) {
             stripeCurrentPeriodEnd: currentPeriodEnd ?? undefined,
           },
         });
-      } catch (prismaErr: any) {
+      } catch (prismaErr: unknown) {
         // If no matching record found, log and continue.
+        const message =
+          prismaErr instanceof Error ? prismaErr.message : String(prismaErr);
         console.warn('No orgSubscription found to update for subscription', {
           subscriptionId: subscription.id,
-          error: prismaErr?.message ?? prismaErr,
+          error: message,
         });
       }
     }
-  } catch (err: any) {
-    console.error('Error processing webhook event:', err?.message ?? err);
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.error('Error processing webhook event:', message);
     return new NextResponse(JSON.stringify({ error: 'Internal error' }), {
       status: 500,
     });
