@@ -880,9 +880,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@content-collections/core@npm:^0.14.2":
-  version: 0.14.2
-  resolution: "@content-collections/core@npm:0.14.2"
+"@content-collections/core@npm:^0.14.3":
+  version: 0.14.3
+  resolution: "@content-collections/core@npm:0.14.3"
   dependencies:
     "@standard-schema/spec": "npm:^1.0.0"
     camelcase: "npm:^8.0.0"
@@ -897,7 +897,7 @@ __metadata:
     yaml: "npm:^2.4.5"
   peerDependencies:
     typescript: ^5.0.2
-  checksum: 10c0/bb5f74c6ca005fd478fe9e12cce0633f978f7da81927d5522773dd6f61ac48923633da68db083018b471e6be47d9604a66ef32586aa4b7702f443403362750d5
+  checksum: 10c0/526a99b0e1cc62f2e11f7f2d49b1ee2cc8914573840d121e8af72170c6ea9df713949420962e14853a43e88e530440c686c44147c8b8f23387a5edb4c5cd6b1c
   languageName: node
   linkType: hard
 
@@ -12660,7 +12660,7 @@ __metadata:
     "@clerk/themes": "npm:^2.4.57"
     "@codecov/nextjs-webpack-plugin": "npm:^1.9.1"
     "@content-collections/cli": "npm:^0.1.9"
-    "@content-collections/core": "npm:^0.14.2"
+    "@content-collections/core": "npm:^0.14.3"
     "@content-collections/mdx": "npm:^0.2.2"
     "@content-collections/next": "npm:^0.2.11"
     "@hello-pangea/dnd": "npm:^18.0.1"
