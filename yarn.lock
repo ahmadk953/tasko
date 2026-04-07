@@ -2063,21 +2063,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:^3.15.1":
-  version: 3.15.2
-  resolution: "@liveblocks/client@npm:3.15.2"
+"@liveblocks/client@npm:^3.17.0":
+  version: 3.17.0
+  resolution: "@liveblocks/client@npm:3.17.0"
   dependencies:
-    "@liveblocks/core": "npm:3.15.2"
-  checksum: 10c0/1a2763142fd85d31a316ba2fa737c62ecafd0e86872dff69b77e038ec83539497a492c1a9ac66e35c66bfeeac9be7f13c9d5d55184e742f608ec551ca98dd13f
-  languageName: node
-  linkType: hard
-
-"@liveblocks/core@npm:3.15.2":
-  version: 3.15.2
-  resolution: "@liveblocks/core@npm:3.15.2"
-  peerDependencies:
-    "@types/json-schema": ^7
-  checksum: 10c0/dffb18127a859818703463f3e9cf7eeb069d238776cce1d818aa7168e92dd9677861166a7e48ffef1a8787e0f4f7f9189efcfbc13479b54d91b49889c77d2ad1
+    "@liveblocks/core": "npm:3.17.0"
+  checksum: 10c0/be31a884615726c663a2cce58ab482ff83d02968fafe5afac86a08ad789ee076a63352f30ebe047cb8280976eea599aa3eb0c32629f5e70b7f44fc6e86cf8905
   languageName: node
   linkType: hard
 
@@ -2096,6 +2087,15 @@ __metadata:
   peerDependencies:
     "@types/json-schema": ^7
   checksum: 10c0/1f6e6cb0e3d946bd7f817127f1e31d73c744d923d0b616a774b1e5ee59c1c92ad31b96a6fb4d176529e56c4ff40bd95ac863b9630b6f330d7fef15d3b1edd800
+  languageName: node
+  linkType: hard
+
+"@liveblocks/core@npm:3.17.0":
+  version: 3.17.0
+  resolution: "@liveblocks/core@npm:3.17.0"
+  peerDependencies:
+    "@types/json-schema": ^7
+  checksum: 10c0/5475b486497ffaa86efcfa72c8b992cad76c146a7e8800cd84ea374b5acd9c99b1f88a613af6a02a03c8c9ba6cdf8d6eb7c026494e94b750ef13773c743ffac9
   languageName: node
   linkType: hard
 
@@ -12673,7 +12673,7 @@ __metadata:
     "@content-collections/mdx": "npm:^0.2.2"
     "@content-collections/next": "npm:^0.2.11"
     "@hello-pangea/dnd": "npm:^18.0.1"
-    "@liveblocks/client": "npm:^3.15.1"
+    "@liveblocks/client": "npm:^3.17.0"
     "@liveblocks/node": "npm:^3.15.5"
     "@liveblocks/react": "npm:^3.15.4"
     "@mdx-js/loader": "npm:^3.1.1"
