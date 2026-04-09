@@ -701,13 +701,13 @@ __metadata:
   linkType: hard
 
 "@clerk/backend@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "@clerk/backend@npm:3.2.2"
+  version: 3.2.4
+  resolution: "@clerk/backend@npm:3.2.4"
   dependencies:
-    "@clerk/shared": "npm:^4.3.2"
+    "@clerk/shared": "npm:^4.4.0"
     standardwebhooks: "npm:^1.0.0"
     tslib: "npm:2.8.1"
-  checksum: 10c0/004a0d92bb9d52b51039bd690c0738d74b0615edbf9c4e65fdd9f3aa1a0468e164ce9accdbfb056b4098b164532a38dea302d12abc22edc92042bd4f888dd942
+  checksum: 10c0/3c0640c2d8e8f4d6b1f5b7c1e2e123e4485b93665ddde4bccfd50b8df9972e94adc31a32ac75caa640fda581eb52e7768d17da4a5a3f90fee6de2ee5c5b3ccad
   languageName: node
   linkType: hard
 
@@ -781,6 +781,27 @@ __metadata:
     react-dom:
       optional: true
   checksum: 10c0/249b0fb26a2ba85fa368cc121e7e2b1b96edd7db6205350d96f1b0d64f8bcfbdbf678cdf33dbd8f1ad700b046dc54be9b6912df9db59c4f9185cb1a6efb980ed
+  languageName: node
+  linkType: hard
+
+"@clerk/shared@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "@clerk/shared@npm:4.4.0"
+  dependencies:
+    "@tanstack/query-core": "npm:5.90.16"
+    dequal: "npm:2.0.3"
+    glob-to-regexp: "npm:0.4.1"
+    js-cookie: "npm:3.0.5"
+    std-env: "npm:^3.9.0"
+  peerDependencies:
+    react: ^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0
+    react-dom: ^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/a5339694ad3ff255155ed70e69565f318fd202b5d6cde0845ca1c2c24f7419bbfee285854838d9d0f3c9966e8cc4d7a606763596245334ee8f78c2c90e5d9582
   languageName: node
   linkType: hard
 
@@ -5901,12 +5922,12 @@ __metadata:
   linkType: hard
 
 "brace-expansion@npm:^1.1.7":
-  version: 1.1.12
-  resolution: "brace-expansion@npm:1.1.12"
+  version: 1.1.13
+  resolution: "brace-expansion@npm:1.1.13"
   dependencies:
     balanced-match: "npm:^1.0.0"
     concat-map: "npm:0.0.1"
-  checksum: 10c0/975fecac2bb7758c062c20d0b3b6288c7cc895219ee25f0a64a9de662dbac981ff0b6e89909c3897c1f84fa353113a721923afdec5f8b2350255b097f12b1f73
+  checksum: 10c0/384c61bb329b6adfdcc0cbbdd108dc19fb5f3e84ae15a02a74f94c6c791b5a9b035aae73b2a51929a8a478e2f0f212a771eb6a8b5b514cccfb8d0c9f2ce8cbd8
   languageName: node
   linkType: hard
 
@@ -6528,9 +6549,9 @@ __metadata:
   linkType: hard
 
 "defu@npm:^6.1.4":
-  version: 6.1.4
-  resolution: "defu@npm:6.1.4"
-  checksum: 10c0/2d6cc366262dc0cb8096e429368e44052fdf43ed48e53ad84cc7c9407f890301aa5fcb80d0995abaaf842b3949f154d060be4160f7a46cb2bc2f7726c81526f5
+  version: 6.1.6
+  resolution: "defu@npm:6.1.6"
+  checksum: 10c0/6755a914d4d1b40346d582cadf3af0c4efb1b89c462631f4c8a20c933da88d5da674344dd0856426d611d5fc0c65a3ffa82388519127b06f1a688dc103ddf5ba
   languageName: node
   linkType: hard
 
@@ -11957,9 +11978,9 @@ __metadata:
   linkType: hard
 
 "serialize-javascript@npm:^7.0.3":
-  version: 7.0.4
-  resolution: "serialize-javascript@npm:7.0.4"
-  checksum: 10c0/f3da6f994c41306fbfabb55eefe280a46da05592939a84b0d95c84e296c92ba9e6a3d86cf7bbd71e7a59e1cfcd8481745910af109bedbd3ed853b444d32f9ee9
+  version: 7.0.5
+  resolution: "serialize-javascript@npm:7.0.5"
+  checksum: 10c0/7b7818e5267f6d474ec7a56d36ba69dd712726a13eab37706ec94615fb7ca8945471f2b7fb0dc9dbe8c79c1930c1079d97f66f91315c8c8c2ca6c38898cec96f
   languageName: node
   linkType: hard
 
