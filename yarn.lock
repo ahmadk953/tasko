@@ -2075,12 +2075,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:3.17.0, @liveblocks/client@npm:^3.17.0":
+"@liveblocks/client@npm:3.17.0":
   version: 3.17.0
   resolution: "@liveblocks/client@npm:3.17.0"
   dependencies:
     "@liveblocks/core": "npm:3.17.0"
   checksum: 10c0/be31a884615726c663a2cce58ab482ff83d02968fafe5afac86a08ad789ee076a63352f30ebe047cb8280976eea599aa3eb0c32629f5e70b7f44fc6e86cf8905
+  languageName: node
+  linkType: hard
+
+"@liveblocks/client@npm:^3.18.1":
+  version: 3.18.1
+  resolution: "@liveblocks/client@npm:3.18.1"
+  dependencies:
+    "@liveblocks/core": "npm:3.18.1"
+  checksum: 10c0/24c408d298047031aa5987252fc68ec25231d7ba336bf28fbd174250850e98ef24e66ac4c341ea97b05a91c35813bcd555261cd01d6af88ac44c3cca5d3c7442
   languageName: node
   linkType: hard
 
@@ -2099,6 +2108,15 @@ __metadata:
   peerDependencies:
     "@types/json-schema": ^7
   checksum: 10c0/5475b486497ffaa86efcfa72c8b992cad76c146a7e8800cd84ea374b5acd9c99b1f88a613af6a02a03c8c9ba6cdf8d6eb7c026494e94b750ef13773c743ffac9
+  languageName: node
+  linkType: hard
+
+"@liveblocks/core@npm:3.18.1":
+  version: 3.18.1
+  resolution: "@liveblocks/core@npm:3.18.1"
+  peerDependencies:
+    "@types/json-schema": ^7
+  checksum: 10c0/9b57ab2e1f41c1b752d707bdccb93107689f57b315b79f6425cc541c9ceaf5168ae9a1be0de4d2a230d79cc4a1ef3c617640ac3e889d4dc93732533cde615073
   languageName: node
   linkType: hard
 
@@ -12676,7 +12694,7 @@ __metadata:
     "@content-collections/mdx": "npm:^0.2.2"
     "@content-collections/next": "npm:^0.2.11"
     "@hello-pangea/dnd": "npm:^18.0.1"
-    "@liveblocks/client": "npm:^3.17.0"
+    "@liveblocks/client": "npm:^3.18.1"
     "@liveblocks/node": "npm:^3.15.5"
     "@liveblocks/react": "npm:^3.17.0"
     "@mdx-js/loader": "npm:^3.1.1"
