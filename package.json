@@ -66,7 +66,7 @@
     "zustand": "^5.0.12"
   },
   "devDependencies": {
-    "@codecov/nextjs-webpack-plugin": "^1.9.1",
+    "@codecov/nextjs-webpack-plugin": "^2.0.1",
     "@content-collections/cli": "^0.1.9",
     "@content-collections/core": "^0.14.3",
     "@content-collections/mdx": "^0.2.2",
