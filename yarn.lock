@@ -12545,15 +12545,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stripe@npm:^22.0.0":
-  version: 22.0.0
-  resolution: "stripe@npm:22.0.0"
+"stripe@npm:^22.1.0":
+  version: 22.1.0
+  resolution: "stripe@npm:22.1.0"
   peerDependencies:
     "@types/node": ">=18"
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10c0/b4653848d9de41c4586e9ee4fa0aaf4388b7427f622d830faeccf95eff995003019bc01db8b55b1e4bdbc387671ea30d2914e4b33c1d71a343a094f1823665ea
+  checksum: 10c0/f83ab4338225b4f56d69afda804193ced8df70db50ba00ecb83188905f8d132dc0c5172a53f1eb77c559d4b32d7b61283534de6e6cf2aa2b6ddab205b4fbcd44
   languageName: node
   linkType: hard
 
@@ -12754,7 +12754,7 @@ __metadata:
     react-dom: "npm:^19.2.4"
     sharp: "npm:^0.34.5"
     sonner: "npm:^2.0.7"
-    stripe: "npm:^22.0.0"
+    stripe: "npm:^22.1.0"
     tailwind-merge: "npm:^3.5.0"
     tailwindcss: "npm:^4.2.2"
     ts-node: "npm:^10.9.2"
