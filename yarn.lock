@@ -2038,12 +2038,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/client@npm:^3.18.5":
-  version: 3.18.5
-  resolution: "@liveblocks/client@npm:3.18.5"
+"@liveblocks/client@npm:^3.19.5":
+  version: 3.19.5
+  resolution: "@liveblocks/client@npm:3.19.5"
   dependencies:
-    "@liveblocks/core": "npm:3.18.5"
-  checksum: 10c0/65e2242eb88cc9ec300d0b6ca713a8ff55ebdd21c1c620145fce9cae2af3e2dbf3417a6b4ca2ee5a00a00f29692b4de36ecdd13bb4c9046c7eb492488f0aadfe
+    "@liveblocks/core": "npm:3.19.5"
+  checksum: 10c0/81df9e870a96c4ada3df8acf32eb4623caf1f83b5ba459bab5f19224249467c4e6ac01eed98c685a607e846d06fa5253057420994840dd1e23a12d8d5fe8e20d
   languageName: node
   linkType: hard
 
@@ -2056,21 +2056,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@liveblocks/core@npm:3.18.5":
-  version: 3.18.5
-  resolution: "@liveblocks/core@npm:3.18.5"
-  peerDependencies:
-    "@types/json-schema": ^7
-  checksum: 10c0/4c09a5a100dc92988c7f13a4508fd6b21f8f37044b72cc0188ba4d99c92dd91cf52716ac0d7fc15383093fa13df52fb9b53b39e8d5caf4a8f52ad9248bdbdec8
-  languageName: node
-  linkType: hard
-
 "@liveblocks/core@npm:3.19.0":
   version: 3.19.0
   resolution: "@liveblocks/core@npm:3.19.0"
   peerDependencies:
     "@types/json-schema": ^7
   checksum: 10c0/60e85df0d41afc80eb2070ee786dee9acd748be729c11c95c802bf2c0fcdbe435b323a4633b8d77b39cb138a5a4e23f7efb61a7d57eeb7d812e9f88661c5144b
+  languageName: node
+  linkType: hard
+
+"@liveblocks/core@npm:3.19.5":
+  version: 3.19.5
+  resolution: "@liveblocks/core@npm:3.19.5"
+  peerDependencies:
+    "@types/json-schema": ^7
+  checksum: 10c0/33e1b9510f9e4e3734686a6365f6535a1ae71b9a64ee4dcffd1cc831c6412b2cef6b4566012d94a6886d271b49be49cfb27059a33dd9c38d7183804569b43743
   languageName: node
   linkType: hard
 
@@ -12703,7 +12703,7 @@ __metadata:
     "@content-collections/mdx": "npm:^0.2.2"
     "@content-collections/next": "npm:^0.2.11"
     "@hello-pangea/dnd": "npm:^18.0.1"
-    "@liveblocks/client": "npm:^3.18.5"
+    "@liveblocks/client": "npm:^3.19.5"
     "@liveblocks/node": "npm:^3.19.0"
     "@liveblocks/react": "npm:^3.17.0"
     "@mdx-js/loader": "npm:^3.1.1"
